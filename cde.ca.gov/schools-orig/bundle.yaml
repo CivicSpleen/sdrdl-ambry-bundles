@@ -1,0 +1,23 @@
+build:
+    private_schools:
+        index: http://www.cde.ca.gov/ds/si/ps/
+        source_package: private-schools-in-california
+    public_schools:
+        schema: http://www.cde.ca.gov/ds/si/ds/fspubschls.asp
+        url: ftp://ftp.cde.ca.gov/demo/schlname/pubschls.txt
+    requirements:
+        ckanclient: git+https://github.com/okfn/ckanclient.git
+identity:
+    cache_key: cde.ca.gov/schools-orig-0.1.2.db
+    dataset: schools
+    id: d00b
+    revision: 2
+    source: cde.ca.gov
+    variation: orig
+    version: 0.1.2
+names:
+    fqname: cde.ca.gov-schools-orig-0.1.2~d00b002
+    name: cde.ca.gov-schools-orig
+    vid: d00b002
+    vname: cde.ca.gov-schools-orig-0.1.2
+partitions: []

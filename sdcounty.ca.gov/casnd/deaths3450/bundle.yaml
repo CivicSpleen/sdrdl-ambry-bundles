@@ -1,0 +1,32 @@
+about:
+    author: Eric Busboom
+    author_email: eric@sandiegodata.org
+    description: !include 'meta/about.description.md'
+    groups:
+    - group1
+    - group2
+    homepage: https://civicknowledge.org
+    license: other-open
+    maintainer: Eric Busboom
+    maintainer_email: eric@sandiegodata.org
+    tags:
+    - tag1
+    - tag2
+    title: Bundle title
+build:
+    sources:
+        deaths: http://ds.civicknowledge.org.s3.amazonaws.com/sdcounty.ca.gov/Deaths-3-4-50-2000-2011.csv
+identity:
+    bspace: casnd
+    dataset: deaths3450
+    id: d02a
+    revision: 1
+    source: sdcounty.ca.gov
+    version: 0.0.1
+names:
+    fqname: sdcounty.ca.gov-deaths3450-casnd-0.0.1~d02a001
+    name: sdcounty.ca.gov-deaths3450-casnd
+    vid: d02a001
+    vname: sdcounty.ca.gov-deaths3450-casnd-0.0.1
+partitions:
+- sdcounty.ca.gov-deaths3450-casnd-deaths3450

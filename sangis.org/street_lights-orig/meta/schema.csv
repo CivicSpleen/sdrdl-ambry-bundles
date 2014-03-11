@@ -1,0 +1,6 @@
+table,seq,column,is_pk,is_fk,type,width,description,id
+streetlights,1,ogc_fid,1,,INTEGER,,,c00S01001
+streetlights,2,polenum,,,NUMERIC,11,,c00S01002
+streetlights,3,sapid,,,TEXT,13,,c00S01003
+streetlights,4,eqpid,,,TEXT,10,,c00S01004
+streetlights,5,status,,,TEXT,1,,c00S01005

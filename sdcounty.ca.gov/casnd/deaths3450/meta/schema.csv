@@ -1,0 +1,15 @@
+table,seq,column,is_pk,is_fk,type,size,d_caster,description,id
+deaths3450,1,id,1,,INTEGER,,,,c02a01001
+deaths3450,2,line,,,INTEGER,3,,,c02a01002
+deaths3450,3,area,,,VARCHAR,22,,,c02a01003
+deaths3450,4,year,,,INTEGER,4,,,c02a01004
+deaths3450,5,all,,,INTEGER,5,lt5,,c02a01005
+deaths3450,6,stroke,,,INTEGER,4,lt5,,c02a01006
+deaths3450,7,chd,,,INTEGER,4,lt5,,c02a01007
+deaths3450,8,diabetes,,,INTEGER,3,lt5,,c02a01008
+deaths3450,9,copd,,,INTEGER,4,lt5,,c02a01009
+deaths3450,10,asthma,,,INTEGER,3,lt5,,c02a0100a
+deaths3450,11,cancer,,,INTEGER,4,lt5,,c02a0100b
+deaths3450,12,deaths3450,,,INTEGER,5,lt5,,c02a0100c
+deaths3450,13,pct3450,,,FLOAT,,percent,,c02a0100d
+deaths3450,14,rate3450,,,FLOAT,4,na,,c02a0100e

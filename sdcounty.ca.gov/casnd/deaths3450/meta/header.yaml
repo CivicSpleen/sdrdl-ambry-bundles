@@ -1,0 +1,28 @@
+# The first item in each entry is the field naem for te xisting
+# file, and the second is our value. 
+-   - '1'
+    - 'line'
+-   - Area
+    - area
+-   - Year
+    - year
+-   - Total Deaths
+    - all
+-   - Stroke Deaths
+    - stroke
+-   - CHD Deaths
+    - chd
+-   - Diabetes Deaths
+    - diabetes 
+-   - COPD Deaths
+    - copd 
+-   - Asthma Deaths
+    - asthma 
+-   - Cancer Deaths
+    - cancer
+-   - 3-4-50 Deaths
+    - deaths3450 
+-   - 3-4-50 Percentage
+    - pct3450
+-   - 3-4-50 Deaths Rates*
+    - rate3450

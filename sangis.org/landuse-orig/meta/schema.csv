@@ -1,0 +1,4 @@
+table,seq,column,is_pk,is_fk,type,width,description,id
+currentuse,1,ogc_fid,1,,INTEGER,,,c00O01001
+currentuse,2,lu,,,INTEGER64,9,,c00O01002
+currentuse,3,landuse,,,TEXT,40,,c00O01003

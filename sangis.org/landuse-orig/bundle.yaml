@@ -1,0 +1,18 @@
+build:
+    sources:
+        currentuse: http://rdw.sandag.org/file_store/Land%20Use/LANDUSE_CURRENT.zip
+identity:
+    cache_key: sangis.org/landuse-orig-0.1.1.db
+    dataset: landuse
+    id: d00O
+    revision: 1
+    source: sangis.org
+    variation: orig
+    version: 0.1.1
+names:
+    fqname: sangis.org-landuse-orig-0.1.1~d00O001
+    name: sangis.org-landuse-orig
+    vid: d00O001
+    vname: sangis.org-landuse-orig-0.1.1
+partitions:
+- sangis.org-landuse-orig-currentuse-geo

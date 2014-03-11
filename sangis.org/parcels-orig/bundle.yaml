@@ -1,0 +1,18 @@
+build:
+    sources:
+        parcels: http://rdw.sandag.org/file_store/Parcel/Parcels.zip
+identity:
+    cache_key: sangis.org/parcels-orig-0.1.1.db
+    dataset: parcels
+    id: d00Q
+    revision: 1
+    source: sangis.org
+    variation: orig
+    version: 0.1.1
+names:
+    fqname: sangis.org-parcels-orig-0.1.1~d00Q001
+    name: sangis.org-parcels-orig
+    vid: d00Q001
+    vname: sangis.org-parcels-orig-0.1.1
+partitions:
+- sangis.org-parcels-orig-parcels-geo

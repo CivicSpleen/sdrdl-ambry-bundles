@@ -1,0 +1,50 @@
+about:
+    author: City of San Diego, General Services Dept., Street Division
+    description: !include 'config/about.description.md'
+    documents:
+    -   description: The PDF file of metadata for the addresses shapefile.
+        title: Addresses file metadata
+        url: http://rdw.sandag.org/file_store/Address/Address_APN.pdf
+    -   description: The PDF file of metadata for the roads shapefile.
+        title: Roads file metadata
+        url: http://rdw.sandag.org/file_store/Transportation/Roads_All.pdf
+    -   description: The PDF file of metadata for the intersections shapefile.
+        title: Intersections file metadata
+        url: http://rdw.sandag.org/file_store/Transportation/Roads_Intersection.pdf
+    -   description: The terms and conditions that apply to the original shapefiles.
+            Users must accept these terms before using the file.
+        title: Terms and Conditions
+        url: http://www.sangis.org/Legal_Notice.htm
+    homepage: http://rdw.sandag.org/Default.aspx?dir=Miscellaneous
+    license: other-open
+    maintainer: City of San Diego, General Services Dept., Street Division
+    tags:
+    - government
+    - gov-infrastructure
+    title: Roads and Addresses
+build:
+    codes: meta/codes.yaml
+    schema_file: meta/schema.csv
+    sources:
+        addresses: http://rdw.sandag.org/file_store/Address/Address_APN.zip
+        intersections: http://rdw.sandag.org/file_store/Transportation/Roads_Intersection.zip
+        roads: http://rdw.sandag.org/file_store/Transportation/Roads_All.zip
+    zips: meta/zips.yaml
+identity:
+    cache_key: sangis.org/streets-orig-0.1.2.db
+    dataset: streets
+    id: d00T
+    revision: 2
+    source: sangis.org
+    variation: orig
+    version: 0.1.2
+names:
+    fqname: sangis.org-streets-orig-0.1.2~d00T002
+    name: sangis.org-streets-orig
+    vid: d00T002
+    vname: sangis.org-streets-orig-0.1.2
+partitions:
+- sangis.org-streets-orig-codes
+- sangis.org-streets-orig-addresses-geo
+- sangis.org-streets-orig-intersections-geo
+- sangis.org-streets-orig-roads-geo

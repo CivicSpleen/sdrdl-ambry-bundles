@@ -1,0 +1,10 @@
+table,seq,column,is_pk,is_fk,type,i1,i2,default,d_fileheader,description,id
+incidents,1,id,1,,INTEGER,,,,,,d2JzK801001
+incidents,2,type,,,VARCHAR,,,-,activityType,,d2JzK801002
+incidents,3,agency,,,VARCHAR,,,-,AGENCY,,d2JzK801003
+incidents,4,datetime,,,TIMESTAMP,,,,activityDate,,d2JzK801004
+incidents,5,legend,,,VARCHAR,,,-,LEGEND,,d2JzK801005
+incidents,6,description,,,VARCHAR,,,-,Charge_Description,,d2JzK801006
+incidents,7,blockaddress,,,VARCHAR,,1,-,BLOCK_ADDRESS,,d2JzK801007
+incidents,8,city,,,VARCHAR,1,,-,City_Name,,d2JzK801008
+incidents,9,zip,,,VARCHAR,,,-,ZipCode,,d2JzK801009
