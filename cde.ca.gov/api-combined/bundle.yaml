@@ -77,4 +77,8 @@ names:
     name: cde.ca.gov-api-combined
     vid: d007001
     vname: cde.ca.gov-api-combined-0.1.1
-partitions: []
+partitions:
+-   name: cde.ca.gov-api-combined-api_base
+    table: api_base
+-   name: cde.ca.gov-api-combined-api_growth
+    table: api_growth

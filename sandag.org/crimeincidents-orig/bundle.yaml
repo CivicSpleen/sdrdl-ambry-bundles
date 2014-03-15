@@ -30,4 +30,30 @@ names:
     name: sandag.org-crimeincidents-orig
     vid: d00L003
     vname: sandag.org-crimeincidents-orig-1.0.3
-partitions: []
+partitions:
+-   name: sandag.org-crimeincidents-orig-incidents
+    table: incidents
+-   name: sandag.org-crimeincidents-orig-incidents-2007
+    table: incidents
+    time: '2007'
+-   name: sandag.org-crimeincidents-orig-incidents-2008
+    table: incidents
+    time: '2008'
+-   name: sandag.org-crimeincidents-orig-incidents-2014
+    table: incidents
+    time: '2014'
+-   name: sandag.org-crimeincidents-orig-incidents-2009
+    table: incidents
+    time: '2009'
+-   name: sandag.org-crimeincidents-orig-incidents-2010
+    table: incidents
+    time: '2010'
+-   name: sandag.org-crimeincidents-orig-incidents-2011
+    table: incidents
+    time: '2011'
+-   name: sandag.org-crimeincidents-orig-incidents-2012
+    table: incidents
+    time: '2012'
+-   name: sandag.org-crimeincidents-orig-incidents-2013
+    table: incidents
+    time: '2013'

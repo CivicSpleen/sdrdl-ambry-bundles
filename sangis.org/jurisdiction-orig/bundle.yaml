@@ -32,7 +32,15 @@ names:
     vid: d028002
     vname: sangis.org-jurisdiction-orig-0.0.2
 partitions:
-- sangis.org-jurisdiction-orig-municipal-geo
-- sangis.org-jurisdiction-orig-publicsafety-geo
-- sangis.org-jurisdiction-orig-reservations-geo
-- sangis.org-jurisdiction-orig-sra-geo
+-   format: geo
+    name: sangis.org-jurisdiction-orig-municipal-geo
+    table: municipal
+-   format: geo
+    name: sangis.org-jurisdiction-orig-publicsafety-geo
+    table: publicsafety
+-   format: geo
+    name: sangis.org-jurisdiction-orig-reservations-geo
+    table: reservations
+-   format: geo
+    name: sangis.org-jurisdiction-orig-sra-geo
+    table: sra

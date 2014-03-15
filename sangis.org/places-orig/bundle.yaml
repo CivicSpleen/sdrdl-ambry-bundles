@@ -39,7 +39,6 @@ build:
         sd_councils: http://rdw.sandag.org/file_store/District/Council_Districts.zip
         sd_neighborhoods: http://rdw.sandag.org/file_store/Community/Neighborhoods_SD.ZIP
 identity:
-    cache_key: sangis.org/places-orig-0.1.1.db
     dataset: places
     id: d00R
     revision: 1
@@ -52,10 +51,18 @@ names:
     vid: d00R001
     vname: sangis.org-places-orig-0.1.1
 partitions:
-- sangis.org-places-orig-cities-geo
-- sangis.org-places-orig-sd_communities-geo
-- sangis.org-places-orig-sd_councils-geo
-- sangis.org-places-orig-sd_neighborhoods-geo
+-   format: geo
+    name: sangis.org-places-orig-cities-geo
+    table: cities
+-   format: geo
+    name: sangis.org-places-orig-sd_communities-geo
+    table: sd_communities
+-   format: geo
+    name: sangis.org-places-orig-sd_councils-geo
+    table: sd_councils
+-   format: geo
+    name: sangis.org-places-orig-sd_neighborhoods-geo
+    table: sd_neighborhoods
 views:
     places:
         places_norm: SELECT code as id, name, AsText(geometry) as wkt, Area(geometry)

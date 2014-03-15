@@ -22,7 +22,6 @@ build:
     sources:
         businesses: http://rdw.sandag.org/file_store/Business/Business_Sites.zip
 identity:
-    cache_key: sangis.org/business-sites-orig-0.1.1.db
     dataset: business
     id: d00N
     revision: 1
@@ -36,4 +35,6 @@ names:
     vid: d00N001
     vname: sangis.org-business-sites-orig-0.1.1
 partitions:
-- sangis.org-business-sites-orig-businesses-geo
+-   format: geo
+    name: sangis.org-business-sites-orig-businesses-geo
+    table: businesses

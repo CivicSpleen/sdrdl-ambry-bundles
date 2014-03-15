@@ -6,7 +6,6 @@ build:
     name_transforms: meta/name_transforms.csv
     revised_name_transforms: meta/name_transforms_revised.csv
 identity:
-    cache_key: cde.ca.gov/schools-combined-0.1.1.db
     dataset: schools
     id: d00a
     revision: 1
@@ -19,5 +18,7 @@ names:
     vid: d00a001
     vname: cde.ca.gov-schools-combined-0.1.1
 partitions:
-- cde.ca.gov-schools-combined-private_schools
-- cde.ca.gov-schools-combined-public_schools
+-   name: cde.ca.gov-schools-combined-private_schools
+    table: private_schools
+-   name: cde.ca.gov-schools-combined-public_schools
+    table: public_schools

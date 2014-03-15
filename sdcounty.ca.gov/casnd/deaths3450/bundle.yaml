@@ -29,4 +29,5 @@ names:
     vid: d02a001
     vname: sdcounty.ca.gov-deaths3450-casnd-0.0.1
 partitions:
-- sdcounty.ca.gov-deaths3450-casnd-deaths3450
+-   name: sdcounty.ca.gov-deaths3450-casnd-deaths3450
+    table: deaths3450
