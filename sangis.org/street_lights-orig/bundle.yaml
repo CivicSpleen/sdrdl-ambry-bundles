@@ -43,7 +43,6 @@ extracts:
         name: sandiego-lights.tiff
         title: Light heatmap
 identity:
-    cache_key: sangis.org/street_lights-orig-0.1.1.db
     dataset: street_lights
     id: d00S
     revision: 1
@@ -56,4 +55,6 @@ names:
     vid: d00S001
     vname: sangis.org-street_lights-orig-0.1.1
 partitions:
-- sangis.org-street_lights-orig-streetlights-geo
+-   format: geo
+    name: sangis.org-street_lights-orig-streetlights-geo
+    table: streetlights

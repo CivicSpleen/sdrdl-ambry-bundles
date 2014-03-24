@@ -31,7 +31,6 @@ build:
         roads: http://rdw.sandag.org/file_store/Transportation/Roads_All.zip
     zips: meta/zips.yaml
 identity:
-    cache_key: sangis.org/streets-orig-0.1.2.db
     dataset: streets
     id: d00T
     revision: 2
@@ -44,7 +43,14 @@ names:
     vid: d00T002
     vname: sangis.org-streets-orig-0.1.2
 partitions:
-- sangis.org-streets-orig-codes
-- sangis.org-streets-orig-addresses-geo
-- sangis.org-streets-orig-intersections-geo
-- sangis.org-streets-orig-roads-geo
+-   name: sangis.org-streets-orig-codes
+    table: codes
+-   format: geo
+    name: sangis.org-streets-orig-addresses-geo
+    table: addresses
+-   format: geo
+    name: sangis.org-streets-orig-intersections-geo
+    table: intersections
+-   format: geo
+    name: sangis.org-streets-orig-roads-geo
+    table: roads
