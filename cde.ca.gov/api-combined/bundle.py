@@ -56,7 +56,10 @@ class Bundle(BuildBundle):
                 .replace("{}".format(yearm12d), '_base')
                 ) if name else None     
 
-                
+            
+        elif name in ('valid_num','ell'):
+            name = 'valid' if name == 'valid_num' else name
+            name = 'el' if name == 'ell' else name
         else:
 
             name = (name
@@ -102,10 +105,12 @@ class Bundle(BuildBundle):
 
         for year in all_years: # Get by year so most recent description is lasy
           
-            p = b.partitions.find(grain = group, time = year, table=NameQuery.ANY)
+            p = b.partitions.find(grain = group, time = year,
+                                     table=NameQuery.ANY)
             
             if not p:
-                self.log("No partition for grain {}, time {}".format(group, year))
+                self.log("No partition for grain {}, time {}"
+                            .format(group, year))
                 continue
             
             bp = self.library.get(p.identity.vid)
@@ -113,25 +118,28 @@ class Bundle(BuildBundle):
             year = int(bp.partition.identity.time)
 
             for c in bp.partition.table.columns:
-                name, desc = self.translate_name_desc(group, c.name, c.description, year)
+                name, desc = self.translate_name_desc(group, c.name,
+                                                     c.description, year)
                 sch[(name,desc)].add(year)
                 last_desc[name] = desc
 
                 
         rows = []
         for (name, desc), years in sch.items():
-            padded_years = [ 'X' if year in years else '' for year in all_years ]
+            padded_years = ['X' if year in years else '' for year in all_years ]
 
             rows.append([name, desc] + padded_years)
 
         rows = sorted(rows, key = lambda x: x[0])
 
-        with open(self.filesystem.path('meta','all_fields_by_year_{}.csv'.format(group)), 'w') as f:
+        with open(self.filesystem.path('meta','all_fields_by_year_{}.csv'
+                                        .format(group)), 'w') as f:
             writer = csv.writer(f, encoding='utf-8')
             writer.writerow(['name', 'description']+all_years)
             writer.writerows(rows)
 
-        with open(self.filesystem.path('meta','most_recent_fields_{}.csv'.format(group)), 'w') as f:
+        with open(self.filesystem.path('meta','most_recent_fields_{}.csv'
+                                        .format(group)), 'w') as f:
             writer = csv.writer(f, encoding='utf-8')
             writer.writerow(['name', 'description'])
             
@@ -139,8 +147,9 @@ class Bundle(BuildBundle):
                 writer.writerow([name, desc])
 
     def meta_create_schema(self, group='base'):
-        '''Build the initial schema. The field layout from the CDE website has every 
-        field listed as a character, so we will have to intuit the schems from the data. '''
+        '''Build the initial schema. The field layout from the CDE website 
+        has every  field listed as a character, so we will have to intuit 
+        the schems from the data. '''
         import unicodecsv as csv
 
         self.log("Creating schema for {}".format(group))
@@ -149,8 +158,12 @@ class Bundle(BuildBundle):
 
         try:
             table_name = 'api_'+group
-            datatypes = self.filesystem.read_csv(self.config.build.datatypes_file.format(table_name), key='column')
-            code_set = self.filesystem.read_yaml(self.config.build.codes_file.format(table_name))
+            datatypes = self.filesystem.read_csv(
+            self.config.build.datatypes_file.format(table_name), key='column')
+            
+            code_set = self.filesystem.read_yaml(
+            self.config.build.codes_file.format(table_name))
+            
         except IOError:
             # For the first run, when the field analysis hasn't yet been done. 
             from collections import defaultdict
@@ -160,7 +173,8 @@ class Bundle(BuildBundle):
         with self.session as s:
             table = self.schema.add_table('api_{}'.format(group))
 
-            with open(self.filesystem.path('meta','most_recent_fields_{}.csv'.format(group))) as f:
+            with open(self.filesystem.path('meta',
+                        'most_recent_fields_{}.csv'.format(group))) as f:
                 reader = csv.DictReader(f)
         
                 for row in reader:
@@ -176,7 +190,8 @@ class Bundle(BuildBundle):
                         description=row['description'],
                         datatype=datatype if not pk else 'integer',
                         is_primary_key = pk,
-                        data = {'codes':','.join(code_set[row['name']]) if row['name'] in code_set else None}
+                        data = {'codes':','.join(code_set[row['name']]) 
+                                if row['name'] in code_set else None}
                     )
                     
                     # Add extra columns after the id
@@ -190,8 +205,9 @@ class Bundle(BuildBundle):
             self.schema.as_csv(f)
 
     def meta_find_distinct(self, table='api_base'):
-        '''Get the disctinct values from each field and find the most common data type, filtering out
-        the strongs that are actually codes in anotherwise integer field '''
+        '''Get the disctinct values from each field and find the most 
+        common data type, filtering out the strongs that are actually 
+        codes in anotherwise integer field '''
         from collections import defaultdict
         import csv
         import os
@@ -217,7 +233,8 @@ class Bundle(BuildBundle):
         # strings that are not in one of the name columns. 
         #
         for c in p.table.columns:
-            for row in p.database.query("SELECT distinct({}) from {}".format(c.name, p.table.name)):
+            for row in p.database.query("SELECT distinct({}) from {}"
+                                        .format(c.name, p.table.name)):
             
                 v = row[0]
                 while v and True:
@@ -243,7 +260,9 @@ class Bundle(BuildBundle):
             
                 # Exclude some fields from the codes conversion
                 if (c.name not in ('sname', 'dname','cname') # Definitely names
-                        and c.name not in ('rtype','stype','sped','charter', 'irg5', 'size') # Codes, but don't convert them. 
+                        and c.name not in ('rtype','stype','sped',
+                            'charter', 'irg5', 
+                            'size') # Codes, but don't convert them. 
                         and not c.name.endswith('_sig') # These should be yes/no
                         and v is not None and type_ == str):
  
@@ -252,7 +271,8 @@ class Bundle(BuildBundle):
                 lr(c.name)
                 
         # Find the most common datatype for the field. 
-        with open(self.filesystem.path(self.config.build.datatypes_file.format(table)), 'w') as f:
+        with open(self.filesystem.path(
+            self.config.build.datatypes_file.format(table)),'w') as f:
             
             type_map = {float: 'real',str:'varchar', int : 'integer'}
             writer = csv.writer(f)
@@ -281,7 +301,8 @@ class Bundle(BuildBundle):
 
             table_name = 'api_'+group
 
-            path = self.filesystem.path(self.config.build.codes_file.format(table_name))
+            path = self.filesystem.path(
+                self.config.build.codes_file.format(table_name))
             if os.path.exists(path):
                 os.remove(path)
                 os.remove(self.config.build.datatypes_file.format('api_'+group))
@@ -302,7 +323,7 @@ class Bundle(BuildBundle):
             # can process the values
             self.build_load_values(group=group)
             
-            # Collect code viles and intuit new schema data types. 
+            # Collect code values and intuit new schema data types. 
             self.meta_find_distinct(table=table_name)
 
 
@@ -312,8 +333,6 @@ class Bundle(BuildBundle):
             
             # Make the final schema.     
             self.meta_create_schema(group=group)
-
-
 
             
         return True
@@ -338,11 +357,13 @@ class Bundle(BuildBundle):
         out_p = self.partitions.find_or_new(table=table_name)
       
         #
-        # Create a converter function that will apply string->integer codes, if the codes
-        # file was created on a previous build, and map names from the name map. 
+        # Create a converter function that will apply string->integer codes, 
+        # if the codes  file was created on a previous build, and map 
+        # names from the name map. 
         #
         try:
-            code_set = self.filesystem.read_yaml(self.config.build.codes_file.format(table_name))
+            code_set = self.filesystem.read_yaml(
+                self.config.build.codes_file.format(table_name))
             codes = self.config.build.field_codes
             coded_fields = [ str(x) for x in code_set.keys() ]
             
@@ -351,7 +372,8 @@ class Bundle(BuildBundle):
             coded_fields_used = []
             for c in table.columns:
                 if str(c.name) in coded_fields:
-                    _converters[c.name] = lambda x: codes[str(x).lower()] if str(x).lower() in codes else x
+                    _converters[c.name] = (lambda x: codes[str(x).lower()] 
+                                        if str(x).lower() in codes else x)
                     coded_fields_used.append(c.name)
                 elif str(c.name).endswith('_sig'):
                     # Should all be yes and no, but there is mixed case across files. 
@@ -362,14 +384,17 @@ class Bundle(BuildBundle):
                 
             
 
-                code_converter = lambda row, name_map: { 
-                    name_map[k]:_converters[name_map[k]](v) for k,v in row.items() if k not in ('id', 'year') }
+                code_converter = (lambda row, name_map: 
+                    { name_map[k]:_converters[name_map[k]](v) 
+                    for k,v in row.items() if k not in ('id', 'year') })
 
-            self.log("Using code/name converter, for fields: {}".format(coded_fields_used))
+            self.log("Using code/name converter, for fields: {}"
+                    .format(coded_fields_used))
             
         except IOError as e:
 
-            code_converter = lambda row, name_map: { name_map[k]:v for k,v in row.items() if k not in ('id', 'year') }
+            code_converter = (lambda row, name_map: { name_map[k]:v 
+                        for k,v in row.items() if k not in ('id', 'year') })
             
             self.log("Using only name converter")
             
@@ -391,13 +416,17 @@ class Bundle(BuildBundle):
             out_p.database.query("DELETE FROM {}".format(table_name))
                 
 
-        for p in  b.partitions.find_all(grain = group, time = NameQuery.ANY, table=NameQuery.ANY):
+        for p in  b.partitions.find_all(grain = group, 
+                                        time = NameQuery.ANY, 
+                                        table = NameQuery.ANY):
             year = int(p.identity.time)
             
             name_map = None
 
             with out_p.database.inserter() as ins:
-                for row in p.database.query("SELECT * FROM {}".format(p.table.name)):
+                p = p.get() # Get from library, if the partition isn't local
+                for row in p.database.query(
+                            "SELECT * FROM {}".format(p.table.name)):
 
                     lr("Copy rows from {}".format(p.identity.vname))
 

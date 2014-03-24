@@ -66,6 +66,10 @@ Column descriptions were also changed, to use a descriptive phrase for the year.
     <tr><td>Current year to next year range</td><td>2013-2014</td><td>[Next Year Range]</td></tr>
 </table>
 
+Three are a few other column names that we changed to be consistent across the time span: 
+* 'ell' -> 'el'
+* 'valid_num' ->'valid'
+
 ## Field Codes and Flags
 
 

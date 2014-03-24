@@ -1,6 +1,6 @@
 about:
     author: California Department of Education
-    description: !include 'meta/about.description.md'
+    description: !include 'README.md'
     groups:
     - Education
     license: other-open
@@ -68,15 +68,15 @@ extracts:
 identity:
     dataset: api
     id: d007
-    revision: 1
+    revision: 2
     source: cde.ca.gov
     variation: combined
-    version: 0.1.1
+    version: 0.1.2
 names:
-    fqname: cde.ca.gov-api-combined-0.1.1~d007001
+    fqname: cde.ca.gov-api-combined-0.1.2~d007002
     name: cde.ca.gov-api-combined
-    vid: d007001
-    vname: cde.ca.gov-api-combined-0.1.1
+    vid: d007002
+    vname: cde.ca.gov-api-combined-0.1.2
 partitions:
 -   name: cde.ca.gov-api-combined-api_base
     table: api_base
