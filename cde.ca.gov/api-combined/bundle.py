@@ -14,9 +14,6 @@ and create files that will results in an updated schema
     dbundle meta --clean # Rebuild schema with improved datatypes
     dbundle build --clean # Build, converting strings to integer codes. 
     
-
-
-
 '''
 
 from  ambry.bundle import BuildBundle
@@ -81,7 +78,7 @@ class Bundle(BuildBundle):
         fields, and the most recent names for the fields, after making some substitutions 
         in the descriptions to make them comparable. '''
         
-        from ambry.identity import Identity
+        from ambry.identity import Identity, NameQuery
         from collections import defaultdict, OrderedDict
         import unicodecsv as csv
         import sys
@@ -105,7 +102,7 @@ class Bundle(BuildBundle):
 
         for year in all_years: # Get by year so most recent description is lasy
           
-            p = b.partitions.find(grain = group, time = year, table=Identity.ANY)
+            p = b.partitions.find(grain = group, time = year, table=NameQuery.ANY)
             
             if not p:
                 self.log("No partition for grain {}, time {}".format(group, year))
@@ -329,7 +326,7 @@ class Bundle(BuildBundle):
         return True
 
     def build_load_values(self, group='base'):
-        from ambry.identity import Identity
+        from ambry.identity import Identity,NameQuery
         from collections import defaultdict
         
         b = self.library.dep('orig')
@@ -339,7 +336,7 @@ class Bundle(BuildBundle):
         table_name = 'api_{}'.format(group)
         table = self.schema.table(table_name)
         out_p = self.partitions.find_or_new(table=table_name)
-
+      
         #
         # Create a converter function that will apply string->integer codes, if the codes
         # file was created on a previous build, and map names from the name map. 
@@ -388,18 +385,13 @@ class Bundle(BuildBundle):
                 name_map[k] = name 
                 
             return name_map           
-
-
-            
-        for csv_part in out_p.get_csv_parts():
-            self.log("Delete CSV partition: {}".format(csv_part ))
-            csv_part.delete()
+ 
             
         if out_p.database.exists():
             out_p.database.query("DELETE FROM {}".format(table_name))
                 
 
-        for p in  b.partitions.find_all(grain = group, time = Identity.ANY, table=Identity.ANY):
+        for p in  b.partitions.find_all(grain = group, time = NameQuery.ANY, table=NameQuery.ANY):
             year = int(p.identity.time)
             
             name_map = None
@@ -417,32 +409,5 @@ class Bundle(BuildBundle):
                     row['year'] = year
                     
                     ins.insert(row)
-
-
-        out_p.csvize(logger = self.init_log_rate(10000,'CSVize'))
-
+                    
         return True
-        
-        
-        
-    def install(self,force=False):
-        self.install_csvize()
-        super(Bundle, self).install(force=force)
-        return True
-         
-         
-    def install_csvize(self):
-        from ambry.identity import Identity
- 
-        for p in self.partitions.find_all(format='db', table=Identity.ANY):
-
-            if not p.get_csv_parts():
-                p.csvize(logger=self.init_log_rate(10000,"CSVIZE {}".format(p.name)))
-            else:
-                self.log("Already have CSV partitions for {}".format(p.name))
-            
-            
-            
-        
-        
-        
