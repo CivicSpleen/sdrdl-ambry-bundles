@@ -1,5 +1,7 @@
 Compilation of multiple years of California Academic Performance Index scores into single files. 
 
+** WARNING: This dataset involved a very difficult conversion process, and is likely to have many errors. See Caveats in the documentation ***
+
 This dataset includes two files that combine multiple years of the [California Academic Performance Index](http://www.cde.ca.gov/ta/ac/ap/) into single CSV files. These files have a few advantages over the oroginal data releases from The California Department of Education:
 
 * Multiple years of records are combined into a single file

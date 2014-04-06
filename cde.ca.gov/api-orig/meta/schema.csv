@@ -61,8 +61,7 @@ growth2004,59,pi_grow,,,VARCHAR,5,2003-2004 Subgroup Growth,c0080100X
 growth2004,60,pi_met,,,VARCHAR,5,Met Pacific Islander Subgroup Growth Target,c0080100Y
 growth2004,61,wh_num,,,VARCHAR,6,Number of whites included in API,c0080100Z
 growth2004,62,wh_sig,,,VARCHAR,5,White Significant? (Yes/No),c00801010
-growth2004,63,wh_api04,,,VARCHAR,5,2004 Whites API (Growth),c00801011
-growth2004,64,wh_api04,,,VARCHAR,5,2003 White API (Base),c00801012
+growth2004,63,wh_api04,,,VARCHAR,5,2003 White API (Base),c00801011
 growth2004,65,wh_targ,,,VARCHAR,5,2003-2004 Whites Subgroup Growth Target,c00801013
 growth2004,66,wh_grow,,,VARCHAR,5,2003-2004 White Growth,c00801014
 growth2004,67,wh_met,,,VARCHAR,5,Met White Subgroup Growth Target,c00801015
@@ -888,7 +887,7 @@ base2001,5,dname,,,VARCHAR,30,District Name,c00807005
 base2001,6,cname,,,VARCHAR,15,County Name,c00807006
 base2001,7,flag,,,VARCHAR,5,Flag Values,c00807007
 base2001,8,pct_test,,,VARCHAR,5,Percentage of Students Tested,c00807008
-base2001,9,valid_num,,,VARCHAR,5,Number of Students Included in the 2001 API,c00807009
+base2001,9,valid,,,VARCHAR,5,Number of Students Included in the 2001 API,c00807009
 base2001,10,api01,,,VARCHAR,5,Tested 2001 API (Base) (Note: Should have asterisk if Valid_Num < 100),c0080700a
 base2001,11,st_rank,,,VARCHAR,5,Statewide Rank (Note: Should have asterisk if Valid_Num < 100),c0080700b
 base2001,12,sim_rank,,,VARCHAR,5,Similar Schools Rank,c0080700c
@@ -1140,7 +1139,7 @@ base2002,5,sname,,,VARCHAR,40,School Name,c0080a005
 base2002,6,dname,,,VARCHAR,30,District Name,c0080a006
 base2002,7,cname,,,VARCHAR,15,County Name,c0080a007
 base2002,8,flag,,,VARCHAR,5,Flag Values,c0080a008
-base2002,9,valid_num,,,VARCHAR,5,Number of Students Included in the 2002 API,c0080a009
+base2002,9,valid,,,VARCHAR,5,Number of Students Included in the 2002 API,c0080a009
 base2002,10,api02,,,VARCHAR,5,Tested 2002 API (Base) (Note: Should have asterisk if Valid_Num < 100),c0080a00a
 base2002,11,st_rank,,,VARCHAR,5,Statewide Rank (Note: Should have asterisk if Valid_Num < 100),c0080a00b
 base2002,12,sim_rank,,,VARCHAR,5,Similar Schools Rank,c0080a00c

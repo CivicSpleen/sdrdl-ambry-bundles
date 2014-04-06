@@ -220,12 +220,12 @@ class Bundle(BuildBundle):
                           
         return True
 
-
     def build_import_public_schools(self):
         
         b = self.library.dep('schools')
         
         in_p = b.partitions.find_or_new_db(table='public_schools', format='db')
+        in_p.get() # Fetch if not already downloaded
         
         out_p = self.partitions.find_or_new_db(table='public_schools')
         
@@ -250,16 +250,52 @@ class Bundle(BuildBundle):
                 self.partitions.find(table='public_schools').database.query("SELECT * from public_schools"), 
                 logger=self.init_log_rate(10000,'Update public_schools schema'))
 
+    def geocode(self):
+        from rtree import index
+        
+        blocks = self.library.dep('blocks').partition
+        
+        idx = index.Index()
+        
+        # HACK! This ordering may only work in North and West
+        # hemispheres. 
+        q = """
+            SELECT
+                geoid,
+                MbrMinX(geometry) AS x_min, 
+                MbrMinY(geometry) AS y_min, 
+                MbrMaxX(geometry) AS x_max,  
+                MbrMaxY(geometry) AS y_max,
+                AsText(geometry) AS wkt
+            FROM blocks
+        """
+        
+        lr = self.init_log_rate(print_rate=5)
+        with self.session as s:
+            for i, row in enumerate(blocks.query(q)):
+
+                g = loads(row['wkt'])
+                
+                idx.insert (row[0],tuple([ float(f) for f in row[1:5]]), obj=g)
+                lr('Load rtree')
+                
+                
+        return 
+        
+        schools = self.partitions.find(table='public_schools')
+        
+        lr = self.init_log_rate(message="geocode", print_rate = 5)
+        for school in schools.rows:
+            print school
+                  
+
     def build(self):
         
-        self.build_import_private_schools()
         self.build_import_public_schools()
+       
+        self.build_import_private_schools()
+        
         self.build_update_schema()
         
         return True
         
-        
-        
-        
-        
-

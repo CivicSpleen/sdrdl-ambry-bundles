@@ -3,22 +3,21 @@ about:
 build:
     dependencies:
         schools: cde.ca.gov-schools-orig
+        blocks: census.gov-geography-dim-orig-blocks-ca
     name_transforms: meta/name_transforms.csv
     revised_name_transforms: meta/name_transforms_revised.csv
 identity:
     dataset: schools
     id: d00a
-    revision: 1
+    revision: 2
     source: cde.ca.gov
     variation: combined
-    version: 0.1.1
+    version: 0.1.2
 names:
-    fqname: cde.ca.gov-schools-combined-0.1.1~d00a001
+    fqname: cde.ca.gov-schools-combined-0.1.2~d00a002
     name: cde.ca.gov-schools-combined
-    vid: d00a001
-    vname: cde.ca.gov-schools-combined-0.1.1
+    vid: d00a002
+    vname: cde.ca.gov-schools-combined-0.1.2
 partitions:
--   name: cde.ca.gov-schools-combined-private_schools
-    table: private_schools
 -   name: cde.ca.gov-schools-combined-public_schools
     table: public_schools

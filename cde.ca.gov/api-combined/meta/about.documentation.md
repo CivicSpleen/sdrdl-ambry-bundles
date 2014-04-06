@@ -129,5 +129,16 @@ As of version 1 of the dataset, these caveats apply:
     * Years 2006 and later have the value 'X' to denote a summary for the state. 
 
 
+Creating this dataset involved a difficult and error-prone process. The source files have difference column names for the same column across the years, and in some cases, the column name in the datafile differes from the name in the documentation. Many of the errors can only be caught manually. 
+
 # Schemas    
 See the file __schema.csv__ for the names, types and descriptions of columns in the two files. 
+
+
+# Versions
+
+* 0.1.1 Initial Revision
+* 0.1.2 Re-ran to fix a database encoding error
+* 0.1.3 Re-ran to fix a database error
+
+

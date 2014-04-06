@@ -121,11 +121,11 @@ private_schools,119,unk_phone_pre,,,INTEGER,,-1,3,,c00a0101V
 private_schools,120,unk_phone_suffix,,,VARCHAR,8,-,7,,c00a0101W
 private_schools,121,unk_co,,,INTEGER,,-1,2,,c00a0101X
 ,,,,,,,,,,
-public_schools,1,id,1,,INTEGER,,-1,,,c00a02001
-public_schools,2,cdscode,,,INTEGER,,-1,,"This 14-digit code is the official, unique identification of a school within California. The first two digits identify the county, the next five digits identify the school district, and the last seven digits identify the school. 
+public_schools,1,id,1,,INTEGER,5,-1,,,c00a02001
+public_schools,2,cdscode,,,INTEGER64,14,-1,,"This 14-digit code is the official, unique identification of a school within California. The first two digits identify the county, the next five digits identify the school district, and the last seven digits identify the school. 
 Please note that a CDS code ending in '0000000' indicates a district record not a school.",c00a02002
-public_schools,3,ncesdist,,,INTEGER,,-1,,"This field represents the 7 digit National Center for Educational Statistics (NCES) school district identification number. The first 2 digits identify the state and the last 5 digits identify the school district. Combined, they make a unique 7 digit ID for each school district.",c00a02003
-public_schools,4,ncesschool,,,INTEGER,,-1,,This field represents the 5 digit NCES school identification number. The NCESSchool combined with the NCESDist form a unique 12 digit ID for each school.,c00a02004
+public_schools,3,ncesdist,,,INTEGER,6,-1,,"This field represents the 7 digit National Center for Educational Statistics (NCES) school district identification number. The first 2 digits identify the state and the last 5 digits identify the school district. Combined, they make a unique 7 digit ID for each school district.",c00a02003
+public_schools,4,ncesschool,,,INTEGER,5,-1,,This field represents the 5 digit NCES school identification number. The NCESSchool combined with the NCESDist form a unique 12 digit ID for each school.,c00a02004
 public_schools,5,statustype,,,VARCHAR,7,-,,"This field identifies the status of the school or district. Definitions of the valid status types are listed below:
 
 Active: The district or school is in operation and providing instructional services.
@@ -146,7 +146,7 @@ public_schools,16,mailcity,,,VARCHAR,22,-,,"The city associated with the mailing
 public_schools,17,mailzip,,,VARCHAR,10,-,,"The zip code associated with the mailing address of the school, district, or administrative authority. Note: Many entities have not provided a mailing address zip code. For your convenience we have filled the unpopulated MailZip cells with Zip data.",c00a0200h
 public_schools,18,mailstate,,,VARCHAR,2,-,,The state within the mailing address. For your convenience we have filled the unpopulated MailState cells with State data.,c00a0200i
 public_schools,19,phone,,,VARCHAR,14,-,,"The area code and phone number of the school, district, or administrative authority.",c00a0200j
-public_schools,20,ext,,,INTEGER,,-1,,"The phone number extension of the school, district, or administrative authority.",c00a0200k
+public_schools,20,ext,,,INTEGER,6,-1,,"The phone number extension of the school, district, or administrative authority.",c00a0200k
 public_schools,21,website,,,VARCHAR,74,-,,"The website address of the school, district, or administrative authority.",c00a0200l
 public_schools,22,opendate,,,VARCHAR,26,-,,"The date the school opened. An empty cell indicates that the start date precedes July 1, 1980, the date the California Department of Education began to maintain this information.",c00a0200m
 public_schools,23,closeddate,,,VARCHAR,26,-,,The date the school closed. An empty cell indicates that the entity is not closed.,c00a0200n
@@ -163,7 +163,7 @@ Not in CS funding model
 Locally funded
 Directly funded
 Blank",c00a0200q
-public_schools,27,doc,,,INTEGER,,-1,,"The District Ownership Code (DOC) is the numeric code used to identity the category of the Administrative Authority. 
+public_schools,27,doc,,,INTEGER,2,-1,,"The District Ownership Code (DOC) is the numeric code used to identity the category of the Administrative Authority. 
 
 00  County Office of Education 
 02  State Board of Education 
@@ -175,7 +175,7 @@ public_schools,27,doc,,,INTEGER,,-1,,"The District Ownership Code (DOC) is the n
 56  High School District 
 98  Regional Occupation Center/Program (ROC/P)",c00a0200r
 public_schools,28,doctype,,,VARCHAR,42,-,,The District Ownership Code Type is the text description of the DOC category. (See text values in DOC field description above),c00a0200s
-public_schools,29,soc,,,INTEGER,,-1,,"The School Ownership Code is a numeric code used to identify the type of school.
+public_schools,29,soc,,,INTEGER,2,-1,,"The School Ownership Code is a numeric code used to identify the type of school.
 
 08  Preschool
 09  Special Education Schools (Public)

@@ -1,3 +1,4 @@
+about: {}
 build:
     sources:
         sdcommunities: http://rdw.sandag.org/file_store/Community/Community_Plan_SD.zip
