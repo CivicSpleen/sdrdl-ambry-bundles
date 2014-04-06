@@ -68,7 +68,7 @@ extracts:
 identity:
     dataset: api
     id: d007
-    revision: 3
+    revision: 4
     source: cde.ca.gov
     variation: combined
     version: 0.1.3

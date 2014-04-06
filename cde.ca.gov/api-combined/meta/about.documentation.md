@@ -140,5 +140,6 @@ See the file __schema.csv__ for the names, types and descriptions of columns in 
 * 0.1.1 Initial Revision
 * 0.1.2 Re-ran to fix a database encoding error
 * 0.1.3 Re-ran to fix a database error
+* 0.1.4 Incorporating updates to 2001, 2002 Valid column from cde.ca.gov-api-orig-0.1.2
 
 
