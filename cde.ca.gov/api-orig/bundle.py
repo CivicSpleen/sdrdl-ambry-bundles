@@ -253,7 +253,7 @@ class Bundle(BuildBundle):
                     with p.database.inserter() as ins:
                         for line in f:
                             
-                            # Some of the lines are short, sp this pads them out to the correct length. 
+                            # Some of the lines are short, so this pads them out to the correct length. 
                             #
                             # WARNING! This may be a symptom of a coruption in the data. 
                             # The ACS_46 column  for the 2009 through 2012 files seems to be overlaid with the
