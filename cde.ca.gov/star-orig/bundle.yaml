@@ -1,0 +1,38 @@
+about:
+    author: Eric Busboom
+    author_email: eric@sandiegodata.org
+    description: !include 'README.md'
+    groups:
+    - Education
+    homepage: https://civicknowledge.org
+    license: other-open
+    maintainer: Eric Busboom
+    maintainer_email: eric@sandiegodata.org
+    tags:
+    - star
+    - education
+    title: California STAR Testing
+build:
+    sources:
+        2004: http://www3.cde.ca.gov/starresearchfiles/2004/CA2004_ALL_CSV_v4.zip
+        2005: http://www3.cde.ca.gov/starresearchfiles/2005/CA2005_ALL_CSV_v4.zip
+        2006: http://www3.cde.ca.gov/starresearchfiles/2006/CA2006_ALL_CSV_v3.zip
+        2007: http://www3.cde.ca.gov/starresearchfiles/2007/P3/CA2007_ALL_CSV_v3.zip
+        2008: http://www3.cde.ca.gov/starresearchfiles/2008/P3/ca2008_all_csv_v3.zip
+        2009: http://www3.cde.ca.gov/starresearchfiles/2009/P3/ca2009_all_csv_v3.zip
+        2010: http://www3.cde.ca.gov/starresearchfiles/2010/P3/ca2010_all_csv_v3.zip
+        2011: http://www3.cde.ca.gov/starresearchfiles/2011/P3/ca2011_all_csv_v3.zip
+        2012: http://www3.cde.ca.gov/starresearchfiles/2012/p3/ca2012_all_csv_v3.zip
+identity:
+    dataset: star
+    id: d02k
+    revision: 1
+    source: cde.ca.gov
+    variation: orig
+    version: 0.1.1
+names:
+    fqname: cde.ca.gov-star-orig-0.1.1~d02k001
+    name: cde.ca.gov-star-orig
+    vid: d02k001
+    vname: cde.ca.gov-star-orig-0.1.1
+partitions: []
