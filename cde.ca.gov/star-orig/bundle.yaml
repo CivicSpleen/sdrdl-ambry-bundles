@@ -2,9 +2,10 @@ about:
     author: Eric Busboom
     author_email: eric@sandiegodata.org
     description: !include 'README.md'
+    summary: California STAR test data, 2004 to 2012
     groups:
     - Education
-    homepage: https://civicknowledge.org
+    homepage: http://star.cde.ca.gov/
     license: other-open
     maintainer: Eric Busboom
     maintainer_email: eric@sandiegodata.org

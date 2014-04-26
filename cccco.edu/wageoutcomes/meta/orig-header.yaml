@@ -1,0 +1,35 @@
+summary:
+    -   - Top6 Title & Code
+        - 'code'
+    -   - Award Categories
+        - 'category'
+    -   - Award Years 2002-2003 to 2006-2007, Median Wage 2 Years Before Award
+        - 'wage2yearbefore'
+    -   - Award Years 2002-2003 to 2006-2007, Median Wage 2 Years After Award
+        - 'wage2yearafter'
+    -   - Award Years 2002-2003 to 2006-2007, Median Wage 5 Years After Award
+        - 'wage5yearafter'
+    -   - Award Years 2002-2003 to 2006-2007, Total Awards
+        - 'numawards'
+    -   - Award Years 2002-2003 to 2006-2007, Total number of award recipients with matched
+            wage records at 2 years before
+        - 'matched2before'
+    -   - Award Years 2002-2003 to 2006-2007, Total number of award recipients with matched
+            wage records at 2 years after
+        - 'matched2after'
+    -   - Award Years 2002-2003 to 2006-2007, Total number of award recipients with matched
+            wage records at 5 years after
+        - 'matched5after'
+colleges:
+    -   - College Name
+        - 'college'
+    -   - Top6 Title & Code
+        - 'code'
+    -   - Award Categories
+        - 'category'
+    -   - Award Year 2000-2001 - 2007-2008, Median Wage 3 Years After Award
+        - 'wage3after'
+    -   - Award Year 2000-2001 - 2007-2008, Total Awards
+        - 'numawards'
+    -   - Award Year 2000-2001 - 2007-2008, Award to Wage Match Rate
+        - 'matched3after'

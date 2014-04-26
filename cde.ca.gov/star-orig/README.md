@@ -1,7 +1,7 @@
 
-# Bundle Documentation
+# California STAR Testing, 2004 to 2012
 
-The contents of this file should be written in  
-[Markdown](http://daringfireball.net/projects/markdown/syntax). It will
-be included in the about.description entry in the bundle configuration.
+See http://star.cde.ca.gov/star2012/research_fixfileformat.aspx for some of the codes used in the files. 
+
+
 

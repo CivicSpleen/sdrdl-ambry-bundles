@@ -1,0 +1,34 @@
+about:
+    author: Eric Busboom
+    author_email: eric@sandiegodata.org
+    description: !include 'README.md'
+    groups: null
+    homepage: https://civicknowledge.org
+    license: other-open
+    maintainer: Eric Busboom
+    maintainer_email: eric@sandiegodata.org
+    summary: California community colleges wage outcomes by degree awarded
+    tags:
+    - education
+    - wage
+    title: California Community Colleges Wage Outcomes
+build:
+    sources:
+        colleges: http://ds.civicknowledge.org.s3.amazonaws.com/cccco.edu/WageOutcomesCollegeSummary.csv
+        summary: http://ds.civicknowledge.org.s3.amazonaws.com/cccco.edu/WageOutcomesSummary.csv
+identity:
+    dataset: wageoutcomes
+    id: d02l
+    revision: 1
+    source: cccco.edu
+    version: 0.0.1
+names:
+    fqname: cccco.edu-wageoutcomes-0.0.1~d02l001
+    name: cccco.edu-wageoutcomes
+    vid: d02l001
+    vname: cccco.edu-wageoutcomes-0.0.1
+partitions:
+-   name: cccco.edu-wageoutcomes-colleges
+    table: colleges
+-   name: cccco.edu-wageoutcomes-summary
+    table: summary
