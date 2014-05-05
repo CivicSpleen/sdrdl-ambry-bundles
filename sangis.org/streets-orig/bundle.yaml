@@ -1,56 +1,67 @@
 about:
-    author: City of San Diego, General Services Dept., Street Division
-    description: !include 'config/about.description.md'
-    documents:
-    -   description: The PDF file of metadata for the addresses shapefile.
-        title: Addresses file metadata
-        url: http://rdw.sandag.org/file_store/Address/Address_APN.pdf
-    -   description: The PDF file of metadata for the roads shapefile.
-        title: Roads file metadata
-        url: http://rdw.sandag.org/file_store/Transportation/Roads_All.pdf
-    -   description: The PDF file of metadata for the intersections shapefile.
-        title: Intersections file metadata
-        url: http://rdw.sandag.org/file_store/Transportation/Roads_Intersection.pdf
-    -   description: The terms and conditions that apply to the original shapefiles.
-            Users must accept these terms before using the file.
-        title: Terms and Conditions
-        url: http://www.sangis.org/Legal_Notice.htm
-    homepage: http://rdw.sandag.org/Default.aspx?dir=Miscellaneous
+    groups: []
     license: other-open
-    maintainer: City of San Diego, General Services Dept., Street Division
+    rights: null
+    subject: San Diego; Transportation
+    summary: Conversions to database format for the roads, intersections and addresses
+        shape files for San Diego County.
     tags:
     - government
     - gov-infrastructure
-    title: Roads and Addresses
-build:
-    codes: meta/codes.yaml
-    schema_file: meta/schema.csv
-    sources:
-        addresses: http://rdw.sandag.org/file_store/Address/Address_APN.zip
-        intersections: http://rdw.sandag.org/file_store/Transportation/Roads_Intersection.zip
-        roads: http://rdw.sandag.org/file_store/Transportation/Roads_All.zip
-    zips: meta/zips.yaml
+    title: San Diego Roads and Addresses
+    url: null
+contact_bundle:
+    creator:
+        email: null
+        name: null
+        url: null
+    maintainer:
+        email: null
+        name: null
+        url: null
+contact_source:
+    creator:
+        email: null
+        name: City of San Diego, General Services Dept., Street Division
+        url: null
+    maintainer:
+        email: null
+        name: SANDAG
+        url: http://rdw.sandag.org/Default.aspx?dir=Miscellaneous
+external_documentation:
+-   description: The PDF file of metadata for the addresses shapefile.
+    title: Addresses file metadata
+    url: http://rdw.sandag.org/file_store/Address/Address_APN.pdf
+-   description: The PDF file of metadata for the roads shapefile.
+    title: Roads file metadata
+    url: http://rdw.sandag.org/file_store/Transportation/Roads_All.pdf
+-   description: The PDF file of metadata for the intersections shapefile.
+    title: Intersections file metadata
+    url: http://rdw.sandag.org/file_store/Transportation/Roads_Intersection.pdf
+-   description: The terms and conditions that apply to the original shapefiles. Users
+        must accept these terms before using the file.
+    title: Terms and Conditions
+    url: http://www.sangis.org/Legal_Notice.htm
 identity:
     dataset: streets
     id: d00T
-    revision: 2
+    revision: 3
     source: sangis.org
+    subset: null
     variation: orig
-    version: 0.1.2
+    version: 0.1.3
 names:
-    fqname: sangis.org-streets-orig-0.1.2~d00T002
+    fqname: sangis.org-streets-orig-0.1.3~d00T003
     name: sangis.org-streets-orig
-    vid: d00T002
-    vname: sangis.org-streets-orig-0.1.2
-partitions:
--   name: sangis.org-streets-orig-codes
-    table: codes
--   format: geo
-    name: sangis.org-streets-orig-addresses-geo
-    table: addresses
--   format: geo
-    name: sangis.org-streets-orig-intersections-geo
-    table: intersections
--   format: geo
-    name: sangis.org-streets-orig-roads-geo
-    table: roads
+    vid: d00T003
+    vname: sangis.org-streets-orig-0.1.3
+versions:
+    1:
+        description: Initial Revision
+        version: 0.1.1
+    2:
+        description: null
+        version: null
+    3:
+        description: Updating metdata Structure
+        version: 0.1.3

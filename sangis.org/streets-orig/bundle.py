@@ -64,7 +64,7 @@ class Bundle(GeoBuildBundle):
     def load_codes(self):
         import json
         
-        codes = self.filesystem.load_yaml(self.config.build.codes)
+        codes = self.filesystem.load_yaml(self.metadata.build.codes)
         
         p = self.partitions.find_or_new(table='codes')
         
@@ -89,7 +89,7 @@ class Bundle(GeoBuildBundle):
                 
         name_map = {'La Jolla' : 'San Diego'}
                     
-        zips = self.filesystem.load_yaml(self.config.build.zips)
+        zips = self.filesystem.load_yaml(self.metadata.build.zips)
             
         with p.database.inserter("codes") as ins:
             for zip, city in zips.items():

@@ -1,0 +1,12 @@
+partitions:
+-   name: sangis.org-streets-orig-codes
+    table: codes
+-   format: geo
+    name: sangis.org-streets-orig-roads-geo
+    table: roads
+-   format: geo
+    name: sangis.org-streets-orig-intersections-geo
+    table: intersections
+-   format: geo
+    name: sangis.org-streets-orig-addresses-geo
+    table: addresses

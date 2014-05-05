@@ -1,9 +1,9 @@
 about:
     author: Eric Busboom
     author_email: eric@sandiegodata.org
-    description: !include 'README.md'
+    description: !include 'meta/README.md'
     groups: null
-    homepage: https://civicknowledge.org
+    homepage: http://datamart.cccco.edu/
     license: other-open
     maintainer: Eric Busboom
     maintainer_email: eric@sandiegodata.org
@@ -12,6 +12,7 @@ about:
     - education
     - wage
     title: California Community Colleges Wage Outcomes
+    
 build:
     sources:
         colleges: http://ds.civicknowledge.org.s3.amazonaws.com/cccco.edu/WageOutcomesCollegeSummary.csv
