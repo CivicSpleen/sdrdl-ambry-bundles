@@ -1,35 +1,46 @@
 about:
-    author: Eric Busboom
-    author_email: eric@sandiegodata.org
-    description: !include 'meta/README.md'
+    description: null
     groups: null
-    homepage: http://datamart.cccco.edu/
     license: other-open
-    maintainer: Eric Busboom
-    maintainer_email: eric@sandiegodata.org
+    rights: null
+    subject: null
     summary: California community colleges wage outcomes by degree awarded
     tags:
     - education
     - wage
     title: California Community Colleges Wage Outcomes
-    
-build:
-    sources:
-        colleges: http://ds.civicknowledge.org.s3.amazonaws.com/cccco.edu/WageOutcomesCollegeSummary.csv
-        summary: http://ds.civicknowledge.org.s3.amazonaws.com/cccco.edu/WageOutcomesSummary.csv
+contact_bundle:
+    creator:
+        email: Eric Busboom
+        name: eric@sandiegodata.org
+        url: http://sandiegodata.org
+    maintainer:
+        email: null
+        name: null
+        url: null
+contact_source:
+    creator:
+        email: null
+        name: California Community Colleges Chancelors Office
+        url: http://datamart.cccco.edu/
+    maintainer:
+        email: null
+        name: null
+        url: null
 identity:
     dataset: wageoutcomes
     id: d02l
     revision: 1
     source: cccco.edu
+    subset: null
+    variation: null
     version: 0.0.1
 names:
     fqname: cccco.edu-wageoutcomes-0.0.1~d02l001
     name: cccco.edu-wageoutcomes
     vid: d02l001
     vname: cccco.edu-wageoutcomes-0.0.1
-partitions:
--   name: cccco.edu-wageoutcomes-colleges
-    table: colleges
--   name: cccco.edu-wageoutcomes-summary
-    table: summary
+versions:
+    1:
+        description: Initial Version
+        version: 0.0.1

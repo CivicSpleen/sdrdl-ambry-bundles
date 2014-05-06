@@ -1,0 +1,8 @@
+build: {}
+dependencies: {}
+extract: {}
+sources:
+    colleges:
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/cccco.edu/WageOutcomesCollegeSummary.csv
+    summary:
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/cccco.edu/WageOutcomesSummary.csv

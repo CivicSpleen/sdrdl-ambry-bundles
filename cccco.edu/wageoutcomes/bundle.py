@@ -15,11 +15,12 @@ class Bundle(BuildBundle):
     # The following  are custom caster types. They are linked 
     # to fields in the d_caster column of the schema. These can be derived
     # functions, or derived from types. 
+    #
+    # The only reason there is one function and one class is an an example of each. 
     # 
 
     @staticmethod
     def percent(v):
-        
         return int(float(v.strip('%')))
 
     class dollars(int):
@@ -46,11 +47,11 @@ class Bundle(BuildBundle):
         self.database.create()
         self._prepare_load_schema()
 
-        for name, url in self.config.build.sources.items():
+        for name, source in self.metadata.sources.items():
 
-            csv_file = self.filesystem.download(url)
+            csv_file = self.filesystem.download(source.url)
             
-            self.log("Build schema for {} using {}".format(name, url))
+            self.log("Build schema for {} using {}".format(name, source.url))
             
             with open(csv_file) as f:
                 r = csv.reader(f)
@@ -73,11 +74,11 @@ class Bundle(BuildBundle):
     def build(self):
         import csv
         
-        for name, url in self.config.build.sources.items():
+        for name, source in self.metadata.sources.items():
 
-            csv_file = self.filesystem.download(url)
+            csv_file = self.filesystem.download(source.url)
             
-            self.log("Building  {} using {}".format(name, url))
+            self.log("Building  {} using {}".format(name, source.url))
             
             p = self.partitions.find_or_new(table=name)
             p.clean()

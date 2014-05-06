@@ -16,8 +16,8 @@ class Bundle(BuildBundle):
         from ambry.client.ckan import new_ckan
         import re
         import yaml
-        ckan = new_ckan(self.config.config.datarepo('default'))
-        package = ckan.get_package(self.config.build.private_schools.source_package)
+        ckan = new_ckan(self.metadata.config.datarepo('default'))
+        package = ckan.get_package(self.metadata.build.private_schools.source_package)
         
         urls = []
         
@@ -40,7 +40,7 @@ class Bundle(BuildBundle):
         from bs4 import BeautifulSoup as soup
         import requests
 
-        url = self.config.build.public_schools.schema
+        url = self.metadata.build.public_schools.schema
 
         type_map = {
         'Character':'varchar', 
@@ -102,8 +102,8 @@ class Bundle(BuildBundle):
         import csv
         from collections import defaultdict
         
-        ckan = new_ckan(self.config.config.datarepo('default'))
-        package = ckan.get_package(self.config.build.private_schools.source_package)
+        ckan = new_ckan(self.metadata.config.datarepo('default'))
+        package = ckan.get_package(self.metadata.build.private_schools.source_package)
 
         years = set()
         fields = defaultdict(set)
@@ -190,7 +190,7 @@ class Bundle(BuildBundle):
         
         p = self.partitions.new_partition(table=table_name)
         
-        url = self.config.build.public_schools.url
+        url = self.metadata.build.public_schools.url
 
         self.log("Dowloading {}".format(url))
         

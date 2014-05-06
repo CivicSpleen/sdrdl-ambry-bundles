@@ -15,7 +15,7 @@ class Bundle(BuildBundle):
     def generate_files(self):
         """A Generator that yields the input files. """
         import re
-        for year, url in self.config.build.sources.items():
+        for year, url in self.metadata.build.sources.items():
                 zf = self.filesystem.download(url)
                 for fn in self.filesystem.unzip_dir(zf, re.compile(r'.*all.*', re.IGNORECASE)):
                     yield year, fn

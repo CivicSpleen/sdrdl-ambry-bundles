@@ -19,9 +19,9 @@ class Bundle(BuildBundle):
     def generate_incidents(self, table):
         from ambry.client.ckan import Ckan
       
-        repo = Ckan(self.config.build.repo.url, self.config.build.repo.key)
+        repo = Ckan(self.metadata.build.repo.url, self.metadata.build.repo.key)
    
-        pkg = repo.get_package(self.config.build.repo.package)
+        pkg = repo.get_package(self.metadata.build.repo.package)
         
         for resource in pkg['resources']:    
                   

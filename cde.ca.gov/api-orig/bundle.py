@@ -25,7 +25,7 @@ class Bundle(BuildBundle):
         from collections import defaultdict
         import os
  
-        url  = self.config.build.index_url
+        url  = self.metadata.build.index_url
         base_url = os.path.dirname(url)
         
         r = requests.get(url)
@@ -92,7 +92,7 @@ class Bundle(BuildBundle):
             print year, '||',a.string, a['href']
  
         import yaml
-        with open(self.filesystem.path(self.config.build.urls_file), 'wb') as f:
+        with open(self.filesystem.path(self.metadata.build.urls_file), 'wb') as f:
             f.write(yaml.dump(dict(recs), indent=4, default_flow_style=False))
 
 
@@ -128,7 +128,7 @@ class Bundle(BuildBundle):
         from collections import defaultdict
         import re
 
-        with open(self.filesystem.path(self.config.build.urls_file)) as f:
+        with open(self.filesystem.path(self.metadata.build.urls_file)) as f:
             urls = yaml.load(f)
 
         schema = defaultdict(lambda : {'columns': list(), 'title': None, 'year': None})
@@ -147,7 +147,7 @@ class Bundle(BuildBundle):
                             schema[skey]['columns'].append(d)
                             
  
-        with open(self.filesystem.path(self.config.build.schema_source_file), 'wb') as f:
+        with open(self.filesystem.path(self.metadata.build.schema_source_file), 'wb') as f:
             f.write(yaml.dump(dict(schema), indent=4, default_flow_style=False))
 
     def meta_compile_fields(self):
@@ -155,7 +155,7 @@ class Bundle(BuildBundle):
         import yaml
         from collections import defaultdict
 
-        with open(self.filesystem.path(self.config.build.urls_file)) as f:
+        with open(self.filesystem.path(self.metadata.build.urls_file)) as f:
             urls = yaml.load(f)
 
         for s in ('base', 'growth'):
@@ -172,7 +172,7 @@ class Bundle(BuildBundle):
                         fields[fn]['size'] = max(fields[d['field']]['size'] , d['size'])
                         fields[fn]['descriptions'].add( d['description'])
 
-            with open(self.filesystem.path(self.config.build.schema_source_file), 'wb') as f:
+            with open(self.filesystem.path(self.metadata.build.schema_source_file), 'wb') as f:
                 f.write(yaml.dump(dict(fields), indent=4, default_flow_style=False))
         
     def meta_create_schema(self):
@@ -180,7 +180,7 @@ class Bundle(BuildBundle):
         import re
         import yaml 
         
-        with open(self.filesystem.path(self.config.build.schema_source_file)) as f:
+        with open(self.filesystem.path(self.metadata.build.schema_source_file)) as f:
             yschema = yaml.load(f)
      
         with self.session:
@@ -222,7 +222,7 @@ class Bundle(BuildBundle):
         import yaml
         import re
         
-        with open(self.filesystem.path(self.config.build.urls_file)) as f:
+        with open(self.filesystem.path(self.metadata.build.urls_file)) as f:
             urls = yaml.load(f)
             
         for year, datasets in urls.items():
@@ -286,7 +286,7 @@ class Bundle(BuildBundle):
         import re
         
         from dbfpy import dbf
-        with open(self.filesystem.path(self.config.build.urls_file)) as f:
+        with open(self.filesystem.path(self.metadata.build.urls_file)) as f:
             urls = yaml.load(f)
             
         lr = self.init_log_rate()

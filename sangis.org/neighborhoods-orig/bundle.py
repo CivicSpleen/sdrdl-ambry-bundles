@@ -15,7 +15,7 @@ class Bundle(GeoBuildBundle):
             if not p.table:
                 continue
   
-            views = self.config.views.get(p.table.name, False)
+            views = self.metadata.views.get(p.table.name, False)
  
             if not views:
                 continue

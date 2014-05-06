@@ -160,10 +160,10 @@ class Bundle(BuildBundle):
         try:
             table_name = 'api_'+group
             datatypes = self.filesystem.read_csv(
-            self.config.build.datatypes_file.format(table_name), key='column')
+            self.metadata.build.datatypes_file.format(table_name), key='column')
             
             code_set = self.filesystem.read_yaml(
-            self.config.build.codes_file.format(table_name))
+            self.metadata.build.codes_file.format(table_name))
             
         except IOError:
             # For the first run, when the field analysis hasn't yet been done. 
@@ -215,7 +215,7 @@ class Bundle(BuildBundle):
     
         self.log("Find distinct values for {} ".format(table))
     
-        path = self.filesystem.path(self.config.build.codes_file.format(table))
+        path = self.filesystem.path(self.metadata.build.codes_file.format(table))
         if os.path.exists(path):
             self.log("{} exists, not rebuilding codes file".format(path))
         
@@ -273,7 +273,7 @@ class Bundle(BuildBundle):
                 
         # Find the most common datatype for the field. 
         with open(self.filesystem.path(
-            self.config.build.datatypes_file.format(table)),'w') as f:
+            self.metadata.build.datatypes_file.format(table)),'w') as f:
             
             type_map = {float: 'real',str:'varchar', int : 'integer'}
             writer = csv.writer(f)
@@ -292,7 +292,7 @@ class Bundle(BuildBundle):
                 writer.writerow([cname, type_map[max_type]])
 
         self.filesystem.write_yaml({k:list(v) for k,v in field_codes.items()},
-                self.config.build.codes_file.format(table))
+                self.metadata.build.codes_file.format(table))
 
 
     def meta(self):
@@ -303,10 +303,10 @@ class Bundle(BuildBundle):
             table_name = 'api_'+group
 
             path = self.filesystem.path(
-                self.config.build.codes_file.format(table_name))
+                self.metadata.build.codes_file.format(table_name))
             if os.path.exists(path):
                 os.remove(path)
-                os.remove(self.config.build.datatypes_file.format('api_'+group))
+                os.remove(self.metadata.build.datatypes_file.format('api_'+group))
 
             # This step transforms field names and descriptions so they 
             # are comparble across years. 
@@ -364,8 +364,8 @@ class Bundle(BuildBundle):
         #
         try:
             code_set = self.filesystem.read_yaml(
-                self.config.build.codes_file.format(table_name))
-            codes = self.config.build.field_codes
+                self.metadata.build.codes_file.format(table_name))
+            codes = self.metadata.build.field_codes
             coded_fields = [ str(x) for x in code_set.keys() ]
             
             _converters = {}

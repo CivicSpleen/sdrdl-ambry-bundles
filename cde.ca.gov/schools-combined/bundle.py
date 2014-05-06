@@ -16,7 +16,7 @@ class Bundle(BuildBundle):
     def get_name_map(self):
         import csv
         
-        file_name = self.filesystem.path(self.config.build.name_transforms)
+        file_name = self.filesystem.path(self.metadata.build.name_transforms)
         t_map = {}
         fields = []
         with open(file_name) as f:
@@ -85,7 +85,7 @@ class Bundle(BuildBundle):
         for i in range(len(rows)):
             rows[i][3] = max(lengths[tf], rows[i][3])
 
-        with open(self.filesystem.path(self.config.build.revised_name_transforms),'wb') as f:
+        with open(self.filesystem.path(self.metadata.build.revised_name_transforms),'wb') as f:
             writer = csv.writer(f)
             writer.writerow(['i','to_name','from_name','size','years']+all_years)
             for row in rows:
@@ -98,7 +98,7 @@ class Bundle(BuildBundle):
         if not self.database.exists():
             self.database.create()
 
-        file_name = self.filesystem.path(self.config.build.name_transforms)
+        file_name = self.filesystem.path(self.metadata.build.name_transforms)
 
         with open(file_name) as f:
             reader = csv.reader(f) # Don't use DictReader -- need to preserve ordering. 
@@ -123,7 +123,7 @@ class Bundle(BuildBundle):
         from collections import OrderedDict
         
 
-        file_name = self.filesystem.path(self.config.build.name_transforms)
+        file_name = self.filesystem.path(self.metadata.build.name_transforms)
 
         with open(file_name) as f:
             reader = csv.reader(f) # Don't use DictReader -- need to preserve ordering. 
