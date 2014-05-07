@@ -1,4 +1,5 @@
-build: {}
+build:
+    dependencies: {}
 dependencies: {}
 extract: {}
 sources:

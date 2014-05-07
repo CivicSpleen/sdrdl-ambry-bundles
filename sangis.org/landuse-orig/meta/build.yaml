@@ -1,0 +1,14 @@
+build:
+    dependencies: {}
+    sources:
+        currentuse: http://rdw.sandag.org/file_store/Land%20Use/LANDUSE_CURRENT.zip
+dependencies: {}
+extract: {}
+partitions:
+-   format: geo
+    name: sangis.org-landuse-orig-currentuse-geo
+    table: currentuse
+sources:
+    currentuse:
+        description: null
+        url: http://rdw.sandag.org/file_store/Land%20Use/LANDUSE_CURRENT.zip

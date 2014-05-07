@@ -1,0 +1,10 @@
+build:
+    dependencies: {}
+    repo:
+        key: ce37e442-bfb6-4c9f-b62e-e0ae100f010c
+        package: raw-san-diego-county-crime-incidents-2007-2013-rev-2
+        url: http://data.sandiegodata.org/api
+        user: guest
+    schema_file: meta/schema.csv
+dependencies: {}
+extract: {}

@@ -1,0 +1,12 @@
+-   format: geo
+    name: sangis.org-places-orig-sd_councils-geo
+    table: sd_councils
+-   format: geo
+    name: sangis.org-places-orig-sd_neighborhoods-geo
+    table: sd_neighborhoods
+-   format: geo
+    name: sangis.org-places-orig-sd_communities-geo
+    table: sd_communities
+-   format: geo
+    name: sangis.org-places-orig-cities-geo
+    table: cities

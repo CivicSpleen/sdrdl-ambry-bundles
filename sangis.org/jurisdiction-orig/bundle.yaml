@@ -1,29 +1,42 @@
 about:
-    author: Eric Busboom
-    author_email: eric@sandiegodata.org
-    description: !include 'meta/about.description.md'
     groups:
     - group1
     - group2
-    homepage: https://civicknowledge.org
     license: other-open
-    maintainer: Eric Busboom
-    maintainer_email: eric@sandiegodata.org
+    rights: null
+    subject: null
+    summary: !include 'meta/about.description.md'
     tags:
     - tag1
     - tag2
     title: Bundle title
-build:
-    sources:
-        municipal: http://rdw.sandag.org/file_store/Jurisdiction/Municipal_Boundaries.zip
-        publicsafety: http://rdw.sandag.org/file_store/Jurisdiction/Public_Safety_Jurisdictions.zip
-        reservations: http://rdw.sandag.org/file_store/Jurisdiction/Indian_Reservations.zip
-        sra: http://rdw.sandag.org/file_store/Jurisdiction/Subregional_Areas_2010.zip
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: null
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: null
+contact_source:
+    creator:
+        email: null
+        name: null
+        url: https://civicknowledge.org
+    maintainer:
+        email: null
+        name: null
+        url: null
 identity:
+    bspace: null
+    btime: null
     dataset: jurisdiction
     id: d028
     revision: 2
     source: sangis.org
+    subset: null
+    type: null
     variation: orig
     version: 0.0.2
 names:
@@ -31,16 +44,10 @@ names:
     name: sangis.org-jurisdiction-orig
     vid: d028002
     vname: sangis.org-jurisdiction-orig-0.0.2
-partitions:
--   format: geo
-    name: sangis.org-jurisdiction-orig-municipal-geo
-    table: municipal
--   format: geo
-    name: sangis.org-jurisdiction-orig-publicsafety-geo
-    table: publicsafety
--   format: geo
-    name: sangis.org-jurisdiction-orig-reservations-geo
-    table: reservations
--   format: geo
-    name: sangis.org-jurisdiction-orig-sra-geo
-    table: sra
+versions:
+    1:
+        description: null
+        version: null
+    2:
+        description: null
+        version: 0.0.2

@@ -1,0 +1,13 @@
+build:
+    dependencies: {}
+    sources:
+        deaths: http://ds.civicknowledge.org.s3.amazonaws.com/sdcounty.ca.gov/Deaths-3-4-50-2000-2011.csv
+dependencies: {}
+extract: {}
+partitions:
+-   name: sdcounty.ca.gov-deaths3450-casnd-deaths3450
+    table: deaths3450
+sources:
+    deaths:
+        description: null
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sdcounty.ca.gov/Deaths-3-4-50-2000-2011.csv

@@ -1,0 +1,12 @@
+-   format: geo
+    name: sangis.org-jurisdiction-orig-reservations-geo
+    table: reservations
+-   format: geo
+    name: sangis.org-jurisdiction-orig-sra-geo
+    table: sra
+-   format: geo
+    name: sangis.org-jurisdiction-orig-municipal-geo
+    table: municipal
+-   format: geo
+    name: sangis.org-jurisdiction-orig-publicsafety-geo
+    table: publicsafety

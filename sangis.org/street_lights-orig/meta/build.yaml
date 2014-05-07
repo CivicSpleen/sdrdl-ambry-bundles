@@ -1,0 +1,24 @@
+build:
+    aa_geoid: '0666000'
+    dependencies: {}
+    sources:
+        streetlights: http://rdw.sandag.org/file_store/Miscellaneous/Street_Light.zip
+dependencies: {}
+extract: {}
+extracts:
+    csv:
+        description: Extract of the table in the original ESRI shape file, but with
+            the addition of two columns for the WGS84 lat/lon
+        name: sandiego_street_lights.csv
+        partition: sangis.org-street_lights-orig-7ba4-street_lights
+        query: select * from street_lights
+        title: San Diego Street Light Locations
+    images:
+        description: A grayscale GeoTIFF heatmap.
+        function: extract_image
+        name: sandiego-lights.tiff
+        title: Light heatmap
+sources:
+    streetlights:
+        description: null
+        url: http://rdw.sandag.org/file_store/Miscellaneous/Street_Light.zip

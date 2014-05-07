@@ -9,7 +9,6 @@ about:
     - government
     - gov-infrastructure
     title: San Diego Roads and Addresses
-    url: null
 contact_bundle:
     creator:
         email: null
@@ -30,24 +29,31 @@ contact_source:
         url: http://rdw.sandag.org/Default.aspx?dir=Miscellaneous
 external_documentation:
 -   description: The PDF file of metadata for the addresses shapefile.
+    source: null
     title: Addresses file metadata
     url: http://rdw.sandag.org/file_store/Address/Address_APN.pdf
 -   description: The PDF file of metadata for the roads shapefile.
+    source: null
     title: Roads file metadata
     url: http://rdw.sandag.org/file_store/Transportation/Roads_All.pdf
 -   description: The PDF file of metadata for the intersections shapefile.
+    source: null
     title: Intersections file metadata
     url: http://rdw.sandag.org/file_store/Transportation/Roads_Intersection.pdf
 -   description: The terms and conditions that apply to the original shapefiles. Users
         must accept these terms before using the file.
+    source: null
     title: Terms and Conditions
     url: http://www.sangis.org/Legal_Notice.htm
 identity:
+    bspace: null
+    btime: null
     dataset: streets
     id: d00T
     revision: 3
     source: sangis.org
     subset: null
+    type: null
     variation: orig
     version: 0.1.3
 names:

@@ -1,11 +1,38 @@
-build:
-    sources:
-        parcels: http://rdw.sandag.org/file_store/Parcel/Parcels.zip
+about:
+    groups: []
+    license: null
+    rights: null
+    subject: null
+    summary: null
+    tags: []
+    title: null
+contact_bundle:
+    creator:
+        email: null
+        name: null
+        url: null
+    maintainer:
+        email: null
+        name: null
+        url: null
+contact_source:
+    creator:
+        email: null
+        name: null
+        url: null
+    maintainer:
+        email: null
+        name: null
+        url: null
 identity:
+    bspace: null
+    btime: null
     dataset: parcels
     id: d00Q
     revision: 1
     source: sangis.org
+    subset: null
+    type: null
     variation: orig
     version: 0.1.1
 names:
@@ -13,7 +40,7 @@ names:
     name: sangis.org-parcels-orig
     vid: d00Q001
     vname: sangis.org-parcels-orig-0.1.1
-partitions:
--   format: geo
-    name: sangis.org-parcels-orig-parcels-geo
-    table: parcels
+versions:
+    1:
+        description: null
+        version: 0.1.1

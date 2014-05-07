@@ -1,5 +1,6 @@
 build:
     codes: meta/codes.yaml
+    dependencies: {}
     schema_file: meta/schema.csv
     zips: meta/zips.yaml
 dependencies: {}

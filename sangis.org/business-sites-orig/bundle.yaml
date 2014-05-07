@@ -1,32 +1,53 @@
 about:
-    author: San Diego County Assessor / SanGIS feature dataset
-    description: Point locations of business sites. Published Jan 2013.
-    documents:
-    -   description: Business point locations source file.
-        title: Business point locations source file.
-        url: http://rdw.sandag.org/file_store/Business/Business_Sites.pdf
-    -   description: Metadata for the source file.
-        title: File Metadata
-        url: http://rdw.sandag.org/file_store/Business/Business_Sites.pdf
-    -   description: The terms and conditions that apply to the original shapefiles.
-            Users must accept these terms before using the file.
-        title: Terms and Conditions
-        url: http://www.sangis.org/Legal_Notice.htm
-    homepage: http://rdw.sandag.org/Default.aspx?dir=Miscellaneous
+    groups: []
     license: other-open
-    maintainer: San Diego County Assessor / SanGIS feature dataset
+    rights: null
+    subject: null
+    summary: Point locations of business sites. Published Jan 2013.
     tags:
     - economy
     title: Business Locations
-build:
-    sources:
-        businesses: http://rdw.sandag.org/file_store/Business/Business_Sites.zip
+contact_bundle:
+    creator:
+        email: null
+        name: San Diego County Assessor / SanGIS feature dataset
+        url: null
+    maintainer:
+        email: null
+        name: San Diego County Assessor / SanGIS feature dataset
+        url: null
+contact_source:
+    creator:
+        email: null
+        name: null
+        url: http://rdw.sandag.org/Default.aspx?dir=Miscellaneous
+    maintainer:
+        email: null
+        name: null
+        url: null
+external_documentation:
+-   description: Business point locations source file.
+    source: null
+    title: Business point locations source file.
+    url: http://rdw.sandag.org/file_store/Business/Business_Sites.pdf
+-   description: Metadata for the source file.
+    source: null
+    title: File Metadata
+    url: http://rdw.sandag.org/file_store/Business/Business_Sites.pdf
+-   description: The terms and conditions that apply to the original shapefiles. Users
+        must accept these terms before using the file.
+    source: null
+    title: Terms and Conditions
+    url: http://www.sangis.org/Legal_Notice.htm
 identity:
+    bspace: null
+    btime: null
     dataset: business
     id: d00N
     revision: 1
     source: sangis.org
     subset: sites
+    type: null
     variation: orig
     version: 0.1.1
 names:
@@ -34,7 +55,7 @@ names:
     name: sangis.org-business-sites-orig
     vid: d00N001
     vname: sangis.org-business-sites-orig-0.1.1
-partitions:
--   format: geo
-    name: sangis.org-business-sites-orig-businesses-geo
-    table: businesses
+versions:
+    1:
+        description: null
+        version: 0.1.1

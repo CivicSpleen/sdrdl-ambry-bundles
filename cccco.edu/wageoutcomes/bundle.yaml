@@ -1,6 +1,6 @@
 about:
-    description: null
-    groups: null
+    groups:
+    - null
     license: other-open
     rights: null
     subject: null
@@ -28,11 +28,14 @@ contact_source:
         name: null
         url: null
 identity:
+    bspace: null
+    btime: null
     dataset: wageoutcomes
     id: d02l
     revision: 1
     source: cccco.edu
     subset: null
+    type: null
     variation: null
     version: 0.0.1
 names:

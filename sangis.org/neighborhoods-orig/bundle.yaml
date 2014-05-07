@@ -1,13 +1,38 @@
-about: {}
-build:
-    sources:
-        sdcommunities: http://rdw.sandag.org/file_store/Community/Community_Plan_SD.zip
-        sdneighborhoods: http://rdw.sandag.org/file_store/Community/Neighborhoods_SD.ZIP
+about:
+    groups: []
+    license: null
+    rights: null
+    subject: null
+    summary: null
+    tags: []
+    title: null
+contact_bundle:
+    creator:
+        email: null
+        name: null
+        url: null
+    maintainer:
+        email: null
+        name: null
+        url: null
+contact_source:
+    creator:
+        email: null
+        name: null
+        url: null
+    maintainer:
+        email: null
+        name: null
+        url: null
 identity:
+    bspace: null
+    btime: null
     dataset: neighborhoods
     id: d00P
     revision: 1
     source: sangis.org
+    subset: null
+    type: null
     variation: orig
     version: 0.1.1
 names:
@@ -15,17 +40,7 @@ names:
     name: sangis.org-neighborhoods-orig
     vid: d00P001
     vname: sangis.org-neighborhoods-orig-0.1.1
-partitions:
--   format: geo
-    name: sangis.org-neighborhoods-orig-sdcommunities-geo
-    table: sdcommunities
--   format: geo
-    name: sangis.org-neighborhoods-orig-sdneighborhoods-geo
-    table: sdneighborhoods
-views:
-    communities:
-        communities_norm: SELECT OGC_FID as id, cpname as name, AsText(geometry) as
-            wkt, Area(geometry) as area FROM communities
-    neighborhoods:
-        neighborhoods_norm: SELECT OGC_FID as id, name, AsText(geometry) as wkt, Area(geometry)
-            as area FROM neighborhoods
+versions:
+    1:
+        description: null
+        version: 0.1.1

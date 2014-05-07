@@ -1,16 +1,38 @@
 about:
-    website: http://www.cde.ca.gov/ta/ac/ap/
-build:
-    dependencies:
-        schools: cde.ca.gov-schools-orig
-        blocks: census.gov-geography-dim-orig-blocks-ca
-    name_transforms: meta/name_transforms.csv
-    revised_name_transforms: meta/name_transforms_revised.csv
+    groups: []
+    license: null
+    rights: null
+    subject: null
+    summary: null
+    tags: []
+    title: null
+contact_bundle:
+    creator:
+        email: null
+        name: null
+        url: null
+    maintainer:
+        email: null
+        name: null
+        url: null
+contact_source:
+    creator:
+        email: null
+        name: null
+        url: http://www.cde.ca.gov/ta/ac/ap/
+    maintainer:
+        email: null
+        name: null
+        url: null
 identity:
+    bspace: null
+    btime: null
     dataset: schools
     id: d00a
     revision: 2
     source: cde.ca.gov
+    subset: null
+    type: null
     variation: combined
     version: 0.1.2
 names:
@@ -18,6 +40,10 @@ names:
     name: cde.ca.gov-schools-combined
     vid: d00a002
     vname: cde.ca.gov-schools-combined-0.1.2
-partitions:
--   name: cde.ca.gov-schools-combined-public_schools
-    table: public_schools
+versions:
+    1:
+        description: null
+        version: null
+    2:
+        description: null
+        version: 0.1.2

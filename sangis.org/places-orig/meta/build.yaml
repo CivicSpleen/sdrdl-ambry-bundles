@@ -1,0 +1,18 @@
+build:
+    dependencies: {}
+    source_srs: 2230
+dependencies: {}
+extract: {}
+sources:
+    cities:
+        url: http://rdw.sandag.org/file_store/Jurisdiction/Municipal_Boundaries.zip
+    sd_communities:
+        url: http://rdw.sandag.org/file_store/Community/Community_Plan_SD.zip
+    sd_councils:
+        url: http://rdw.sandag.org/file_store/District/Council_Districts.zip
+    sd_neighborhoods:
+        url: http://rdw.sandag.org/file_store/Community/Neighborhoods_SD.ZIP
+views:
+    places:
+        places_norm: SELECT code as id, name, AsText(geometry) as wkt, Area(geometry)
+            as area FROM places

@@ -1,28 +1,42 @@
 about:
-    author: San Diego Regional Data Library
-    description: Crime incidents provided by SANDAG in response to Public Records
-        Request 12-075, covering the period from 1 Jan 2007 to 31 March 2013.
     groups:
     - Crime
-    homepage: http://sandag.org
     license: other-open
-    maintainer: San Diego Regional Data Library
+    rights: null
+    subject: null
+    summary: Crime incidents provided by SANDAG in response to Public Records Request
+        12-075, covering the period from 1 Jan 2007 to 31 March 2013.
     tags:
     - government
     - gov-crime
     title: SANDAG Crime Incidents, 2007 - March 2013
-build:
-    repo:
-        key: ce37e442-bfb6-4c9f-b62e-e0ae100f010c
-        package: raw-san-diego-county-crime-incidents-2007-2013-rev-2
-        url: http://data.sandiegodata.org/api
-        user: guest
-    schema_file: meta/schema.csv
+contact_bundle:
+    creator:
+        email: null
+        name: San Diego Regional Data Library
+        url: null
+    maintainer:
+        email: null
+        name: San Diego Regional Data Library
+        url: null
+contact_source:
+    creator:
+        email: null
+        name: null
+        url: http://sandag.org
+    maintainer:
+        email: null
+        name: null
+        url: null
 identity:
+    bspace: null
+    btime: null
     dataset: crimeincidents
     id: d00L
     revision: 3
     source: sandag.org
+    subset: null
+    type: null
     variation: orig
     version: 1.0.3
 names:
@@ -30,30 +44,13 @@ names:
     name: sandag.org-crimeincidents-orig
     vid: d00L003
     vname: sandag.org-crimeincidents-orig-1.0.3
-partitions:
--   name: sandag.org-crimeincidents-orig-incidents
-    table: incidents
--   name: sandag.org-crimeincidents-orig-incidents-2007
-    table: incidents
-    time: '2007'
--   name: sandag.org-crimeincidents-orig-incidents-2008
-    table: incidents
-    time: '2008'
--   name: sandag.org-crimeincidents-orig-incidents-2014
-    table: incidents
-    time: '2014'
--   name: sandag.org-crimeincidents-orig-incidents-2009
-    table: incidents
-    time: '2009'
--   name: sandag.org-crimeincidents-orig-incidents-2010
-    table: incidents
-    time: '2010'
--   name: sandag.org-crimeincidents-orig-incidents-2011
-    table: incidents
-    time: '2011'
--   name: sandag.org-crimeincidents-orig-incidents-2012
-    table: incidents
-    time: '2012'
--   name: sandag.org-crimeincidents-orig-incidents-2013
-    table: incidents
-    time: '2013'
+versions:
+    1:
+        description: null
+        version: null
+    2:
+        description: null
+        version: null
+    3:
+        description: null
+        version: 1.0.3

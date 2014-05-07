@@ -1,0 +1,14 @@
+build:
+    dependencies: {}
+    sources:
+        businesses: http://rdw.sandag.org/file_store/Business/Business_Sites.zip
+dependencies: {}
+extract: {}
+partitions:
+-   format: geo
+    name: sangis.org-business-sites-orig-businesses-geo
+    table: businesses
+sources:
+    businesses:
+        description: null
+        url: http://rdw.sandag.org/file_store/Business/Business_Sites.zip

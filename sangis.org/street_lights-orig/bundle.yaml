@@ -1,52 +1,60 @@
 about:
-    author: City of San Diego, General Services Dept., Street Division
-    description: 'Street Light Pole locations used for Street Division GIS/SAP WorkManagement
+    groups: []
+    license: other-open
+    rights: null
+    subject: null
+    summary: 'Street Light Pole locations used for Street Division GIS/SAP WorkManagement
         System. The geographic extent is the City of San Diego. Users must understand
         the original SanGIS Terms and Conditions before using this derived data.
 
         This GIS data was derived and  modified from SanGIS downloadable data - www.sangis.org
         Copyright SanGIS 2009'
-    documents:
-    -   description: The original SanGIS Shapefile, subject to their [Terms and Conditions]
-            (http://rdw.sandag.org)
-        title: Source Shapefile
-        url: http://rdw.sandag.org/file_store/Miscellaneous/Street_Light.zip
-    -   description: The original metadta, provided by SanGIS
-        title: SanGIS Metadata
-        url: http://rdw.sandag.org/file_store/Miscellaneous/Street_Light.pdf
-    -   description: The terms and conditions that apply to the original shapefile.
-            Users must accept these terms before using the file.
-        title: Terms and Conditions
-        url: http://www.sangis.org/Legal_Notice.htm
-    homepage: http://rdw.sandag.org/Default.aspx?dir=Miscellaneous
-    license: other-open
-    maintainer: City of San Diego, General Services Dept., Street Division
     tags:
     - government
     - gov-infrastructure
     title: San Diego Street Light Locations
-build:
-    aa_geoid: '0666000'
-    sources:
-        streetlights: http://rdw.sandag.org/file_store/Miscellaneous/Street_Light.zip
-extracts:
-    csv:
-        description: Extract of the table in the original ESRI shape file, but with
-            the addition of two columns for the WGS84 lat/lon
-        name: sandiego_street_lights.csv
-        partition: sangis.org-street_lights-orig-7ba4-street_lights
-        query: select * from street_lights
-        title: San Diego Street Light Locations
-    images:
-        description: A grayscale GeoTIFF heatmap.
-        function: extract_image
-        name: sandiego-lights.tiff
-        title: Light heatmap
+contact_bundle:
+    creator:
+        email: null
+        name: City of San Diego, General Services Dept., Street Division
+        url: null
+    maintainer:
+        email: null
+        name: City of San Diego, General Services Dept., Street Division
+        url: null
+contact_source:
+    creator:
+        email: null
+        name: null
+        url: http://rdw.sandag.org/Default.aspx?dir=Miscellaneous
+    maintainer:
+        email: null
+        name: null
+        url: null
+external_documentation:
+-   description: The original SanGIS Shapefile, subject to their [Terms and Conditions]
+        (http://rdw.sandag.org)
+    source: null
+    title: Source Shapefile
+    url: http://rdw.sandag.org/file_store/Miscellaneous/Street_Light.zip
+-   description: The original metadta, provided by SanGIS
+    source: null
+    title: SanGIS Metadata
+    url: http://rdw.sandag.org/file_store/Miscellaneous/Street_Light.pdf
+-   description: The terms and conditions that apply to the original shapefile. Users
+        must accept these terms before using the file.
+    source: null
+    title: Terms and Conditions
+    url: http://www.sangis.org/Legal_Notice.htm
 identity:
+    bspace: null
+    btime: null
     dataset: street_lights
     id: d00S
     revision: 1
     source: sangis.org
+    subset: null
+    type: null
     variation: orig
     version: 0.1.1
 names:
@@ -54,7 +62,7 @@ names:
     name: sangis.org-street_lights-orig
     vid: d00S001
     vname: sangis.org-street_lights-orig-0.1.1
-partitions:
--   format: geo
-    name: sangis.org-street_lights-orig-streetlights-geo
-    table: streetlights
+versions:
+    1:
+        description: null
+        version: 0.1.1
