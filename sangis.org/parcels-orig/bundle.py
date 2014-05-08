@@ -11,8 +11,6 @@ class Bundle(GeoBuildBundle):
         
         super(Bundle, self ).build()
 
-        return 
-
         p = self.partitions.find(PartitionNameQuery(table='parcels'))
         
         pdq = p.database.query
