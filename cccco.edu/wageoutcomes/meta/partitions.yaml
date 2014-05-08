@@ -1,4 +1,3 @@
-partitions:
 -   name: cccco.edu-wageoutcomes-colleges
     table: colleges
 -   name: cccco.edu-wageoutcomes-summary

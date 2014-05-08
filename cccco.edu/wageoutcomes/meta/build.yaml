@@ -1,4 +1,7 @@
-build: {}
+build:
+    sources:
+        header_end: 0
+        header_start: 0
 dependencies: {}
 extract: {}
 sources:

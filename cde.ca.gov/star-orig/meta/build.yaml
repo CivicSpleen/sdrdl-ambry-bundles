@@ -12,7 +12,6 @@ build:
         2012: http://www3.cde.ca.gov/starresearchfiles/2012/p3/ca2012_all_csv_v3.zip
 dependencies: {}
 extract: {}
-partitions: []
 sources:
     2004:
         description: null

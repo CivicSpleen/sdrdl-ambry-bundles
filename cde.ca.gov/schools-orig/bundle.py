@@ -213,9 +213,6 @@ class Bundle(BuildBundle):
                    
                     ins.insert(row)
 
-            self.log("CSVizing {}".format(p.identity))
-            p.csvize(logger=self.init_log_rate(5000,'CSVizing'))
-
         return True
 
     def load_private_schools(self):
