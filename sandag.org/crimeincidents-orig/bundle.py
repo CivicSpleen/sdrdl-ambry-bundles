@@ -16,7 +16,7 @@ class Bundle(BuildBundle):
         self.part_cache = {}
 
 
-    def generate_incidents(self, table):
+    def generate_incidents(self, p):
         from ambry.client.ckan import Ckan
       
         repo = Ckan(self.metadata.build.repo.url, self.metadata.build.repo.key)
@@ -34,7 +34,7 @@ class Bundle(BuildBundle):
                 reader = csv.reader(csvfile)
                 header = reader.next()
                 
-                fh = [ c.data['fileheader'] for c in table.columns]
+                fh = [ c.data['fileheader'] for c in p.table.columns]
                 # get rid of the id field, since that isn't in the data. 
                 fh = fh[1:]
                 if  fh != header:
@@ -53,15 +53,19 @@ class Bundle(BuildBundle):
 
     def build(self):
         from dateutil.parser import parse
+        
+        
+        lr = self.init_log_rate(10000)
+        
         # All incidents
         allp = self.partitions.find_or_new(table='incidents');
         allins = allp.database.inserter()
         
         table = allp.table
+
         header = [c.name for c in table.columns]
-        lr = self.init_log_rate(10000)
         
-        for row in self.generate_incidents(table):
+        for row in self.generate_incidents(allp):
             
             
             lr()
