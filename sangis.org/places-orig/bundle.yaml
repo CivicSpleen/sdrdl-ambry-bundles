@@ -27,31 +27,37 @@ contact_source:
         name: null
         url: null
 external_documentation:
--   description: The terms and conditions that apply to the original shapefiles. Users
-        must accept these terms before using the file.
-    source: null
-    title: Terms and Conditions
-    url: http://www.sangis.org/Legal_Notice.htm
--   description: The PDF file of metadata for the Municipal Boundaries shapefile.
-    source: cities
-    title: Municipal Boundaries metadata
-    url: http://rdw.sandag.org/file_store/Jurisdiction/Municipal_Boundaries.pdf
--   description: null
-    source: sdcommunities
-    title: null
-    url: http://rdw.sandag.org/file_store/Community/Community_Plan_SD.pdf
--   description: null
-    source: sdneighborhoods
-    title: null
-    url: http://rdw.sandag.org/file_store/Community/Neighborhoods_SD.pdf
--   description: null
-    source: sdcouncil
-    title: null
-    url: http://rdw.sandag.org/file_store/District/Council_Districts.pdf
--   description: null
-    source: sdmad
-    title: null
-    url: http://rdw.sandag.org/file_store/District/Maintenance_Assessment_Districts_SD.pdf
+    terms:
+        description: The terms and conditions that apply to the original shapefiles. Users
+            must accept these terms before using the file.
+        source: null
+        title: Terms and Conditions
+        url: http://www.sangis.org/Legal_Notice.htm
+    boundaries:
+        description: The PDF file of metadata for the Municipal Boundaries shapefile.
+        source: cities
+        title: Municipal Boundaries metadata
+        url: http://rdw.sandag.org/file_store/Jurisdiction/Municipal_Boundaries.pdf
+    communities:
+        description: null
+        source: sdcommunities
+        title: null
+        url: http://rdw.sandag.org/file_store/Community/Community_Plan_SD.pdf
+    neighborhoods:
+        description: null
+        source: sdneighborhoods
+        title: null
+        url: http://rdw.sandag.org/file_store/Community/Neighborhoods_SD.pdf
+    districts:
+        description: null
+        source: sdcouncil
+        title: null
+        url: http://rdw.sandag.org/file_store/District/Council_Districts.pdf
+    mads:
+        description: null
+        source: sdmad
+        title: null
+        url: http://rdw.sandag.org/file_store/District/Maintenance_Assessment_Districts_SD.pdf
 identity:
     bspace: null
     btime: null

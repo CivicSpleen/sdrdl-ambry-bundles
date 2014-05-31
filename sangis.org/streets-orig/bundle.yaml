@@ -28,23 +28,27 @@ contact_source:
         name: SANDAG
         url: http://rdw.sandag.org/Default.aspx?dir=Miscellaneous
 external_documentation:
--   description: The PDF file of metadata for the addresses shapefile.
-    source: null
-    title: Addresses file metadata
-    url: http://rdw.sandag.org/file_store/Address/Address_APN.pdf
--   description: The PDF file of metadata for the roads shapefile.
-    source: null
-    title: Roads file metadata
-    url: http://rdw.sandag.org/file_store/Transportation/Roads_All.pdf
--   description: The PDF file of metadata for the intersections shapefile.
-    source: null
-    title: Intersections file metadata
-    url: http://rdw.sandag.org/file_store/Transportation/Roads_Intersection.pdf
--   description: The terms and conditions that apply to the original shapefiles. Users
-        must accept these terms before using the file.
-    source: null
-    title: Terms and Conditions
-    url: http://www.sangis.org/Legal_Notice.htm
+    addresses:
+        description: The PDF file of metadata for the addresses shapefile.
+        source: null
+        title: Addresses file metadata
+        url: http://rdw.sandag.org/file_store/Address/Address_APN.pdf
+    roads:
+        description: The PDF file of metadata for the roads shapefile.
+        source: null
+        title: Roads file metadata
+        url: http://rdw.sandag.org/file_store/Transportation/Roads_All.pdf
+    intersections:
+        description: The PDF file of metadata for the intersections shapefile.
+        source: null
+        title: Intersections file metadata
+        url: http://rdw.sandag.org/file_store/Transportation/Roads_Intersection.pdf
+    terms:
+        description: The terms and conditions that apply to the original shapefiles. Users
+            must accept these terms before using the file.
+        source: null
+        title: Terms and Conditions
+        url: http://www.sangis.org/Legal_Notice.htm
 identity:
     bspace: null
     btime: null

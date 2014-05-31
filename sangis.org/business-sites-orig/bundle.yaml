@@ -26,19 +26,22 @@ contact_source:
         name: null
         url: null
 external_documentation:
--   description: Business point locations source file.
-    source: null
-    title: Business point locations source file.
-    url: http://rdw.sandag.org/file_store/Business/Business_Sites.pdf
--   description: Metadata for the source file.
-    source: null
-    title: File Metadata
-    url: http://rdw.sandag.org/file_store/Business/Business_Sites.pdf
--   description: The terms and conditions that apply to the original shapefiles. Users
-        must accept these terms before using the file.
-    source: null
-    title: Terms and Conditions
-    url: http://www.sangis.org/Legal_Notice.htm
+    shape:
+        description: Business point locations source file.
+        source: null
+        title: Business point locations source file.
+        url: http://rdw.sandag.org/file_store/Business/Business_Sites.pdf
+    meta:
+        description: Metadata for the source file.
+        source: null
+        title: File Metadata
+        url: http://rdw.sandag.org/file_store/Business/Business_Sites.pdf
+    terms:
+        description: The terms and conditions that apply to the original shapefiles. Users
+            must accept these terms before using the file.
+        source: null
+        title: Terms and Conditions
+        url: http://www.sangis.org/Legal_Notice.htm
 identity:
     bspace: null
     btime: null
