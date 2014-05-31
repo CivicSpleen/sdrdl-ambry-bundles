@@ -3,12 +3,12 @@ about:
     license: other-open
     rights: null
     subject: null
-    summary: 'Street Light Pole locations used for Street Division GIS/SAP WorkManagement
+    summary: Street Light Pole locations used for Street Division GIS/SAP WorkManagement
         System. The geographic extent is the City of San Diego. Users must understand
         the original SanGIS Terms and Conditions before using this derived data.
 
         This GIS data was derived and  modified from SanGIS downloadable data - www.sangis.org
-        Copyright SanGIS 2009'
+        Copyright SanGIS 2009
     tags:
     - government
     - gov-infrastructure
@@ -32,20 +32,23 @@ contact_source:
         name: null
         url: null
 external_documentation:
--   description: The original SanGIS Shapefile, subject to their [Terms and Conditions]
-        (http://rdw.sandag.org)
-    source: null
-    title: Source Shapefile
-    url: http://rdw.sandag.org/file_store/Miscellaneous/Street_Light.zip
--   description: The original metadta, provided by SanGIS
-    source: null
-    title: SanGIS Metadata
-    url: http://rdw.sandag.org/file_store/Miscellaneous/Street_Light.pdf
--   description: The terms and conditions that apply to the original shapefile. Users
-        must accept these terms before using the file.
-    source: null
-    title: Terms and Conditions
-    url: http://www.sangis.org/Legal_Notice.htm
+    orig_shapefile:
+        description: The original SanGIS Shapefile, subject to their [Terms and Conditions]
+            (http://rdw.sandag.org)
+        source: null
+        title: Source Shapefile
+        url: http://rdw.sandag.org/file_store/Miscellaneous/Street_Light.zip
+    orig_metadata:
+        description: The original metadta, provided by SanGIS
+        source: null
+        title: SanGIS Metadata
+        url: http://rdw.sandag.org/file_store/Miscellaneous/Street_Light.pdf
+    orig_terms:
+        description: The terms and conditions that apply to the original shapefile. Users
+            must accept these terms before using the file.
+        source: null
+        title: Terms and Conditions
+        url: http://www.sangis.org/Legal_Notice.htm
 identity:
     bspace: null
     btime: null
