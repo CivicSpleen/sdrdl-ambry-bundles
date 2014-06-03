@@ -19,15 +19,12 @@ class Bundle(BuildBundle):
     def generate_incidents(self, p):
         from ambry.client.ckan import Ckan
       
-        repo = Ckan(self.metadata.build.repo.url, self.metadata.build.repo.key)
-   
-        pkg = repo.get_package(self.metadata.build.repo.package)
-        
-        for resource in pkg['resources']:    
-                  
-            f = self.filesystem.download(resource['url'])
+      
+        for year in self.metadata.build.set_1_years:
+            
+            f = self.filesystem.download(year)
             uz = self.filesystem.unzip(f)
-                   
+          
             self.log("Reading: {}".format(uz))
 
             with open(uz, 'rbU') as csvfile:
@@ -53,10 +50,7 @@ class Bundle(BuildBundle):
 
     def build(self):
         from dateutil.parser import parse
-        
-        
-        lr = self.init_log_rate(10000)
-        
+
         # All incidents
         allp = self.partitions.find_or_new(table='incidents');
         allins = allp.database.inserter()
@@ -65,6 +59,8 @@ class Bundle(BuildBundle):
 
         header = [c.name for c in table.columns]
         
+        lr = self.init_log_rate(10000)
+
         for row in self.generate_incidents(allp):
             
             
@@ -98,12 +94,6 @@ class Bundle(BuildBundle):
 
         return True
 
-import sys
 
-if __name__ == '__main__':
-    import ambry.run
-      
-    ambry.run.run(sys.argv[1:], Bundle)
-     
     
     

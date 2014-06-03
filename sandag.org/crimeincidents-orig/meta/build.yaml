@@ -1,10 +1,26 @@
 build:
-    dependencies: {}
-    repo:
-        key: ce37e442-bfb6-4c9f-b62e-e0ae100f010c
-        package: raw-san-diego-county-crime-incidents-2007-2013-rev-2
-        url: http://data.sandiegodata.org/api
-        user: guest
-    schema_file: meta/schema.csv
+    set_1_years:
+    - 2007
+    - 2008
+    - 2009
+    - 2010
+    - 2011
+    - 2012
+    - 2013
 dependencies: {}
 extract: {}
+sources:
+    2007:
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/SANDAG%20Crime%20Incidents%202007.zip
+    2008:
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/SANDAG%20Crime%20Incidents%202008.zip
+    2009:
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/SANDAG%20Crime%20Incidents%202009.zip
+    2010:
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/SANDAG%20Crime%20Incidents%202010.zip
+    2011:
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/SANDAG%20Crime%20Incidents%202011.zip
+    2012:
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/SANDAG%20Crime%20Incidents%202012.zip
+    2013:
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/SANDAG%20Crime%20Incidents%202013.zip

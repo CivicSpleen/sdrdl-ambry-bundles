@@ -1,0 +1,30 @@
+table,seq,column,is_pk,is_fk,type,d_header,description,id
+master_all,1,valid_from,,,INTEGER,Valid From,,c02r01001
+master_all,2,valid_to,,,INTEGER,Valid To,,c02r01002
+master_all,3,funds_center,,,INTEGER,Funds Center,,c02r01003
+master_all,4,long_description,,,INTEGER,Long Description,,c02r01004
+,,,,,,,,
+functional_areas,1,functional_area,,,INTEGER,Functional Area,,c02r02001
+functional_areas,2,long_description,,,INTEGER,Long description,,c02r02002
+,,,,,,,,
+funds,1,fund,,,INTEGER,Fund,,c02r03001
+funds,2,fund_type,,,INTEGER,Fund Type,,c02r03002
+funds,3,long_description,,,INTEGER,Long description,,c02r03003
+,,,,,,,,
+committment_items,1,_bp09_s_cmmt_it,,,INTEGER,/BP09/S_CMMT_IT,,c02r04001
+committment_items,2,txtlg,,,INTEGER,TXTLG,,c02r04002
+,,,,,,,,
+grants,1,grant,,,INTEGER,Grant,,c02r05001
+grants,2,long_description,,,INTEGER,Long description,,c02r05002
+,,,,,,,,
+fund_centers,1,valid_from,,,INTEGER,Valid From,,c02r06001
+fund_centers,2,valid_to,,,INTEGER,Valid To,,c02r06002
+fund_centers,3,funds_center,,,INTEGER,Funds Center,,c02r06003
+fund_centers,4,long_description,,,INTEGER,Long Description,,c02r06004
+,,,,,,,,
+program_grouping,1,level_1,,,INTEGER,Level 1,,c02r07001
+program_grouping,2,level_2_,,,INTEGER,Level 2 ,,c02r07002
+program_grouping,3,title,,,INTEGER,Title,,c02r07003
+,,,,,,,,
+funded_programs,1,funded_program,,,INTEGER,Funded Program,,c02r08001
+funded_programs,2,long_description,,,INTEGER,Long description,,c02r08002

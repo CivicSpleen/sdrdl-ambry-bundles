@@ -33,7 +33,7 @@ identity:
     btime: null
     dataset: crimeincidents
     id: d00L
-    revision: 3
+    revision: 4
     source: sandag.org
     subset: null
     type: null
@@ -52,5 +52,5 @@ versions:
         description: null
         version: null
     3:
-        description: null
+        description: Dropped CKAN access in favor of S3 urls. 
         version: 1.0.3
