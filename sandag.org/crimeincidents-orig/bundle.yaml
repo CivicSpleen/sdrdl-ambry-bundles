@@ -12,22 +12,22 @@ about:
     title: SANDAG Crime Incidents, 2007 - March 2013
 contact_bundle:
     creator:
-        email: null
+        email: eric@sandiegodata.org
         name: San Diego Regional Data Library
-        url: null
+        url: http://sandiegodata.org
     maintainer:
-        email: null
+        email: eric@sandiegodata.org
         name: San Diego Regional Data Library
-        url: null
+        url: http://sandiegodata.org
 contact_source:
     creator:
         email: null
-        name: null
+        name: SANDAG
         url: http://sandag.org
     maintainer:
         email: null
-        name: null
-        url: null
+        name: SANDAG
+        url: http://sandag.org
 identity:
     bspace: null
     btime: null
@@ -38,12 +38,12 @@ identity:
     subset: null
     type: null
     variation: orig
-    version: 1.0.3
+    version: 1.0.4
 names:
-    fqname: sandag.org-crimeincidents-orig-1.0.3~d00L003
+    fqname: sandag.org-crimeincidents-orig-1.0.4~d00L004
     name: sandag.org-crimeincidents-orig
-    vid: d00L003
-    vname: sandag.org-crimeincidents-orig-1.0.3
+    vid: d00L004
+    vname: sandag.org-crimeincidents-orig-1.0.4
 versions:
     1:
         description: null
@@ -52,5 +52,8 @@ versions:
         description: null
         version: null
     3:
-        description: Dropped CKAN access in favor of S3 urls. 
+        description: Dropped CKAN access in favor of S3 urls.
         version: 1.0.3
+    4:
+        description: Added 2013 records
+        version: 1.0.4

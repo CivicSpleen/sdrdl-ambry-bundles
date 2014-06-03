@@ -18,3 +18,6 @@
 -   name: sandag.org-crimeincidents-orig-incidents-2012
     table: incidents
     time: '2012'
+-   name: sandag.org-crimeincidents-orig-incidents-2013
+    table: incidents
+    time: '2013'
