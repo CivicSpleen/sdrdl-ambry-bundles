@@ -1,0 +1,34 @@
+build:
+    requirements:
+        petl: petl
+        xlrd: xlrd
+dependencies: {}
+extract: {}
+sources:
+    2001Q1:
+        description: 2001Q1
+        url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes2001.zip
+    2002Q1:
+        description: 2002Q1
+        url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes2002.zip
+    2003Q1:
+        description: 2003Q1
+        url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes2003.zip
+    2004Q1:
+        description: 2004Q1
+        url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes2004.zip
+    2005Q1:
+        description: 2005Q1
+        url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes2005.zip
+    2006Q1:
+        description: 2006Q1
+        url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes2006.zip
+    2007Q1:
+        description: 2007Q1
+        url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes2007.zip
+    2008Q1:
+        description: 2008Q1
+        url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes2008.zip
+    2009Q1:
+        description: 2009Q1
+        url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes2009.zip

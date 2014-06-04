@@ -1,0 +1,12 @@
+table,seq,column,is_pk,is_fk,type,size,default,d_header,description,id
+empwages,1,soc,,,VARCHAR,7,-,soc,,c02A01001
+empwages,2,name,,,VARCHAR,54,-,name,,c02A01002
+empwages,3,hourly_75,,,VARCHAR,7,-,hourly_75,,c02A01003
+empwages,4,mean_rse,,,REAL,,-1,mean_rse,,c02A01004
+empwages,5,hourly_50,,,VARCHAR,7,-,hourly_50,,c02A01005
+empwages,6,hourly_25,,,VARCHAR,7,-,hourly_25,,c02A01006
+empwages,7,annual_mean,,,INTEGER,6,-1,annual_mean,,c02A01007
+empwages,8,hourly_mean,,,VARCHAR,7,-,hourly_mean,,c02A01008
+empwages,9,emp_est,,,VARCHAR,10,-,emp_est,,c02A01009
+empwages,10,msa,,,INTEGER,5,-1,msa,,c02A0100a
+empwages,11,occupation,,,VARCHAR,105,-,occupation,,c02A0100b
