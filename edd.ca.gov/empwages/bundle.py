@@ -54,16 +54,12 @@ class Bundle(BuildBundle):
         self.database.create()
         
         self.schema.update('empwages', self.generate_rows(), n=20000, logger=lr)
-        
- 
-    def meta_make_schema(self):
-        
+
     def meta(self):
         
         self.meta_make_headers()
 
         self.meta_make_schema()
-        
         
         
         return True
