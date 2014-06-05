@@ -15,8 +15,8 @@ empwages,13,hourly_25_code,,,VARCHAR,7,,Non-integer code value for column hourly
 empwages,14,hourly_50_code,,,VARCHAR,7,,Non-integer code value for column hourly_50,,,c02A0100e
 empwages,15,hourly_mean_code,,,VARCHAR,7,,Non-integer code value for column hourly_mean,,,c02A0100f
 empwages,16,hourly_75_code,,,VARCHAR,7,,Non-integer code value for column hourly_75,,,c02A0100g
-empwages,17,annual_mean_code,,,VARCHAR,,,Non-integer code value for column annual_mean,,,c02A0100h
-empwages,18,mean_rse_code,,,VARCHAR,,,Non-integer code value for column mean_rse,,,c02A0100i
+empwages,17,annual_mean_code,,,VARCHAR,9,,Non-integer code value for column annual_mean,,,c02A0100h
+empwages,18,mean_rse_code,,,VARCHAR,6,,Non-integer code value for column mean_rse,,,c02A0100i
 ,,,,,,,,,,,
 empwages_emp_est_codes,1,id,1,,INTEGER,,,,"[""empwages"", ""emp_est""]",,c02A02001
 empwages_emp_est_codes,2,code,,,VARCHAR,3,,Value of code,,,c02A02002
@@ -45,3 +45,5 @@ empwages_annual_mean_codes,3,description,,,VARCHAR,,,Code description,,,c02A0700
 empwages_mean_rse_codes,1,id,1,,INTEGER,,,,"[""empwages"", ""mean_rse""]",,c02A08001
 empwages_mean_rse_codes,2,code,,,VARCHAR,6,,Value of code,,,c02A08002
 empwages_mean_rse_codes,3,description,,,VARCHAR,,,Code description,,,c02A08003
+,,,,,,,,,,,
+column_codes,1,id,1,,INTEGER,,,,,,c02A09001

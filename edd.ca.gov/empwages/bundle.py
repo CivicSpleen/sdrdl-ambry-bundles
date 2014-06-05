@@ -99,8 +99,6 @@ class Bundle(BuildBundle):
                         in_table = True
                         header = [ headers[v] for v in values]
                         
-        
-
     def build(self):
         from ambry.database.inserter import CodeCastErrorHandler
         lr = self.init_log_rate(10000)
@@ -111,6 +109,5 @@ class Bundle(BuildBundle):
             for i, d in enumerate(self.generate_rows()):
                 errors = ins.insert(d)
                 lr('Loading')
-
         
         return True
