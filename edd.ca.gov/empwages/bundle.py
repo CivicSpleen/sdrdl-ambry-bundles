@@ -55,13 +55,16 @@ class Bundle(BuildBundle):
         
         self.schema.update('empwages', self.generate_rows(), n=20000, logger=lr)
         
-        self.schema.write_schema()
+ 
+    def meta_make_schema(self):
         
     def meta(self):
         
-        #self.meta_make_headers()
-        
+        self.meta_make_headers()
+
         self.meta_make_schema()
+        
+        
         
         return True
 
@@ -103,14 +106,15 @@ class Bundle(BuildBundle):
         
 
     def build(self):
-        
+        from ambry.database.inserter import CodeCastErrorHandler
         lr = self.init_log_rate(10000)
         
         p = self.partitions.new_partition(table='empwages')
-        
-        with p.inserter() as ins:
-            for d in self.generate_rows():
-                ins.insert(d)
+
+        with p.inserter(cast_error_handler = CodeCastErrorHandler) as ins:
+            for i, d in enumerate(self.generate_rows()):
+                errors = ins.insert(d)
                 lr('Loading')
+
         
         return True

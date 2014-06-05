@@ -1,2 +1,16 @@
 -   name: edd.ca.gov-empwages-empwages
     table: empwages
+-   name: edd.ca.gov-empwages-empwages_hourly_75_codes
+    table: empwages_hourly_75_codes
+-   name: edd.ca.gov-empwages-empwages_mean_rse_codes
+    table: empwages_mean_rse_codes
+-   name: edd.ca.gov-empwages-empwages_hourly_50_codes
+    table: empwages_hourly_50_codes
+-   name: edd.ca.gov-empwages-empwages_annual_mean_codes
+    table: empwages_annual_mean_codes
+-   name: edd.ca.gov-empwages-empwages_hourly_25_codes
+    table: empwages_hourly_25_codes
+-   name: edd.ca.gov-empwages-empwages_hourly_mean_codes
+    table: empwages_hourly_mean_codes
+-   name: edd.ca.gov-empwages-empwages_emp_est_codes
+    table: empwages_emp_est_codes

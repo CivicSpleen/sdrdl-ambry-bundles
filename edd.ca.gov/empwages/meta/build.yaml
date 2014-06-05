@@ -32,3 +32,15 @@ sources:
     2009Q1:
         description: 2009Q1
         url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes2009.zip
+    2010Q1:
+        description: 2010Q1
+        url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes.zip
+    2011Q1:
+        description: 2011Q1
+        url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes2011.zip
+    2012Q1:
+        description: 2012Q1
+        url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes2012.zip
+    2013Q1:
+        description: 2013Q1
+        url: http://www.calmis.ca.gov/file/occup$/oeswages/alloes2013.zip
