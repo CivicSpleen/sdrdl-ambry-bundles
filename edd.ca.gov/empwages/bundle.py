@@ -74,6 +74,8 @@ class Bundle(BuildBundle):
         for k in self.metadata.sources.keys():
             f = self.filesystem.download(k)
 
+            year, quarter = re.match(r'(\d{4})Q(\d)', k).groups()
+
             for fn in self.filesystem.unzip_dir(f):
             
                 in_table = False
@@ -90,6 +92,9 @@ class Bundle(BuildBundle):
 
                     if in_table:
                         d =  dict(zip(header, values))
+                        
+                        d['year'] = year
+                        d['quarter'] = quarter
                         
                         if d['soc']:
                             yield d

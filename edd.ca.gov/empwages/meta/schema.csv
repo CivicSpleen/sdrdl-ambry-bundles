@@ -1,49 +1,56 @@
-table,seq,column,is_pk,is_fk,type,size,default,description,d_code_key,d_header,id
-empwages,1,soc,,,VARCHAR,7,-,,,soc,c02A01001
-empwages,2,name,,,VARCHAR,54,-,,,name,c02A01002
-empwages,3,hourly_75,,,REAL,7,,,,hourly_75,c02A01003
-empwages,4,mean_rse,,,REAL,,,,,mean_rse,c02A01004
-empwages,5,hourly_50,,,REAL,7,,,,hourly_50,c02A01005
-empwages,6,hourly_25,,,REAL,7,,,,hourly_25,c02A01006
-empwages,7,annual_mean,,,REAL,6,,,,annual_mean,c02A01007
-empwages,8,hourly_mean,,,REAL,7,,,,hourly_mean,c02A01008
-empwages,9,emp_est,,,INTEGER,10,,,,emp_est,c02A01009
-empwages,10,msa,,,INTEGER,5,,,,msa,c02A0100a
-empwages,11,occupation,,,VARCHAR,105,-,,,occupation,c02A0100b
-empwages,12,emp_est_code,,,VARCHAR,3,,Non-integer code value for column emp_est,,,c02A0100c
-empwages,13,hourly_25_code,,,VARCHAR,7,,Non-integer code value for column hourly_25,,,c02A0100d
-empwages,14,hourly_50_code,,,VARCHAR,7,,Non-integer code value for column hourly_50,,,c02A0100e
-empwages,15,hourly_mean_code,,,VARCHAR,7,,Non-integer code value for column hourly_mean,,,c02A0100f
-empwages,16,hourly_75_code,,,VARCHAR,7,,Non-integer code value for column hourly_75,,,c02A0100g
-empwages,17,annual_mean_code,,,VARCHAR,9,,Non-integer code value for column annual_mean,,,c02A0100h
-empwages,18,mean_rse_code,,,VARCHAR,6,,Non-integer code value for column mean_rse,,,c02A0100i
-,,,,,,,,,,,
-empwages_emp_est_codes,1,id,1,,INTEGER,,,,"[""empwages"", ""emp_est""]",,c02A02001
-empwages_emp_est_codes,2,code,,,VARCHAR,3,,Value of code,,,c02A02002
-empwages_emp_est_codes,3,description,,,VARCHAR,,,Code description,,,c02A02003
-,,,,,,,,,,,
-empwages_hourly_25_codes,1,id,1,,INTEGER,,,,"[""empwages"", ""hourly_25""]",,c02A03001
-empwages_hourly_25_codes,2,code,,,VARCHAR,7,,Value of code,,,c02A03002
-empwages_hourly_25_codes,3,description,,,VARCHAR,,,Code description,,,c02A03003
-,,,,,,,,,,,
-empwages_hourly_50_codes,1,id,1,,INTEGER,,,,"[""empwages"", ""hourly_50""]",,c02A04001
-empwages_hourly_50_codes,2,code,,,VARCHAR,7,,Value of code,,,c02A04002
-empwages_hourly_50_codes,3,description,,,VARCHAR,,,Code description,,,c02A04003
-,,,,,,,,,,,
-empwages_hourly_mean_codes,1,id,1,,INTEGER,,,,"[""empwages"", ""hourly_mean""]",,c02A05001
-empwages_hourly_mean_codes,2,code,,,VARCHAR,7,,Value of code,,,c02A05002
-empwages_hourly_mean_codes,3,description,,,VARCHAR,,,Code description,,,c02A05003
-,,,,,,,,,,,
-empwages_hourly_75_codes,1,id,1,,INTEGER,,,,"[""empwages"", ""hourly_75""]",,c02A06001
-empwages_hourly_75_codes,2,code,,,VARCHAR,7,,Value of code,,,c02A06002
-empwages_hourly_75_codes,3,description,,,VARCHAR,,,Code description,,,c02A06003
-,,,,,,,,,,,
-empwages_annual_mean_codes,1,id,1,,INTEGER,,,,"[""empwages"", ""annual_mean""]",,c02A07001
-empwages_annual_mean_codes,2,code,,,VARCHAR,9,,Value of code,,,c02A07002
-empwages_annual_mean_codes,3,description,,,VARCHAR,,,Code description,,,c02A07003
-,,,,,,,,,,,
-empwages_mean_rse_codes,1,id,1,,INTEGER,,,,"[""empwages"", ""mean_rse""]",,c02A08001
-empwages_mean_rse_codes,2,code,,,VARCHAR,6,,Value of code,,,c02A08002
-empwages_mean_rse_codes,3,description,,,VARCHAR,,,Code description,,,c02A08003
-,,,,,,,,,,,
-column_codes,1,id,1,,INTEGER,,,,,,c02A09001
+table,seq,column,is_pk,is_fk,type,size,description,d_code_key,d_header,id
+empwages,1,id,1,,INTEGER,,,,,c02A01001
+empwages,2,soc,,,VARCHAR,7,,,soc,c02A01002
+empwages,3,soc_code,,,VARCHAR,,Non-integer code value for column soc,,,c02A01003
+empwages,4,name,,,VARCHAR,54,,,name,c02A01004
+empwages,5,occupation,,,VARCHAR,105,,,occupation,c02A01005
+empwages,6,msa,,,INTEGER,5,,,msa,c02A01006
+empwages,7,year,,,INTEGER,4,,,year,c02A01007
+empwages,8,quarter,,,INTEGER,1,,,quarter,c02A01008
+empwages,9,hourly_25,,,INTEGER,7,,,hourly_25,c02A01009
+empwages,10,hourly_25_code,,,VARCHAR,7,Non-integer code value for column hourly_25,,,c02A0100a
+empwages,11,hourly_50,,,INTEGER,7,,,hourly_50,c02A0100b
+empwages,12,hourly_50_code,,,VARCHAR,7,Non-integer code value for column hourly_50,,,c02A0100c
+empwages,13,hourly_mean,,,INTEGER,7,,,hourly_mean,c02A0100d
+empwages,14,hourly_mean_code,,,VARCHAR,7,Non-integer code value for column hourly_mean,,,c02A0100e
+empwages,15,hourly_75,,,INTEGER,7,,,hourly_75,c02A0100f
+empwages,16,hourly_75_code,,,VARCHAR,7,Non-integer code value for column hourly_75,,,c02A0100g
+empwages,17,mean_rse,,,INTEGER,2,,,mean_rse,c02A0100h
+empwages,18,mean_rse_code,,,VARCHAR,6,Non-integer code value for column mean_rse,,,c02A0100i
+empwages,19,annual_mean,,,INTEGER,6,,,annual_mean,c02A0100j
+empwages,20,annual_mean_code,,,VARCHAR,9,Non-integer code value for column annual_mean,,,c02A0100k
+empwages,21,emp_est,,,INTEGER,10,,,emp_est,c02A0100l
+empwages,22,emp_est_code,,,VARCHAR,3,Non-integer code value for column emp_est,,,c02A0100m
+,,,,,,,,,,
+empwages_annual_mean_codes,1,id,1,,INTEGER,,,"[""empwages"", ""annual_mean""]",,c02A02001
+empwages_annual_mean_codes,2,code,,,VARCHAR,9,Value of code,,,c02A02002
+empwages_annual_mean_codes,3,description,,,VARCHAR,,Code description,,,c02A02003
+,,,,,,,,,,
+empwages_mean_rse_codes,1,id,1,,INTEGER,,,"[""empwages"", ""mean_rse""]",,c02A03001
+empwages_mean_rse_codes,2,code,,,VARCHAR,6,Value of code,,,c02A03002
+empwages_mean_rse_codes,3,description,,,VARCHAR,,Code description,,,c02A03003
+,,,,,,,,,,
+column_codes,1,id,1,,INTEGER,,,,,c02A04001
+,,,,,,,,,,
+empwages_emp_est_codes,1,id,1,,INTEGER,,,"[""empwages"", ""emp_est""]",,c02A05001
+empwages_emp_est_codes,2,code,,,VARCHAR,3,Value of code,,,c02A05002
+empwages_emp_est_codes,3,description,,,VARCHAR,,Code description,,,c02A05003
+,,,,,,,,,,
+empwages_hourly_25_codes,1,id,1,,INTEGER,,,"[""empwages"", ""hourly_25""]",,c02A06001
+empwages_hourly_25_codes,2,code,,,VARCHAR,7,Value of code,,,c02A06002
+empwages_hourly_25_codes,3,description,,,VARCHAR,,Code description,,,c02A06003
+,,,,,,,,,,
+empwages_hourly_50_codes,1,id,1,,INTEGER,,,"[""empwages"", ""hourly_50""]",,c02A07001
+empwages_hourly_50_codes,2,code,,,VARCHAR,7,Value of code,,,c02A07002
+empwages_hourly_50_codes,3,description,,,VARCHAR,,Code description,,,c02A07003
+,,,,,,,,,,
+empwages_hourly_mean_codes,1,id,1,,INTEGER,,,"[""empwages"", ""hourly_mean""]",,c02A08001
+empwages_hourly_mean_codes,2,code,,,VARCHAR,7,Value of code,,,c02A08002
+empwages_hourly_mean_codes,3,description,,,VARCHAR,,Code description,,,c02A08003
+,,,,,,,,,,
+empwages_hourly_75_codes,1,id,1,,INTEGER,,,"[""empwages"", ""hourly_75""]",,c02A09001
+empwages_hourly_75_codes,2,code,,,VARCHAR,7,Value of code,,,c02A09002
+empwages_hourly_75_codes,3,description,,,VARCHAR,,Code description,,,c02A09003
+,,,,,,,,,,
+empwages_soc_codes,2,code,,,VARCHAR,7,Value of code,,,c02A0a002
+empwages_soc_codes,3,description,,,VARCHAR,,Code description,,,c02A0a003

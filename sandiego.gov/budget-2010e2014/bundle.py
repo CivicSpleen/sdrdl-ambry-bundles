@@ -14,14 +14,21 @@ class Bundle(BuildBundle):
         super(Bundle, self).__init__(directory)
 
     def build(self):
+        from xlrd import open_workbook
         
-        for k, _ in self.metadata.sources.items():
+        for k in self.metadata.sources.keys():
+            f = self.filesystem.download(k)
+            
+            self.log("Processing: {}".format(f))
+            wb = open_workbook(f)
 
-            fn = self.filesystem.download(k)
-        
-            try:
-                self.schema.update_csv(k, fn)
-            except Exception as e:
-                self.error("Failed to create schema for: {}: {}".format(k, e))
-        return True
+            for s in wb.sheets():
+                self.log("    Worksheet: {}".format(s.name))
+                continue
+                for i,row in enumerate(range(s.nrows)):
+                    values = []
+                    for col in range(s.ncols):
+                        values.append(s.cell(row,col).value)
+
+                    print values
         

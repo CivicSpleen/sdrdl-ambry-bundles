@@ -1,31 +1,22 @@
-build: {}
+build:
+    requirements:
+        petl: petl
+        xlrd: xlrd
 dependencies: {}
 extract: {}
 sources:
-    centers:
-        description: description
-        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Funds%20Center_Hierarchy.csv
     committment_items:
         description: description
-        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Master%20Data_All_Fund_CommittmentItem.csv
-    functional_areas:
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Commitment%20Item%20Hierarchy.xlsx
+    fmdata:
         description: description
-        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Master%20Data_All_Fund_FunctionalArea.csv
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/FMData_2010-2014_CIP%20FINAL.XLSX
+    fpgroup:
+        description: description
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Funded%20Program%20Grouping_ECC.xlsx
     fund_centers:
         description: description
-        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Master%20Data_All_Fund_Center.csv
-    funded_programs:
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Funds%20Center_Hierarchy.xlsx
+    master_data:
         description: description
-        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Master%20Data_All_Fund_FundedProgram.csv
-    funds:
-        description: description
-        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Master%20Data_All_Fund.csv
-    grants:
-        description: description
-        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Master%20Data_All_Fund_Grant.csv
-    master_all:
-        description: description
-        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Master%20Data_All.csv
-    program_grouping:
-        description: description
-        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Funded%20Program%20Grouping_ECC.csv
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Master%20Data_All.xlsx

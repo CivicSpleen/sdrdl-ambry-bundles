@@ -18,8 +18,8 @@ contact_bundle:
 contact_source:
     creator:
         email: null
-        name: null
-        url: null
+        name: State of California Employment Development Department
+        url: http://www.labormarketinfo.edd.ca.gov/OES/OES_Survey.html
     maintainer:
         email: null
         name: null
@@ -35,18 +35,21 @@ identity:
     btime: null
     dataset: empwages
     id: d02A
-    revision: 1
+    revision: 2
     source: edd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: edd.ca.gov-empwages-0.0.1~d02A001
+    fqname: edd.ca.gov-empwages-0.0.2~d02A002
     name: edd.ca.gov-empwages
-    vid: d02A001
-    vname: edd.ca.gov-empwages-0.0.1
+    vid: d02A002
+    vname: edd.ca.gov-empwages-0.0.2
 versions:
     1:
         description: null
         version: 0.0.1
+    2:
+        description: Added year, quaters, other improvements. 
+        version: 0.0.2
