@@ -24,8 +24,6 @@ class Bundle(BuildBundle):
             
         for k in self.metadata.sources.keys():
             f = self.filesystem.download(k)
-            
-            
             for fn in self.filesystem.unzip_dir(f):
             
                 wb = open_workbook(fn)
@@ -76,10 +74,20 @@ class Bundle(BuildBundle):
 
             year, quarter = re.match(r'(\d{4})Q(\d)', k).groups()
 
+            year = int(year)
+            quarter = int(quarter)
+
             for fn in self.filesystem.unzip_dir(f):
             
                 in_table = False
                 header = None
+            
+                if year == 2010 and '2011' in fn:
+                    # Inexplicably, there are 2011 files in the 2010 zip file, so 
+                    # exclude them
+                    print "In {}, skipping {}".format(year, fn)
+                    continue
+                    
             
                 wb = open_workbook(fn)
 
@@ -113,6 +121,18 @@ class Bundle(BuildBundle):
         with p.inserter(cast_error_handler = CodeCastErrorHandler) as ins:
             for i, d in enumerate(self.generate_rows()):
                 errors = ins.insert(d)
-                lr('Loading')
+                lr('Loading {}'.format(d['year']))
         
         return True
+        
+    def print_files(self):
+        import re 
+        
+        for k in self.metadata.sources.keys():
+            f = self.filesystem.download(k)
+
+            year, quarter = re.match(r'(\d{4})Q(\d)', k).groups()
+
+            for fn in self.filesystem.unzip_dir(f):
+                print year, quarter, fn
+        

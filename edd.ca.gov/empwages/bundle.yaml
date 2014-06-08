@@ -35,21 +35,24 @@ identity:
     btime: null
     dataset: empwages
     id: d02A
-    revision: 2
+    revision: 3
     source: edd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: edd.ca.gov-empwages-0.0.2~d02A002
+    fqname: edd.ca.gov-empwages-0.0.3~d02A003
     name: edd.ca.gov-empwages
-    vid: d02A002
-    vname: edd.ca.gov-empwages-0.0.2
+    vid: d02A003
+    vname: edd.ca.gov-empwages-0.0.3
 versions:
     1:
         description: null
         version: 0.0.1
     2:
-        description: Added year, quaters, other improvements. 
+        description: Added year, quaters, other improvements.
         version: 0.0.2
+    3:
+        description: Year 2010 file also had 2011 data. Special case to remove. 
+        version: 0.0.3
