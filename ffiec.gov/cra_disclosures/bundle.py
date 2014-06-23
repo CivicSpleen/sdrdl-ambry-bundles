@@ -92,11 +92,12 @@ class Bundle(BuildBundle):
                         field_names[fn] = ''
                         
                     tables[table_name][i].append(fn)
-                        
-                    
+
                     
         self.filesystem.write_yaml(field_names, 'meta','field_map.yaml')
                     
+
+        print tables
 
 
     def build(self):
