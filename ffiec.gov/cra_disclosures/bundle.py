@@ -68,24 +68,32 @@ class Bundle(BuildBundle):
         
 
     def meta(self):
-        import re
+        import re, collections
+        
+        
         tables = {}
         try:
-            field_names = self.filesystem.write_yaml('meta','field_map.yaml')
+            field_names = self.filesystem.read_yaml('meta','field_map.yaml')
         except:
             raise 
             
         if not field_names:
             field_names = {}
 
+        tables = colections.defaultdict(lambda: defaultdict(list))
+
         for year in range(1996, 2013):
             for table_name, table in self.meta_generate_tables(year):
                 #print '------- {} {} ---------'.format(year, table_name)
-                for row in table:
+                for i,row in enumerate(table):
                     #print row['Start'], row['End'], row['Field']
                     fn = re.sub(r'^\d+[\.\s]*','',row['Field'].strip())
                     if not fn in field_names:
                         field_names[fn] = ''
+                        
+                    tables[table_name][i].append(fn)
+                        
+                    
                     
         self.filesystem.write_yaml(field_names, 'meta','field_map.yaml')
                     
