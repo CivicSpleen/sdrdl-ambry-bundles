@@ -1,11 +1,15 @@
 about:
     groups: []
-    license: null
+    license: CC0 on data model and bundle code.
     rights: null
-    subject: null
-    summary: null
-    tags: []
-    title: null
+    subject: Wages per occupation and time in California
+    summary: Multi-year compilation of data for californiafrom the  Occupational Employment
+        Statistics (OES)survey, a semiannual mail survey measuring occupational employment
+        and wage rates for wage and salary workers in nonfarm establishments in the
+        United States
+    tags:
+    - employment
+    title: California Occupational Employment Statistics
 contact_bundle:
     creator:
         email: eric@sandiegodata.org
@@ -25,11 +29,16 @@ contact_source:
         name: null
         url: null
 external_documentation:
-    example:
-        description: description
-        source: source
-        title: title
-        url: http://example.com
+    california_extract:
+        description: null
+        source: null
+        title: California OES Overview
+        url: http://www.labormarketinfo.edd.ca.gov/OES/OES_Survey.html
+    national_oes:
+        description: Technical description of the OES from the Bureau of Labor Statistics
+        source: null
+        title: BLS OES Technical Description
+        url: http://www.bls.gov/oes/current/oes_tec.htm
 identity:
     bspace: null
     btime: null
@@ -54,5 +63,6 @@ versions:
         description: Added year, quaters, other improvements.
         version: 0.0.2
     3:
-        description: Year 2010 file also had 2011 data. Special case to remove. 
+        description: Year 2010 file also had 2011 data. Special case to remove 2011
+            data from 2010 files.
         version: 0.0.3

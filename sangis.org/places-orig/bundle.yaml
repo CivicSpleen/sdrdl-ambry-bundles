@@ -27,12 +27,6 @@ contact_source:
         name: null
         url: null
 external_documentation:
-    terms:
-        description: The terms and conditions that apply to the original shapefiles. Users
-            must accept these terms before using the file.
-        source: null
-        title: Terms and Conditions
-        url: http://www.sangis.org/Legal_Notice.htm
     boundaries:
         description: The PDF file of metadata for the Municipal Boundaries shapefile.
         source: cities
@@ -43,11 +37,6 @@ external_documentation:
         source: sdcommunities
         title: null
         url: http://rdw.sandag.org/file_store/Community/Community_Plan_SD.pdf
-    neighborhoods:
-        description: null
-        source: sdneighborhoods
-        title: null
-        url: http://rdw.sandag.org/file_store/Community/Neighborhoods_SD.pdf
     districts:
         description: null
         source: sdcouncil
@@ -58,6 +47,17 @@ external_documentation:
         source: sdmad
         title: null
         url: http://rdw.sandag.org/file_store/District/Maintenance_Assessment_Districts_SD.pdf
+    neighborhoods:
+        description: null
+        source: sdneighborhoods
+        title: null
+        url: http://rdw.sandag.org/file_store/Community/Neighborhoods_SD.pdf
+    terms:
+        description: The terms and conditions that apply to the original shapefiles.
+            Users must accept these terms before using the file.
+        source: null
+        title: Terms and Conditions
+        url: http://www.sangis.org/Legal_Notice.htm
 identity:
     bspace: null
     btime: null

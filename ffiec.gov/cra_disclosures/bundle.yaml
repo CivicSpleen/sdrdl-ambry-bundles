@@ -1,0 +1,52 @@
+about:
+    groups: []
+    license: null
+    rights: null
+    subject: null
+    summary: null
+    tags: []
+    title: null
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: http://www.ffiec.gov/contact/default.aspx
+        name: Federal Financial Institutions Examination Council
+        url: http://www.ffiec.gov/cra/craflatfiles.htm
+    maintainer:
+        email: null
+        name: null
+        url: null
+external_documentation:
+    file_specs:
+        description: "List of the PDF documents that define the tables and columns in each year's file."
+        source: 
+        title: File Spec Page
+        url: http://www.ffiec.gov/cra/craflatfiles.htm
+identity:
+    bspace: null
+    btime: null
+    dataset: cra_disclosures
+    id: djagFt3j9V
+    revision: 1
+    source: ffiec.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: ffiec.gov-cra_disclosures-0.0.1~djagFt3j9V001
+    name: ffiec.gov-cra_disclosures
+    vid: djagFt3j9V001
+    vname: ffiec.gov-cra_disclosures-0.0.1
+versions:
+    1:
+        description: null
+        version: 0.0.1

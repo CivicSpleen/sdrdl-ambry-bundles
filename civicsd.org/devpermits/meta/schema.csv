@@ -1,0 +1,14 @@
+table,seq,column,is_pk,is_fk,type,size,description,id
+permits,1,id,1,,INTEGER,,,cxoLGGYtNk01001
+permits,2,permit_no,,,VARCHAR,11,,cxoLGGYtNk01002
+permits,3,type,,,VARCHAR,18,,cxoLGGYtNk01003
+permits,4,received,,,DATE,,,cxoLGGYtNk01004
+permits,5,received_year,,,INTEGER,4,,cxoLGGYtNk01005
+permits,6,received_month,,,INTEGER,2,,cxoLGGYtNk01006
+permits,7,approved,,,DATE,,,cxoLGGYtNk01007
+permits,8,approved_year,,,INTEGER,4,,cxoLGGYtNk01008
+permits,9,approved_month,,,INTEGER,2,,cxoLGGYtNk01009
+permits,10,approval_msg,,,VARCHAR,30,,cxoLGGYtNk0100a
+permits,11,name,,,VARCHAR,56,,cxoLGGYtNk0100b
+permits,12,comments,,,VARCHAR,135,,cxoLGGYtNk0100c
+permits,13,duration,,,REAL,,,cxoLGGYtNk0100d
