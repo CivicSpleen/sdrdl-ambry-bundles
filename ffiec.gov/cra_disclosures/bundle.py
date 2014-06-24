@@ -122,7 +122,7 @@ class Bundle(BuildBundle):
         return x
     
 
-    def meta(self):
+    def meta_field_map(self):
         import re
 
         tables = {}
@@ -162,25 +162,128 @@ class Bundle(BuildBundle):
                     
         self.filesystem.write_yaml(tables, 'meta','column_names_by_pos.yaml')
 
+    def meta_make_regexes(self):
+        import re 
+        
+        field_names = self.filesystem.read_yaml('meta','field_map.yaml')
+
+        regexes  = {}
+
+        for year in range(1996, 2013):
+        
+            
+        
+            assert year not in regexes
+            
+            regexes[year] = {}
+        
+            for table_name, table in self.meta_generate_tables(year):
+                self.log('{} {}'.format(year, table_name))
+
+                pos = 0
+                regex = ''
+                header = []
+                
+                for i,row in enumerate(table):
+                    fn = re.sub(r'^\d+[\.\s]*','',row['Field'].strip())
+                    col_name = field_names[fn]
+                    
+                    size = int(row['Length'])
+                    
+                    pos += size
+                
+                    regex += "(?P<{name}>.{{{size}}})".format(size=size, name=col_name)
+                    header.append(col_name)
+
+                
+                regexes[year][table_name] = regex
+                 
+                 
+        self.filesystem.write_yaml(regexes, 'meta','table_regexes.yaml')        
+
+    def meta_gen_urls(self):
+         
+        templ = self.metadata.build.url_template
+
+        
+        for year in range(*self.metadata.build.years):
+            self.metadata.sources[year].url=templ.format(year%100)
+        
+        
+        self.metadata.write_to_dir(write_all=True)
+
+    def meta(self):
+        
+        self.meta_gen_urls()
+        
+        self.meta_make_regexes()
+        
+        return 
+        
+        import re
+        
+        self.database.create()
+        
+        field_names = self.filesystem.read_yaml('meta','field_map.yaml')
+        
+        for year in range(*self.metadata.build.years):
+            for table_name, table in self.meta_generate_tables(year):
+                print '------- {} {} ---------'.format(year, table_name)
+
+                t = self.schema.add_table(table_name);
+                self.schema.add_column(t, 'id', datatype='integer', is_primary_key = True)
+
+                for i,row in enumerate(table):
+                    fn = re.sub(r'^\d+[\.\s]*','',row['Field'].strip())
+
+                    self.schema.add_column(t, field_names[fn], datatype='integer', width = row['Length'],
+                                        description=row['Comments'], data={'orig_field':row['Field']})
+                    
+                    
+        self.schema.write_schema()
+        
+
     def build(self):
-        import uuid
-        import random
-
-        p = self.partitions.new_partition(table='example1')
-
-        p.query('DELETE FROM example1')
-
-        lr = self.init_log_rate(100)
-
-        with p.database.inserter() as ins:
-            for i in range(1000):
-                row = {}
-                row['uuid'] = str(uuid.uuid4())
-                row['int'] = random.randint(0,100)
-                row['float'] = random.random()*100
-
-                ins.insert(row)
-                lr()
-
-        return True
+        import re
+        regexes_years = self.filesystem.read_yaml('meta','table_regexes.yaml')        
+        
+        rm = {}
+        
+        for year, regexes in regexes_years.items():
+            for table, regex in regexes.items():
+            
+                rm[(year, table)] = re.compile(regex)
+    
+        
+        for year in range(*self.metadata.build.years):
+            
+            regexes = regexes_years[year]
+            
+            z_fn = self.filesystem.download(year)
+            fn = self.filesystem.unzip(z_fn)
+            
+            with open (fn) as f:
+                for line in iter(f):
+                    table_id = line[:4].lower().replace('-','_')
+                    regex = rm[(year, table_id)]
+                    
+                    m = regex.match(line)
+                    
+                    print m.groups()
+                    
+                    
+                    
+                    
+            
+            
+        
+        
+            
+            
+            
+        
+        
+        
+        
+        
 
