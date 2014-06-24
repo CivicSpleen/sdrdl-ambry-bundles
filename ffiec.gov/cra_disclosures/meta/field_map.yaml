@@ -2,164 +2,98 @@ Action Taken Type: 'action'
 Action Type: 'action'
 Activity Year: 'year'
 Agency Code: 'agency'
-Assessment Area Number: 'assess_area'
+Assessment Area Number: 'assessment_area'
 Census Tract: 'tract'
 County: 'county'
-Fie d: 'field'
-Filler: 'filler'
+Filler: 'fillter'
 Income Group: 'income_group'
-Income Group Total: 'income_group_total'
-Loan Indicator: ''
+Income Group Total: 'income_total'
+Loan Indicator: 'loan_indicator'
 Loan Type: 'loan_type'
 Loan Type .: 'loan_type'
-MA: 'ma'
+MA: 'msa'
 MSA: 'msa'
 MSA/MD: 'msa'
-Number of Loans: 'num_loans'
-Number of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million: 'sb_oloans_lt1m'
-Number of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million (Originations & Purchases): 'sb_oloans_lt1m'
-Number of Loans Originated to Small Farms with Gross Annual Revenues < $1 million: 'sf_oloans_lt1m'
-Number of Loans Originated to Small Farms with Gross Annual Revenues < $1 million (Originations & Purchases): 'sf_oloans_lt1m'
-Number of Loans Purchased to Small Businesses with Gross Annual Revenues < $1 million: 'sb_ploans_lt1m'
-Number of Loans Purchased to Small Businesses with Gross Annual Revenues < $1 million (Originations & Purchases): 'sb_ploans_lt1m'
-Number of Loans Purchased to Small Farms with Gross Annual Revenues < $1 million: 'sf_ploans_lt1m'
-Number of Loans Reported as Affiliate Loans: 'aloans'
-Number of Loans to Small Farms with Gross Annual Revenues < $1 million (Originations & Purchases): ''
-Number of Small Business Loans Originated: ''
-Number of Small Business Loans Originated Reported as Affiliate Loans: ''
-Number of Small Business Loans Originated Reported as Affiliate Loans (Originations and Purchases): ''
-Number of Small Business Loans Originated with Loan Amount at Origination < $100,000: ''
-Number of Small Business Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000: ''
-Number of Small Business Loans Originated with Loan Amount at Origination > 100,000 and < $250,000: ''
-Number of Small Business Loans Purchased: ''
-Number of Small Business Loans Purchased Reported as Affiliate Loans: ''
-Number of Small Business Loans Purchased Reported as Affiliate Loans (Originations and Purchases): ''
-Number of Small Business Loans Purchased with Gross Annual Revenues < $1 million: ''
-Number of Small Business Loans Purchased with Loan Amount at Origination < $100,000: ''
-Number of Small Business Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000: ''
-Number of Small Business Loans Purchased with Loan Amount at Origination > 100,000 and < $250,000: ''
-Number of Small Business Loans Reported as Affiliate Loans (Originations and Purchases): ''
-Number of Small Farm Loans Originated: ''
-Number of Small Farm Loans Originated Reported as Affiliate Loans: ''
-Number of Small Farm Loans Originated Reported as Affiliate Loans (Originations and Purchases): ''
-Number of Small Farm Loans Originated with Loan Amount at Origination < $100,000: ''
-Number of Small Farm Loans Originated with Loan Amount at Origination > $250,000: ''
-Number of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000: ''
-Number of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $500,000: ''
-Number of Small Farm Loans Originated with Loan Amount at Origination > 100,000 and < $250,000: ''
-Number of Small Farm Loans Purchased: ''
-Number of Small Farm Loans Purchased Reported as Affiliate Loans: ''
-Number of Small Farm Loans Purchased with Gross Annual Revenues < $1 million: ''
-Number of Small Farm Loans Purchased with Loan Amount at Origination < $100,000: ''
-Number of Small Farm Loans Purchased with Loan Amount at Origination > $250,000: ''
-Number of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000: ''
-Number of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $500,000: ''
-Number of Small Farm Loans Purchased with Loan Amount at Origination > 100,000 and < $250,000: ''
-Number of Small Farm Loans Reported as Affiliate Loans (Originations and Purchases): ''
-Number of Small Farms Loans Originated Reported as Affiliate Loans: ''
-Number of Small Farms Loans Originated Reported as Affiliate Loans (Originations and Purchases): ''
-Partial County Indicator: ''
-Population Classification: ''
-Report Level: ''
-Respondent ID: ''
-Split County Indicator: ''
-State: ''
-Table ID: ''
-Total Loan Amount Small Business Loans Purchased with Gross Annual Revenues < $1 million: ''
-Total Loan Amount of Loans: ''
-Total Loan Amount of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million: ''
-? Total Loan Amount of Loans Originated to Small Businesses with Gross Annual Revenues
-    < $1 million (Originations & Purchases)
-: ''
-Total Loan Amount of Loans Originated to Small Farms with Gross Annual Revenues < $1 million: ''
-Total Loan Amount of Loans Originated to Small Farms with Gross Annual Revenues < $1 million (Originations & Purchases): ''
-Total Loan Amount of Loans Purchased to Small Businesses with Gross Annual Revenues < $1 million: ''
-? Total Loan Amount of Loans Purchased to Small Businesses with Gross Annual Revenues
-    < $1 million (Originations & Purchases)
-: ''
-Total Loan Amount of Loans Purchased to Small Farms with Gross Annual Revenues < $1 million: ''
-Total Loan Amount of Loans Reported as Affiliate Loans: ''
-Total Loan Amount of Loans to Small Farms with Gross Annual Revenues < $1 million (Originations & Purchases): ''
-Total Loan Amount of Small Business Loans Originated: ''
-Total Loan Amount of Small Business Loans Originated Reported as Affiliate Loans: ''
-Total Loan Amount of Small Business Loans Originated Reported as Affiliate Loans (Originations & Purchases): ''
-Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination < $100,000: ''
-Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination > $100,000 and < $250,000: ''
-Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000: ''
-Total Loan Amount of Small Business Loans Purchased: ''
-Total Loan Amount of Small Business Loans Purchased Reported as Affiliate Loans: ''
-Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination < $100,000: ''
-Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination > $100,000 and < $250,000: ''
-Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000: ''
-Total Loan Amount of Small Business Loans Reported as Affiliate Loans (Originated and Purchased): ''
-Total Loan Amount of Small Business Loans Reported as Affiliate Loans (Originations & Purchases): ''
-Total Loan Amount of Small Farm Loans Originated: ''
-Total Loan Amount of Small Farm Loans Originated Reported as Affiliate Loans (Originations & Purchases): ''
-Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination < $100,000: ''
-Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $100,000 and < $250,000: ''
-Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000: ''
-Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000: ''
-Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $500,000: ''
-Total Loan Amount of Small Farm Loans Purchased: ''
-Total Loan Amount of Small Farm Loans Purchased Reported as Affiliate Loans: ''
-Total Loan Amount of Small Farm Loans Purchased with Gross Annual Revenues < $1 million: ''
-Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination < $100,000: ''
-Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $100,000 and < $250,000: ''
-Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000: ''
-Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000: ''
-Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $500,000: ''
-Total Loan Amount of Small Farm Loans Reported as Affiliate Loans (Originations & Purchases): ''
-Total Loan Amount of Small Farm Originated Loans Reported as Affiliate Loans: ''
-Total Loan Amount of Small Farms Loans Originated Reported as Affiliate Loans: ''
-Total Loan Amount of Small Farms Loans Originated Reported as Affiliate Loans (Originations & Purchases): ''
-Total Loan amount of loans Originated to Small Businesses with Gross Annual Revenues < $1 million: ''
-Total Loan amount of loans Originated to Small Farms with Gross Annual Revenues < $1 million: ''
-an Amount Small Business Loans Purchased with Gross Annual Revenues < $1 million: ''
-Total Loan Amount of Loans: ''
-Total Loan Amount of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million: ''
-? Total Loan Amount of Loans Originated to Small Businesses with Gross Annual Revenues
-    < $1 million (Originations & Purchases)
-: ''
-Total Loan Amount of Loans Originated to Small Farms with Gross Annual Revenues < $1 million: ''
-Total Loan Amount of Loans Originated to Small Farms with Gross Annual Revenues < $1 million (Originations & Purchases): ''
-Total Loan Amount of Loans Purchased to Small Businesses with Gross Annual Revenues < $1 million: ''
-? Total Loan Amount of Loans Purchased to Small Businesses with Gross Annual Revenues
-    < $1 million (Originations & Purchases)
-: ''
-Total Loan Amount of Loans Purchased to Small Farms with Gross Annual Revenues < $1 million: ''
-Total Loan Amount of Loans Reported as Affiliate Loans: ''
-Total Loan Amount of Loans to Small Farms with Gross Annual Revenues < $1 million (Originations & Purchases): ''
-Total Loan Amount of Small Business Loans Originated: ''
-Total Loan Amount of Small Business Loans Originated Reported as Affiliate Loans: ''
-Total Loan Amount of Small Business Loans Originated Reported as Affiliate Loans (Originations & Purchases): ''
-Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination < $100,000: ''
-Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination > $100,000 and < $250,000: ''
-Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000: ''
-Total Loan Amount of Small Business Loans Purchased: ''
-Total Loan Amount of Small Business Loans Purchased Reported as Affiliate Loans: ''
-Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination < $100,000: ''
-Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination > $100,000 and < $250,000: ''
-Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000: ''
-Total Loan Amount of Small Business Loans Reported as Affiliate Loans (Originated and Purchased): ''
-Total Loan Amount of Small Business Loans Reported as Affiliate Loans (Originations & Purchases): ''
-Total Loan Amount of Small Farm Loans Originated: ''
-Total Loan Amount of Small Farm Loans Originated Reported as Affiliate Loans (Originations & Purchases): ''
-Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination < $100,000: ''
-Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $100,000 and < $250,000: ''
-Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000: ''
-Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000: ''
-Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $500,000: ''
-Total Loan Amount of Small Farm Loans Purchased: ''
-Total Loan Amount of Small Farm Loans Purchased Reported as Affiliate Loans: ''
-Total Loan Amount of Small Farm Loans Purchased with Gross Annual Revenues < $1 million: ''
-Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination < $100,000: ''
-Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $100,000 and < $250,000: ''
-Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000: ''
-Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000: ''
-Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $500,000: ''
-Total Loan Amount of Small Farm Loans Reported as Affiliate Loans (Originations & Purchases): ''
-Total Loan Amount of Small Farm Originated Loans Reported as Affiliate Loans: ''
-Total Loan Amount of Small Farms Loans Originated Reported as Affiliate Loans: ''
-Total Loan Amount of Small Farms Loans Originated Reported as Affiliate Loans (Originations & Purchases): ''
-Total Loan amount of loans Originated to Small Businesses with Gross Annual Revenues < $1 million: ''
-Total Loan amount of loans Originated to Small Farms with Gross Annual Revenues < $1 million: ''
+Number of Loans: num_loans
+Number of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million: num_orig_bus_lt1m
+Number of Loans Originated to Small Farms with Gross Annual Revenues < $1 million: num_orig_farm_lt1m
+Number of Loans Purchased to Small Businesses with Gross Annual Revenues < $1 million: num_purch_bus_lt1m
+Number of Loans Purchased to Small Farms with Gross Annual Revenues < $1 million: num_purch_farm_lt1m
+Number of Loans Reported as Affiliate Loans: num_al
+Number of Loans to Small Farms with Gross Annual Revenues < $1 million: num_farm_lt1m
+Number of Small Business Loans Originated: num_orig_bus
+Number of Small Business Loans Originated Reported as Affiliate Loans: num_orig_bus_al
+Number of Small Business Loans Originated with Loan Amount at Origination < $100,000: num_orig_bus_lt100k
+Number of Small Business Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000: num_orig_bus_gt250k_lt1m
+Number of Small Business Loans Originated with Loan Amount at Origination > 100,000 and < $250,000: num_orig_bus_lt250k
+Number of Small Business Loans Purchased: num_purch_bus
+Number of Small Business Loans Purchased Reported as Affiliate Loans: num_purch_bus_al
+Number of Small Business Loans Purchased with Gross Annual Revenues < $1 million: num_purch_bus_lt1m
+Number of Small Business Loans Purchased with Loan Amount at Origination < $100,000: num_purch_bus_lt100k
+Number of Small Business Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000: num_purch_bus_gt250k_lt1m
+Number of Small Business Loans Purchased with Loan Amount at Origination > 100,000 and < $250,000: num_purch_bus_lt250k
+Number of Small Business Loans Reported as Affiliate Loans: num_bus_al
+Number of Small Farm Loans Originated: num_orig_farm
+Number of Small Farm Loans Originated Reported as Affiliate Loans: num_orig_farm_al
+Number of Small Farm Loans Originated with Loan Amount at Origination < $100,000: num_orig_farm_lt100k
+Number of Small Farm Loans Originated with Loan Amount at Origination > $250,000: num_orig_farm_gt250k
+Number of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000: num_orig_farm_gt250k_lt1m
+Number of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $500,000: num_orig_farm_gt250k_lt500k
+Number of Small Farm Loans Originated with Loan Amount at Origination > 100,000 and < $250,000: num_orig_farm_lt250k
+Number of Small Farm Loans Purchased: num_purch_farm
+Number of Small Farm Loans Purchased Reported as Affiliate Loans: num_purch_farm_al
+Number of Small Farm Loans Purchased with Gross Annual Revenues < $1 million: num_purch_farm_lt1m
+Number of Small Farm Loans Purchased with Loan Amount at Origination < $100,000: num_purch_farm_lt100k
+Number of Small Farm Loans Purchased with Loan Amount at Origination > $250,000: num_purch_farm_gt250k
+Number of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000: num_purch_farm_gt250k_lt1m
+Number of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $500,000: num_purch_farm_gt250k_lt500k
+Number of Small Farm Loans Purchased with Loan Amount at Origination > 100,000 and < $250,000: num_purch_farm_lt250k
+Number of Small Farm Loans Reported as Affiliate Loans: num_farm_al
+Number of Small Farms Loans Originated Reported as Affiliate Loans: num_orig_farm_al
+Partial County Indicator: 'partial_county'
+Population Classification: 'pop_class'
+Report Level: 'report_level'
+Respondent ID: 'respondent_id'
+Split County Indicator: 'split_county'
+State: 'state'
+Table ID: 'table_id'
+Total Loan Amount Small Business Loans Purchased with Gross Annual Revenues < $1 million: tot_purch_bus_lt1m
+Total Loan Amount of Loans: tot
+Total Loan Amount of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million: tot_orig_bus_lt1m
+Total Loan Amount of Loans Originated to Small Farms with Gross Annual Revenues < $1 million: tot_orig_farm_lt1m
+Total Loan Amount of Loans Purchased to Small Businesses with Gross Annual Revenues < $1 million: tot_purch_bus_lt1m
+Total Loan Amount of Loans Purchased to Small Farms with Gross Annual Revenues < $1 million: tot_purch_farm_lt1m
+Total Loan Amount of Loans Reported as Affiliate Loans: tot_al
+Total Loan Amount of Loans to Small Farms with Gross Annual Revenues < $1 million: tot_farm_lt1m
+Total Loan Amount of Small Business Loans Originated: tot_orig_bus
+Total Loan Amount of Small Business Loans Originated Reported as Affiliate Loans: tot_orig_bus_al
+Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination < $100,000: tot_orig_bus_lt100k
+Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination > $100,000 and < $250,000: tot_orig_bus_gt100k_lt250k
+Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000: tot_orig_bus_gt250k_lt1m
+Total Loan Amount of Small Business Loans Purchased: tot_purch_bus
+Total Loan Amount of Small Business Loans Purchased Reported as Affiliate Loans: tot_purch_bus_al
+Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination < $100,000: tot_purch_bus_lt100k
+Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination > $100,000 and < $250,000: tot_purch_bus_gt100k_lt250k
+Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000: tot_purch_bus_gt250k_lt1m
+Total Loan Amount of Small Business Loans Reported as Affiliate Loans: tot_bus_al
+Total Loan Amount of Small Business Loans Reported as Affiliate Loans (Originated and Purchased): tot_orig_bus_al
+Total Loan Amount of Small Farm Loans Originated: tot_orig_farm
+Total Loan Amount of Small Farm Loans Originated Reported as Affiliate Loans: tot_orig_farm_al
+Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination < $100,000: tot_orig_farm_lt100k
+Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $100,000 and < $250,000: tot_orig_farm_gt100k_lt250k
+Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000: tot_orig_farm_gt250k
+Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000: tot_orig_farm_gt250k_lt1m
+Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $500,000: tot_orig_farm_gt250k_lt500k
+Total Loan Amount of Small Farm Loans Purchased: tot_purch_farm
+Total Loan Amount of Small Farm Loans Purchased Reported as Affiliate Loans: tot_purch_farm_al
+Total Loan Amount of Small Farm Loans Purchased with Gross Annual Revenues < $1 million: tot_purch_farm_lt1m
+Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination < $100,000: tot_purch_farm_lt100k
+Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $100,000 and < $250,000: tot_purch_farm_gt100k_lt250k
+Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000: tot_purch_farm_gt250k
+Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000: tot_purch_farm_gt250k_lt1m
+Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $500,000: tot_purch_farm_gt250k_lt500k
+Total Loan Amount of Small Farm Loans Reported as Affiliate Loans: tot_farm_al
+Total Loan Amount of Small Farm Originated Loans Reported as Affiliate Loans: tot_orig_farm_al
+Total Loan Amount of Small Farms Loans Originated Reported as Affiliate Loans: tot_orig_farm_al
+Total Loan amount of loans Originated to Small Businesses with Gross Annual Revenues < $1 million: tot_orig_bus_lt1m
+Total Loan amount of loans Originated to Small Farms with Gross Annual Revenues < $1 million: tot_orig_farm_lt1m

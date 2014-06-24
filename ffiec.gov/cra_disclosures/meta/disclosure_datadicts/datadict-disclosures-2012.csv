@@ -608,7 +608,7 @@ Reported as Affiliate Loans  ,,,,,"$25,000}; Right justified with leading zeros 
 ,,,,,P = Purchased 
 ,,,,,T = Total (Originated + Purchased) 
 11. Filler ,63,145,83,AN ,Blank 
-Fie d ,Start ,End ,Length ,Type ,"Comments, Values, Keys, Etc. "
+Field ,Start ,End ,Length ,Type ,"Comments, Values, Keys, Etc. "
 1. Table ID ,1,5,5,AN ,Value is D6-0 
 2. Respondent ID ,6,15,10,AN ,Assigned by regulatory agency 
 ,,,,,(same as HMDA ID if applicable);  

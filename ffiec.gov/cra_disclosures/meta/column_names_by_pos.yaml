@@ -1,0 +1,413 @@
+d1_1:
+    0:
+    - table id
+    1:
+    - respondent id
+    2:
+    - agency code
+    3:
+    - activity year
+    4:
+    - loan type
+    5:
+    - action taken type
+    6:
+    - state
+    7:
+    - county
+    8:
+    - msa/md
+    - ma
+    9:
+    - assessment area number
+    10:
+    - partial county indicator
+    11:
+    - split county indicator
+    12:
+    - population classification
+    13:
+    - income group total
+    14:
+    - report level
+    15:
+    - number of small business loans originated with loan amount at origination <
+        $100,000
+    16:
+    - total loan amount of small business loans originated with loan amount at origination
+        < $100,000
+    17:
+    - number of small business loans originated with loan amount at origination >
+        100,000 and < $250,000
+    18:
+    - total loan amount of small business loans originated with loan amount at origination
+        > $100,000 and < $250,000
+    19:
+    - number of small business loans originated with loan amount at origination >
+        $250,000 and < $1,000,000
+    20:
+    - total loan amount of small business loans originated with loan amount at origination
+        > $250,000 and < $1,000,000
+    21:
+    - number of loans originated to small businesses with gross annual revenues <
+        $1 million
+    22:
+    - total loan amount of loans originated to small businesses with gross annual
+        revenues < $1 million
+    23:
+    - number of small business loans originated reported as affiliate loans
+    24:
+    - total loan amount of small business loans originated reported as affiliate loans
+d1_2:
+    0:
+    - table id
+    1:
+    - respondent id
+    2:
+    - agency code
+    3:
+    - activity year
+    4:
+    - loan type
+    5:
+    - action taken type
+    6:
+    - state
+    7:
+    - county
+    8:
+    - msa/md
+    - ma
+    9:
+    - assessment area number
+    10:
+    - partial county indicator
+    11:
+    - split county indicator
+    12:
+    - population classification
+    13:
+    - income group total
+    14:
+    - report level
+    15:
+    - number of small business loans purchased with loan amount at origination < $100,000
+    16:
+    - total loan amount of small business loans purchased with loan amount at origination
+        < $100,000
+    17:
+    - number of small business loans purchased with loan amount at origination > 100,000
+        and < $250,000
+    18:
+    - total loan amount of small business loans purchased with loan amount at origination
+        > $100,000 and < $250,000
+    19:
+    - number of small business loans purchased with loan amount at origination > $250,000
+        and < $1,000,000
+    20:
+    - total loan amount of small business loans purchased with loan amount at origination
+        > $250,000 and < $1,000,000
+    21:
+    - number of loans purchased to small businesses with gross annual revenues < $1
+        million
+    - number of small business loans purchased with gross annual revenues < $1 million
+    22:
+    - total loan amount of loans purchased to small businesses with gross annual revenues
+        < $1 million
+    - total loan amount small business loans purchased with gross annual revenues
+        < $1 million
+    23:
+    - number of small business loans purchased reported as affiliate loans
+    - number of small business loans reported as affiliate loans
+    24:
+    - total loan amount of small business loans reported as affiliate loans (originated
+        and purchased)
+    - total loan amount of small business loans reported as affiliate loans
+    - total loan amount of small business loans purchased reported as affiliate loans
+d2_1:
+    0:
+    - table id
+    1:
+    - respondent id
+    2:
+    - agency code
+    3:
+    - activity year
+    4:
+    - loan type
+    5:
+    - action taken type
+    6:
+    - state
+    7:
+    - county
+    8:
+    - msa/md
+    - ma
+    9:
+    - assessment area number
+    10:
+    - partial county indicator
+    11:
+    - split county indicator
+    12:
+    - population classification
+    13:
+    - income group total
+    14:
+    - report level
+    15:
+    - number of small farm loans originated with loan amount at origination < $100,000
+    16:
+    - total loan amount of small farm loans originated with loan amount at origination
+        < $100,000
+    17:
+    - number of small farm loans originated with loan amount at origination > 100,000
+        and < $250,000
+    18:
+    - total loan amount of small farm loans originated with loan amount at origination
+        > $100,000 and < $250,000
+    19:
+    - number of small farm loans originated with loan amount at origination > $250,000
+    - number of small farm loans originated with loan amount at origination > $250,000
+        and < $1,000,000
+    - number of small farm loans originated with loan amount at origination > $250,000
+        and < $500,000
+    20:
+    - total loan amount of small farm loans originated with loan amount at origination
+        > $250,000
+    - total loan amount of small farm loans originated with loan amount at origination
+        > $250,000 and < $1,000,000
+    - total loan amount of small farm loans originated with loan amount at origination
+        > $250,000 and < $500,000
+    21:
+    - number of loans originated to small farms with gross annual revenues < $1 million
+    22:
+    - total loan amount of loans originated to small farms with gross annual revenues
+        < $1 million
+    23:
+    - number of small farm loans originated reported as affiliate loans
+    - number of small farms loans originated reported as affiliate loans
+    24:
+    - total loan amount of small farm loans originated reported as affiliate loans
+    - total loan amount of small farms loans originated reported as affiliate loans
+    - total loan amount of small farm originated loans reported as affiliate loans
+d2_2:
+    0:
+    - table id
+    1:
+    - respondent id
+    2:
+    - agency code
+    3:
+    - activity year
+    4:
+    - loan type
+    - loan type .
+    5:
+    - action taken type
+    6:
+    - state
+    7:
+    - county
+    8:
+    - msa/md
+    - ma
+    9:
+    - assessment area number
+    10:
+    - partial county indicator
+    11:
+    - split county indicator
+    12:
+    - population classification
+    13:
+    - income group total
+    14:
+    - report level
+    15:
+    - number of small farm loans purchased with loan amount at origination < $100,000
+    16:
+    - total loan amount of small farm loans purchased with loan amount at origination
+        < $100,000
+    17:
+    - number of small farm loans purchased with loan amount at origination > 100,000
+        and < $250,000
+    18:
+    - total loan amount of small farm loans purchased with loan amount at origination
+        > $100,000 and < $250,000
+    19:
+    - number of small farm loans purchased with loan amount at origination > $250,000
+    - number of small farm loans purchased with loan amount at origination > $250,000
+        and < $1,000,000
+    - number of small farm loans purchased with loan amount at origination > $250,000
+        and < $500,000
+    20:
+    - total loan amount of small farm loans purchased with loan amount at origination
+        > $250,000
+    - total loan amount of small farm loans purchased with loan amount at origination
+        > $250,000 and < $1,000,000
+    - total loan amount of small farm loans purchased with loan amount at origination
+        > $250,000 and < $500,000
+    21:
+    - number of loans to small farms with gross annual revenues < $1 million
+    - number of loans purchased to small farms with gross annual revenues < $1 million
+    - number of small farm loans purchased with gross annual revenues < $1 million
+    22:
+    - total loan amount of loans to small farms with gross annual revenues < $1 million
+    - total loan amount of loans purchased to small farms with gross annual revenues
+        < $1 million
+    - total loan amount of small farm loans purchased with gross annual revenues <
+        $1 million
+    23:
+    - number of small farm loans reported as affiliate loans
+    - number of small farm loans purchased reported as affiliate loans
+    24:
+    - total loan amount of small farm loans reported as affiliate loans
+    - total loan amount of small farm loans purchased reported as affiliate loans
+d3_0:
+    0:
+    - table id
+    1:
+    - respondent id
+    2:
+    - agency code
+    3:
+    - activity year
+    4:
+    - loan type
+    5:
+    - state
+    6:
+    - county
+    7:
+    - msa/md
+    - ma
+    8:
+    - assessment area number
+    9:
+    - partial county indicator
+    10:
+    - split county indicator
+    11:
+    - report level
+    12:
+    - number of small business loans originated
+    13:
+    - total loan amount of small business loans originated
+    14:
+    - number of small business loans purchased
+    - number of loans originated to small businesses with gross annual revenues <
+        $1 million
+    15:
+    - total loan amount of small business loans purchased
+    - total loan amount of loans originated to small businesses with gross annual
+        revenues < $1 million
+    16:
+    - filler
+    - number of small business loans purchased
+    17:
+    - total loan amount of small business loans purchased
+    18:
+    - filler
+d4_0:
+    0:
+    - table id
+    1:
+    - respondent id
+    2:
+    - agency code
+    3:
+    - activity year
+    4:
+    - loan type
+    5:
+    - state
+    6:
+    - county
+    7:
+    - msa/md
+    - ma
+    8:
+    - assessment area number
+    9:
+    - partial county indicator
+    10:
+    - split county indicator
+    11:
+    - report level
+    12:
+    - number of small farm loans originated
+    13:
+    - total loan amount of small farm loans originated
+    14:
+    - number of small farm loans purchased
+    - number of loans originated to small farms with gross annual revenues < $1 million
+    15:
+    - total loan amount of small farm loans purchased
+    - total loan amount of loans originated to small farms with gross annual revenues
+        < $1 million
+    16:
+    - filler
+    - number of small farm loans purchased
+    17:
+    - total loan amount of small farm loans purchased
+    18:
+    - filler
+d5_0:
+    0:
+    - table id
+    1:
+    - respondent id
+    2:
+    - agency code
+    3:
+    - activity year
+    4:
+    - loan type
+    5:
+    - number of loans
+    6:
+    - total loan amount of loans
+    7:
+    - number of loans reported as affiliate loans
+    8:
+    - total loan amount of loans reported as affiliate loans
+    9:
+    - filler
+    - action type
+    10:
+    - filler
+d6_0:
+    0:
+    - table id
+    1:
+    - respondent id
+    2:
+    - agency code
+    3:
+    - activity year
+    4:
+    - state
+    5:
+    - county
+    6:
+    - msa/md
+    - ma
+    - msa
+    7:
+    - census tract
+    8:
+    - assessment area number
+    9:
+    - partial county indicator
+    10:
+    - split county indicator
+    11:
+    - population classification
+    12:
+    - income group
+    13:
+    - loan indicator
+    14:
+    - filler

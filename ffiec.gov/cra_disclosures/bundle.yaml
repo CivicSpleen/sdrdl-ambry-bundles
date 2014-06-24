@@ -26,15 +26,16 @@ contact_source:
         url: null
 external_documentation:
     file_specs:
-        description: "List of the PDF documents that define the tables and columns in each year's file."
-        source: 
+        description: List of the PDF documents that define the tables and columns
+            in each year file.
+        source: null
         title: File Spec Page
         url: http://www.ffiec.gov/cra/craflatfiles.htm
 identity:
     bspace: null
     btime: null
     dataset: cra_disclosures
-    id: djagFt3j9V
+    id: d02F
     revision: 1
     source: ffiec.gov
     subset: null
@@ -42,9 +43,9 @@ identity:
     variation: null
     version: 0.0.1
 names:
-    fqname: ffiec.gov-cra_disclosures-0.0.1~djagFt3j9V001
+    fqname: ffiec.gov-cra_disclosures-0.0.1~d02F001
     name: ffiec.gov-cra_disclosures
-    vid: djagFt3j9V001
+    vid: d02F001
     vname: ffiec.gov-cra_disclosures-0.0.1
 versions:
     1:
