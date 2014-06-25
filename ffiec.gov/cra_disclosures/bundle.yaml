@@ -36,18 +36,21 @@ identity:
     btime: null
     dataset: cra_disclosures
     id: d02F
-    revision: 1
+    revision: 2
     source: ffiec.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: ffiec.gov-cra_disclosures-0.0.1~d02F001
+    fqname: ffiec.gov-cra_disclosures-0.0.2~d02F002
     name: ffiec.gov-cra_disclosures
-    vid: d02F001
-    vname: ffiec.gov-cra_disclosures-0.0.1
+    vid: d02F002
+    vname: ffiec.gov-cra_disclosures-0.0.2
 versions:
     1:
-        description: null
+        description: Initial version
         version: 0.0.1
+    2:
+        description: Added Indexes
+        version: 0.0.2
