@@ -9,12 +9,12 @@ Right justified with leading zeros","2. Respondent ID","c02F01003"
 "d1_1",5,"year",,,,1,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F01005"
 "d1_1",6,"loan_type",,,,,,,,,,,"INTEGER",1,1,"Value is 4 (Small Business)","5. Loan Type","c02F01006"
 "d1_1",7,"action",,,,,,,,,,,"INTEGER",1,1,"Value is 1 (Originations)","6. Action Taken Type","c02F01007"
-"d1_1",8,"state",,,,,1,1,,,,,"VARCHAR",2,2,"FIPS code with leading zeros 
+"d1_1",8,"state",,,,,1,1,,,,,"INTEGER",2,2,"FIPS code with leading zeros 
 or blank for totals across all 
 states","7. State","c02F01008"
-"d1_1",9,"county",,,,,,1,,,,,"VARCHAR",3,3,"FIPS code with leading zeros or blank 
+"d1_1",9,"county",,,,,,1,,,,,"INTEGER",3,3,"FIPS code with leading zeros or blank 
 for totals across all counties","8. County","c02F01009"
-"d1_1",10,"msa",,,,,,,1,,,,"VARCHAR",5,5,"As defined by OMB; Right justified 
+"d1_1",10,"msa",,,,,,,1,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
 with leading zeros, NA left justified 
 for areas outside of MSA/MD or blank 
 for totals across all MSA/MDs","9. MSA/MD","c02F0100a"
@@ -116,11 +116,11 @@ Right justified with leading zeros","2. Respondent ID","c02F02003"
 "d1_2",5,"year",,,,1,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F02005"
 "d1_2",6,"loan_type",,,,,,,,,,,"INTEGER",1,1,"Value is 4 (Small Business)","5. Loan Type","c02F02006"
 "d1_2",7,"action",,,,,,,,,,,"INTEGER",1,1,"Value is 6 (Purchases)","6. Action Taken Type","c02F02007"
-"d1_2",8,"state",,,,,1,,,,,,"VARCHAR",2,2,"FIPS code with leading zeros 
+"d1_2",8,"state",,,,,1,,,,,,"INTEGER",2,2,"FIPS code with leading zeros 
 or blank for totals across all states","7. State","c02F02008"
-"d1_2",9,"county",,,,,1,1,,,,,"VARCHAR",3,3,"FIPS code with leading zeros or blank 
+"d1_2",9,"county",,,,,1,1,,,,,"INTEGER",3,3,"FIPS code with leading zeros or blank 
 for totals across all counties","8. County","c02F02009"
-"d1_2",10,"msa",,,,,,,1,,,,"VARCHAR",5,5,"As defined by OMB; Right justified 
+"d1_2",10,"msa",,,,,,,1,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
 with leading zeros, NA left justified 
 for areas outside of MSA/MD or blank 
 for totals across all MSA/MDs","9. MSA/MD","c02F0200a"
@@ -229,11 +229,11 @@ Right justified with leading zeros","2. Respondent ID","c02F03003"
 "d2_1",5,"year",,,,1,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F03005"
 "d2_1",6,"loan_type",,,,,,,,,,,"INTEGER",1,1,"Value is 5 (Small Farm)","5. Loan Type","c02F03006"
 "d2_1",7,"action",,,,,,,,,,,"INTEGER",1,1,"Value is 1 (Originations)","6. Action Taken Type","c02F03007"
-"d2_1",8,"state",,,,,1,,,,,,"VARCHAR",2,2,"FIPS code with leading zeros 
+"d2_1",8,"state",,,,,1,,,,,,"INTEGER",2,2,"FIPS code with leading zeros 
 or blank for totals across all states","7. State","c02F03008"
-"d2_1",9,"county",,,,,1,1,,,,,"VARCHAR",3,3,"FIPS code with leading zeros or blank 
+"d2_1",9,"county",,,,,1,1,,,,,"INTEGER",3,3,"FIPS code with leading zeros or blank 
 for totals across all counties","8. County","c02F03009"
-"d2_1",10,"msa",,,,,,,1,,,,"VARCHAR",5,5,"As defined by OMB; Right justified 
+"d2_1",10,"msa",,,,,,,1,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
 with leading zeros, NA left justified 
 for areas outside of MSA/MD or blank 
 for totals across all MSA/MDs","9. MSA/MD","c02F0300a"
@@ -343,11 +343,11 @@ Right justified with leading zeros","2. Respondent ID","c02F04003"
 "d2_2",5,"year",,,,1,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F04005"
 "d2_2",6,"loan_type",,,,,,,,,,,"INTEGER",1,1,"Value is 5 (Small Farm)","5. Loan Type","c02F04006"
 "d2_2",7,"action",,,,,,,,,,,"INTEGER",1,1,"Value is 6 (Purchases)","6. Action Taken Type","c02F04007"
-"d2_2",8,"state",,,,,1,,,,,,"VARCHAR",2,2,"FIPS code with leading zeros 
+"d2_2",8,"state",,,,,1,,,,,,"INTEGER",2,2,"FIPS code with leading zeros 
 or blank for totals across all states","7. State","c02F04008"
-"d2_2",9,"county",,,,,1,1,,,,,"VARCHAR",3,3,"FIPS code with leading zeros or blank 
+"d2_2",9,"county",,,,,1,1,,,,,"INTEGER",3,3,"FIPS code with leading zeros or blank 
 for totals across all counties","8. County","c02F04009"
-"d2_2",10,"msa",,,,,,,1,,,,"VARCHAR",5,5,"As defined by OMB; Right justified 
+"d2_2",10,"msa",,,,,,,1,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
 with leading zeros, NA left justified 
 for areas outside of MSA/MD or blank 
 for totals across all MSA/MDs","9. MSA/MD","c02F0400a"
@@ -464,12 +464,12 @@ Right justified with leading zeros","2. Respondent ID","c02F05003"
 3=FDIC, or 4=OTS","3. Agency Code","c02F05004"
 "d3_0",5,"year",,,,1,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F05005"
 "d3_0",6,"loan_type",,,,,,,,,,,"INTEGER",1,1,"Value is 4 (Small Business)","5. Loan Type","c02F05006"
-"d3_0",7,"state",,,,,1,,,,,,"VARCHAR",2,2,"FIPS code with leading zeros 
+"d3_0",7,"state",,,,,1,,,,,,"INTEGER",2,2,"FIPS code with leading zeros 
 or blank for totals across all 
 states","6. State","c02F05007"
-"d3_0",8,"county",,,,,1,1,,,,,"VARCHAR",3,3,"FIPS code with leading zeros or blank 
+"d3_0",8,"county",,,,,1,1,,,,,"INTEGER",3,3,"FIPS code with leading zeros or blank 
 for totals across all counties","7. County","c02F05008"
-"d3_0",9,"msa",,,,,,,1,,,,"VARCHAR",5,5,"As defined by OMB; Right justified 
+"d3_0",9,"msa",,,,,,,1,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
 with leading zeros, NA left justified 
 for areas outside of MSA/MD or blank 
 for totals across all MSA/MDs","8. MSA/MD","c02F05009"
@@ -517,12 +517,12 @@ Right justified with leading zeros","2. Respondent ID","c02F06003"
 3=FDIC, or 4=OTS","3. Agency Code","c02F06004"
 "d4_0",5,"year",,,,,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F06005"
 "d4_0",6,"loan_type",,,,,,,,,,,"INTEGER",1,1,"Value is 5 (Small Farm)","5. Loan Type","c02F06006"
-"d4_0",7,"state",,,,,,,,,,,"VARCHAR",2,2,"FIPS code with leading zeros 
+"d4_0",7,"state",,,,,,,,,,,"INTEGER",2,2,"FIPS code with leading zeros 
 or blank for totals across all 
 states","6. State","c02F06007"
-"d4_0",8,"county",,,,,,,,,,,"VARCHAR",3,3,"FIPS code with leading zeros or blank 
+"d4_0",8,"county",,,,,,,,,,,"INTEGER",3,3,"FIPS code with leading zeros or blank 
 for totals across all counties","7. County","c02F06008"
-"d4_0",9,"msa",,,,,,,,,,,"VARCHAR",5,5,"As defined by OMB; Right justified 
+"d4_0",9,"msa",,,,,,,,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
 with leading zeros, NA left justified 
 for areas outside of MSA/MD or blank 
 for totals across all MSA/MDs","8. MSA/MD","c02F06009"
@@ -594,9 +594,9 @@ Right justified with leading zeros","2. Respondent ID","c02F08003"
 "d6_0",4,"agency",,,,,,,,,,,"INTEGER",1,1,"Values are 1=OCC, 2=FRS, 
 3=FDIC, or 4=OTS","3. Agency Code","c02F08004"
 "d6_0",5,"year",,,,1,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F08005"
-"d6_0",6,"state",,,,,1,1,,,,,"VARCHAR",2,2,"FIPS code with leading zeros","5. State","c02F08006"
-"d6_0",7,"county",,,,," ",1,,,,,"VARCHAR",3,3,"FIPS code with leading zeros","6. County","c02F08007"
-"d6_0",8,"msa",,,,,," ",1,,,,"VARCHAR",5,5,"As defined by OMB; Right justified 
+"d6_0",6,"state",,,,,1,1,,,,,"INTEGER",2,2,"FIPS code with leading zeros","5. State","c02F08006"
+"d6_0",7,"county",,,,," ",1,,,,,"INTEGER",3,3,"FIPS code with leading zeros","6. County","c02F08007"
+"d6_0",8,"msa",,,,,," ",1,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
 with leading zeros or NA left justified 
 for areas outside of an MSA/MD","7. MSA/MD","c02F08008"
 "d6_0",9,"tract",,,,,,,,1,,,"VARCHAR",7,7,"As defined by the Bureau of Census; 
