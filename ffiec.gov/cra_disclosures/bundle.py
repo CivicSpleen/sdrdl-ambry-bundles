@@ -14,7 +14,8 @@ class Bundle(BuildBundle):
         super(Bundle, self).__init__(directory)
 
     def meta_generate_dd_rows(self, year):
-        '''Read the file and combines multiple comment rows into single field entry rows'''
+        '''Read the file and combine multiple comment rows into single field entry rows.
+        Also munges the Field name'''
         import csv
         import re
         
@@ -52,7 +53,7 @@ class Bundle(BuildBundle):
             yield out_row
         
     def meta_generate_tables(self, year):
-        
+        """Generates tables for a year file, where each table is an array olf column entries."""
         table_name = None
         table = []
         for row in self.meta_generate_dd_rows(year):
@@ -71,7 +72,8 @@ class Bundle(BuildBundle):
         yield table_name, table
         
     def make_column_name(self, field):
-    
+        """Create a mnemonic column name for the purchase and original value fields, so the
+        name can be stored in the colum name mape for easier editing.  """
     
         x = []
         
@@ -123,6 +125,8 @@ class Bundle(BuildBundle):
     
 
     def meta_field_map(self):
+        """Write two field map files, one for review, and one ( field_map.yaml) for hand editing
+        to set shorter column names. """
         import re
 
         tables = {}
@@ -136,7 +140,7 @@ class Bundle(BuildBundle):
 
         tables = dict()
 
-        for year in range(1996, 2013):
+        for year in range(*self.metadata.build.years):
             for table_name, table in self.meta_generate_tables(year):
                 print '------- {} {} ---------'.format(year, table_name)
 
@@ -163,15 +167,16 @@ class Bundle(BuildBundle):
         self.filesystem.write_yaml(tables, 'meta','column_names_by_pos.yaml')
 
     def meta_make_regexes(self):
+        """ Create a YAML file of regular expressions for parsing each of the tables in each year file. There
+        is a lot of redundancy between the years, but there are a few differences, so it is more reliable
+        to enumerate all of the regexes. """
         import re 
         
         field_names = self.filesystem.read_yaml('meta','field_map.yaml')
 
         regexes  = {}
 
-        for year in range(1996, 2013):
-        
-            
+        for year in range(*self.metadata.build.years):
         
             assert year not in regexes
             
@@ -190,6 +195,12 @@ class Bundle(BuildBundle):
                     
                     size = int(row['Length'])
                     
+                    # A lot of the filler sizes are wrong, and they are all blanks anyway, 
+                    # so we'll just strip them off
+                    if col_name == 'filler':
+                        continue
+
+                    
                     pos += size
                 
                     regex += "(?P<{name}>.{{{size}}})".format(size=size, name=col_name)
@@ -202,6 +213,7 @@ class Bundle(BuildBundle):
         self.filesystem.write_yaml(regexes, 'meta','table_regexes.yaml')        
 
     def meta_gen_urls(self):
+        """Expand a URL template into source vaules in the build metadata. """
          
         templ = self.metadata.build.url_template
 
@@ -212,14 +224,7 @@ class Bundle(BuildBundle):
         
         self.metadata.write_to_dir(write_all=True)
 
-    def meta(self):
-        
-        self.meta_gen_urls()
-        
-        self.meta_make_regexes()
-        
-        return 
-        
+    def meta_make_schema(self):
         import re
         
         self.database.create()
@@ -236,12 +241,28 @@ class Bundle(BuildBundle):
                 for i,row in enumerate(table):
                     fn = re.sub(r'^\d+[\.\s]*','',row['Field'].strip())
 
-                    self.schema.add_column(t, field_names[fn], datatype='integer', width = row['Length'],
+                    if row['Type'].strip() == 'N':
+                        datatype = 'integer'
+                    elif row['Type'].strip() == 'AN':
+                        datatype = 'varchar'
+                    else:
+                        self.log("Bad row?: {}".format(row))
+                        raise ValueError("Unknown data type code: '{}'".format(row['Type']))
+
+                    self.schema.add_column(t, field_names[fn], datatype=datatype, width = row['Length'],
                                         description=row['Comments'], data={'orig_field':row['Field']})
-                    
-                    
         self.schema.write_schema()
         
+    def meta(self):
+
+        self.meta_gen_urls()
+        
+        self.meta_make_regexes()
+        
+        self.meta_make_schema()
+        
+        return True
+
 
     def build(self):
         import re
@@ -255,6 +276,23 @@ class Bundle(BuildBundle):
                 rm[(year, table)] = re.compile(regex)
     
         
+        inserters = {}
+
+        # You'd think we could just iterate over the self.schema.tables directly, 
+        # but there is a problem with Sqlalchemy disconnecting the table from the session, 
+        # probably due to the partitions.find_or_new destroying the session. This issue
+        # crops up a lot. 
+        table_names = [t.name for t in self.schema.tables]
+
+        for table_name in table_names:
+            self.log("Creating inserter: {}".format(table_name))
+            p = self.partitions.find_or_new(table=table_name)
+            ins = p.inserter()
+            ins.__enter__()
+            inserters[table_name] = (p, ins)
+            
+            lr = self.init_log_rate(N=30000)
+        
         for year in range(*self.metadata.build.years):
             
             regexes = regexes_years[year]
@@ -262,14 +300,54 @@ class Bundle(BuildBundle):
             z_fn = self.filesystem.download(year)
             fn = self.filesystem.unzip(z_fn)
             
+            last_table_id = None
+            ins = None
+            p = None
+            n = 0
+
+    
             with open (fn) as f:
-                for line in iter(f):
+                for i, line in enumerate(iter(f)):
+                    
+                    line = line.strip()
+                    
                     table_id = line[:4].lower().replace('-','_')
+                    
+                    if last_table_id != table_id:
+                        last_table_id = table_id
+                        try:
+                            ins = inserters[table_id][1]
+                        except KeyError:
+                            # Some of the files have bad endings. 
+                            self.error("Failed to get table_id on line {}, year {}, file {}: '{}'"
+                                      .format(i, year, fn, line))
+                            continue
+                    
                     regex = rm[(year, table_id)]
+                    
+                    if year == 1996 and table_id == 'd5_0' and len(line) == 34:
+                        line += ( '0' * 14 )
+                    
+                    
                     
                     m = regex.match(line)
                     
-                    print m.groups()
+                    if not m:
+                        self.error("Failed to match regex to line {}, year {}, file {}, len {}: '{}'"
+                                  .format(i, year, fn, len(line), line))
+                        continue
+                    
+                    ins.insert(m.groupdict())
+                    
+                    lr("{}: {}".format(year, table_id))
+                    
+                
+        for table_name, (p, ins) in inserters.items():
+            ins.__exit__(None,None,None)
+            
+                
+        return True
+                    
                     
                     
                     

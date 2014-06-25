@@ -1,683 +1,683 @@
-Field,Start,End,Length,Type,Comments
-1. Table ID ,1,5,5,AN ,Value is D1-1 ,
-2. Respondent ID ,6,15,10,AN ,Assigned by regulatory agency ,
-,,,,,(same as HMDAID if applicable);  ,
-,,,,,Right justified with leading zeros ,
-3. Agency Code ,16,17,1,N ,"Values are 1=OCC, 2=FRS, ",
-,,,,,"3=FDIC, or 4=OTS ",
-4. Activity Year ,17,20,4,N ,Four digit year (e.g. 1998) ,
-5. Loan Type ,21,21,1,N ,Value is 4 (Small Business) ,
-6. Action Taken Type ,22,22,1,N ,Value is 1 (Originations) ,
-7. State ,23,24,2,AN ,FIPS code with leading zeros ,
-,,,,,or blank for totals across all ,
-,,,,,states ,
-8. County ,25,27,3,AN ,FIPS code with leading zeros or blank ,
-,,,,,for totals across all counties ,
-9. MSA/MD ,28,31,4,AN ,As defined by OMB; Right justified ,
-,,,,,"with leading zeros, NA left justified ",
-,,,,,for areas outside of MSA/MD or blank ,
-,,,,,for totals across all MSA/MDs ,
-10. Assessment Area Number ,32,35,4,AN ,Values are 0001 through 9999; Right ,
-,,,,,"justified with leading zeros, NA left justified ",
-,,,,,for areas outside of an Assessment ,
-,,,,,Area (including predominately military ,
-,,,,,areas) OR blank for totals across ,
-,,,,,all Assessment Areas ,
-11. Partial County Indicator ,36,36,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-,,,,,OR blank for totals ,
-12. Split County Indicator ,37,37,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-,,,,,OR blank for totals ,
-13 . Population Classification ,38,38,1,AN ,Values are ,
-,,,,,S= counties with ,
-,,,,,"< 500,000 in population ",
-,,,,,L= counties with ,
-,,,,,">500,000 in population ",
-,,,,,OR blank for totals ,
-14. Income Group Total ,39,41,3,AN ,Values are ,
-,,,,,1= < 10% of Median Family ,
-,,,,,Income(MFI) ,
-,,,,,2= 10% to 20% of MFI ,
-,,,,,3= 20% to 30% of MFI ,
-,,,,,4= 30% to 40% of MFI ,
-,,,,,5= 40% to 50% of MFI ,
-,,,,,6= 50% to 60% of MFI ,
-,,,,,7= 60% to 70% of MFI ,
-,,,,,8= 70% to 80% of MFI ,
-,,,,,9= 80% to 90% of MFI ,
-,,,,, 10= 90% to 100% of MFI ,
-,,,,, 11= 100% to 110% of MFI ,
-,,,,, 12= 110% to 120% of MFI ,
-,,,,, 13= > 120% of MFI ,
-,,,,, 14= MFI not known (income ,
-,,,,,percentage = 0) ,
-,,,,, 15= Tract not Known (reported ,
-,,,,,as NA) ,
-,,,,,101= Low Income (< 50% of ,
-,,,,,MFI - excluding 0) ,
-,,,,,102= Moderate Income (50% ,
-,,,,,to 80% of MFI) ,
-,,,,,103= Middle Income (80% to ,
-,,,,,120% of MFI) ,
-,,,,,104= Upper Income (> 120% ,
-,,,,,of MFI) ,
-,,,,,105= Income Not Known (0) ,
-,,,,,106= Tract not Known (NA) ,
-,,,,,Right justified with leading zeros ,
-,,,,,or blank for totals ,
-15. Report Level ,42,44,3,AN ,Values are ,
-,,,,,4= Total Inside & Outside ,
-,,,,,Assessment Area (AA) ,
-,,,,,(across all states) ,
-,,,,,6= Total Inside AA ,
-,,,,,(across all states) ,
-,,,,,8= Total Outside AA ,
-,,,,,(across all states) ,
-,,,,,  10= State Total ,
-,,,,,  20= Total Inside AA in State ,
-,,,,,  30= Total Outside AA in State ,
-,,,,,  40= County Total ,
-,,,,,  50= Total Inside AA in County ,
-,,,,,  60= Total Outside AA in County ,
-,,,,,Right justified with leading zeros ,
-,,,,,or blank if not a total ,
-16. Number of Small Business Loans ,45,50,6,N ,Right justified with leading zeros ,
-Originated with Loan Amount at ,,,,,,
-"Origination < $100,000 ",,,,,,
-17. Total Loan Amount of Small Business ,51,58,8,N ,Amount is in thousands {e.g. 00000025 ,
-Loans Originated with Loan Amount ,,,,,"indicates $25,000); Right justified with ",
-"at Origination < $100,000 ",,,,,leading zeros ,
-18. Number of Small Business Loans ,59,64,6,N ,Right justified with leading zeros ,
-Originated with Loan Amount at ,,,,,,
-"Origination > 100,000 and ",,,,,,
-"< $250,000 ",,,,,,
-19. Total Loan Amount of Small Business ,65,72,8,N ,Amount is in thousands {e.g. 00000125 ,
-Loans Originated with Loan Amount ,,,,,"indicates $125,000); Right justified with ",
-"at Origination > $100,000 and ",,,,,leading zeros ,
-"< $250,000 ",,,,,,
-20. Number of Small Business Loans ,73,78,6,N ,Right justified with leading zeros ,
-Originated with Loan Amount at ,,,,,,
-"Origination > $250,000 and < ",,,,,,
-"$1,000,000 ",,,,,,
-21. Total Loan Amount of Small Business ,79,86,8,N ,Amount is in thousands {e.g. 00000300 ,
-Loans Originated with Loan Amount ,,,,,"indicates $300,000); Right justified with ",
-"at Origination > $250,000 and < ",,,,,leading zeros ,
-"$1,000,000 ",,,,,,
-22. Number of Loans Originated to Small ,87,92,6,N ,Right justified with leading zeros ,
-Businesses with Gross Annual ,,,,,,
-Revenues < $1 million,,,,,,
-23. Total Loan Amount of Loans ,93,100,8,N ,Amount is in thousands {e.g. 00000025 ,
-Originated to Small Businesses ,,,,,"indicates $25,000); Right justified with ",
-with Gross Annual Revenues ,,,,,leading zeros ,
-< $1 million  ,,,,,,
-24. Number of Small Business Loans ,101,106,6,N ,Right justified with leading zeros ,
-Originated Reported as Affiliate Loans  ,,,,,,
-(Originations and Purchases) ,,,,,,
-25. Total Loan Amount of Small Business ,107,114,8,N ,Amount is in thousands {e.g. 00000025 ,
-Loans Originated Reported as Affiliate ,,,,,"indicates $25,000); Right justified with ",
-Loans (Originations &  Purchases) ,,,,,leading zeros ,
-Field ,Start ,End ,Length ,Type ,"Comments, Values, Keys, Etc. ",
-1. Table ID ,1,5,5,AN ,Value is D1-2 ,
-2. Respondent ID ,6,15,10,AN ,Assigned by regulatory agency ,
-,,,,,(same as HMDAID if applicable);  ,
-,,,,,Right justified with leading zeros ,
-3. Agency Code ,16,17,1,N ,"Values are 1=OCC, 2=FRS, ",
-,,,,,"3=FDIC, or 4=OTS ",
-4. Activity Year ,17,20,4,N ,Four digit year (e.g. 1998) ,
-5. Loan Type ,21,21,1,N ,Value is 4 (Small Business) ,
-6. Action Taken Type ,22,22,1,N ,Value is 6 (Purchases) ,
-7. State ,23,24,2,AN ,FIPS code with leading zeros ,
-,,,,,or blank for totals across all ,
-,,,,,states ,
-8. County ,25,27,3,AN ,FIPS code with leading zeros or blank ,
-,,,,,for totals across all counties ,
-9. MSA/MD ,28,31,4,AN ,As defined by OMB; Right justified ,
-,,,,,"with leading zeros, NA left justified ",
-,,,,,for areas outside of MSA/MD or blank ,
-,,,,,for totals across all MSA/MDs ,
-10. Assessment Area Number ,32,35,4,AN ,Values are 0001 through 9999; Right ,
-,,,,,"justified with leading zeros, NA left justified ",
-,,,,,for areas outside of an Assessment ,
-,,,,,Area (including predominately military ,
-,,,,,areas) OR blank for totals across ,
-,,,,,all Assessment Areas ,
-11. Partial County Indicator ,36,36,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-,,,,,OR blank for totals ,
-12. Split County Indicator ,37,37,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-,,,,,OR blank for totals ,
-13 . Population Classification ,38,38,1,AN ,Values are ,
-,,,,,S= counties with ,
-,,,,,"< 500,000 in population ",
-,,,,,L= counties with ,
-,,,,,">500,000 in population ",
-,,,,,OR blank for totals ,
-14. Income Group Total ,39,41,3,AN ,Values are ,
-,,,,,1= < 10% of Median Family ,
-,,,,,Income(MFI) ,
-,,,,,2= 10% to 20% of MFI ,
-,,,,,3= 20% to 30% of MFI ,
-,,,,,4= 30% to 40% of MFI ,
-,,,,,5= 40% to 50% of MFI ,
-,,,,,6= 50% to 60% of MFI ,
-,,,,,7= 60% to 70% of MFI ,
-,,,,,8= 70% to 80% of MFI ,
-,,,,,9= 80% to 90% of MFI ,
-,,,,, 10= 90% to 100% of MFI ,
-,,,,, 11= 100% to 110% of MFI ,
-,,,,, 12= 110% to 120% of MFI ,
-,,,,, 13= > 120% of MFI ,
-,,,,, 14= MFI not known (income ,
-,,,,,percentage = 0) ,
-,,,,, 15= Tract not Known (reported ,
-,,,,,as NA) ,
-,,,,,101= Low Income (< 50% of ,
-,,,,,MFI - excluding 0) ,
-,,,,,102= Moderate Income (50% ,
-,,,,,to 80% of MFI) ,
-,,,,,103= Middle Income (80% to ,
-,,,,,120% of MFI) ,
-,,,,,104= Upper Income (> 120% ,
-,,,,,of MFI) ,
-,,,,,105= Income Not Known (0) ,
-,,,,,106= Tract not Known (NA) ,
-,,,,,Right justified with leading zeros ,
-,,,,,or blank for totals ,
-15. Report Level ,42,44,3,AN ,Values are ,
-,,,,,4= Total Inside & Outside ,
-,,,,,Assessment Area (AA) ,
-,,,,,(across all states) ,
-,,,,,6= Total Inside AA ,
-,,,,,(across all states) ,
-,,,,,8= Total Outside AA ,
-,,,,,(across all states) ,
-,,,,,  10= State Total ,
-,,,,,  20= Total Inside AA in State ,
-,,,,,  30= Total Outside AA in State ,
-,,,,,  40= County Total ,
-,,,,,  50= Total Inside AA in County ,
-,,,,,  60= Total Outside AA in County ,
-,,,,,Right justified with leading zeros ,
-,,,,,or blank if not a total ,
-16. Number of Small Business Loans ,45,50,6,N ,Right justified with leading zeros ,
-Purchased with Loan Amount at ,,,,,,
-"Origination < $100,000 ",,,,,,
-17. Total Loan Amount of Small Business ,51,58,8,N ,Amount is in thousands {e.g. 00000025 ,
-Loans Purchased with Loan Amount ,,,,,"indicates $25,000); Right justified with ",
-"at Origination < $100,000 ",,,,,leading zeros ,
-18. Number of Small Business Loans ,59,64,6,N ,Right justified with leading zeros ,
-Purchased with Loan Amount at ,,,,,,
-"Origination > 100,000 and ",,,,,,
-"< $250,000 ",,,,,,
-19. Total Loan Amount of Small Business ,65,72,8,N ,Amount is in thousands {e.g. 00000125 ,
-Loans Purchased with Loan Amount ,,,,,"indicates $125,000); Right justified with ",
-"at Origination > $100,000 and ",,,,,leading zeros ,
-"< $250,000 ",,,,,,
-20. Number of Small Business Loans ,73,78,6,N ,Right justified with leading zeros ,
-Purchased with Loan Amount at ,,,,,,
-"Origination > $250,000 and < ",,,,,,
-"$1,000,000 ",,,,,,
-21. Total Loan Amount of Small Business ,79,86,8,N ,Amount is in thousands {e.g. 00000300 ,
-Loans Purchased with Loan Amount ,,,,,"indicates $300,000); Right justified with ",
-"at Origination > $250,000 and < ",,,,,leading zeros ,
-"$1,000,000 ",,,,,,
-22. Number of Loans Purchased to Small ,87,92,6,N ,Right justified with leading zeros ,
-Businesses with Gross Annual ,,,,,,
-Revenues < $1 million,,,,,,
-23. Total Loan Amount of Loans ,93,100,8,N ,Amount is in thousands {e.g. 00000025 ,
-Purchased to Small Businesses ,,,,,"indicates $25,000); Right justified with ",
-with Gross Annual Revenues ,,,,,leading zeros ,
-< $1 million,,,,,,
-24. Number of Small Business Loans ,101,106,6,N ,Right justified with leading zeros ,
-Reported as Affiliate Loans  ,,,,,,
-(Originations and Purchases) ,,,,,,
-25. Total Loan Amount of Small Business ,107,114,8,N ,Amount is in thousands {e.g. 00000025 ,
-Loans Reported as Affiliate ,,,,,"indicates $25,000); Right justified with ",
-Loans (Originations &  Purchases) ,,,,,leading zeros ,
-Field ,Start ,End ,Length ,Type ,"Comments, Values, Keys, Etc. ",
-1. Table ID ,1,5,5,AN ,Value is D2-1 ,
-2. Respondent ID ,6,15,10,AN ,Assigned by regulatory agency ,
-,,,,,(same as HMDAID if applicable);  ,
-,,,,,Right justified with leading zeros ,
-3. Agency Code ,16,17,1,N ,"Values are 1=OCC, 2=FRS, ",
-,,,,,"3=FDIC, or 4=OTS ",
-4. Activity Year ,17,20,4,N ,Four digit year (e.g. 1998) ,
-5. Loan Type ,21,21,1,N ,Value is 5 (Small Farm) ,
-6. Action Taken Type ,22,22,1,N ,Value is 1 (Originations) ,
-7. State ,23,24,2,AN ,FIPS code with leading zeros ,
-,,,,,or blank for totals across all ,
-,,,,,states ,
-8. County ,25,27,3,AN ,FIPS code with leading zeros or blank ,
-,,,,,for totals across all counties ,
-9. MSA/MD ,28,31,4,AN ,As defined by OMB; Right justified ,
-,,,,,"with leading zeros, NA left justified ",
-,,,,,for areas outside of MSA/MD or blank ,
-,,,,,for totals across all MSA/MDs ,
-10. Assessment Area Number ,32,35,4,AN ,Values are 0001 through 9999; Right ,
-,,,,,"justified with leading zeros, NA left justified ",
-,,,,,for areas outside of an Assessment ,
-,,,,,Area (including predominately military ,
-,,,,,areas) OR blank for totals across ,
-,,,,,all Assessment Areas ,
-11. Partial County Indicator ,36,36,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-,,,,,OR blank for totals ,
-12. Split County Indicator ,37,37,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-,,,,,OR blank for totals ,
-13 . Population Classification ,38,38,1,AN ,Values are ,
-,,,,,S= counties with ,
-,,,,,"< 500,000 in population ",
-,,,,,L= counties with ,
-,,,,,">500,000 in population ",
-,,,,,OR blank for totals ,
-14. Income Group Total ,39,41,3,AN ,Values are ,
-,,,,,1= < 10% of Median Family ,
-,,,,,Income(MFI) ,
-,,,,,2= 10% to 20% of MFI ,
-,,,,,3= 20% to 30% of MFI ,
-,,,,,4= 30% to 40% of MFI ,
-,,,,,5= 40% to 50% of MFI ,
-,,,,,6= 50% to 60% of MFI ,
-,,,,,7= 60% to 70% of MFI ,
-,,,,,8= 70% to 80% of MFI ,
-,,,,,9= 80% to 90% of MFI ,
-,,,,, 10= 90% to 100% of MFI ,
-,,,,, 11= 100% to 110% of MFI ,
-,,,,, 12= 110% to 120% of MFI ,
-,,,,, 13= > 120% of MFI ,
-,,,,, 14= MFI not known (income ,
-,,,,,percentage = 0) ,
-,,,,, 15= Tract not Known (reported ,
-,,,,,as NA) ,
-,,,,,101= Low Income (< 50% of ,
-,,,,,MFI - excluding 0) ,
-,,,,,102= Moderate Income (50% ,
-,,,,,to 80% of MFI) ,
-,,,,,103= Middle Income (80% to ,
-,,,,,120% of MFI) ,
-,,,,,104= Upper Income (> 120% ,
-,,,,,of MFI) ,
-,,,,,105= Income Not Known (0) ,
-,,,,,106= Tract not Known (NA) ,
-,,,,,Right justified with leading zeros ,
-,,,,,or blank for totals ,
-15. Report Level ,42,44,3,AN ,Values are ,
-,,,,,4= Total Inside & Outside ,
-,,,,,Assessment Area (AA) ,
-,,,,,(across all states) ,
-,,,,,6= Total Inside AA ,
-,,,,,(across all states) ,
-,,,,,8= Total Outside AA ,
-,,,,,(across all states) ,
-,,,,,  10= State Total ,
-,,,,,  20= Total Inside AA in State ,
-,,,,,  30= Total Outside AA in State ,
-,,,,,  40= County Total ,
-,,,,,  50= Total Inside AA in County ,
-,,,,,  60= Total Outside AA in County ,
-,,,,,Right justified with leading zeros ,
-,,,,,or blank if not a total ,
-16. Number of Small Farm Loans ,45,50,6,N ,Right justified with leading zeros ,
-Originated with Loan Amount at ,,,,,,
-"Origination < $100,000 ",,,,,,
-17. Total Loan Amount of Small Farm ,51,58,8,N ,Amount is in thousands {e.g. 00000025 ,
-Loans Originated with Loan Amount ,,,,,"indicates $25,000); Right justified with ",
-"at Origination < $100,000 ",,,,,leading zeros ,
-18. Number of Small Farm Loans ,59,64,6,N ,Right justified with leading zeros ,
-Originated with Loan Amount at ,,,,,,
-"Origination > 100,000 and ",,,,,,
-"< $250,000 ",,,,,,
-19. Total Loan Amount of Small Farm ,65,72,8,N ,Amount is in thousands {e.g. 00000125 ,
-Loans Originated with Loan Amount ,,,,,"indicates $125,000); Right justified with ",
-"at Origination > $100,000 and ",,,,,leading zeros ,
-"< $250,000 ",,,,,,
-20. Number of Small Farm Loans ,73,78,6,N ,Right justified with leading zeros ,
-Originated with Loan Amount at ,,,,,,
-"Origination > $250,000 and < ",,,,,,
-"$1,000,000 ",,,,,,
-21. Total Loan Amount of Small Farm ,79,86,8,N ,Amount is in thousands {e.g. 00000300 ,
-Loans Originated with Loan Amount ,,,,,"indicates $300,000); Right justified with ",
-"at Origination > $250,000 and < ",,,,,leading zeros ,
-"$1,000,000 ",,,,,,
-22. Number of Loans Originated to Small ,87,92,6,N ,Right justified with leading zeros ,
-Farms with Gross Annual ,,,,,,
-Revenues < $1 million  ,,,,,,
-23. Total Loan Amount of Loans ,93,100,8,N ,Amount is in thousands {e.g. 00000025 ,
-Originated to Small Farms ,,,,,"indicates $25,000); Right justified with ",
-with Gross Annual Revenues ,,,,,leading zeros ,
-< $1 million  ,,,,,,
-24. Number of Small Farms Loans ,101,106,6,N ,Right justified with leading zeros ,
-Originated Reported as Affiliate Loans  ,,,,,,
-(Originations and Purchases) ,,,,,,
-25. Total Loan Amount of Small Farms ,107,114,8,N ,Amount is in thousands {e.g. 00000025 ,
-Loans Originated Reported as Affiliate ,,,,,"indicates $25,000); Right justified with ",
-Loans (Originations &  Purchases) ,,,,,leading zeros ,
-Field ,Start ,End ,Length ,Type ,"Comments, Values, Keys, Etc. ",
-1. Table ID ,1,5,5,AN ,Value is D2-2 ,
-2. Respondent ID ,6,15,10,AN ,Assigned by regulatory agency ,
-,,,,,(same as HMDAID if applicable);  ,
-,,,,,Right justified with leading zeros ,
-3. Agency Code ,16,17,1,N ,"Values are 1=OCC, 2=FRS, ",
-,,,,,"3=FDIC, or 4=OTS ",
-4. Activity Year ,17,20,4,N ,Four digit year (e.g. 1998) ,
-5. Loan Type ,21,21,1,N ,Value is 5 (Small Farm) ,
-6. Action Taken Type ,22,22,1,N ,Value is 6 (Purchases) ,
-7. State ,23,24,2,AN ,FIPS code with leading zeros ,
-,,,,,or blank for totals across all ,
-,,,,,states ,
-8. County ,25,27,3,AN ,FIPS code with leading zeros or blank ,
-,,,,,for totals across all counties ,
-9. MSA/MD ,28,31,4,AN ,As defined by OMB; Right justified ,
-,,,,,"with leading zeros, NA left justified ",
-,,,,,for areas outside of MSA/MD or blank ,
-,,,,,for totals across all MSA/MDs ,
-10. Assessment Area Number ,32,35,4,AN ,Values are 0001 through 9999; Right ,
-,,,,,"justified with leading zeros, NA left justified ",
-,,,,,for areas outside of an Assessment ,
-,,,,,Area (including predominately military ,
-,,,,,areas) OR blank for totals across ,
-,,,,,all Assessment Areas ,
-11. Partial County Indicator ,36,36,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-,,,,,OR blank for totals ,
-12. Split County Indicator ,37,37,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-,,,,,OR blank for totals ,
-13 . Population Classification ,38,38,1,AN ,Values are ,
-,,,,,S= counties with ,
-,,,,,"< 500,000 in population ",
-,,,,,L= counties with ,
-,,,,,">500,000 in population ",
-,,,,,OR blank for totals ,
-14. Income Group Total ,39,41,3,AN ,Values are ,
-,,,,,1= < 10% of Median Family ,
-,,,,,Income(MFI) ,
-,,,,,2= 10% to 20% of MFI ,
-,,,,,3= 20% to 30% of MFI ,
-,,,,,4= 30% to 40% of MFI ,
-,,,,,5= 40% to 50% of MFI ,
-,,,,,6= 50% to 60% of MFI ,
-,,,,,7= 60% to 70% of MFI ,
-,,,,,8= 70% to 80% of MFI ,
-,,,,,9= 80% to 90% of MFI ,
-,,,,, 10= 90% to 100% of MFI ,
-,,,,, 11= 100% to 110% of MFI ,
-,,,,, 12= 110% to 120% of MFI ,
-,,,,, 13= > 120% of MFI ,
-,,,,, 14= MFI not known (income ,
-,,,,,percentage = 0) ,
-,,,,, 15= Tract not Known (reported ,
-,,,,,as NA) ,
-,,,,,101= Low Income (< 50% of ,
-,,,,,MFI - excluding 0) ,
-,,,,,102= Moderate Income (50% ,
-,,,,,to 80% of MFI) ,
-,,,,,103= Middle Income (80% to ,
-,,,,,120% of MFI) ,
-,,,,,104= Upper Income (> 120% ,
-,,,,,of MFI) ,
-,,,,,105= Income Not Known (0) ,
-,,,,,106= Tract not Known (NA) ,
-,,,,,Right justified with leading zeros ,
-,,,,,or blank for totals ,
-15. Report Level ,42,44,3,AN ,Values are ,
-,,,,,4= Total Inside & Outside ,
-,,,,,Assessment Area (AA) ,
-,,,,,(across all states) ,
-,,,,,6= Total Inside AA ,
-,,,,,(across all states) ,
-,,,,,8= Total Outside AA ,
-,,,,,(across all states) ,
-,,,,,  10= State Total ,
-,,,,,  20= Total Inside AA in State ,
-,,,,,  30= Total Outside AA in State ,
-,,,,,  40= County Total ,
-,,,,,  50= Total Inside AA in County ,
-,,,,,  60= Total Outside AA in County ,
-,,,,,Right justified with leading zeros ,
-,,,,,or blank if not a total ,
-16. Number of Small Farm Loans ,45,50,6,N ,Right justified with leading zeros ,
-Purchased with Loan Amount at ,,,,,,
-"Origination < $100,000 ",,,,,,
-17. Total Loan Amount of Small Farm ,51,58,8,N ,Amount is in thousands {e.g. 00000025 ,
-Loans Purchased with Loan Amount ,,,,,"indicates $25,000); Right justified with ",
-"at Origination < $100,000 ",,,,,leading zeros ,
-18. Number of Small Farm Loans ,59,64,6,N ,Right justified with leading zeros ,
-Purchased with Loan Amount at ,,,,,,
-"Origination > 100,000 and ",,,,,,
-"< $250,000 ",,,,,,
-19. Total Loan Amount of Small Farm ,65,72,8,N ,Amount is in thousands {e.g. 00000125 ,
-Loans Purchased with Loan Amount ,,,,,"indicates $125,000); Right justified with ",
-"at Origination > $100,000 and ",,,,,leading zeros ,
-"< $250,000 ",,,,,,
-20. Number of Small Farm Loans ,73,78,6,N ,Right justified with leading zeros ,
-Purchased with Loan Amount at ,,,,,,
-"Origination > $250,000 and < ",,,,,,
-"$1,000,000 ",,,,,,
-21. Total Loan Amount of Small Farm ,79,86,8,N ,Amount is in thousands {e.g. 00000300 ,
-Loans Purchased with Loan Amount ,,,,,"indicates $300,000); Right justified with ",
-"at Origination > $250,000 and < ",,,,,leading zeros ,
-"$1,000,000 ",,,,,,
-22. Number of Loans Purchased to Small ,87,92,6,N ,Right justified with leading zeros ,
-Farms with Gross Annual ,,,,,,
-Revenues < $1 million,,,,,,
-23. Total Loan Amount of Loans ,93,100,8,N ,Amount is in thousands {e.g. 00000025 ,
-Purchased to Small Farms ,,,,,"indicates $25,000); Right justified with ",
-with Gross Annual Revenues ,,,,,leading zeros ,
-< $1 million,,,,,,
-24. Number of Small Farm Loans ,101,106,6,N ,Right justified with leading zeros ,
-Reported as Affiliate Loans  ,,,,,,
-(Originations and Purchases) ,,,,,,
-25. Total Loan Amount of Small Farm ,107,114,8,N ,Amount is in thousands {e.g. 00000025 ,
-Loans Reported as Affiliate ,,,,,"indicates $25,000); Right justified with ",
-Loans (Originations &  Purchases) ,,,,,leading zeros ,
-Field ,Start ,End ,Length ,Type ,"Comments, Values, Keys, Etc. ",
-1. Table ID ,1,5,5,AN ,Value is D3-0 ,
-2. Respondent ID ,6,15,10,AN ,Assigned by regulatory agency ,
-,,,,,(same as HMDAID if applicable);  ,
-,,,,,Right justified with leading zeros ,
-3. Agency Code ,16,16,1,N ,"Values are 1=OCC, 2=FRS, ",
-,,,,,"3=FDIC, or 4=OTS ",
-4. Activity Year ,17,20,4,N ,Four digit year (e.g. 1998) ,
-5. Loan Type ,21,21,1,N ,Value is 4 (Small Business) ,
-6. State ,22,23,2,AN ,FIPS code with leading zeros ,
-,,,,,or blank for totals across all ,
-,,,,,states ,
-7. County ,24,26,3,AN ,FIPS code with leading zeros or blank ,
-,,,,,for totals across all counties ,
-8. MSA/MD ,27,30,4,AN ,As defined by OMB; Right justified ,
-,,,,,"with leading zeros, NA left justified ",
-,,,,,for areas outside of MSA/MD or blank ,
-,,,,,for totals across all MSA/MDs ,
-9. Assessment Area Number ,31,34,4,AN ,Values are 0001 through 9999; Right ,
-,,,,,"justified with leading zeros, NA left justified ",
-,,,,,for areas outside of an Assessment ,
-,,,,,Area (including predominately military ,
-,,,,,areas) or blank for totals across all ,
-,,,,,Assessment Areas ,
-10. Partial County Indicator ,35,35,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-,,,,,OR blank for totals across all counties ,
-11. Split County Indicator ,36,36,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-,,,,,OR blank for totals across all counties ,
-12. Report Level ,37,38,2,AN ,Values are ,
-,,,,,  05= Assessment Area Total ,
-,,,,,  10= County Total within ,
-,,,,,Assessment Area ,
-,,,,,15= Activity Inside all ,
-,,,,,Assessment Areas ,
-,,,,,20= Activity Outside ,
-,,,,,Assessment Area(s) ,
-,,,,,30=Total Loans (Inside +Outside ,
-,,,,,Assessment Area) ,
-13. Number of Small Business Loans ,39,44,6,N ,Right justified with leading zeros ,
-Originated ,,,,,,
-14. Total Loan Amount of Small Business ,45,52,8,N ,Amount is in thousands {e.g. 25 would be  ,
-Loans Originated ,,,,,"$25,000}; Right justified with leading  zeros ",
-15. Number of Loans  Originated  to Small,53,58,6,N ,Right justified with leading zeros ,
-Businesses with  Gross Annual Revenues ,,,,,,
-< $1 million ,,,,,,
-16. Total Loan amount of loans  Originated  ,59,66,8,N ,Right justified with leading zeros ,
-to Small Businesses with  Gross Annual ,,,,,,
-Revenues < $1 million ,,,,,,
-17. Number of Small Business Loans ,67,72,6,N ,Amount is in thousands {e.g. 25 indicates  ,
-Purchased ,,,,,"$25,000); Right justified with leading  zeros ",
-18. Total Loan Amount of  Small Business ,73,80,8,N ,Amount is in thousands {e.g. 25 indicates  ,
-Loans Purchased ,,,,,"$25,000); Right justified with leading  zeros ",
-19. Filler ,81,114,34,AN ,Blank ,
-Field ,Start ,End ,Length ,Type ,"Comments, Values, Keys, Etc. ",
-1. Table ID ,1,5,5,AN ,Value is D4-0 ,
-2. Respondent ID ,6,15,10,AN ,Assigned by regulatory agency ,
-,,,,,(same as HMDAID if applicable);  ,
-,,,,,Right justified with leading zeros ,
-3. Agency Code ,16,16,1,N ,"Values are 1=OCC, 2=FRS, ",
-,,,,,"3=FDIC, or 4=OTS ",
-4. Activity Year ,17,20,4,N ,Four digit year (e.g. 1998) ,
-5. Loan Type ,21,21,1,N ,Value is 5 (Small Farm) ,
-6. State ,22,23,2,AN ,FIPS code with leading zeros ,
-,,,,,or blank for totals across all ,
-,,,,,states ,
-7. County ,24,26,3,AN ,FIPS code with leading zeros or blank ,
-,,,,,for totals across all counties ,
-8. MSA/MD ,27,30,4,AN ,As defined by OMB; Right justified ,
-,,,,,"with leading zeros, NA left justified ",
-,,,,,for areas outside of MSA/MD or blank ,
-,,,,,for totals across all MSA/MDs ,
-9. Assessment Area Number ,31,34,4,AN ,Values are 0001 through 9999; Right ,
-,,,,,"justified with leading zeros, NA left justified ",
-,,,,,for areas outside of an Assessment ,
-,,,,,Area (including predominately military ,
-,,,,,areas) or blank for totals across all ,
-,,,,,Assessment Areas ,
-10. Partial County Indicator ,35,35,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-,,,,,OR blank for totals across all counties ,
-11. Split County Indicator ,36,36,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-,,,,,OR blank for totals across all counties ,
-12. Report Level ,37,38,2,AN ,Values are ,
-,,,,,  05= Assessment Area Total ,
-,,,,,  10= County Total within ,
-,,,,,Assessment Area ,
-,,,,,15= Activity Inside all ,
-,,,,,Assessment Areas ,
-,,,,,20= Activity Outside ,
-,,,,,Assessment Area(s) ,
-,,,,,30=Total Loans (Inside +Outside ,
-,,,,,Assessment Area) ,
-13. Number of Small Farm Loans ,39,44,6,N ,Right justified with leading zeros ,
-Originated ,,,,,,
-14. Total Loan Amount of Small Farm ,45,52,8,N ,Amount is in thousands {e.g. 25 would be  ,
-Loans Originated ,,,,,"$25,000}; Right justified with leading  zeros ",
-15. Number of Loans  Originated  to Small,53,58,6,N ,Right justified with leading zeros ,
-Farms with  Gross Annual Revenues < $1 ,,,,,,
-million ,,,,,,
-16. Total Loan amount of loans  Originated  ,59,66,8,N ,Right justified with leading zeros ,
-to Small Farms with  Gross Annual ,,,,,,
-Revenues < $1 million ,,,,,,
-17. Number of Small Farm Loans Purchased ,67,72,6,N ,Amount is in thousands {e.g. 25 indicates  ,
-,,,,,"$25,000); Right justified with leading  zeros ",
-18. Total Loan Amount of  Small Farm Loans ,73,80,8,N ,Amount is in thousands {e.g. 25 indicates  ,
-Purchased ,,,,,"$25,000); Right justified with leading  zeros ",
-19. Filler ,81,114,34,AN ,Blank ,
-Field ,Start ,End ,Length ,Type ,"Comments, Values, Keys, Etc. ",
-1. Table ID ,1,5,5,AN ,Value is D5-0 ,
-2. Respondent ID ,6,15,10,AN ,Assigned by regulatory agency ,
-,,,,,(same as HMDAID if applicable);  ,
-,,,,,Right justified with leading zeros ,
-3. Agency Code ,16,16,1,N ,"Values are 1=OCC, 2=FRS, ",
-,,,,,"3=FDIC, or 4=OTS ",
-4. Activity Year ,17,20,4,N ,Four digit year (e.g. 1998) ,
-5. Loan Type ,21,21,1,N ,Values are ,
-,,,,,6 = Community Development ,
-,,,,,7 = Consortium/Third-Party ,
-6. Number of Loans ,22,27,6,N ,Right justified with leading zeros ,
-7. Total Loan Amount of ,28,35,8,N ,Amount is in thousands {e.g. 25 would be  ,
-Loans ,,,,,"$25,000}; Right justified with leading zeros ",
-8. Number of Loans Reported ,36,41,6,N ,Right justified with leading zeros or blank if  ,
-as Affiliate Loans ,,,,,not applicable ,
-9. Total Loan Amount of Loans ,42,49,8,N ,Amount is in thousands {e.g. 25 would be  ,
-Reported as Affiliate Loans  ,,,,,"$25,000}; Right justified with leading zeros  ",
-,,,,,or blank if not applicable ,
-10. Filler ,50,114,65,AN ,Blank ,
-Field ,Start ,End ,Length ,Type ,"Comments, Values, Keys, Etc. ",
-1. Table ID ,1,5,5,AN ,Value is D6-0 ,
-2. Respondent ID ,6,15,10,AN ,Assigned by regulatory agency ,
-,,,,,(same as HMDA ID if applicable);  ,
-,,,,,Right justified with leading zeros ,
-3. Agency Code ,16,16,1,N ,"Values are 1=OCC, 2=FRS, ",
-,,,,,"3=FDIC, or 4=OTS ",
-4. Activity Year ,17,20,4,N ,Four digit year (e.g. 1998) ,
-5. State ,21,22,2,AN ,FIPS code with leading zeros ,
-6. County ,23,25,3,AN ,FIPS code with leading zeros ,
-7. MSA/MD ,26,29,4,AN ,As defined by OMB; Right justified ,
-,,,,,with leading zeros or NA left justified ,
-,,,,,for areas outside of an MSA/MD ,
-8. Census Tract ,30,36,7,AN ,As defined by the Bureau of Census; ,
-,,,,,Right justified with leading/trailing zeros ,
-,,,,,and decimal point or blank for totals ,
-,,,,,across all census tracts ,
-9. Assessment Area Number ,37,40,4,AN ,Values are 1 through 9999; ,
-,,,,,"Right justified with leading zeros, or NA left  ",
-,,,,,justified if outside of Assessment Area(s)  ,
-,,,,,(including predominately military areas). ,
-10. Partial County Indicator ,41,41,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-11. Split County Indicator ,42,42,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-12. Population Classification ,43,43,1,AN ,Values are ,
-,,,,,S= counties with ,
-,,,,,"< 500,000 in population ",
-,,,,,L= counties with ,
-,,,,,">500,000 in population ",
-13. Income Group ,44,,46,3,AN ,Values are 
-,,,,,1= < 10% of Median Family ,
-,,,,,Income(MFI) ,
-,,,,,2= 10% to 20% of MFI ,
-,,,,,3= 20% to 30% of MFI ,
-,,,,,4= 30% to 40% of MFI ,
-,,,,,5= 40% to 50% of MFI ,
-,,,,,6= 50% to 60% of MFI ,
-,,,,,7= 60% to 70% of MFI ,
-,,,,,8= 70% to 80% of MFI ,
-,,,,,9= 80% to 90% of MFI ,
-,,,,, 10= 90% to 100% of MFI ,
-,,,,, 11= 100% to 110% of MFI ,
-,,,,, 12= 110% to 120% of MFI ,
-,,,,, 13= > 120% of MFI ,
-,,,,, 14= MFI not known (income ,
-,,,,,percentage = 0) ,
-,,,,, 15=Tract not Known (Reported as NA) ,
-,,,,,101= Low Income (< 50% of ,
-,,,,,MFI - excluding 0) ,
-,,,,,102= Moderate Income (50% ,
-,,,,,to 80% of MFI) ,
-,,,,,103= Middle Income (80% to ,
-,,,,,120% of MFI) ,
-,,,,,104= Upper Income (> 120% ,
-,,,,,of MFI) ,
-,,,,,105= Income Not Known (0) ,
-,,,,,106=Tract not Known (NA) ,
-,,,,,Right justified with leading zeros  ,
-14. Loan Indicator ,47,47,1,AN ,Values are ,
-,,,,,Y = Yes ,
-,,,,,N = No ,
-15. Filler ,48,114,67,AN ,Blank ,
+"Field","Start","End","Length","Type","Comments"
+"1. Table ID ",1,5,5,"AN ","Value is D1-1 "
+"2. Respondent ID ",6,15,10,"AN ","Assigned by regulatory agency "
+,,,,,"(same as HMDAID if applicable);  "
+,,,,,"Right justified with leading zeros "
+"3. Agency Code ",16,17,1,"N ","Values are 1=OCC, 2=FRS, "
+,,,,,"3=FDIC, or 4=OTS "
+"4. Activity Year ",17,20,4,"N ","Four digit year (e.g. 1998) "
+"5. Loan Type ",21,21,1,"N ","Value is 4 (Small Business) "
+"6. Action Taken Type ",22,22,1,"N ","Value is 1 (Originations) "
+"7. State ",23,24,2,"AN ","FIPS code with leading zeros "
+,,,,,"or blank for totals across all "
+,,,,,"states "
+"8. County ",25,27,3,"AN ","FIPS code with leading zeros or blank "
+,,,,,"for totals across all counties "
+"9. MSA/MD ",28,31,4,"AN ","As defined by OMB; Right justified "
+,,,,,"with leading zeros, NA left justified "
+,,,,,"for areas outside of MSA/MD or blank "
+,,,,,"for totals across all MSA/MDs "
+"10. Assessment Area Number ",32,35,4,"AN ","Values are 0001 through 9999; Right "
+,,,,,"justified with leading zeros, NA left justified "
+,,,,,"for areas outside of an Assessment "
+,,,,,"Area (including predominately military "
+,,,,,"areas) OR blank for totals across "
+,,,,,"all Assessment Areas "
+"11. Partial County Indicator ",36,36,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+,,,,,"OR blank for totals "
+"12. Split County Indicator ",37,37,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+,,,,,"OR blank for totals "
+"13 . Population Classification ",38,38,1,"AN ","Values are "
+,,,,,"S= counties with "
+,,,,,"< 500,000 in population "
+,,,,,"L= counties with "
+,,,,,">500,000 in population "
+,,,,,"OR blank for totals "
+"14. Income Group Total ",39,41,3,"AN ","Values are "
+,,,,,"1= < 10% of Median Family "
+,,,,,"Income(MFI) "
+,,,,,"2= 10% to 20% of MFI "
+,,,,,"3= 20% to 30% of MFI "
+,,,,,"4= 30% to 40% of MFI "
+,,,,,"5= 40% to 50% of MFI "
+,,,,,"6= 50% to 60% of MFI "
+,,,,,"7= 60% to 70% of MFI "
+,,,,,"8= 70% to 80% of MFI "
+,,,,,"9= 80% to 90% of MFI "
+,,,,," 10= 90% to 100% of MFI "
+,,,,," 11= 100% to 110% of MFI "
+,,,,," 12= 110% to 120% of MFI "
+,,,,," 13= > 120% of MFI "
+,,,,," 14= MFI not known (income "
+,,,,,"percentage = 0) "
+,,,,," 15= Tract not Known (reported "
+,,,,,"as NA) "
+,,,,,"101= Low Income (< 50% of "
+,,,,,"MFI - excluding 0) "
+,,,,,"102= Moderate Income (50% "
+,,,,,"to 80% of MFI) "
+,,,,,"103= Middle Income (80% to "
+,,,,,"120% of MFI) "
+,,,,,"104= Upper Income (> 120% "
+,,,,,"of MFI) "
+,,,,,"105= Income Not Known (0) "
+,,,,,"106= Tract not Known (NA) "
+,,,,,"Right justified with leading zeros "
+,,,,,"or blank for totals "
+"15. Report Level ",42,44,3,"AN ","Values are "
+,,,,,"4= Total Inside & Outside "
+,,,,,"Assessment Area (AA) "
+,,,,,"(across all states) "
+,,,,,"6= Total Inside AA "
+,,,,,"(across all states) "
+,,,,,"8= Total Outside AA "
+,,,,,"(across all states) "
+,,,,,"  10= State Total "
+,,,,,"  20= Total Inside AA in State "
+,,,,,"  30= Total Outside AA in State "
+,,,,,"  40= County Total "
+,,,,,"  50= Total Inside AA in County "
+,,,,,"  60= Total Outside AA in County "
+,,,,,"Right justified with leading zeros "
+,,,,,"or blank if not a total "
+"16. Number of Small Business Loans ",45,50,6,"N ","Right justified with leading zeros "
+"Originated with Loan Amount at ",,,,,
+"Origination < $100,000 ",,,,,
+"17. Total Loan Amount of Small Business ",51,58,8,"N ","Amount is in thousands {e.g. 00000025 "
+"Loans Originated with Loan Amount ",,,,,"indicates $25,000); Right justified with "
+"at Origination < $100,000 ",,,,,"leading zeros "
+"18. Number of Small Business Loans ",59,64,6,"N ","Right justified with leading zeros "
+"Originated with Loan Amount at ",,,,,
+"Origination > 100,000 and ",,,,,
+"< $250,000 ",,,,,
+"19. Total Loan Amount of Small Business ",65,72,8,"N ","Amount is in thousands {e.g. 00000125 "
+"Loans Originated with Loan Amount ",,,,,"indicates $125,000); Right justified with "
+"at Origination > $100,000 and ",,,,,"leading zeros "
+"< $250,000 ",,,,,
+"20. Number of Small Business Loans ",73,78,6,"N ","Right justified with leading zeros "
+"Originated with Loan Amount at ",,,,,
+"Origination > $250,000 and < ",,,,,
+"$1,000,000 ",,,,,
+"21. Total Loan Amount of Small Business ",79,86,8,"N ","Amount is in thousands {e.g. 00000300 "
+"Loans Originated with Loan Amount ",,,,,"indicates $300,000); Right justified with "
+"at Origination > $250,000 and < ",,,,,"leading zeros "
+"$1,000,000 ",,,,,
+"22. Number of Loans Originated to Small ",87,92,6,"N ","Right justified with leading zeros "
+"Businesses with Gross Annual ",,,,,
+"Revenues < $1 million",,,,,
+"23. Total Loan Amount of Loans ",93,100,8,"N ","Amount is in thousands {e.g. 00000025 "
+"Originated to Small Businesses ",,,,,"indicates $25,000); Right justified with "
+"with Gross Annual Revenues ",,,,,"leading zeros "
+"< $1 million  ",,,,,
+"24. Number of Small Business Loans ",101,106,6,"N ","Right justified with leading zeros "
+"Originated Reported as Affiliate Loans  ",,,,,
+"(Originations and Purchases) ",,,,,
+"25. Total Loan Amount of Small Business ",107,114,8,"N ","Amount is in thousands {e.g. 00000025 "
+"Loans Originated Reported as Affiliate ",,,,,"indicates $25,000); Right justified with "
+"Loans (Originations &  Purchases) ",,,,,"leading zeros "
+"Field ","Start ","End ","Length ","Type ","Comments, Values, Keys, Etc. "
+"1. Table ID ",1,5,5,"AN ","Value is D1-2 "
+"2. Respondent ID ",6,15,10,"AN ","Assigned by regulatory agency "
+,,,,,"(same as HMDAID if applicable);  "
+,,,,,"Right justified with leading zeros "
+"3. Agency Code ",16,17,1,"N ","Values are 1=OCC, 2=FRS, "
+,,,,,"3=FDIC, or 4=OTS "
+"4. Activity Year ",17,20,4,"N ","Four digit year (e.g. 1998) "
+"5. Loan Type ",21,21,1,"N ","Value is 4 (Small Business) "
+"6. Action Taken Type ",22,22,1,"N ","Value is 6 (Purchases) "
+"7. State ",23,24,2,"AN ","FIPS code with leading zeros "
+,,,,,"or blank for totals across all "
+,,,,,"states "
+"8. County ",25,27,3,"AN ","FIPS code with leading zeros or blank "
+,,,,,"for totals across all counties "
+"9. MSA/MD ",28,31,4,"AN ","As defined by OMB; Right justified "
+,,,,,"with leading zeros, NA left justified "
+,,,,,"for areas outside of MSA/MD or blank "
+,,,,,"for totals across all MSA/MDs "
+"10. Assessment Area Number ",32,35,4,"AN ","Values are 0001 through 9999; Right "
+,,,,,"justified with leading zeros, NA left justified "
+,,,,,"for areas outside of an Assessment "
+,,,,,"Area (including predominately military "
+,,,,,"areas) OR blank for totals across "
+,,,,,"all Assessment Areas "
+"11. Partial County Indicator ",36,36,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+,,,,,"OR blank for totals "
+"12. Split County Indicator ",37,37,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+,,,,,"OR blank for totals "
+"13 . Population Classification ",38,38,1,"AN ","Values are "
+,,,,,"S= counties with "
+,,,,,"< 500,000 in population "
+,,,,,"L= counties with "
+,,,,,">500,000 in population "
+,,,,,"OR blank for totals "
+"14. Income Group Total ",39,41,3,"AN ","Values are "
+,,,,,"1= < 10% of Median Family "
+,,,,,"Income(MFI) "
+,,,,,"2= 10% to 20% of MFI "
+,,,,,"3= 20% to 30% of MFI "
+,,,,,"4= 30% to 40% of MFI "
+,,,,,"5= 40% to 50% of MFI "
+,,,,,"6= 50% to 60% of MFI "
+,,,,,"7= 60% to 70% of MFI "
+,,,,,"8= 70% to 80% of MFI "
+,,,,,"9= 80% to 90% of MFI "
+,,,,," 10= 90% to 100% of MFI "
+,,,,," 11= 100% to 110% of MFI "
+,,,,," 12= 110% to 120% of MFI "
+,,,,," 13= > 120% of MFI "
+,,,,," 14= MFI not known (income "
+,,,,,"percentage = 0) "
+,,,,," 15= Tract not Known (reported "
+,,,,,"as NA) "
+,,,,,"101= Low Income (< 50% of "
+,,,,,"MFI - excluding 0) "
+,,,,,"102= Moderate Income (50% "
+,,,,,"to 80% of MFI) "
+,,,,,"103= Middle Income (80% to "
+,,,,,"120% of MFI) "
+,,,,,"104= Upper Income (> 120% "
+,,,,,"of MFI) "
+,,,,,"105= Income Not Known (0) "
+,,,,,"106= Tract not Known (NA) "
+,,,,,"Right justified with leading zeros "
+,,,,,"or blank for totals "
+"15. Report Level ",42,44,3,"AN ","Values are "
+,,,,,"4= Total Inside & Outside "
+,,,,,"Assessment Area (AA) "
+,,,,,"(across all states) "
+,,,,,"6= Total Inside AA "
+,,,,,"(across all states) "
+,,,,,"8= Total Outside AA "
+,,,,,"(across all states) "
+,,,,,"  10= State Total "
+,,,,,"  20= Total Inside AA in State "
+,,,,,"  30= Total Outside AA in State "
+,,,,,"  40= County Total "
+,,,,,"  50= Total Inside AA in County "
+,,,,,"  60= Total Outside AA in County "
+,,,,,"Right justified with leading zeros "
+,,,,,"or blank if not a total "
+"16. Number of Small Business Loans ",45,50,6,"N ","Right justified with leading zeros "
+"Purchased with Loan Amount at ",,,,,
+"Origination < $100,000 ",,,,,
+"17. Total Loan Amount of Small Business ",51,58,8,"N ","Amount is in thousands {e.g. 00000025 "
+"Loans Purchased with Loan Amount ",,,,,"indicates $25,000); Right justified with "
+"at Origination < $100,000 ",,,,,"leading zeros "
+"18. Number of Small Business Loans ",59,64,6,"N ","Right justified with leading zeros "
+"Purchased with Loan Amount at ",,,,,
+"Origination > 100,000 and ",,,,,
+"< $250,000 ",,,,,
+"19. Total Loan Amount of Small Business ",65,72,8,"N ","Amount is in thousands {e.g. 00000125 "
+"Loans Purchased with Loan Amount ",,,,,"indicates $125,000); Right justified with "
+"at Origination > $100,000 and ",,,,,"leading zeros "
+"< $250,000 ",,,,,
+"20. Number of Small Business Loans ",73,78,6,"N ","Right justified with leading zeros "
+"Purchased with Loan Amount at ",,,,,
+"Origination > $250,000 and < ",,,,,
+"$1,000,000 ",,,,,
+"21. Total Loan Amount of Small Business ",79,86,8,"N ","Amount is in thousands {e.g. 00000300 "
+"Loans Purchased with Loan Amount ",,,,,"indicates $300,000); Right justified with "
+"at Origination > $250,000 and < ",,,,,"leading zeros "
+"$1,000,000 ",,,,,
+"22. Number of Loans Purchased to Small ",87,92,6,"N ","Right justified with leading zeros "
+"Businesses with Gross Annual ",,,,,
+"Revenues < $1 million",,,,,
+"23. Total Loan Amount of Loans ",93,100,8,"N ","Amount is in thousands {e.g. 00000025 "
+"Purchased to Small Businesses ",,,,,"indicates $25,000); Right justified with "
+"with Gross Annual Revenues ",,,,,"leading zeros "
+"< $1 million",,,,,
+"24. Number of Small Business Loans ",101,106,6,"N ","Right justified with leading zeros "
+"Reported as Affiliate Loans  ",,,,,
+"(Originations and Purchases) ",,,,,
+"25. Total Loan Amount of Small Business ",107,114,8,"N ","Amount is in thousands {e.g. 00000025 "
+"Loans Reported as Affiliate ",,,,,"indicates $25,000); Right justified with "
+"Loans (Originations &  Purchases) ",,,,,"leading zeros "
+"Field ","Start ","End ","Length ","Type ","Comments, Values, Keys, Etc. "
+"1. Table ID ",1,5,5,"AN ","Value is D2-1 "
+"2. Respondent ID ",6,15,10,"AN ","Assigned by regulatory agency "
+,,,,,"(same as HMDAID if applicable);  "
+,,,,,"Right justified with leading zeros "
+"3. Agency Code ",16,17,1,"N ","Values are 1=OCC, 2=FRS, "
+,,,,,"3=FDIC, or 4=OTS "
+"4. Activity Year ",17,20,4,"N ","Four digit year (e.g. 1998) "
+"5. Loan Type ",21,21,1,"N ","Value is 5 (Small Farm) "
+"6. Action Taken Type ",22,22,1,"N ","Value is 1 (Originations) "
+"7. State ",23,24,2,"AN ","FIPS code with leading zeros "
+,,,,,"or blank for totals across all "
+,,,,,"states "
+"8. County ",25,27,3,"AN ","FIPS code with leading zeros or blank "
+,,,,,"for totals across all counties "
+"9. MSA/MD ",28,31,4,"AN ","As defined by OMB; Right justified "
+,,,,,"with leading zeros, NA left justified "
+,,,,,"for areas outside of MSA/MD or blank "
+,,,,,"for totals across all MSA/MDs "
+"10. Assessment Area Number ",32,35,4,"AN ","Values are 0001 through 9999; Right "
+,,,,,"justified with leading zeros, NA left justified "
+,,,,,"for areas outside of an Assessment "
+,,,,,"Area (including predominately military "
+,,,,,"areas) OR blank for totals across "
+,,,,,"all Assessment Areas "
+"11. Partial County Indicator ",36,36,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+,,,,,"OR blank for totals "
+"12. Split County Indicator ",37,37,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+,,,,,"OR blank for totals "
+"13 . Population Classification ",38,38,1,"AN ","Values are "
+,,,,,"S= counties with "
+,,,,,"< 500,000 in population "
+,,,,,"L= counties with "
+,,,,,">500,000 in population "
+,,,,,"OR blank for totals "
+"14. Income Group Total ",39,41,3,"AN ","Values are "
+,,,,,"1= < 10% of Median Family "
+,,,,,"Income(MFI) "
+,,,,,"2= 10% to 20% of MFI "
+,,,,,"3= 20% to 30% of MFI "
+,,,,,"4= 30% to 40% of MFI "
+,,,,,"5= 40% to 50% of MFI "
+,,,,,"6= 50% to 60% of MFI "
+,,,,,"7= 60% to 70% of MFI "
+,,,,,"8= 70% to 80% of MFI "
+,,,,,"9= 80% to 90% of MFI "
+,,,,," 10= 90% to 100% of MFI "
+,,,,," 11= 100% to 110% of MFI "
+,,,,," 12= 110% to 120% of MFI "
+,,,,," 13= > 120% of MFI "
+,,,,," 14= MFI not known (income "
+,,,,,"percentage = 0) "
+,,,,," 15= Tract not Known (reported "
+,,,,,"as NA) "
+,,,,,"101= Low Income (< 50% of "
+,,,,,"MFI - excluding 0) "
+,,,,,"102= Moderate Income (50% "
+,,,,,"to 80% of MFI) "
+,,,,,"103= Middle Income (80% to "
+,,,,,"120% of MFI) "
+,,,,,"104= Upper Income (> 120% "
+,,,,,"of MFI) "
+,,,,,"105= Income Not Known (0) "
+,,,,,"106= Tract not Known (NA) "
+,,,,,"Right justified with leading zeros "
+,,,,,"or blank for totals "
+"15. Report Level ",42,44,3,"AN ","Values are "
+,,,,,"4= Total Inside & Outside "
+,,,,,"Assessment Area (AA) "
+,,,,,"(across all states) "
+,,,,,"6= Total Inside AA "
+,,,,,"(across all states) "
+,,,,,"8= Total Outside AA "
+,,,,,"(across all states) "
+,,,,,"  10= State Total "
+,,,,,"  20= Total Inside AA in State "
+,,,,,"  30= Total Outside AA in State "
+,,,,,"  40= County Total "
+,,,,,"  50= Total Inside AA in County "
+,,,,,"  60= Total Outside AA in County "
+,,,,,"Right justified with leading zeros "
+,,,,,"or blank if not a total "
+"16. Number of Small Farm Loans ",45,50,6,"N ","Right justified with leading zeros "
+"Originated with Loan Amount at ",,,,,
+"Origination < $100,000 ",,,,,
+"17. Total Loan Amount of Small Farm ",51,58,8,"N ","Amount is in thousands {e.g. 00000025 "
+"Loans Originated with Loan Amount ",,,,,"indicates $25,000); Right justified with "
+"at Origination < $100,000 ",,,,,"leading zeros "
+"18. Number of Small Farm Loans ",59,64,6,"N ","Right justified with leading zeros "
+"Originated with Loan Amount at ",,,,,
+"Origination > 100,000 and ",,,,,
+"< $250,000 ",,,,,
+"19. Total Loan Amount of Small Farm ",65,72,8,"N ","Amount is in thousands {e.g. 00000125 "
+"Loans Originated with Loan Amount ",,,,,"indicates $125,000); Right justified with "
+"at Origination > $100,000 and ",,,,,"leading zeros "
+"< $250,000 ",,,,,
+"20. Number of Small Farm Loans ",73,78,6,"N ","Right justified with leading zeros "
+"Originated with Loan Amount at ",,,,,
+"Origination > $250,000 and < ",,,,,
+"$1,000,000 ",,,,,
+"21. Total Loan Amount of Small Farm ",79,86,8,"N ","Amount is in thousands {e.g. 00000300 "
+"Loans Originated with Loan Amount ",,,,,"indicates $300,000); Right justified with "
+"at Origination > $250,000 and < ",,,,,"leading zeros "
+"$1,000,000 ",,,,,
+"22. Number of Loans Originated to Small ",87,92,6,"N ","Right justified with leading zeros "
+"Farms with Gross Annual ",,,,,
+"Revenues < $1 million  ",,,,,
+"23. Total Loan Amount of Loans ",93,100,8,"N ","Amount is in thousands {e.g. 00000025 "
+"Originated to Small Farms ",,,,,"indicates $25,000); Right justified with "
+"with Gross Annual Revenues ",,,,,"leading zeros "
+"< $1 million  ",,,,,
+"24. Number of Small Farms Loans ",101,106,6,"N ","Right justified with leading zeros "
+"Originated Reported as Affiliate Loans  ",,,,,
+"(Originations and Purchases) ",,,,,
+"25. Total Loan Amount of Small Farms ",107,114,8,"N ","Amount is in thousands {e.g. 00000025 "
+"Loans Originated Reported as Affiliate ",,,,,"indicates $25,000); Right justified with "
+"Loans (Originations &  Purchases) ",,,,,"leading zeros "
+"Field ","Start ","End ","Length ","Type ","Comments, Values, Keys, Etc. "
+"1. Table ID ",1,5,5,"AN ","Value is D2-2 "
+"2. Respondent ID ",6,15,10,"AN ","Assigned by regulatory agency "
+,,,,,"(same as HMDAID if applicable);  "
+,,,,,"Right justified with leading zeros "
+"3. Agency Code ",16,17,1,"N ","Values are 1=OCC, 2=FRS, "
+,,,,,"3=FDIC, or 4=OTS "
+"4. Activity Year ",17,20,4,"N ","Four digit year (e.g. 1998) "
+"5. Loan Type ",21,21,1,"N ","Value is 5 (Small Farm) "
+"6. Action Taken Type ",22,22,1,"N ","Value is 6 (Purchases) "
+"7. State ",23,24,2,"AN ","FIPS code with leading zeros "
+,,,,,"or blank for totals across all "
+,,,,,"states "
+"8. County ",25,27,3,"AN ","FIPS code with leading zeros or blank "
+,,,,,"for totals across all counties "
+"9. MSA/MD ",28,31,4,"AN ","As defined by OMB; Right justified "
+,,,,,"with leading zeros, NA left justified "
+,,,,,"for areas outside of MSA/MD or blank "
+,,,,,"for totals across all MSA/MDs "
+"10. Assessment Area Number ",32,35,4,"AN ","Values are 0001 through 9999; Right "
+,,,,,"justified with leading zeros, NA left justified "
+,,,,,"for areas outside of an Assessment "
+,,,,,"Area (including predominately military "
+,,,,,"areas) OR blank for totals across "
+,,,,,"all Assessment Areas "
+"11. Partial County Indicator ",36,36,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+,,,,,"OR blank for totals "
+"12. Split County Indicator ",37,37,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+,,,,,"OR blank for totals "
+"13 . Population Classification ",38,38,1,"AN ","Values are "
+,,,,,"S= counties with "
+,,,,,"< 500,000 in population "
+,,,,,"L= counties with "
+,,,,,">500,000 in population "
+,,,,,"OR blank for totals "
+"14. Income Group Total ",39,41,3,"AN ","Values are "
+,,,,,"1= < 10% of Median Family "
+,,,,,"Income(MFI) "
+,,,,,"2= 10% to 20% of MFI "
+,,,,,"3= 20% to 30% of MFI "
+,,,,,"4= 30% to 40% of MFI "
+,,,,,"5= 40% to 50% of MFI "
+,,,,,"6= 50% to 60% of MFI "
+,,,,,"7= 60% to 70% of MFI "
+,,,,,"8= 70% to 80% of MFI "
+,,,,,"9= 80% to 90% of MFI "
+,,,,," 10= 90% to 100% of MFI "
+,,,,," 11= 100% to 110% of MFI "
+,,,,," 12= 110% to 120% of MFI "
+,,,,," 13= > 120% of MFI "
+,,,,," 14= MFI not known (income "
+,,,,,"percentage = 0) "
+,,,,," 15= Tract not Known (reported "
+,,,,,"as NA) "
+,,,,,"101= Low Income (< 50% of "
+,,,,,"MFI - excluding 0) "
+,,,,,"102= Moderate Income (50% "
+,,,,,"to 80% of MFI) "
+,,,,,"103= Middle Income (80% to "
+,,,,,"120% of MFI) "
+,,,,,"104= Upper Income (> 120% "
+,,,,,"of MFI) "
+,,,,,"105= Income Not Known (0) "
+,,,,,"106= Tract not Known (NA) "
+,,,,,"Right justified with leading zeros "
+,,,,,"or blank for totals "
+"15. Report Level ",42,44,3,"AN ","Values are "
+,,,,,"4= Total Inside & Outside "
+,,,,,"Assessment Area (AA) "
+,,,,,"(across all states) "
+,,,,,"6= Total Inside AA "
+,,,,,"(across all states) "
+,,,,,"8= Total Outside AA "
+,,,,,"(across all states) "
+,,,,,"  10= State Total "
+,,,,,"  20= Total Inside AA in State "
+,,,,,"  30= Total Outside AA in State "
+,,,,,"  40= County Total "
+,,,,,"  50= Total Inside AA in County "
+,,,,,"  60= Total Outside AA in County "
+,,,,,"Right justified with leading zeros "
+,,,,,"or blank if not a total "
+"16. Number of Small Farm Loans ",45,50,6,"N ","Right justified with leading zeros "
+"Purchased with Loan Amount at ",,,,,
+"Origination < $100,000 ",,,,,
+"17. Total Loan Amount of Small Farm ",51,58,8,"N ","Amount is in thousands {e.g. 00000025 "
+"Loans Purchased with Loan Amount ",,,,,"indicates $25,000); Right justified with "
+"at Origination < $100,000 ",,,,,"leading zeros "
+"18. Number of Small Farm Loans ",59,64,6,"N ","Right justified with leading zeros "
+"Purchased with Loan Amount at ",,,,,
+"Origination > 100,000 and ",,,,,
+"< $250,000 ",,,,,
+"19. Total Loan Amount of Small Farm ",65,72,8,"N ","Amount is in thousands {e.g. 00000125 "
+"Loans Purchased with Loan Amount ",,,,,"indicates $125,000); Right justified with "
+"at Origination > $100,000 and ",,,,,"leading zeros "
+"< $250,000 ",,,,,
+"20. Number of Small Farm Loans ",73,78,6,"N ","Right justified with leading zeros "
+"Purchased with Loan Amount at ",,,,,
+"Origination > $250,000 and < ",,,,,
+"$1,000,000 ",,,,,
+"21. Total Loan Amount of Small Farm ",79,86,8,"N ","Amount is in thousands {e.g. 00000300 "
+"Loans Purchased with Loan Amount ",,,,,"indicates $300,000); Right justified with "
+"at Origination > $250,000 and < ",,,,,"leading zeros "
+"$1,000,000 ",,,,,
+"22. Number of Loans Purchased to Small ",87,92,6,"N ","Right justified with leading zeros "
+"Farms with Gross Annual ",,,,,
+"Revenues < $1 million",,,,,
+"23. Total Loan Amount of Loans ",93,100,8,"N ","Amount is in thousands {e.g. 00000025 "
+"Purchased to Small Farms ",,,,,"indicates $25,000); Right justified with "
+"with Gross Annual Revenues ",,,,,"leading zeros "
+"< $1 million",,,,,
+"24. Number of Small Farm Loans ",101,106,6,"N ","Right justified with leading zeros "
+"Reported as Affiliate Loans  ",,,,,
+"(Originations and Purchases) ",,,,,
+"25. Total Loan Amount of Small Farm ",107,114,8,"N ","Amount is in thousands {e.g. 00000025 "
+"Loans Reported as Affiliate ",,,,,"indicates $25,000); Right justified with "
+"Loans (Originations &  Purchases) ",,,,,"leading zeros "
+"Field ","Start ","End ","Length ","Type ","Comments, Values, Keys, Etc. "
+"1. Table ID ",1,5,5,"AN ","Value is D3-0 "
+"2. Respondent ID ",6,15,10,"AN ","Assigned by regulatory agency "
+,,,,,"(same as HMDAID if applicable);  "
+,,,,,"Right justified with leading zeros "
+"3. Agency Code ",16,16,1,"N ","Values are 1=OCC, 2=FRS, "
+,,,,,"3=FDIC, or 4=OTS "
+"4. Activity Year ",17,20,4,"N ","Four digit year (e.g. 1998) "
+"5. Loan Type ",21,21,1,"N ","Value is 4 (Small Business) "
+"6. State ",22,23,2,"AN ","FIPS code with leading zeros "
+,,,,,"or blank for totals across all "
+,,,,,"states "
+"7. County ",24,26,3,"AN ","FIPS code with leading zeros or blank "
+,,,,,"for totals across all counties "
+"8. MSA/MD ",27,30,4,"AN ","As defined by OMB; Right justified "
+,,,,,"with leading zeros, NA left justified "
+,,,,,"for areas outside of MSA/MD or blank "
+,,,,,"for totals across all MSA/MDs "
+"9. Assessment Area Number ",31,34,4,"AN ","Values are 0001 through 9999; Right "
+,,,,,"justified with leading zeros, NA left justified "
+,,,,,"for areas outside of an Assessment "
+,,,,,"Area (including predominately military "
+,,,,,"areas) or blank for totals across all "
+,,,,,"Assessment Areas "
+"10. Partial County Indicator ",35,35,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+,,,,,"OR blank for totals across all counties "
+"11. Split County Indicator ",36,36,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+,,,,,"OR blank for totals across all counties "
+"12. Report Level ",37,38,2,"AN ","Values are "
+,,,,,"  05= Assessment Area Total "
+,,,,,"  10= County Total within "
+,,,,,"Assessment Area "
+,,,,,"15= Activity Inside all "
+,,,,,"Assessment Areas "
+,,,,,"20= Activity Outside "
+,,,,,"Assessment Area(s) "
+,,,,,"30=Total Loans (Inside +Outside "
+,,,,,"Assessment Area) "
+"13. Number of Small Business Loans ",39,44,6,"N ","Right justified with leading zeros "
+"Originated ",,,,,
+"14. Total Loan Amount of Small Business ",45,52,8,"N ","Amount is in thousands {e.g. 25 would be  "
+"Loans Originated ",,,,,"$25,000}; Right justified with leading  zeros "
+"15. Number of Loans  Originated  to Small",53,58,6,"N ","Right justified with leading zeros "
+"Businesses with  Gross Annual Revenues ",,,,,
+"< $1 million ",,,,,
+"16. Total Loan amount of loans  Originated  ",59,66,8,"N ","Right justified with leading zeros "
+"to Small Businesses with  Gross Annual ",,,,,
+"Revenues < $1 million ",,,,,
+"17. Number of Small Business Loans ",67,72,6,"N ","Amount is in thousands {e.g. 25 indicates  "
+"Purchased ",,,,,"$25,000); Right justified with leading  zeros "
+"18. Total Loan Amount of  Small Business ",73,80,8,"N ","Amount is in thousands {e.g. 25 indicates  "
+"Loans Purchased ",,,,,"$25,000); Right justified with leading  zeros "
+"19. Filler ",81,114,34,"AN ","Blank "
+"Field ","Start ","End ","Length ","Type ","Comments, Values, Keys, Etc. "
+"1. Table ID ",1,5,5,"AN ","Value is D4-0 "
+"2. Respondent ID ",6,15,10,"AN ","Assigned by regulatory agency "
+,,,,,"(same as HMDAID if applicable);  "
+,,,,,"Right justified with leading zeros "
+"3. Agency Code ",16,16,1,"N ","Values are 1=OCC, 2=FRS, "
+,,,,,"3=FDIC, or 4=OTS "
+"4. Activity Year ",17,20,4,"N ","Four digit year (e.g. 1998) "
+"5. Loan Type ",21,21,1,"N ","Value is 5 (Small Farm) "
+"6. State ",22,23,2,"AN ","FIPS code with leading zeros "
+,,,,,"or blank for totals across all "
+,,,,,"states "
+"7. County ",24,26,3,"AN ","FIPS code with leading zeros or blank "
+,,,,,"for totals across all counties "
+"8. MSA/MD ",27,30,4,"AN ","As defined by OMB; Right justified "
+,,,,,"with leading zeros, NA left justified "
+,,,,,"for areas outside of MSA/MD or blank "
+,,,,,"for totals across all MSA/MDs "
+"9. Assessment Area Number ",31,34,4,"AN ","Values are 0001 through 9999; Right "
+,,,,,"justified with leading zeros, NA left justified "
+,,,,,"for areas outside of an Assessment "
+,,,,,"Area (including predominately military "
+,,,,,"areas) or blank for totals across all "
+,,,,,"Assessment Areas "
+"10. Partial County Indicator ",35,35,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+,,,,,"OR blank for totals across all counties "
+"11. Split County Indicator ",36,36,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+,,,,,"OR blank for totals across all counties "
+"12. Report Level ",37,38,2,"AN ","Values are "
+,,,,,"  05= Assessment Area Total "
+,,,,,"  10= County Total within "
+,,,,,"Assessment Area "
+,,,,,"15= Activity Inside all "
+,,,,,"Assessment Areas "
+,,,,,"20= Activity Outside "
+,,,,,"Assessment Area(s) "
+,,,,,"30=Total Loans (Inside +Outside "
+,,,,,"Assessment Area) "
+"13. Number of Small Farm Loans ",39,44,6,"N ","Right justified with leading zeros "
+"Originated ",,,,,
+"14. Total Loan Amount of Small Farm ",45,52,8,"N ","Amount is in thousands {e.g. 25 would be  "
+"Loans Originated ",,,,,"$25,000}; Right justified with leading  zeros "
+"15. Number of Loans  Originated  to Small",53,58,6,"N ","Right justified with leading zeros "
+"Farms with  Gross Annual Revenues < $1 ",,,,,
+"million ",,,,,
+"16. Total Loan amount of loans  Originated  ",59,66,8,"N ","Right justified with leading zeros "
+"to Small Farms with  Gross Annual ",,,,,
+"Revenues < $1 million ",,,,,
+"17. Number of Small Farm Loans Purchased ",67,72,6,"N ","Amount is in thousands {e.g. 25 indicates  "
+,,,,,"$25,000); Right justified with leading  zeros "
+"18. Total Loan Amount of  Small Farm Loans ",73,80,8,"N ","Amount is in thousands {e.g. 25 indicates  "
+"Purchased ",,,,,"$25,000); Right justified with leading  zeros "
+"19. Filler ",81,114,34,"AN ","Blank "
+"Field ","Start ","End ","Length ","Type ","Comments, Values, Keys, Etc. "
+"1. Table ID ",1,5,5,"AN ","Value is D5-0 "
+"2. Respondent ID ",6,15,10,"AN ","Assigned by regulatory agency "
+,,,,,"(same as HMDAID if applicable);  "
+,,,,,"Right justified with leading zeros "
+"3. Agency Code ",16,16,1,"N ","Values are 1=OCC, 2=FRS, "
+,,,,,"3=FDIC, or 4=OTS "
+"4. Activity Year ",17,20,4,"N ","Four digit year (e.g. 1998) "
+"5. Loan Type ",21,21,1,"N ","Values are "
+,,,,,"6 = Community Development "
+,,,,,"7 = Consortium/Third-Party "
+"6. Number of Loans ",22,27,6,"N ","Right justified with leading zeros "
+"7. Total Loan Amount of ",28,35,8,"N ","Amount is in thousands {e.g. 25 would be  "
+"Loans ",,,,,"$25,000}; Right justified with leading zeros "
+"8. Number of Loans Reported ",36,41,6,"N ","Right justified with leading zeros or blank if  "
+"as Affiliate Loans ",,,,,"not applicable "
+"9. Total Loan Amount of Loans ",42,49,8,"N ","Amount is in thousands {e.g. 25 would be  "
+"Reported as Affiliate Loans  ",,,,,"$25,000}; Right justified with leading zeros  "
+,,,,,"or blank if not applicable "
+"10. Filler ",50,114,65,"AN ","Blank "
+"Field ","Start ","End ","Length ","Type ","Comments, Values, Keys, Etc. "
+"1. Table ID ",1,5,5,"AN ","Value is D6-0 "
+"2. Respondent ID ",6,15,10,"AN ","Assigned by regulatory agency "
+,,,,,"(same as HMDA ID if applicable);  "
+,,,,,"Right justified with leading zeros "
+"3. Agency Code ",16,16,1,"N ","Values are 1=OCC, 2=FRS, "
+,,,,,"3=FDIC, or 4=OTS "
+"4. Activity Year ",17,20,4,"N ","Four digit year (e.g. 1998) "
+"5. State ",21,22,2,"AN ","FIPS code with leading zeros "
+"6. County ",23,25,3,"AN ","FIPS code with leading zeros "
+"7. MSA/MD ",26,29,4,"AN ","As defined by OMB; Right justified "
+,,,,,"with leading zeros or NA left justified "
+,,,,,"for areas outside of an MSA/MD "
+"8. Census Tract ",30,36,7,"AN ","As defined by the Bureau of Census; "
+,,,,,"Right justified with leading/trailing zeros "
+,,,,,"and decimal point or blank for totals "
+,,,,,"across all census tracts "
+"9. Assessment Area Number ",37,40,4,"AN ","Values are 1 through 9999; "
+,,,,,"Right justified with leading zeros, or NA left  "
+,,,,,"justified if outside of Assessment Area(s)  "
+,,,,,"(including predominately military areas). "
+"10. Partial County Indicator ",41,41,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+"11. Split County Indicator ",42,42,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+"12. Population Classification ",43,43,1,"AN ","Values are "
+,,,,,"S= counties with "
+,,,,,"< 500,000 in population "
+,,,,,"L= counties with "
+,,,,,">500,000 in population "
+"13. Income Group ",44,46,3,"AN ","Values are "
+,,,,,"1= < 10% of Median Family "
+,,,,,"Income(MFI) "
+,,,,,"2= 10% to 20% of MFI "
+,,,,,"3= 20% to 30% of MFI "
+,,,,,"4= 30% to 40% of MFI "
+,,,,,"5= 40% to 50% of MFI "
+,,,,,"6= 50% to 60% of MFI "
+,,,,,"7= 60% to 70% of MFI "
+,,,,,"8= 70% to 80% of MFI "
+,,,,,"9= 80% to 90% of MFI "
+,,,,," 10= 90% to 100% of MFI "
+,,,,," 11= 100% to 110% of MFI "
+,,,,," 12= 110% to 120% of MFI "
+,,,,," 13= > 120% of MFI "
+,,,,," 14= MFI not known (income "
+,,,,,"percentage = 0) "
+,,,,," 15=Tract not Known (Reported as NA) "
+,,,,,"101= Low Income (< 50% of "
+,,,,,"MFI - excluding 0) "
+,,,,,"102= Moderate Income (50% "
+,,,,,"to 80% of MFI) "
+,,,,,"103= Middle Income (80% to "
+,,,,,"120% of MFI) "
+,,,,,"104= Upper Income (> 120% "
+,,,,,"of MFI) "
+,,,,,"105= Income Not Known (0) "
+,,,,,"106=Tract not Known (NA) "
+,,,,,"Right justified with leading zeros  "
+"14. Loan Indicator ",47,47,1,"AN ","Values are "
+,,,,,"Y = Yes "
+,,,,,"N = No "
+"15. Filler ",48,114,67,"AN ","Blank "
