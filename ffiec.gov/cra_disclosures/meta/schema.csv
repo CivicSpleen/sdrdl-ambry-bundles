@@ -1,44 +1,44 @@
-"table","seq","column","is_pk","is_fk","i1","i2","i3","i4","i5","i6","i7","i8","type","size","width","description","d_orig_field","id"
-"d1_1",1,"id",1,,,,,,,,,,"INTEGER",,,,,"c02F01001"
-"d1_1",2,"table_id",,,,,,,,,,,"VARCHAR",5,5,"Value is D1-1","1. Table ID","c02F01002"
-"d1_1",3,"respondent_id",,,1,,,,,,,,"VARCHAR",10,10,"Assigned by regulatory agency 
+table,seq,column,is_pk,is_fk,type,i1,i2,i3,i4,i5,i6,i7,size,width,description,d_orig_field,id
+d1_1,1,id,1,,INTEGER,,,,,,,,,,,,c02F01001
+d1_1,2,table_id,,,VARCHAR,,,,,,,,5,5,Value is D1-1,1. Table ID,c02F01002
+d1_1,3,respondent_id,,,VARCHAR,1,,,,,,,10,10,"Assigned by regulatory agency 
 (same as HMDAID if applicable);  
-Right justified with leading zeros","2. Respondent ID","c02F01003"
-"d1_1",4,"agency",,,,,,,,,,,"INTEGER",1,1,"Values are 1=OCC, 2=FRS, 
-3=FDIC, or 4=OTS","3. Agency Code","c02F01004"
-"d1_1",5,"year",,,,1,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F01005"
-"d1_1",6,"loan_type",,,,,,,,,,,"INTEGER",1,1,"Value is 4 (Small Business)","5. Loan Type","c02F01006"
-"d1_1",7,"action",,,,,,,,,,,"INTEGER",1,1,"Value is 1 (Originations)","6. Action Taken Type","c02F01007"
-"d1_1",8,"state",,,,,1,1,,,,,"INTEGER",2,2,"FIPS code with leading zeros 
+Right justified with leading zeros",2. Respondent ID,c02F01003
+d1_1,4,agency,,,INTEGER,,,,,,,,1,1,"Values are 1=OCC, 2=FRS, 
+3=FDIC, or 4=OTS",3. Agency Code,c02F01004
+d1_1,5,year,,,INTEGER,,1,,,,,,4,4,Four digit year (e.g. 2012),4. Activity Year,c02F01005
+d1_1,6,loan_type,,,INTEGER,,,,,,,,1,1,Value is 4 (Small Business),5. Loan Type,c02F01006
+d1_1,7,action,,,INTEGER,,,,,,,,1,1,Value is 1 (Originations),6. Action Taken Type,c02F01007
+d1_1,8,state,,,INTEGER,,,1,1,,,,2,2,"FIPS code with leading zeros 
 or blank for totals across all 
-states","7. State","c02F01008"
-"d1_1",9,"county",,,,,,1,,,,,"INTEGER",3,3,"FIPS code with leading zeros or blank 
-for totals across all counties","8. County","c02F01009"
-"d1_1",10,"msa",,,,,,,1,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
+states",7. State,c02F01008
+d1_1,9,county,,,INTEGER,,,,1,,,,3,3,"FIPS code with leading zeros or blank 
+for totals across all counties",8. County,c02F01009
+d1_1,10,msa,,,INTEGER,,,,,1,,,5,5,"As defined by OMB; Right justified 
 with leading zeros, NA left justified 
 for areas outside of MSA/MD or blank 
-for totals across all MSA/MDs","9. MSA/MD","c02F0100a"
-"d1_1",11,"assessment_area",,,,,,,,,,,"VARCHAR",4,4,"Values are 0001 through 9999; Right 
+for totals across all MSA/MDs",9. MSA/MD,c02F0100a
+d1_1,11,assessment_area,,,VARCHAR,,,,,,,,4,4,"Values are 0001 through 9999; Right 
 justified with leading zeros, NA left justified 
 for areas outside of an Assessment 
 Area (including predominately military 
 areas) OR blank for totals across 
-all Assessment Areas","10. Assessment Area Number","c02F0100b"
-"d1_1",12,"partial_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+all Assessment Areas",10. Assessment Area Number,c02F0100b
+d1_1,12,partial_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
 N = No 
-OR blank for totals","11. Partial County Indicator","c02F0100c"
-"d1_1",13,"split_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+OR blank for totals",11. Partial County Indicator,c02F0100c
+d1_1,13,split_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
 N = No 
-OR blank for totals","12. Split County Indicator","c02F0100d"
-"d1_1",14,"pop_class",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+OR blank for totals",12. Split County Indicator,c02F0100d
+d1_1,14,pop_class,,,VARCHAR,,,,,,,,1,1,"Values are 
 S= counties with 
 < 500,000 in population 
 L= counties with 
 >500,000 in population 
-OR blank for totals","13 . Population Classification","c02F0100e"
-"d1_1",15,"income_total",,,,,,,,,1,,"VARCHAR",3,3,"Values are 
+OR blank for totals",13 . Population Classification,c02F0100e
+d1_1,15,income_total,,,VARCHAR,,,,,,,1,3,3,"Values are 
 1= < 10% of Median Family 
 Income(MFI) 
 2= 10% to 20% of MFI 
@@ -68,8 +68,8 @@ of MFI)
 105= Income Not Known (0) 
 106= Tract not Known (NA) 
 Right justified with leading zeros 
-or blank for totals","14. Income Group Total","c02F0100f"
-"d1_1",16,"report_level",,,,,,,,,,,"VARCHAR",3,3,"Values are 
+or blank for totals",14. Income Group Total,c02F0100f
+d1_1,16,report_level,,,VARCHAR,,,,,,,,3,3,"Values are 
 4= Total Inside & Outside 
 Assessment Area (AA) 
 (across all states) 
@@ -84,67 +84,67 @@ Assessment Area (AA)
   50= Total Inside AA in County 
   60= Total Outside AA in County 
 Right justified with leading zeros 
-or blank if not a total","15. Report Level","c02F0100g"
-"d1_1",17,"num_orig_bus_lt100k",,,,,,,,,,,"INTEGER",7,10,"Right justified with leading zeros","16. Number of Small Business Loans Originated with Loan Amount at Origination < $100,000","c02F0100h"
-"d1_1",18,"tot_orig_bus_lt100k",,,,,,,,,,,"INTEGER",8,10,"Amount is in thousands {e.g. 00000025 
+or blank if not a total",15. Report Level,c02F0100g
+d1_1,17,num_orig_bus_lt100k,,,INTEGER,,,,,,,,7,10,Right justified with leading zeros,"16. Number of Small Business Loans Originated with Loan Amount at Origination < $100,000",c02F0100h
+d1_1,18,tot_orig_bus_lt100k,,,INTEGER,,,,,,,,8,10,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","17. Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination < $100,000","c02F0100i"
-"d1_1",19,"num_orig_bus_lt250k",,,,,,,,,,,"INTEGER",6,10,"Right justified with leading zeros","18. Number of Small Business Loans Originated with Loan Amount at Origination > 100,000 and < $250,000","c02F0100j"
-"d1_1",20,"tot_orig_bus_gt100k_lt250k",,,,,,,,,,,"INTEGER",8,10,"Amount is in thousands {e.g. 00000125 
+leading zeros","17. Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination < $100,000",c02F0100i
+d1_1,19,num_orig_bus_lt250k,,,INTEGER,,,,,,,,6,10,Right justified with leading zeros,"18. Number of Small Business Loans Originated with Loan Amount at Origination > 100,000 and < $250,000",c02F0100j
+d1_1,20,tot_orig_bus_gt100k_lt250k,,,INTEGER,,,,,,,,8,10,"Amount is in thousands {e.g. 00000125 
 indicates $125,000); Right justified with 
-leading zeros","19. Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination > $100,000 and < $250,000","c02F0100k"
-"d1_1",21,"num_orig_bus_gt250k_lt1m",,,,,,,,,,,"INTEGER",6,10,"Right justified with leading zeros","20. Number of Small Business Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000","c02F0100l"
-"d1_1",22,"tot_orig_bus_gt250k_lt1m",,,,,,,,,,,"INTEGER",7,10,"Amount is in thousands {e.g. 00000300 
+leading zeros","19. Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination > $100,000 and < $250,000",c02F0100k
+d1_1,21,num_orig_bus_gt250k_lt1m,,,INTEGER,,,,,,,,6,10,Right justified with leading zeros,"20. Number of Small Business Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000",c02F0100l
+d1_1,22,tot_orig_bus_gt250k_lt1m,,,INTEGER,,,,,,,,7,10,"Amount is in thousands {e.g. 00000300 
 indicates $300,000); Right justified with 
-leading zeros","21. Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000","c02F0100m"
-"d1_1",23,"num_orig_bus_lt1m",,,,,,,,,,,"INTEGER",7,10,"Right justified with leading zeros","22. Number of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million","c02F0100n"
-"d1_1",24,"tot_orig_bus_lt1m",,,,,,,,,,,"INTEGER",8,10,"Amount is in thousands {e.g. 00000025 
+leading zeros","21. Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000",c02F0100m
+d1_1,23,num_orig_bus_lt1m,,,INTEGER,,,,,,,,7,10,Right justified with leading zeros,22. Number of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million,c02F0100n
+d1_1,24,tot_orig_bus_lt1m,,,INTEGER,,,,,,,,8,10,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","23. Total Loan Amount of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million","c02F0100o"
-"d1_1",25,"num_orig_bus_al",,,,,,,,,,,"INTEGER",6,10,"Right justified with leading zeros","24. Number of Small Business Loans Originated Reported as Affiliate Loans","c02F0100p"
-"d1_1",26,"tot_orig_bus_al",,,,,,,,,,,"INTEGER",7,10,"Amount is in thousands {e.g. 00000025 
+leading zeros",23. Total Loan Amount of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million,c02F0100o
+d1_1,25,num_orig_bus_al,,,INTEGER,,,,,,,,6,10,Right justified with leading zeros,24. Number of Small Business Loans Originated Reported as Affiliate Loans,c02F0100p
+d1_1,26,tot_orig_bus_al,,,INTEGER,,,,,,,,7,10,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","25. Total Loan Amount of Small Business Loans Originated Reported as Affiliate Loans","c02F0100q"
-,,,,,,,,,,,,,,,,,,
-"d1_2",1,"id",1,,,,,,,,,,"INTEGER",,,,,"c02F02001"
-"d1_2",2,"table_id",,,,,,,,,,,"VARCHAR",5,5,"Value is D1-2","1. Table ID","c02F02002"
-"d1_2",3,"respondent_id",,,1,,,,,,,,"VARCHAR",10,10,"Assigned by regulatory agency 
+leading zeros",25. Total Loan Amount of Small Business Loans Originated Reported as Affiliate Loans,c02F0100q
+,,,,,,,,,,,,,,,,,
+d1_2,1,id,1,,INTEGER,,,,,,,,,,,,c02F02001
+d1_2,2,table_id,,,VARCHAR,,,,,,,,5,5,Value is D1-2,1. Table ID,c02F02002
+d1_2,3,respondent_id,,,VARCHAR,1,,,,,,,10,10,"Assigned by regulatory agency 
 (same as HMDAID if applicable);  
-Right justified with leading zeros","2. Respondent ID","c02F02003"
-"d1_2",4,"agency",,,,,,,,,,,"INTEGER",1,1,"Values are 1=OCC, 2=FRS, 
-3=FDIC, or 4=OTS","3. Agency Code","c02F02004"
-"d1_2",5,"year",,,,1,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F02005"
-"d1_2",6,"loan_type",,,,,,,,,,,"INTEGER",1,1,"Value is 4 (Small Business)","5. Loan Type","c02F02006"
-"d1_2",7,"action",,,,,,,,,,,"INTEGER",1,1,"Value is 6 (Purchases)","6. Action Taken Type","c02F02007"
-"d1_2",8,"state",,,,,1,,,,,,"INTEGER",2,2,"FIPS code with leading zeros 
-or blank for totals across all states","7. State","c02F02008"
-"d1_2",9,"county",,,,,1,1,,,,,"INTEGER",3,3,"FIPS code with leading zeros or blank 
-for totals across all counties","8. County","c02F02009"
-"d1_2",10,"msa",,,,,,,1,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
+Right justified with leading zeros",2. Respondent ID,c02F02003
+d1_2,4,agency,,,INTEGER,,,,,,,,1,1,"Values are 1=OCC, 2=FRS, 
+3=FDIC, or 4=OTS",3. Agency Code,c02F02004
+d1_2,5,year,,,INTEGER,,1,,,,,,4,4,Four digit year (e.g. 2012),4. Activity Year,c02F02005
+d1_2,6,loan_type,,,INTEGER,,,,,,,,1,1,Value is 4 (Small Business),5. Loan Type,c02F02006
+d1_2,7,action,,,INTEGER,,,,,,,,1,1,Value is 6 (Purchases),6. Action Taken Type,c02F02007
+d1_2,8,state,,,INTEGER,,,1,,,,,2,2,"FIPS code with leading zeros 
+or blank for totals across all states",7. State,c02F02008
+d1_2,9,county,,,INTEGER,,,1,1,,,,3,3,"FIPS code with leading zeros or blank 
+for totals across all counties",8. County,c02F02009
+d1_2,10,msa,,,INTEGER,,,,,1,,,5,5,"As defined by OMB; Right justified 
 with leading zeros, NA left justified 
 for areas outside of MSA/MD or blank 
-for totals across all MSA/MDs","9. MSA/MD","c02F0200a"
-"d1_2",11,"assessment_area",,,,,,,,,,,"VARCHAR",4,4,"Values are 0001 through 9999; Right 
+for totals across all MSA/MDs",9. MSA/MD,c02F0200a
+d1_2,11,assessment_area,,,VARCHAR,,,,,,,,4,4,"Values are 0001 through 9999; Right 
 justified with leading zeros, NA left justified 
 for areas outside of an Assessment 
 Area (including predominately military 
 areas) OR blank for totals across 
-all Assessment Areas","10. Assessment Area Number","c02F0200b"
-"d1_2",12,"partial_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+all Assessment Areas",10. Assessment Area Number,c02F0200b
+d1_2,12,partial_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
 N = No 
-OR blank for totals","11. Partial County Indicator","c02F0200c"
-"d1_2",13,"split_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+OR blank for totals",11. Partial County Indicator,c02F0200c
+d1_2,13,split_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
 N = No 
-OR blank for totals","12. Split County Indicator","c02F0200d"
-"d1_2",14,"pop_class",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+OR blank for totals",12. Split County Indicator,c02F0200d
+d1_2,14,pop_class,,,VARCHAR,,,,,,,,1,1,"Values are 
 S= counties with 
 < 500,000 in population 
 L= counties with 
 >500,000 in population 
-OR blank for totals","13. Population Classification","c02F0200e"
-"d1_2",15,"income_total",,,,,,,,1,,,"VARCHAR",3,3,"Values are 
+OR blank for totals",13. Population Classification,c02F0200e
+d1_2,15,income_total,,,VARCHAR,,,,,,1,,3,3,"Values are 
 1= < 10% of Median Family 
 Income(MFI) 
 2= 10% to 20% of MFI 
@@ -174,8 +174,8 @@ of MFI)
 105= Income Not Known (0) 
 106= Tract not Known (NA) 
 Right justified with leading zeros 
-or blank for totals","14. Income Group Total","c02F0200f"
-"d1_2",16,"report_level",,,,,,,,,,,"VARCHAR",3,3,"Values are 
+or blank for totals",14. Income Group Total,c02F0200f
+d1_2,16,report_level,,,VARCHAR,,,,,,,,3,3,"Values are 
 4= Total Inside & Outside 
 Assessment Area (AA) 
 (across all states) 
@@ -190,74 +190,74 @@ Assessment Area (AA)
   50= Total Inside AA in County 
   60= Total Outside AA in County 
 Right justified with leading zeros 
-or blank if not a total","15. Report Level","c02F0200g"
-"d1_2",17,"num_purch_bus_lt100k",,,,,,,,,,,"INTEGER",7,10,"Right justified with leading zeros","16. Number of Small Business Loans Purchased with Loan Amount at Origination < $100,000","c02F0200h"
-"d1_2",18,"tot_purch_bus_lt100k",,,,,,,,,,,"INTEGER",8,10,"Amount is in thousands {e.g. 00000025 
+or blank if not a total",15. Report Level,c02F0200g
+d1_2,17,num_purch_bus_lt100k,,,INTEGER,,,,,,,,7,10,Right justified with leading zeros,"16. Number of Small Business Loans Purchased with Loan Amount at Origination < $100,000",c02F0200h
+d1_2,18,tot_purch_bus_lt100k,,,INTEGER,,,,,,,,8,10,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","17. Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination < $100,000","c02F0200i"
-"d1_2",19,"num_purch_bus_lt250k",,,,,,,,,,,"INTEGER",4,10,"Right justified with leading zeros","18. Number of Small Business Loans Purchased with Loan Amount at Origination > 100,000 and < $250,000","c02F0200j"
-"d1_2",20,"tot_purch_bus_gt100k_lt250k",,,,,,,,,,,"INTEGER",6,10,"Amount is in thousands {e.g. 00000125 
+leading zeros","17. Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination < $100,000",c02F0200i
+d1_2,19,num_purch_bus_lt250k,,,INTEGER,,,,,,,,4,10,Right justified with leading zeros,"18. Number of Small Business Loans Purchased with Loan Amount at Origination > 100,000 and < $250,000",c02F0200j
+d1_2,20,tot_purch_bus_gt100k_lt250k,,,INTEGER,,,,,,,,6,10,"Amount is in thousands {e.g. 00000125 
 indicates $125,000); Right justified with 
-leading zeros","19. Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination > $100,000 and < $250,000","c02F0200k"
-"d1_2",21,"num_purch_bus_gt250k_lt1m",,,,,,,,,,,"INTEGER",4,10,"Right justified with leading zeros","20. Number of Small Business Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000","c02F0200l"
-"d1_2",22,"tot_purch_bus_gt250k_lt1m",,,,,,,,,,,"INTEGER",7,10,"Amount is in thousands {e.g. 00000300 
+leading zeros","19. Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination > $100,000 and < $250,000",c02F0200k
+d1_2,21,num_purch_bus_gt250k_lt1m,,,INTEGER,,,,,,,,4,10,Right justified with leading zeros,"20. Number of Small Business Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000",c02F0200l
+d1_2,22,tot_purch_bus_gt250k_lt1m,,,INTEGER,,,,,,,,7,10,"Amount is in thousands {e.g. 00000300 
 indicates $300,000); Right justified with 
-leading zeros","21. Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000","c02F0200m"
-"d1_2",23,"num_purch_bus_lt1m",,,,,,,,,,,"INTEGER",6,10,"Right justified with leading zeros","22. Number of Small Business Loans Purchased with Gross Annual Revenues < $1 million","c02F0200n"
-"d1_2",24,"tot_purch_bus_lt1m",,,,,,,,,,,"INTEGER",7,10,"Amount is in thousands {e.g. 00000025 
+leading zeros","21. Total Loan Amount of Small Business Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000",c02F0200m
+d1_2,23,num_purch_bus_lt1m,,,INTEGER,,,,,,,,6,10,Right justified with leading zeros,22. Number of Small Business Loans Purchased with Gross Annual Revenues < $1 million,c02F0200n
+d1_2,24,tot_purch_bus_lt1m,,,INTEGER,,,,,,,,7,10,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","23. Total Loan Amount Small Business Loans Purchased with Gross Annual Revenues < $1 million","c02F0200o"
-"d1_2",25,"num_purch_bus_al",,,,,,,,,,,"INTEGER",4,10,"Right justified with leading zeros","24. Number of Small Business Loans Purchased Reported as Affiliate Loans","c02F0200p"
-"d1_2",26,"tot_orig_bus_al",,,,,,,,,,,"INTEGER",5,8,"Amount is in thousands {e.g. 00000025 
+leading zeros",23. Total Loan Amount Small Business Loans Purchased with Gross Annual Revenues < $1 million,c02F0200o
+d1_2,25,num_purch_bus_al,,,INTEGER,,,,,,,,4,10,Right justified with leading zeros,24. Number of Small Business Loans Purchased Reported as Affiliate Loans,c02F0200p
+d1_2,26,tot_orig_bus_al,,,INTEGER,,,,,,,,5,8,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","25. Total Loan Amount of Small Business Loans Reported as Affiliate Loans (Originated and Purchased)","c02F0200q"
-"d1_2",51,"num_bus_al",,,,,,,,,,,"INTEGER",4,6,"Right justified with leading zeros","24. Number of Small Business Loans Reported as Affiliate Loans","c02F0200P"
-"d1_2",52,"tot_bus_al",,,,,,,,,,,"INTEGER",5,8,"Amount is in thousands {e.g. 00000025 
+leading zeros",25. Total Loan Amount of Small Business Loans Reported as Affiliate Loans (Originated and Purchased),c02F0200q
+d1_2,51,num_bus_al,,,INTEGER,,,,,,,,4,6,Right justified with leading zeros,24. Number of Small Business Loans Reported as Affiliate Loans,c02F0200P
+d1_2,52,tot_bus_al,,,INTEGER,,,,,,,,5,8,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","25. Total Loan Amount of Small Business Loans Reported as Affiliate Loans","c02F0200Q"
-"d1_2",104,"tot_purch_bus_al",,,,,,,,,,,"INTEGER",6,10,"Amount is in thousands {e.g. 00000025 
+leading zeros",25. Total Loan Amount of Small Business Loans Reported as Affiliate Loans,c02F0200Q
+d1_2,104,tot_purch_bus_al,,,INTEGER,,,,,,,,6,10,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","25. Total Loan Amount of Small Business Loans Purchased Reported as Affiliate Loans","c02F0201G"
-,,,,,,,,,,,,,,,,,,
-"d2_1",1,"id",1,,,,,,,,,,"INTEGER",,,,,"c02F03001"
-"d2_1",2,"table_id",,,,,,,,,,,"VARCHAR",5,5,"Value is D2-1","1. Table ID","c02F03002"
-"d2_1",3,"respondent_id",,,1,,,,,,,,"VARCHAR",10,10,"Assigned by regulatory agency 
+leading zeros",25. Total Loan Amount of Small Business Loans Purchased Reported as Affiliate Loans,c02F0201G
+,,,,,,,,,,,,,,,,,
+d2_1,1,id,1,,INTEGER,,,,,,,,,,,,c02F03001
+d2_1,2,table_id,,,VARCHAR,,,,,,,,5,5,Value is D2-1,1. Table ID,c02F03002
+d2_1,3,respondent_id,,,VARCHAR,1,,,,,,,10,10,"Assigned by regulatory agency 
 (same as HMDAID if applicable);  
-Right justified with leading zeros","2. Respondent ID","c02F03003"
-"d2_1",4,"agency",,,,,,,,,,,"INTEGER",1,1,"Values are 1=OCC, 2=FRS, 
-3=FDIC, or 4=OTS","3. Agency Code","c02F03004"
-"d2_1",5,"year",,,,1,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F03005"
-"d2_1",6,"loan_type",,,,,,,,,,,"INTEGER",1,1,"Value is 5 (Small Farm)","5. Loan Type","c02F03006"
-"d2_1",7,"action",,,,,,,,,,,"INTEGER",1,1,"Value is 1 (Originations)","6. Action Taken Type","c02F03007"
-"d2_1",8,"state",,,,,1,,,,,,"INTEGER",2,2,"FIPS code with leading zeros 
-or blank for totals across all states","7. State","c02F03008"
-"d2_1",9,"county",,,,,1,1,,,,,"INTEGER",3,3,"FIPS code with leading zeros or blank 
-for totals across all counties","8. County","c02F03009"
-"d2_1",10,"msa",,,,,,,1,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
+Right justified with leading zeros",2. Respondent ID,c02F03003
+d2_1,4,agency,,,INTEGER,,,,,,,,1,1,"Values are 1=OCC, 2=FRS, 
+3=FDIC, or 4=OTS",3. Agency Code,c02F03004
+d2_1,5,year,,,INTEGER,,1,,,,,,4,4,Four digit year (e.g. 2012),4. Activity Year,c02F03005
+d2_1,6,loan_type,,,INTEGER,,,,,,,,1,1,Value is 5 (Small Farm),5. Loan Type,c02F03006
+d2_1,7,action,,,INTEGER,,,,,,,,1,1,Value is 1 (Originations),6. Action Taken Type,c02F03007
+d2_1,8,state,,,INTEGER,,,1,,,,,2,2,"FIPS code with leading zeros 
+or blank for totals across all states",7. State,c02F03008
+d2_1,9,county,,,INTEGER,,,1,1,,,,3,3,"FIPS code with leading zeros or blank 
+for totals across all counties",8. County,c02F03009
+d2_1,10,msa,,,INTEGER,,,,,1,,,5,5,"As defined by OMB; Right justified 
 with leading zeros, NA left justified 
 for areas outside of MSA/MD or blank 
-for totals across all MSA/MDs","9. MSA/MD","c02F0300a"
-"d2_1",11,"assessment_area",,,,,,,,,,,"VARCHAR",4,4,"Values are 0001 through 9999; Right 
+for totals across all MSA/MDs",9. MSA/MD,c02F0300a
+d2_1,11,assessment_area,,,VARCHAR,,,,,,,,4,4,"Values are 0001 through 9999; Right 
 justified with leading zeros, NA left justified 
 for areas outside of an Assessment 
 Area (including predominately military 
 areas) OR blank for totals across 
-all Assessment Areas","10. Assessment Area Number","c02F0300b"
-"d2_1",12,"partial_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+all Assessment Areas",10. Assessment Area Number,c02F0300b
+d2_1,12,partial_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
 N = No 
-OR blank for totals","11. Partial County Indicator","c02F0300c"
-"d2_1",13,"split_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+OR blank for totals",11. Partial County Indicator,c02F0300c
+d2_1,13,split_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
 N = No 
-OR blank for totals","12. Split County Indicator","c02F0300d"
-"d2_1",14,"pop_class",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+OR blank for totals",12. Split County Indicator,c02F0300d
+d2_1,14,pop_class,,,VARCHAR,,,,,,,,1,1,"Values are 
 S= counties with 
 < 500,000 in population 
 L= counties with 
 >500,000 in population 
-OR blank for totals","13. . Population Classification","c02F0300e"
-"d2_1",15,"income_total",,,,,,,,1,,,"VARCHAR",3,3,"Values are 
+OR blank for totals",13. . Population Classification,c02F0300e
+d2_1,15,income_total,,,VARCHAR,,,,,,1,,3,3,"Values are 
 1= < 10% of Median Family 
 Income(MFI) 
 2= 10% to 20% of MFI 
@@ -287,8 +287,8 @@ of MFI)
 105= Income Not Known (0) 
 106= Tract not known (NA) 
 Right justified with leading zeros 
-or blank for totals","14. Income Group Total","c02F0300f"
-"d2_1",16,"report_level",,,,,,,,,,,"VARCHAR",3,3,"Values are 
+or blank for totals",14. Income Group Total,c02F0300f
+d2_1,16,report_level,,,VARCHAR,,,,,,,,3,3,"Values are 
 4= Total Inside & Outside 
 Assessment Area (AA) 
 (across all states) 
@@ -303,75 +303,75 @@ Assessment Area (AA)
   50= Total Inside AA in County 
   60= Total Outside AA in County 
 Right justified with leading zeros 
-or blank if not a total","15. Report Level","c02F0300g"
-"d2_1",17,"num_orig_farm_lt100k",,,,,,,,,,,"INTEGER",5,10,"Right justified with leading zeros","16. Number of Small Farm Loans Originated with Loan Amount at Origination < $100,000","c02F0300h"
-"d2_1",18,"tot_orig_farm_lt100k",,,,,,,,,,,"INTEGER",6,10,"Amount is in thousands {e.g. 00000025 
+or blank if not a total",15. Report Level,c02F0300g
+d2_1,17,num_orig_farm_lt100k,,,INTEGER,,,,,,,,5,10,Right justified with leading zeros,"16. Number of Small Farm Loans Originated with Loan Amount at Origination < $100,000",c02F0300h
+d2_1,18,tot_orig_farm_lt100k,,,INTEGER,,,,,,,,6,10,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","17. Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination < $100,000","c02F0300i"
-"d2_1",19,"num_orig_farm_lt250k",,,,,,,,,,,"INTEGER",4,10,"Right justified with leading zeros","18. Number of Small Farm Loans Originated with Loan Amount at Origination > 100,000 and < $250,000","c02F0300j"
-"d2_1",20,"tot_orig_farm_gt100k_lt250k",,,,,,,,,,,"INTEGER",6,10,"Amount is in thousands {e.g. 00000125 
+leading zeros","17. Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination < $100,000",c02F0300i
+d2_1,19,num_orig_farm_lt250k,,,INTEGER,,,,,,,,4,10,Right justified with leading zeros,"18. Number of Small Farm Loans Originated with Loan Amount at Origination > 100,000 and < $250,000",c02F0300j
+d2_1,20,tot_orig_farm_gt100k_lt250k,,,INTEGER,,,,,,,,6,10,"Amount is in thousands {e.g. 00000125 
 indicates $125,000); Right justified with 
-leading zeros","19. Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $100,000 and < $250,000","c02F0300k"
-"d2_1",21,"num_orig_farm_gt250k",,,,,,,,,,,"INTEGER",3,6,"Right justified with leading zeros","20. Number of Small Farm Loans Originated with Loan Amount at Origination > $250,000","c02F0300l"
-"d2_1",22,"tot_orig_farm_gt250k",,,,,,,,,,,"INTEGER",5,8,"Amount is in thousands {e.g. 00000300 
+leading zeros","19. Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $100,000 and < $250,000",c02F0300k
+d2_1,21,num_orig_farm_gt250k,,,INTEGER,,,,,,,,3,6,Right justified with leading zeros,"20. Number of Small Farm Loans Originated with Loan Amount at Origination > $250,000",c02F0300l
+d2_1,22,tot_orig_farm_gt250k,,,INTEGER,,,,,,,,5,8,"Amount is in thousands {e.g. 00000300 
 indicates $300,000); Right justified with 
-leading zeros","21. Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000","c02F0300m"
-"d2_1",23,"num_orig_farm_lt1m",,,,,,,,,,,"INTEGER",5,10,"Right justified with leading zeros","22. Number of Loans Originated to Small Farms with Gross Annual Revenues < $1 million","c02F0300n"
-"d2_1",24,"tot_orig_farm_lt1m",,,,,,,,,,,"INTEGER",7,10,"Amount is in thousands {e.g. 00000025 
+leading zeros","21. Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000",c02F0300m
+d2_1,23,num_orig_farm_lt1m,,,INTEGER,,,,,,,,5,10,Right justified with leading zeros,22. Number of Loans Originated to Small Farms with Gross Annual Revenues < $1 million,c02F0300n
+d2_1,24,tot_orig_farm_lt1m,,,INTEGER,,,,,,,,7,10,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","23. Total Loan Amount of Loans Originated to Small Farms with Gross Annual Revenues < $1 million","c02F0300o"
-"d2_1",25,"num_orig_farm_al",,,,,,,,,,,"INTEGER",4,10,"Right justified with leading zeros","24. Number of Small Farm Loans Originated Reported as Affiliate Loans","c02F0300p"
-"d2_1",26,"tot_orig_farm_al",,,,,,,,,,,"INTEGER",5,10,"Amount is in thousands {e.g. 00000025 
+leading zeros",23. Total Loan Amount of Loans Originated to Small Farms with Gross Annual Revenues < $1 million,c02F0300o
+d2_1,25,num_orig_farm_al,,,INTEGER,,,,,,,,4,10,Right justified with leading zeros,24. Number of Small Farm Loans Originated Reported as Affiliate Loans,c02F0300p
+d2_1,26,tot_orig_farm_al,,,INTEGER,,,,,,,,5,10,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","25. Total Loan Amount of Small Farm Originated Loans Reported as Affiliate Loans","c02F0300q"
-"d2_1",47,"num_orig_farm_gt250k_lt1m",,,,,,,,,,,"INTEGER",3,6,"Right justified with leading zeros","20. Number of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000","c02F0300L"
-"d2_1",48,"tot_orig_farm_gt250k_lt1m",,,,,,,,,,,"INTEGER",6,8,"Amount is in thousands {e.g. 00000300 
+leading zeros",25. Total Loan Amount of Small Farm Originated Loans Reported as Affiliate Loans,c02F0300q
+d2_1,47,num_orig_farm_gt250k_lt1m,,,INTEGER,,,,,,,,3,6,Right justified with leading zeros,"20. Number of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000",c02F0300L
+d2_1,48,tot_orig_farm_gt250k_lt1m,,,INTEGER,,,,,,,,6,8,"Amount is in thousands {e.g. 00000300 
 indicates $300,000); Right justified with 
-leading zeros","21. Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000","c02F0300M"
-"d2_1",229,"num_orig_farm_gt250k_lt500k",,,,,,,,,,,"INTEGER",4,10,"Right justified with leading zeros","20. Number of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $500,000","c02F0303H"
-"d2_1",230,"tot_orig_farm_gt250k_lt500k",,,,,,,,,,,"INTEGER",6,10,"Amount is in thousands {e.g. 00000300 
+leading zeros","21. Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $1,000,000",c02F0300M
+d2_1,229,num_orig_farm_gt250k_lt500k,,,INTEGER,,,,,,,,4,10,Right justified with leading zeros,"20. Number of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $500,000",c02F0303H
+d2_1,230,tot_orig_farm_gt250k_lt500k,,,INTEGER,,,,,,,,6,10,"Amount is in thousands {e.g. 00000300 
 indicates $300,000); Right justified with 
-leading zeros","21. Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $500,000","c02F0303I"
-,,,,,,,,,,,,,,,,,,
-"d2_2",1,"id",1,,,,,,,,,,"INTEGER",,,,,"c02F04001"
-"d2_2",2,"table_id",,,,,,,,,,,"VARCHAR",5,5,"Value is D2-2","1. Table ID","c02F04002"
-"d2_2",3,"respondent_id",,,1,,,,,,,,"VARCHAR",10,10,"Assigned by regulatory agency 
+leading zeros","21. Total Loan Amount of Small Farm Loans Originated with Loan Amount at Origination > $250,000 and < $500,000",c02F0303I
+,,,,,,,,,,,,,,,,,
+d2_2,1,id,1,,INTEGER,,,,,,,,,,,,c02F04001
+d2_2,2,table_id,,,VARCHAR,,,,,,,,5,5,Value is D2-2,1. Table ID,c02F04002
+d2_2,3,respondent_id,,,VARCHAR,1,,,,,,,10,10,"Assigned by regulatory agency 
 (same as HMDAID if applicable);  
-Right justified with leading zeros","2. Respondent ID","c02F04003"
-"d2_2",4,"agency",,,,,,,,,,,"INTEGER",1,1,"Values are 1=OCC, 2=FRS, 
-3=FDIC, or 4=OTS","3. Agency Code","c02F04004"
-"d2_2",5,"year",,,,1,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F04005"
-"d2_2",6,"loan_type",,,,,,,,,,,"INTEGER",1,1,"Value is 5 (Small Farm)","5. Loan Type","c02F04006"
-"d2_2",7,"action",,,,,,,,,,,"INTEGER",1,1,"Value is 6 (Purchases)","6. Action Taken Type","c02F04007"
-"d2_2",8,"state",,,,,1,,,,,,"INTEGER",2,2,"FIPS code with leading zeros 
-or blank for totals across all states","7. State","c02F04008"
-"d2_2",9,"county",,,,,1,1,,,,,"INTEGER",3,3,"FIPS code with leading zeros or blank 
-for totals across all counties","8. County","c02F04009"
-"d2_2",10,"msa",,,,,,,1,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
+Right justified with leading zeros",2. Respondent ID,c02F04003
+d2_2,4,agency,,,INTEGER,,,,,,,,1,1,"Values are 1=OCC, 2=FRS, 
+3=FDIC, or 4=OTS",3. Agency Code,c02F04004
+d2_2,5,year,,,INTEGER,,1,,,,,,4,4,Four digit year (e.g. 2012),4. Activity Year,c02F04005
+d2_2,6,loan_type,,,INTEGER,,,,,,,,1,1,Value is 5 (Small Farm),5. Loan Type,c02F04006
+d2_2,7,action,,,INTEGER,,,,,,,,1,1,Value is 6 (Purchases),6. Action Taken Type,c02F04007
+d2_2,8,state,,,INTEGER,,,1,,,,,2,2,"FIPS code with leading zeros 
+or blank for totals across all states",7. State,c02F04008
+d2_2,9,county,,,INTEGER,,,1,1,,,,3,3,"FIPS code with leading zeros or blank 
+for totals across all counties",8. County,c02F04009
+d2_2,10,msa,,,INTEGER,,,,,1,,,5,5,"As defined by OMB; Right justified 
 with leading zeros, NA left justified 
 for areas outside of MSA/MD or blank 
-for totals across all MSA/MDs","9. MSA/MD","c02F0400a"
-"d2_2",11,"assessment_area",,,,,,,,,,,"VARCHAR",4,4,"Values are 0001 through 9999; Right 
+for totals across all MSA/MDs",9. MSA/MD,c02F0400a
+d2_2,11,assessment_area,,,VARCHAR,,,,,,,,4,4,"Values are 0001 through 9999; Right 
 justified with leading zeros, NA left justified 
 for areas outside of an Assessment 
 Area (including predominately military 
 areas) OR blank for totals across 
-all Assessment Areas","10. Assessment Area Number","c02F0400b"
-"d2_2",12,"partial_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+all Assessment Areas",10. Assessment Area Number,c02F0400b
+d2_2,12,partial_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
 N = No 
-OR blank for totals","11. Partial County Indicator","c02F0400c"
-"d2_2",13,"split_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+OR blank for totals",11. Partial County Indicator,c02F0400c
+d2_2,13,split_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
 N = No 
-OR blank for totals","12. Split County Indicator","c02F0400d"
-"d2_2",14,"pop_class",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+OR blank for totals",12. Split County Indicator,c02F0400d
+d2_2,14,pop_class,,,VARCHAR,,,,,,,,1,1,"Values are 
 S= counties with 
 < 500,000 in population 
 L= counties with 
 >500,000 in population 
-OR blank for totals","13. Population Classification","c02F0400e"
-"d2_2",15,"income_total",,,,,,,1,,,,"VARCHAR",3,3,"Values are 
+OR blank for totals",13. Population Classification,c02F0400e
+d2_2,15,income_total,,,VARCHAR,,,,,1,,,3,3,"Values are 
 1= < 10% of Median Family 
 Income(MFI) 
 2= 10% to 20% of MFI 
@@ -401,8 +401,8 @@ of MFI)
 105= Income Not Known (0) 
 106= Tract not Known (NA) 
 Right justified with leading zeros 
-or blank for totals","14. Income Group Total","c02F0400f"
-"d2_2",16,"report_level",,,,,,,,,,,"VARCHAR",3,3,"Values are 
+or blank for totals",14. Income Group Total,c02F0400f
+d2_2,16,report_level,,,VARCHAR,,,,,,,,3,3,"Values are 
 4= Total Inside & Outside 
 Assessment Area (AA) 
 (across all states) 
@@ -417,77 +417,77 @@ Assessment Area (AA)
   50= Total Inside AA in County 
   60= Total Outside AA in County 
 Right justified with leading zeros 
-or blank if not a total","15. Report Level","c02F0400g"
-"d2_2",17,"num_purch_farm_lt100k",,,,,,,,,,,"INTEGER",4,10,"Right justified with leading zeros","16. Number of Small Farm Loans Purchased with Loan Amount at Origination < $100,000","c02F0400h"
-"d2_2",18,"tot_purch_farm_lt100k",,,,,,,,,,,"INTEGER",5,10,"Amount is in thousands {e.g. 00000025 
+or blank if not a total",15. Report Level,c02F0400g
+d2_2,17,num_purch_farm_lt100k,,,INTEGER,,,,,,,,4,10,Right justified with leading zeros,"16. Number of Small Farm Loans Purchased with Loan Amount at Origination < $100,000",c02F0400h
+d2_2,18,tot_purch_farm_lt100k,,,INTEGER,,,,,,,,5,10,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","17. Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination < $100,000","c02F0400i"
-"d2_2",19,"num_purch_farm_lt250k",,,,,,,,,,,"INTEGER",3,10,"Right justified with leading zeros","18. Number of Small Farm Loans Purchased with Loan Amount at Origination > 100,000 and < $250,000","c02F0400j"
-"d2_2",20,"tot_purch_farm_gt100k_lt250k",,,,,,,,,,,"INTEGER",5,10,"Amount is in thousands {e.g. 00000125 
+leading zeros","17. Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination < $100,000",c02F0400i
+d2_2,19,num_purch_farm_lt250k,,,INTEGER,,,,,,,,3,10,Right justified with leading zeros,"18. Number of Small Farm Loans Purchased with Loan Amount at Origination > 100,000 and < $250,000",c02F0400j
+d2_2,20,tot_purch_farm_gt100k_lt250k,,,INTEGER,,,,,,,,5,10,"Amount is in thousands {e.g. 00000125 
 indicates $125,000); Right justified with 
-leading zeros","19. Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $100,000 and < $250,000","c02F0400k"
-"d2_2",21,"num_purch_farm_gt250k",,,,,,,,,,,"INTEGER",2,6,"Right justified with leading zeros","20. Number of Small Farm Loans Purchased with Loan Amount at Origination > $250,000","c02F0400l"
-"d2_2",22,"tot_purch_farm_gt250k",,,,,,,,,,,"INTEGER",4,8,"Amount is in thousands {e.g. 00000300 
+leading zeros","19. Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $100,000 and < $250,000",c02F0400k
+d2_2,21,num_purch_farm_gt250k,,,INTEGER,,,,,,,,2,6,Right justified with leading zeros,"20. Number of Small Farm Loans Purchased with Loan Amount at Origination > $250,000",c02F0400l
+d2_2,22,tot_purch_farm_gt250k,,,INTEGER,,,,,,,,4,8,"Amount is in thousands {e.g. 00000300 
 indicates $300,000); Right justified with 
-leading zeros","21. Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000","c02F0400m"
-"d2_2",23,"num_farm_lt1m",,,,,,,,,,,"INTEGER",4,6,"Right justified with leading zeros","22. Number of Loans to Small Farms with Gross Annual Revenues < $1 million","c02F0400n"
-"d2_2",24,"tot_farm_lt1m",,,,,,,,,,,"INTEGER",6,8,"Amount is in thousands {e.g. 00000025 
+leading zeros","21. Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000",c02F0400m
+d2_2,23,num_farm_lt1m,,,INTEGER,,,,,,,,4,6,Right justified with leading zeros,22. Number of Loans to Small Farms with Gross Annual Revenues < $1 million,c02F0400n
+d2_2,24,tot_farm_lt1m,,,INTEGER,,,,,,,,6,8,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","23. Total Loan Amount of Loans to Small Farms with Gross Annual Revenues < $1 million","c02F0400o"
-"d2_2",25,"num_farm_al",,,,,,,,,,,"INTEGER",3,6,"Right justified with leading zeros","24. Number of Small Farm Loans Reported as Affiliate Loans","c02F0400p"
-"d2_2",26,"tot_farm_al",,,,,,,,,,,"INTEGER",5,8,"Amount is in thousands {e.g. 00000025 
+leading zeros",23. Total Loan Amount of Loans to Small Farms with Gross Annual Revenues < $1 million,c02F0400o
+d2_2,25,num_farm_al,,,INTEGER,,,,,,,,3,6,Right justified with leading zeros,24. Number of Small Farm Loans Reported as Affiliate Loans,c02F0400p
+d2_2,26,tot_farm_al,,,INTEGER,,,,,,,,5,8,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","25. Total Loan Amount of Small Farm Loans Reported as Affiliate Loans","c02F0400q"
-"d2_2",47,"num_purch_farm_gt250k_lt1m",,,,,,,,,,,"INTEGER",3,6,"Right justified with leading zeros","20. Number of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000","c02F0400L"
-"d2_2",48,"tot_purch_farm_gt250k_lt1m",,,,,,,,,,,"INTEGER",5,8,"Amount is in thousands {e.g. 00000300 
+leading zeros",25. Total Loan Amount of Small Farm Loans Reported as Affiliate Loans,c02F0400q
+d2_2,47,num_purch_farm_gt250k_lt1m,,,INTEGER,,,,,,,,3,6,Right justified with leading zeros,"20. Number of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000",c02F0400L
+d2_2,48,tot_purch_farm_gt250k_lt1m,,,INTEGER,,,,,,,,5,8,"Amount is in thousands {e.g. 00000300 
 indicates $300,000); Right justified with 
-leading zeros","21. Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000","c02F0400M"
-"d2_2",49,"num_purch_farm_lt1m",,,,,,,,,,,"INTEGER",4,10,"Right justified with leading zeros","22. Number of Small Farm Loans Purchased with Gross Annual Revenues < $1 million","c02F0400N"
-"d2_2",50,"tot_purch_farm_lt1m",,,,,,,,,,,"INTEGER",5,10,"Amount is in thousands {e.g. 00000025 
+leading zeros","21. Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $1,000,000",c02F0400M
+d2_2,49,num_purch_farm_lt1m,,,INTEGER,,,,,,,,4,10,Right justified with leading zeros,22. Number of Small Farm Loans Purchased with Gross Annual Revenues < $1 million,c02F0400N
+d2_2,50,tot_purch_farm_lt1m,,,INTEGER,,,,,,,,5,10,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","23. Total Loan Amount of Small Farm Loans Purchased with Gross Annual Revenues < $1 million","c02F0400O"
-"d2_2",103,"num_purch_farm_al",,,,,,,,,,,"INTEGER",3,10,"Right justified with leading zeros","24. Number of Small Farm Loans Purchased Reported as Affiliate Loans","c02F0401F"
-"d2_2",104,"tot_purch_farm_al",,,,,,,,,,,"INTEGER",5,10,"Amount is in thousands {e.g. 00000025 
+leading zeros",23. Total Loan Amount of Small Farm Loans Purchased with Gross Annual Revenues < $1 million,c02F0400O
+d2_2,103,num_purch_farm_al,,,INTEGER,,,,,,,,3,10,Right justified with leading zeros,24. Number of Small Farm Loans Purchased Reported as Affiliate Loans,c02F0401F
+d2_2,104,tot_purch_farm_al,,,INTEGER,,,,,,,,5,10,"Amount is in thousands {e.g. 00000025 
 indicates $25,000); Right justified with 
-leading zeros","25. Total Loan Amount of Small Farm Loans Purchased Reported as Affiliate Loans","c02F0401G"
-"d2_2",229,"num_purch_farm_gt250k_lt500k",,,,,,,,,,,"INTEGER",2,10,"Right justified with leading zeros","20. Number of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $500,000","c02F0403H"
-"d2_2",230,"tot_purch_farm_gt250k_lt500k",,,,,,,,,,,"INTEGER",5,10,"Amount is in thousands {e.g. 00000300 
+leading zeros",25. Total Loan Amount of Small Farm Loans Purchased Reported as Affiliate Loans,c02F0401G
+d2_2,229,num_purch_farm_gt250k_lt500k,,,INTEGER,,,,,,,,2,10,Right justified with leading zeros,"20. Number of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $500,000",c02F0403H
+d2_2,230,tot_purch_farm_gt250k_lt500k,,,INTEGER,,,,,,,,5,10,"Amount is in thousands {e.g. 00000300 
 indicates $300,000); Right justified with 
-leading zeros","21. Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $500,000","c02F0403I"
-,,,,,,,,,,,,,,,,,,
-"d3_0",1,"id",1,,,,,,,,,,"INTEGER",,,,,"c02F05001"
-"d3_0",2,"table_id",,,,,,,,,,,"VARCHAR",5,5,"Value is D3-0","1. Table ID","c02F05002"
-"d3_0",3,"respondent_id",,,1,,,,,,,,"VARCHAR",10,10,"Assigned by regulatory agency 
+leading zeros","21. Total Loan Amount of Small Farm Loans Purchased with Loan Amount at Origination > $250,000 and < $500,000",c02F0403I
+,,,,,,,,,,,,,,,,,
+d3_0,1,id,1,,INTEGER,,,,,,,,,,,,c02F05001
+d3_0,2,table_id,,,VARCHAR,,,,,,,,5,5,Value is D3-0,1. Table ID,c02F05002
+d3_0,3,respondent_id,,,VARCHAR,1,,,,,,,10,10,"Assigned by regulatory agency 
 (same as HMDAID if applicable);  
-Right justified with leading zeros","2. Respondent ID","c02F05003"
-"d3_0",4,"agency",,,,,,,,,,,"INTEGER",1,1,"Values are 1=OCC, 2=FRS, 
-3=FDIC, or 4=OTS","3. Agency Code","c02F05004"
-"d3_0",5,"year",,,,1,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F05005"
-"d3_0",6,"loan_type",,,,,,,,,,,"INTEGER",1,1,"Value is 4 (Small Business)","5. Loan Type","c02F05006"
-"d3_0",7,"state",,,,,1,,,,,,"INTEGER",2,2,"FIPS code with leading zeros 
+Right justified with leading zeros",2. Respondent ID,c02F05003
+d3_0,4,agency,,,INTEGER,,,,,,,,1,1,"Values are 1=OCC, 2=FRS, 
+3=FDIC, or 4=OTS",3. Agency Code,c02F05004
+d3_0,5,year,,,INTEGER,,1,,,,,,4,4,Four digit year (e.g. 2012),4. Activity Year,c02F05005
+d3_0,6,loan_type,,,INTEGER,,,,,,,,1,1,Value is 4 (Small Business),5. Loan Type,c02F05006
+d3_0,7,state,,,INTEGER,,,1,,,,,2,2,"FIPS code with leading zeros 
 or blank for totals across all 
-states","6. State","c02F05007"
-"d3_0",8,"county",,,,,1,1,,,,,"INTEGER",3,3,"FIPS code with leading zeros or blank 
-for totals across all counties","7. County","c02F05008"
-"d3_0",9,"msa",,,,,,,1,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
+states",6. State,c02F05007
+d3_0,8,county,,,INTEGER,,,1,1,,,,3,3,"FIPS code with leading zeros or blank 
+for totals across all counties",7. County,c02F05008
+d3_0,9,msa,,,INTEGER,,,,,1,,,5,5,"As defined by OMB; Right justified 
 with leading zeros, NA left justified 
 for areas outside of MSA/MD or blank 
-for totals across all MSA/MDs","8. MSA/MD","c02F05009"
-"d3_0",10,"assessment_area",,,,,,,,,,,"VARCHAR",4,4,"Values are 0001 through 9999; Right 
+for totals across all MSA/MDs",8. MSA/MD,c02F05009
+d3_0,10,assessment_area,,,VARCHAR,,,,,,,,4,4,"Values are 0001 through 9999; Right 
 justified with leading zeros, NA left justified 
 for areas outside of an Assessment 
 Area (including predominately military 
 areas) or blank for totals across all 
-Assessment Areas","9. Assessment Area Number","c02F0500a"
-"d3_0",11,"partial_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+Assessment Areas",9. Assessment Area Number,c02F0500a
+d3_0,11,partial_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
 N = No 
-OR blank for totals across all counties","10. Partial County Indicator","c02F0500b"
-"d3_0",12,"split_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+OR blank for totals across all counties",10. Partial County Indicator,c02F0500b
+d3_0,12,split_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
 N = No 
-OR blank for totals across all counties","11. Split County Indicator","c02F0500c"
-"d3_0",13,"report_level",,,,,,,,,,,"VARCHAR",2,2,"Values are 
+OR blank for totals across all counties",11. Split County Indicator,c02F0500c
+d3_0,13,report_level,,,VARCHAR,,,,,,,,2,2,"Values are 
   05= Assessment Area Total 
   10= County Total within 
 Assessment Area 
@@ -496,51 +496,51 @@ Assessment Areas
 20= Activity Outside 
 Assessment Area(s) 
 30=Total Loans (Inside +Outside 
-Assessment Area)","12. Report Level","c02F0500d"
-"d3_0",14,"num_orig_bus",,,,,,,,,,,"INTEGER",7,10,"Right justified with leading zeros","13. Number of Small Business Loans Originated","c02F0500e"
-"d3_0",15,"tot_orig_bus",,,,,,,,,,,"INTEGER",8,10,"Amount is in thousands {e.g. 25 would be  
-$25,000}; Right justified with leading zeros","14. Total Loan Amount of Small Business Loans Originated","c02F0500f"
-"d3_0",16,"num_purch_bus",,,,,,,,,,,"INTEGER",7,10,"Right justified with leading zeros","17. Number of Small Business Loans Purchased","c02F0500g"
-"d3_0",17,"tot_purch_bus",,,,,,,,,,,"INTEGER",8,10,"Amount is in thousands {e.g. 25 indicates  
-$25,000); Right justified with leading zeros","18. Total Loan Amount of Small Business Loans Purchased","c02F0500h"
-"d3_0",18,"filler",,,,,,,,,,,"VARCHAR",,46,"Blank","19. Filler","c02F0500i"
-"d3_0",34,"num_orig_bus_lt1m",,,,,,,,,,,"INTEGER",7,10,"Right justified with leading zeros","15. Number of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million","c02F0500y"
-"d3_0",35,"tot_orig_bus_lt1m",,,,,,,,,,,"INTEGER",8,10,"Amount is in thousands {e.g. 25 would be 
- $25,000}; Right justified with leading zeros","16. Total Loan Amount of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million","c02F0500z"
-,,,,,,,,,,,,,,,,,,
-"d4_0",1,"id",1,,,,,,,,,,"INTEGER",,,,,"c02F06001"
-"d4_0",2,"table_id",,,,,,,,,,,"VARCHAR",5,5,"Value is D4-0","1. Table ID","c02F06002"
-"d4_0",3,"respondent_id",,,,,,,,,,,"VARCHAR",10,10,"Assigned by regulatory agency 
+Assessment Area)",12. Report Level,c02F0500d
+d3_0,14,num_orig_bus,,,INTEGER,,,,,,,,7,10,Right justified with leading zeros,13. Number of Small Business Loans Originated,c02F0500e
+d3_0,15,tot_orig_bus,,,INTEGER,,,,,,,,8,10,"Amount is in thousands {e.g. 25 would be  
+$25,000}; Right justified with leading zeros",14. Total Loan Amount of Small Business Loans Originated,c02F0500f
+d3_0,16,num_purch_bus,,,INTEGER,,,,,,,,7,10,Right justified with leading zeros,17. Number of Small Business Loans Purchased,c02F0500g
+d3_0,17,tot_purch_bus,,,INTEGER,,,,,,,,8,10,"Amount is in thousands {e.g. 25 indicates  
+$25,000); Right justified with leading zeros",18. Total Loan Amount of Small Business Loans Purchased,c02F0500h
+d3_0,18,filler,,,VARCHAR,,,,,,,,,46,Blank,19. Filler,c02F0500i
+d3_0,34,num_orig_bus_lt1m,,,INTEGER,,,,,,,,7,10,Right justified with leading zeros,15. Number of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million,c02F0500y
+d3_0,35,tot_orig_bus_lt1m,,,INTEGER,,,,,,,,8,10,"Amount is in thousands {e.g. 25 would be 
+ $25,000}; Right justified with leading zeros",16. Total Loan Amount of Loans Originated to Small Businesses with Gross Annual Revenues < $1 million,c02F0500z
+,,,,,,,,,,,,,,,,,
+d4_0,1,id,1,,INTEGER,,,,,,,,,,,,c02F06001
+d4_0,2,table_id,,,VARCHAR,,,,,,,,5,5,Value is D4-0,1. Table ID,c02F06002
+d4_0,3,respondent_id,,,VARCHAR,,,,,,,,10,10,"Assigned by regulatory agency 
 (same as HMDAID if applicable);  
-Right justified with leading zeros","2. Respondent ID","c02F06003"
-"d4_0",4,"agency",,,,,,,,,,,"INTEGER",1,1,"Values are 1=OCC, 2=FRS, 
-3=FDIC, or 4=OTS","3. Agency Code","c02F06004"
-"d4_0",5,"year",,,,,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F06005"
-"d4_0",6,"loan_type",,,,,,,,,,,"INTEGER",1,1,"Value is 5 (Small Farm)","5. Loan Type","c02F06006"
-"d4_0",7,"state",,,,,,,,,,,"INTEGER",2,2,"FIPS code with leading zeros 
+Right justified with leading zeros",2. Respondent ID,c02F06003
+d4_0,4,agency,,,INTEGER,,,,,,,,1,1,"Values are 1=OCC, 2=FRS, 
+3=FDIC, or 4=OTS",3. Agency Code,c02F06004
+d4_0,5,year,,,INTEGER,,,,,,,,4,4,Four digit year (e.g. 2012),4. Activity Year,c02F06005
+d4_0,6,loan_type,,,INTEGER,,,,,,,,1,1,Value is 5 (Small Farm),5. Loan Type,c02F06006
+d4_0,7,state,,,INTEGER,,,,,,,,2,2,"FIPS code with leading zeros 
 or blank for totals across all 
-states","6. State","c02F06007"
-"d4_0",8,"county",,,,,,,,,,,"INTEGER",3,3,"FIPS code with leading zeros or blank 
-for totals across all counties","7. County","c02F06008"
-"d4_0",9,"msa",,,,,,,,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
+states",6. State,c02F06007
+d4_0,8,county,,,INTEGER,,,,,,,,3,3,"FIPS code with leading zeros or blank 
+for totals across all counties",7. County,c02F06008
+d4_0,9,msa,,,INTEGER,,,,,,,,5,5,"As defined by OMB; Right justified 
 with leading zeros, NA left justified 
 for areas outside of MSA/MD or blank 
-for totals across all MSA/MDs","8. MSA/MD","c02F06009"
-"d4_0",10,"assessment_area",,,,,,,,,,,"VARCHAR",4,4,"Values are 0001 through 9999; Right 
+for totals across all MSA/MDs",8. MSA/MD,c02F06009
+d4_0,10,assessment_area,,,VARCHAR,,,,,,,,4,4,"Values are 0001 through 9999; Right 
 justified with leading zeros, NA left justified 
 for areas outside of an Assessment 
 Area (including predominately military 
 areas) or blank for totals across all 
-Assessment Areas","9. Assessment Area Number","c02F0600a"
-"d4_0",11,"partial_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+Assessment Areas",9. Assessment Area Number,c02F0600a
+d4_0,11,partial_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
 N = No 
-OR blank for totals across all counties","10. Partial County Indicator","c02F0600b"
-"d4_0",12,"split_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+OR blank for totals across all counties",10. Partial County Indicator,c02F0600b
+d4_0,12,split_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
 N = No 
-OR blank for totals across all counties","11. Split County Indicator","c02F0600c"
-"d4_0",13,"report_level",,,,,,,,,,,"VARCHAR",2,2,"Values are 
+OR blank for totals across all counties",11. Split County Indicator,c02F0600c
+d4_0,13,report_level,,,VARCHAR,,,,,,,,2,2,"Values are 
   05= Assessment Area Total 
   10= County Total within 
 Assessment Area 
@@ -549,76 +549,76 @@ Assessment Areas
 20= Activity Outside 
 Assessment Area(s) 
 30= Total Loans (Inside +  
-Outside Assessment Area)","12. Report Level","c02F0600d"
-"d4_0",14,"num_orig_farm",,,,,,,,,,,"INTEGER",5,10,"Right justified with leading zeros","13. Number of Small Farm Loans Originated","c02F0600e"
-"d4_0",15,"tot_orig_farm",,,,,,,,,,,"INTEGER",7,10,"Amount is in thousands {e.g. 25 would be 
- $25,000}; Right justified with leading zeros","14. Total Loan Amount of Small Farm Loans Originated","c02F0600f"
-"d4_0",16,"num_purch_farm",,,,,,,,,,,"INTEGER",4,10,"Right justified with leading zeros","17. Number of Small Farm Loans Purchased","c02F0600g"
-"d4_0",17,"tot_purch_farm",,,,,,,,,,,"INTEGER",6,10,"Amount is in thousands {e.g. 25 indicates 
-$25,000); Right justified with leading zeros","18. Total Loan Amount of Small Farm Loans Purchased","c02F0600h"
-"d4_0",18,"filler",,,,,,,,,,,"VARCHAR",,46,"Blank","19. Filler","c02F0600i"
-"d4_0",34,"num_orig_farm_lt1m",,,,,,,,,,,"INTEGER",5,10,"Right justified with leading zeros","15. Number of Loans Originated to Small Farms with Gross Annual Revenues < $1 million","c02F0600y"
-"d4_0",35,"tot_orig_farm_lt1m",,,,,,,,,,,"INTEGER",7,10,"Amount is in thousands {e.g. 25 would be 
-$25,000}; Right justified with leading zeros","16. Total Loan Amount of Loans Originated to Small Farms with Gross Annual Revenues < $1 million","c02F0600z"
-,,,,,,,,,,,,,,,,,,
-"d5_0",1,"id",1,,,,,,,,,,"INTEGER",,,,,"c02F07001"
-"d5_0",2,"table_id",,,,,,,,,,,"VARCHAR",5,5,"Value is D5-0","1. Table ID","c02F07002"
-"d5_0",3,"respondent_id",,,1,,,,,,,,"VARCHAR",10,10,"Assigned by regulatory agency 
+Outside Assessment Area)",12. Report Level,c02F0600d
+d4_0,14,num_orig_farm,,,INTEGER,,,,,,,,5,10,Right justified with leading zeros,13. Number of Small Farm Loans Originated,c02F0600e
+d4_0,15,tot_orig_farm,,,INTEGER,,,,,,,,7,10,"Amount is in thousands {e.g. 25 would be 
+ $25,000}; Right justified with leading zeros",14. Total Loan Amount of Small Farm Loans Originated,c02F0600f
+d4_0,16,num_purch_farm,,,INTEGER,,,,,,,,4,10,Right justified with leading zeros,17. Number of Small Farm Loans Purchased,c02F0600g
+d4_0,17,tot_purch_farm,,,INTEGER,,,,,,,,6,10,"Amount is in thousands {e.g. 25 indicates 
+$25,000); Right justified with leading zeros",18. Total Loan Amount of Small Farm Loans Purchased,c02F0600h
+d4_0,18,filler,,,VARCHAR,,,,,,,,,46,Blank,19. Filler,c02F0600i
+d4_0,34,num_orig_farm_lt1m,,,INTEGER,,,,,,,,5,10,Right justified with leading zeros,15. Number of Loans Originated to Small Farms with Gross Annual Revenues < $1 million,c02F0600y
+d4_0,35,tot_orig_farm_lt1m,,,INTEGER,,,,,,,,7,10,"Amount is in thousands {e.g. 25 would be 
+$25,000}; Right justified with leading zeros",16. Total Loan Amount of Loans Originated to Small Farms with Gross Annual Revenues < $1 million,c02F0600z
+,,,,,,,,,,,,,,,,,
+d5_0,1,id,1,,INTEGER,,,,,,,,,,,,c02F07001
+d5_0,2,table_id,,,VARCHAR,,,,,,,,5,5,Value is D5-0,1. Table ID,c02F07002
+d5_0,3,respondent_id,,,VARCHAR,1,,,,,,,10,10,"Assigned by regulatory agency 
 (same as HMDAID if applicable);  
-Right justified with leading zeros","2. Respondent ID","c02F07003"
-"d5_0",4,"agency",,,,,,,,,,,"INTEGER",1,1,"Values are 1=OCC, 2=FRS, 
-3=FDIC, or 4=OTS","3. Agency Code","c02F07004"
-"d5_0",5,"year",,,,1,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F07005"
-"d5_0",6,"loan_type",,,,,,,,,,,"INTEGER",1,1,"Values are 
+Right justified with leading zeros",2. Respondent ID,c02F07003
+d5_0,4,agency,,,INTEGER,,,,,,,,1,1,"Values are 1=OCC, 2=FRS, 
+3=FDIC, or 4=OTS",3. Agency Code,c02F07004
+d5_0,5,year,,,INTEGER,,1,,,,,,4,4,Four digit year (e.g. 2012),4. Activity Year,c02F07005
+d5_0,6,loan_type,,,INTEGER,,,,,,,,1,1,"Values are 
 6 = Community Development 
-7 = Consortium/Third-Party","5. Loan Type","c02F07006"
-"d5_0",7,"num_loans",,,,,,,,,,,"INTEGER",5,10,"Right justified with leading zeros","6. Number of Loans","c02F07007"
-"d5_0",8,"tot",,,,,,,,,,,"INTEGER",8,10,"Amount is in thousands {e.g. 25 would be  
-$25,000}; Right justified with leading zeros","7. Total Loan Amount of Loans","c02F07008"
-"d5_0",9,"num_al",,,,,,,,,,,"INTEGER",4,10,"Right justified with leading zeros or blank if 
-not applicable","8. Number of Loans Reported as Affiliate Loans","c02F07009"
-"d5_0",10,"tot_al",,,,,,,,,,,"INTEGER",7,10,"Amount is in thousands {e.g. 25 would be  
+7 = Consortium/Third-Party",5. Loan Type,c02F07006
+d5_0,7,num_loans,,,INTEGER,,,,,,,,5,10,Right justified with leading zeros,6. Number of Loans,c02F07007
+d5_0,8,tot,,,INTEGER,,,,,,,,8,10,"Amount is in thousands {e.g. 25 would be  
+$25,000}; Right justified with leading zeros",7. Total Loan Amount of Loans,c02F07008
+d5_0,9,num_al,,,INTEGER,,,,,,,,4,10,"Right justified with leading zeros or blank if 
+not applicable",8. Number of Loans Reported as Affiliate Loans,c02F07009
+d5_0,10,tot_al,,,INTEGER,,,,,,,,7,10,"Amount is in thousands {e.g. 25 would be  
 $25,000}; Right justified with leading zeros  
-or blank if not applicable","9. Total Loan Amount of Loans Reported as Affiliate Loans","c02F0700a"
-"d5_0",11,"filler",,,,,,,,,,,"VARCHAR",,83,"Blank","11. Filler","c02F0700b"
-"d5_0",44,"action",,,,,,,,,,,"INTEGER",,1,"Values are 
+or blank if not applicable",9. Total Loan Amount of Loans Reported as Affiliate Loans,c02F0700a
+d5_0,11,filler,,,VARCHAR,,,,,,,,,83,Blank,11. Filler,c02F0700b
+d5_0,44,action,,,INTEGER,,,,,,,,,1,"Values are 
 O = Originated 
 P = Purchased 
-T = Total (Originated + Purchased)","10. Action Type","c02F0700I"
-,,,,,,,,,,,,,,,,,,
-"d6_0",1,"id",1,,,,,,,,,,"INTEGER",,,,,"c02F08001"
-"d6_0",2,"table_id",,,,,,,,,,,"VARCHAR",5,5,"Value is D6-0","1. Table ID","c02F08002"
-"d6_0",3,"respondent_id",,,1,,,,,,,,"VARCHAR",10,10,"Assigned by regulatory agency 
+T = Total (Originated + Purchased)",10. Action Type,c02F0700I
+,,,,,,,,,,,,,,,,,
+d6_0,1,id,1,,INTEGER,,,,,,,,,,,,c02F08001
+d6_0,2,table_id,,,VARCHAR,,,,,,,,5,5,Value is D6-0,1. Table ID,c02F08002
+d6_0,3,respondent_id,,,VARCHAR,1,,,,,,,10,10,"Assigned by regulatory agency 
 (same as HMDA ID if applicable);  
-Right justified with leading zeros","2. Respondent ID","c02F08003"
-"d6_0",4,"agency",,,,,,,,,,,"INTEGER",1,1,"Values are 1=OCC, 2=FRS, 
-3=FDIC, or 4=OTS","3. Agency Code","c02F08004"
-"d6_0",5,"year",,,,1,,,,,,,"INTEGER",4,4,"Four digit year (e.g. 2012)","4. Activity Year","c02F08005"
-"d6_0",6,"state",,,,,1,1,,,,,"INTEGER",2,2,"FIPS code with leading zeros","5. State","c02F08006"
-"d6_0",7,"county",,,,," ",1,,,,,"INTEGER",3,3,"FIPS code with leading zeros","6. County","c02F08007"
-"d6_0",8,"msa",,,,,," ",1,,,,"INTEGER",5,5,"As defined by OMB; Right justified 
+Right justified with leading zeros",2. Respondent ID,c02F08003
+d6_0,4,agency,,,INTEGER,,,,,,,,1,1,"Values are 1=OCC, 2=FRS, 
+3=FDIC, or 4=OTS",3. Agency Code,c02F08004
+d6_0,5,year,,,INTEGER,,1,,,,,,4,4,Four digit year (e.g. 2012),4. Activity Year,c02F08005
+d6_0,6,state,,,INTEGER,,,1,1,,,,2,2,FIPS code with leading zeros,5. State,c02F08006
+d6_0,7,county,,,INTEGER,,,,1,,,,3,3,FIPS code with leading zeros,6. County,c02F08007
+d6_0,8,msa,,,INTEGER,,,,,1,,,5,5,"As defined by OMB; Right justified 
 with leading zeros or NA left justified 
-for areas outside of an MSA/MD","7. MSA/MD","c02F08008"
-"d6_0",9,"tract",,,,,,,,1,,,"VARCHAR",7,7,"As defined by the Bureau of Census; 
+for areas outside of an MSA/MD",7. MSA/MD,c02F08008
+d6_0,9,tract,,,VARCHAR,,,,,,1,,7,7,"As defined by the Bureau of Census; 
 Right justified with leading/trailing zeros 
 and decimal point or blank for totals 
-across all census tracts","8. Census Tract","c02F08009"
-"d6_0",10,"assessment_area",,,,,,,,,,,"VARCHAR",4,4,"Values are 1 through 9999; 
+across all census tracts",8. Census Tract,c02F08009
+d6_0,10,assessment_area,,,VARCHAR,,,,,,,,4,4,"Values are 1 through 9999; 
 Right justified with leading zeros, or NA left 
 justified if outside of Assessment Area(s)  
-(including predominately military areas).","9. Assessment Area Number","c02F0800a"
-"d6_0",11,"partial_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+(including predominately military areas).",9. Assessment Area Number,c02F0800a
+d6_0,11,partial_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
-N = No","10. Partial County Indicator","c02F0800b"
-"d6_0",12,"split_county",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+N = No",10. Partial County Indicator,c02F0800b
+d6_0,12,split_county,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
-N = No","11. Split County Indicator","c02F0800c"
-"d6_0",13,"pop_class",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+N = No",11. Split County Indicator,c02F0800c
+d6_0,13,pop_class,,,VARCHAR,,,,,,,,1,1,"Values are 
 S= counties with 
 < 500,000 in population 
 L= counties with 
->500,000 in population","12. Population Classification","c02F0800d"
-"d6_0",14,"income_group",,,,,,,,,1,,"VARCHAR",3,3,"Values are 
+>500,000 in population",12. Population Classification,c02F0800d
+d6_0,14,income_group,,,VARCHAR,,,,,,,1,3,3,"Values are 
 1= < 10% of Median Family 
 Income(MFI) 
 2= 10% to 20% of MFI 
@@ -646,8 +646,8 @@ to 80% of MFI)
 of MFI) 
 105= Income Not Known (0) 
 106=Tract not Known (NA) 
-Right justified with leading zeros","13. Income Group","c02F0800e"
-"d6_0",15,"loan_indicator",,,,,,,,,,,"VARCHAR",1,1,"Values are 
+Right justified with leading zeros",13. Income Group,c02F0800e
+d6_0,15,loan_indicator,,,VARCHAR,,,,,,,,1,1,"Values are 
 Y = Yes 
-N = No","14. Loan Indicator","c02F0800f"
-"d6_0",16,"filler",,,,,,,,,,,"VARCHAR",,96,"Blank","15. Filler","c02F0800g"
+N = No",14. Loan Indicator,c02F0800f
+d6_0,16,filler,,,VARCHAR,,,,,,,,,96,Blank,15. Filler,c02F0800g

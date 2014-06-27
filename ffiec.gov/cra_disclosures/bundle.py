@@ -325,8 +325,13 @@ class Bundle(BuildBundle):
                     
                     regex = rm[(year, table_id)]
                     
-                    if year == 1996 and table_id == 'd5_0' and len(line) == 34:
-                        line += ( '0' * 14 )
+                    if table_id == 'd5_0':
+                        if year == 1996 and len(line) == 34:
+                            line += ( '0' * 14 )
+                        elif year == 1997 and len(line) == 35:
+                            line += ( '0' * 14 )
+                        elif year == 1998 and len(line) == 36:
+                            line += ( '0' * 14 )
                     
                     
                     

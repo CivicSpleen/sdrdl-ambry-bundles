@@ -24,7 +24,7 @@ actually has 'P', 'O', or 'T', for 'purchased', 'originated' or 'total'.
 
 In Table D6-0, year 1996, the MSA column is incorrectly listed as 5 characters wide. It should be 4, as it is in other tables and other years. 
 
-In Table D5-0, year 1996, many of the records are missing the last two fields ( 14 char combined ) so the rows have a length of 34 chars, rather than 48.
+In Table D5-0, years 1996, 1997 and 1998 many of the records are missing the last two fields ( 14 char combined ) so the rows have a length of 34, 35 or 36 chars, rather than 48 or 49. From 1996 to 1997, ... The 1998 file adss an action_type field that isn't documented until 1999. 
 
 Table D5-0, year 1999, has lines of length 114 chars, while the file spec indicates they are 115 chars. The specification carried for the filler size of 65 chars from the previous years, which should have been reduced to 64 chars because of the addition of the "Action Type" field. 
 
