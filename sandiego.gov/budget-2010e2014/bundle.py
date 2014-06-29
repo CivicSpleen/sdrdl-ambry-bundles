@@ -181,11 +181,9 @@ class Bundle(BuildBundle):
                     last_values[i] = values[i] if values[i] else last_values[i] 
                 values = last_values
                     
-
             yield values
             
             last_values = values
-          
                   
     def meta(self):
 
@@ -193,32 +191,33 @@ class Bundle(BuildBundle):
         
         self.meta_gen_schema()
         
-        
     def build(self):
         
         headings = self.filesystem.read_yaml('meta','headings.yaml')
+        
+        p = self.partitions.find_or_new(table='fmdatacip', tables = [ t.name for t in self.schema.tables])
         
         for file_key, sheets in headings.items():
             for sheet_name, header_map in sheets.items():
                 
                 print '====', file_key, sheet_name
                 
-                p = self.partitions.find_or_new(table=sheet_name)
+                
                 lr = self.init_log_rate(2000)
                 
                 header = [ i[1] for i in header_map ]
                 
-                with p.inserter() as ins:
-                    for i, row in enumerate(self.gen_rows(file_key, sheet_name)):
+                accumulate = False
+                
+                if sheet_name in ('fchierarchy', 'pbf_publishing_commitment_item'):
+                    accumulate = True
+                
+                with p.inserter(sheet_name) as ins:
+                    for i, row in enumerate(self.gen_rows(file_key, sheet_name, accumulate = accumulate)):
                         lr(sheet_name)
                         ins.insert(dict(zip(header, row)))
-                    
+                        
+                      
+        return True
+                        
                 
-                
-                
-        
-        
-        
-        
-        
-        
