@@ -1,0 +1,105 @@
+committment_items:
+    pbf_publishing_commitment_item:
+    -   - Print Preview for Hierarchy PBF Publishing Commitment Item Hierarchy
+        - 'print'
+    -   - '1'
+        - 'l1'
+    -   - '2'
+        - 'l2'
+    -   - '3'
+        - 'l3'
+    -   - '4'
+        - 'l4'
+    -   - '5'
+        - 'l5'
+    -   - '6'
+        - 'l6'
+    -   - '7'
+        - 'info_object'
+    -   - '8'
+        - 'node_name'
+    -   - '9'
+        - 'link_id'
+fmdata:
+    fmdatacip:
+    -   - Fiscal Year
+        - 'year'
+    -   - Fund
+        - 'fund'
+    -   - Funds Center
+        - 'center'
+    -   - Commitment item
+        - 'commit_item'
+    -   - Funded Program
+        - 'program'
+    -   - Grant
+        - 'grant'
+    -   - Carryforward
+        - 'carryforward'
+    -   - Original Budget
+        - 'orig'
+    -   - Budget Change
+        - 'change'
+    -   - Actuals
+        - 'actuals'
+fpgroup:
+    fc_grouping:
+    -   - Level 1
+        - 'l1'
+    -   - Level 2
+        - 'l2'
+    -   - Title
+        - 'desc'
+fund_centers:
+    fchierarchy:
+    -   - '0'
+        - 'l1'
+    -   - '1'
+        - 'l2'
+    -   - '2'
+        - 'l3'
+    -   - '3'
+        - 'l4'
+    -   - '4'
+        - 'info_object'
+    -   - '5'
+        - 'node_name'
+    -   - '6'
+        - 'link_id'
+master_data:
+    commitment_item:
+    -   - /BP09/S_CMMT_IT
+        - 'commit_item'
+    -   - TXTLG
+        - 'desc'
+    functional_area:
+    -   - Functional Area
+        - 'func_area'
+    -   - Long description
+        - 'desc'
+    fund:
+    -   - Fund
+        - 'fund'
+    -   - Fund Type
+        - 'type'
+    -   - Long description
+        - 'desc'
+    fund_center:
+    -   - Valid From
+        - 'valid_from'
+    -   - Valid To
+        - 'valid_to'
+    -   - Funds Center
+        - 'center'
+    -   - Long Description
+        - 'desc'
+    funded_program:
+    -   - Funded Program
+        - 'program'
+    -   - Long description
+        - 'desc'
+    grant:
+    -   - Grant
+        - 'grant'
+    -   - Long description
+        - 'desc'

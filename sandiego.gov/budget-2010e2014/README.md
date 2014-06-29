@@ -1,7 +1,4 @@
 
-# Bundle Readme
+# City of San Diego Budget Data
 
-The contents of this file should be written in  
-[Markdown](http://daringfireball.net/projects/markdown/syntax). It will
-be included in the about.description entry in the bundle configuration.
-
+A quick import of budget files supplied by the City of San Diego

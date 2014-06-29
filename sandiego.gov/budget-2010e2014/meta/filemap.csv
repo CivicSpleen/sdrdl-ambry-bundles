@@ -1,0 +1,10 @@
+fmdata,fmdatacip,/data/cache/downloads/ds.civicknowledge.org.s3.amazonaws.com/_sandiego.gov_City%2520Budget_201405_FMData_2010-2014_CIP%2520FINAL.XLSX,FMData-CIP
+master_data,fund,/data/cache/downloads/ds.civicknowledge.org.s3.amazonaws.com/_sandiego.gov_City%2520Budget_201405_Master%2520Data_All.xlsx,Fund
+master_data,fund_center,/data/cache/downloads/ds.civicknowledge.org.s3.amazonaws.com/_sandiego.gov_City%2520Budget_201405_Master%2520Data_All.xlsx,Fund Center
+master_data,commitment_item,/data/cache/downloads/ds.civicknowledge.org.s3.amazonaws.com/_sandiego.gov_City%2520Budget_201405_Master%2520Data_All.xlsx,Commitment Item
+master_data,grant,/data/cache/downloads/ds.civicknowledge.org.s3.amazonaws.com/_sandiego.gov_City%2520Budget_201405_Master%2520Data_All.xlsx,Grant
+master_data,funded_program,/data/cache/downloads/ds.civicknowledge.org.s3.amazonaws.com/_sandiego.gov_City%2520Budget_201405_Master%2520Data_All.xlsx,Funded Program
+master_data,functional_area,/data/cache/downloads/ds.civicknowledge.org.s3.amazonaws.com/_sandiego.gov_City%2520Budget_201405_Master%2520Data_All.xlsx,Functional Area
+fpgroup,fc_grouping,/data/cache/downloads/ds.civicknowledge.org.s3.amazonaws.com/_sandiego.gov_City%2520Budget_201405_Funded%2520Program%2520Grouping_ECC.xlsx,FC Grouping
+committment_items,pbf_publishing_commitment_item,/data/cache/downloads/ds.civicknowledge.org.s3.amazonaws.com/_sandiego.gov_City%2520Budget_201405_Commitment%2520Item%2520Hierarchy.xlsx,PBF Publishing Commitment Item 
+fund_centers,fchierarchy,/data/cache/downloads/ds.civicknowledge.org.s3.amazonaws.com/_sandiego.gov_City%2520Budget_201405_Funds%2520Center_Hierarchy.xlsx,FC_Hierarchy

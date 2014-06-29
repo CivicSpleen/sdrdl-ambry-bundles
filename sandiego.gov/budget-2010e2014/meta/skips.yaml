@@ -1,0 +1,10 @@
+committment_items;pbf_publishing_commitment_item: 3
+fmdata;fmdatacip: 1
+fpgroup;fc_grouping: 1
+fund_centers;fchierarchy: 4
+master_data;commitment_item: 1
+master_data;functional_area: 1
+master_data;fund: 1
+master_data;fund_center: 1
+master_data;funded_program: 1
+master_data;grant: 1
