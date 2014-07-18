@@ -1,0 +1,158 @@
+calldata:
+    fbexport:
+    -   - Shared - NEW - Call Status
+        - 'call_stat'
+    -   - Portal Restrictions
+        - 'restrictions'
+    -   - 'Client: Create Date/Time'
+        - 'create_time'
+    -   - Client ID
+        - 'client_id'
+    -   - 211 - Queue
+        - 'queue'
+    -   - Shared - Call Type
+        - 'call_type'
+    -   - Shared (211, Imperial)- Relationship to client
+        - 'relationship'
+    -   - 211 - Have you called 2-1-1 before?
+        - 'called_before'
+    -   - 211 - How did you hear about 211?
+        - 'how_hear'
+    -   - Shared - Do you have health insurance?
+        - 'have_ins'
+    -   - Shared - If yes, what type of insurance?
+        - 'ins_type'
+    -   - 211 - Is anyone in the household disabled?
+        - 'hshld_disabled'
+    -   - Shared - Gender
+        - 'gender'
+    -   - Shared (211, Imperial) - Age Groups
+        - 'age_goups'
+    -   - New - 211 - Age of Caller
+        - 'caller_age'
+    -   - NEW - Pregnant Women or Children under 6
+        - 'preg_lt6'
+    -   - 211  - Children Under 6
+        - 'child_lt6'
+    -   - Shared (211, C2C) Ethnic Category
+        - 'ethnicity'
+    -   - Shared (211, Imperial) - Race - Ethnicity
+        - 'race'
+    -   - 211 - Language?
+        - 'language'
+    -   - Shared - Household Size
+        - 'hshld_size'
+    -   - Shared (211, Imperial) - Income Source
+        - 'income_source'
+    -   - Shared (211, Imperial) - What is your household's yearly gross income
+        - 'hshld_income'
+    -   - (211, Imperial) - Enter Percentage for Household's FPL
+        - 'hshld_pct_fpl'
+    -   - 2-1-1 - Declined to State Yearly Income or Did Not Ask
+        - 'income_declined'
+    -   - Shared - Zip
+        - 'zip'
+    -   - 'Presenting Needs: Taxonomy Code'
+        - 'need_tax_code'
+    -   - 'Presenting Needs: Taxonomy Category'
+        - 'need_tax_cat'
+    -   - 'Presenting Needs: Unmet?'
+        - 'need_unmet'
+    -   - 'Presenting Needs: Reason Unmet'
+        - 'need_reason_unmet'
+    -   - Referral Agency Name
+        - 'ref_agency'
+    -   - Referral Name
+        - 'ref_name'
+    income:
+    -   - Client ID
+        - 'client_id'
+    -   - Shared (211, Imperial) - Income Source
+        - 'income_source'
+    insurance:
+    -   - Client ID
+        - 'client_id'
+    -   - Shared - Do you have health insurance?
+        - 'have_ins'
+    -   - Shared - If yes, what type of insurance?
+        - 'ins_type'
+    -   - '3'
+        - ''
+    -   - '4'
+        - ''
+    -   - '5'
+        - ''
+    -   - '6'
+        - ''
+    -   - '7'
+        - ''
+    -   - Row Labels
+        - ''
+    -   - Count of Client ID
+        - ''
+    sheet1:
+    -   - Client ID
+        - 'client_id'
+    -   - Referral Agency Name
+        - 'ref_agency'
+    -   - Referral Name
+        - 'ref_name'
+    -   - '3'
+        - ''
+    -   - '4'
+        - ''
+    -   - '5'
+        - ''
+    -   - Row Labels
+        - ''
+    -   - Count of Client ID
+        - ''
+    sheet2:
+    -   - Client ID
+        - 'client_id'
+    -   - 211 - Queue
+        - 'queue'
+    -   - Shared - Call Type
+        - 'call_type'
+    -   - Shared (211, Imperial)- Relationship to client
+        - 'relationship'
+    -   - 211 - Have you called 2-1-1 before?
+        - 'called_before'
+    -   - 211 - How did you hear about 211?
+        - 'how_hear'
+    -   - Shared - Do you have health insurance?
+        - 'have_ins'
+    -   - 211 - Is anyone in the household disabled?
+        - 'hsld_disabled'
+    -   - Shared - Gender
+        - 'gender'
+    -   - Shared (211, Imperial) - Age Groups
+        - 'age_groups'
+    -   - New - 211 - Age of Caller
+        - 'caller_age'
+    -   - NEW - Pregnant Women or Children under 6
+        - 'preg_lt6'
+    -   - 211  - Children Under 6
+        - 'child_lt6'
+    -   - Shared (211, C2C) Ethnic Category
+        - 'ethnicity'
+    -   - Shared (211, Imperial) - Race - Ethnicity
+        - 'race'
+    -   - 211 - Language?
+        - 'language'
+    -   - Shared - Household Size
+        - 'hshld_size'
+    -   - Shared (211, Imperial) - What is your household's yearly gross income
+        - 'hshld_income'
+    -   - 2-1-1 - Declined to State Yearly Income or Did Not Ask
+        - 'income_declined'
+    -   - Shared - Zip
+        - 'zip'
+    -   - '20'
+        - ''
+    -   - '21'
+        - ''
+    -   - Row Labels
+        - ''
+    -   - Count of Client ID
+        - ''

@@ -1,0 +1,35 @@
+table,seq,column,is_pk,is_fk,type,size,description,id
+hitnrun,1,id,1,,INTEGER,3,,c02M01001
+hitnrun,2,division,,,VARCHAR,25,,c02M01002
+hitnrun,3,district,,,VARCHAR,12,,c02M01003
+hitnrun,4,highest_dispo_charge,,,VARCHAR,25,,c02M01004
+hitnrun,5,last_event_result,,,VARCHAR,78,,c02M01005
+hitnrun,6,number,,,VARCHAR,8,,c02M01006
+hitnrun,7,highest_charge,,,VARCHAR,25,,c02M01007
+hitnrun,8,highest_charge_mod,,,VARCHAR,25,,c02M01008
+hitnrun,9,complaint_year,,,REAL,,,c02M01009
+hitnrun,10,next_pending_event,,,VARCHAR,33,,c02M0100a
+hitnrun,11,offense_date,,,DATETIME,,,c02M0100b
+hitnrun,12,sentencing,,,VARCHAR,100,,c02M0100c
+hitnrun,13,final_disposition,,,VARCHAR,49,,c02M0100d
+hitnrun,14,unit,,,VARCHAR,31,,c02M0100e
+hitnrun,15,event_of_final_dispo,,,VARCHAR,31,,c02M0100f
+hitnrun,16,drug,,,INTEGER,3,,c02M0100g
+hitnrun,17,drug_patient,,,INTEGER,2,,c02M0100h
+hitnrun,18,drug_res,,,INTEGER,3,,c02M0100i
+hitnrun,19,full,,,INTEGER,4,,c02M0100j
+hitnrun,20,incar,,,INTEGER,4,Any Incarceration,c02M0100k
+hitnrun,21,incar_county,,,INTEGER,4,Prison Served in County Jail,c02M0100l
+hitnrun,22,incar_life,,,INTEGER,4,Life and Life +,c02M0100m
+hitnrun,23,incar_prison,,,INTEGER,4,State Prison,c02M0100n
+hitnrun,24,incr_local,,,INTEGER,,Local Custody,c02M0100o
+hitnrun,25,prob,,,INTEGER,4,Any probation,c02M0100p
+hitnrun,26,prob_formal,,,INTEGER,4,Probation Formal,c02M0100q
+hitnrun,27,prob_sum,,,INTEGER,4,Probation Summary,c02M0100r
+hitnrun,28,prog,,,INTEGER,3,Any program,c02M0100s
+hitnrun,29,prog_child,,,INTEGER,3,Child Abuse Program,c02M0100t
+hitnrun,30,prog_dv,,,INTEGER,3,DV Recovery Program,c02M0100u
+hitnrun,31,work,,,INTEGER,3,Any work,c02M0100v
+hitnrun,32,work_furl,,,INTEGER,3,Work Furlough,c02M0100w
+hitnrun,33,work_pub,,,INTEGER,2,Public Work Service,c02M0100x
+hitnrun,34,work_vol,,,INTEGER,,Volunteer Work Service,c02M0100y

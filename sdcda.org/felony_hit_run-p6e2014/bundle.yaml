@@ -1,0 +1,52 @@
+about:
+    groups: []
+    license: null
+    rights: null
+    subject: null
+    summary: null
+    tags: []
+    title: null
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: null
+        name: null
+        url: null
+    maintainer:
+        email: null
+        name: null
+        url: null
+external_documentation:
+    example:
+        description: description
+        source: source
+        title: title
+        url: http://example.com
+identity:
+    bspace: null
+    btime: p6e2014
+    dataset: felony_hit_run
+    id: d02M
+    revision: 1
+    source: sdcda.org
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: sdcda.org-felony_hit_run-p6e2014-0.0.1~d02M001
+    name: sdcda.org-felony_hit_run-p6e2014
+    vid: d02M001
+    vname: sdcda.org-felony_hit_run-p6e2014-0.0.1
+versions:
+    1:
+        description: null
+        version: 0.0.1

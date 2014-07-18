@@ -1,10 +1,37 @@
 table,seq,column,is_pk,is_fk,type,size,description,id
-example1,1,id,1,,INTEGER,,,c00H01001
-example1,2,uuid,,,VARCHAR,36,A random UUID,c00H01002
-example1,3,int,,,INTEGER,3,A random integer,c00H01003
-example1,4,float,,,REAL,,,c00H01004
+calls,1,id,1,,INTEGER,,,c02J01001
+calls,2,call_stat,,,VARCHAR,26,,c02J01002
+calls,3,restrictions,,,VARCHAR,19,,c02J01003
+calls,4,create_time,,,VARCHAR,30,,c02J01004
+calls,5,client_id,,,INTEGER,8,,c02J01005
+calls,6,queue,,,VARCHAR,27,,c02J01006
+calls,7,call_type,,,VARCHAR,23,,c02J01007
+calls,8,relationship,,,VARCHAR,46,,c02J01008
+calls,9,called_before,,,VARCHAR,35,,c02J01009
+calls,10,how_hear,,,VARCHAR,34,,c02J0100a
+calls,11,have_ins,,,VARCHAR,38,,c02J0100b
+calls,12,ins_type,,,VARCHAR,48,,c02J0100c
+calls,13,hshld_disabled,,,VARCHAR,42,,c02J0100d
+calls,14,gender,,,VARCHAR,15,,c02J0100e
+calls,15,age_goups,,,VARCHAR,35,,c02J0100f
+calls,16,caller_age,,,VARCHAR,26,,c02J0100g
+calls,17,preg_lt6,,,VARCHAR,40,,c02J0100h
+calls,18,child_lt6,,,INTEGER,1,,c02J0100i
+calls,19,ethnicity,,,VARCHAR,33,,c02J0100j
+calls,20,race,,,VARCHAR,41,,c02J0100k
+calls,21,language,,,VARCHAR,17,,c02J0100l
+calls,22,hshld_size,,,VARCHAR,29,,c02J0100m
+calls,23,income_source,,,VARCHAR,43,,c02J0100n
+calls,24,hshld_income,,,VARCHAR,69,,c02J0100o
+calls,25,hshld_pct_fpl,,,VARCHAR,54,,c02J0100p
+calls,26,income_declined,,,VARCHAR,54,,c02J0100q
+calls,27,zip,,,INTEGER64,10,,c02J0100r
+calls,28,need_tax_code,,,VARCHAR,31,,c02J0100s
+calls,29,need_tax_cat,,,VARCHAR,76,,c02J0100t
+calls,30,need_unmet,,,VARCHAR,24,,c02J0100u
+calls,31,need_reason_unmet,,,VARCHAR,37,,c02J0100v
+calls,32,ref_agency,,,VARCHAR,98,,c02J0100w
+calls,33,ref_name,,,VARCHAR,190,,c02J0100x
 ,,,,,,,,
-example2,1,id,1,,INTEGER,,,c00H02001
-example2,2,uuid2,,,VARCHAR,,A random UUID,c00H02002
-example2,3,int2,,,INTEGER,,A random integer,c00H02003
-example2,4,float,,,REAL,,,c00H02004
+income,1,client_id,,,INTEGER,,,c02J02001
+income,2,income_source,,,VARCHAR,43,,c02J02002

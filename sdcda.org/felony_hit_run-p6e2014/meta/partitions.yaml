@@ -1,0 +1,6 @@
+-   grain: orig
+    name: sdcda.org-felony_hit_run-p6e2014-hitnrun-orig
+    table: hitnrun
+-   grain: cleaned
+    name: sdcda.org-felony_hit_run-p6e2014-hitnrun-cleaned
+    table: hitnrun

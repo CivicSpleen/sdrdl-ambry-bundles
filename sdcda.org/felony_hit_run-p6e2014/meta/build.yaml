@@ -1,0 +1,9 @@
+build:
+    requirements:
+        xlrd: xlrd
+dependencies: {}
+extract: {}
+sources:
+    fhnr:
+        description: Felony Hist and runs 2009 to 2014
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sdcda.org/Felony_Hit_and_Run_Cases_Jan_1_2009_to_May_31_2014.xls

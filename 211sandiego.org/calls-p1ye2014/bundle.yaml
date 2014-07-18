@@ -17,9 +17,9 @@ contact_bundle:
         url: http://www.sandiegodata.org
 contact_source:
     creator:
-        email: null
-        name: null
-        url: null
+        email: coksayan@211sandiego.org
+        name: Claire Oksayan
+        url: http://www.211sandiego.org/
     maintainer:
         email: null
         name: null
@@ -39,13 +39,13 @@ identity:
     source: 211sandiego.org
     subset: null
     type: null
-    variation: null
+    variation: orig
     version: 0.0.1
 names:
-    fqname: 211sandiego.org-calls-p1ye2014-0.0.1~d02J001
-    name: 211sandiego.org-calls-p1ye2014
+    fqname: 211sandiego.org-calls-p1ye2014-orig-0.0.1~d02J001
+    name: 211sandiego.org-calls-p1ye2014-orig
     vid: d02J001
-    vname: 211sandiego.org-calls-p1ye2014-0.0.1
+    vname: 211sandiego.org-calls-p1ye2014-orig-0.0.1
 versions:
     1:
         description: null
