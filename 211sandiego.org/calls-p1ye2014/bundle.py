@@ -147,6 +147,23 @@ class Bundle(BuildBundle):
                 yield values 
                 
 
+    def meta_append_schema_descriptions(self):
+        """Reattach the original column names to the description fields"""
+        headings = self.filesystem.read_yaml('meta','headings.yaml')
+
+        d = { k:v for  v,k in headings['calldata']['fbexport']}
+        
+        with self.session:
+            t = self.schema.table('calls')
+
+            for c in t.columns: 
+                c.description = d.get(c.name)
+
+        
+        
+        self.schema.write_schema()
+        
+
                         
     def build(self):
         
