@@ -22,14 +22,14 @@ hitnrun,20,incar,,,INTEGER,4,Any Incarceration,c02M0100k
 hitnrun,21,incar_county,,,INTEGER,4,Prison Served in County Jail,c02M0100l
 hitnrun,22,incar_life,,,INTEGER,4,Life and Life +,c02M0100m
 hitnrun,23,incar_prison,,,INTEGER,4,State Prison,c02M0100n
-hitnrun,24,incr_local,,,INTEGER,,Local Custody,c02M0100o
+hitnrun,24,incar_local,,,INTEGER,3,Local Custody,c02M0100o
 hitnrun,25,prob,,,INTEGER,4,Any probation,c02M0100p
 hitnrun,26,prob_formal,,,INTEGER,4,Probation Formal,c02M0100q
 hitnrun,27,prob_sum,,,INTEGER,4,Probation Summary,c02M0100r
 hitnrun,28,prog,,,INTEGER,3,Any program,c02M0100s
 hitnrun,29,prog_child,,,INTEGER,3,Child Abuse Program,c02M0100t
 hitnrun,30,prog_dv,,,INTEGER,3,DV Recovery Program,c02M0100u
-hitnrun,31,work,,,INTEGER,3,Any work,c02M0100v
-hitnrun,32,work_furl,,,INTEGER,3,Work Furlough,c02M0100w
-hitnrun,33,work_pub,,,INTEGER,2,Public Work Service,c02M0100x
-hitnrun,34,work_vol,,,INTEGER,,Volunteer Work Service,c02M0100y
+hitnrun,31,work,,,REAL,3,Any work,c02M0100v
+hitnrun,32,work_furl,,,REAL,3,Work Furlough,c02M0100w
+hitnrun,33,work_pub,,,REAL,2,Public Work Service,c02M0100x
+hitnrun,34,work_vol,,,REAL,,Volunteer Work Service,c02M0100y

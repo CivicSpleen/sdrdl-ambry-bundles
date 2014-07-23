@@ -2,10 +2,11 @@ about:
     groups: []
     license: null
     rights: null
-    subject: null
-    summary: null
+    subject: Traffic collision prosecution
+    summary: Data from the San Diego DA's office about the prosecution results of
+        hit and run collisions that resulted in injury or death.
     tags: []
-    title: null
+    title: Felony Hit and Run, San Diego County 2009 to 2014
 contact_bundle:
     creator:
         email: eric@sandiegodata.org
@@ -17,36 +18,42 @@ contact_bundle:
         url: http://www.sandiegodata.org
 contact_source:
     creator:
-        email: null
-        name: null
-        url: null
+        email: publicaffairs@sdcda.org
+        name: San Diego County District Attorney
+        url: http://www.sdcda.org/
     maintainer:
         email: null
         name: null
         url: null
-external_documentation:
-    example:
-        description: description
-        source: source
-        title: title
-        url: http://example.com
 identity:
     bspace: null
     btime: p6e2014
     dataset: felony_hit_run
     id: d02M
-    revision: 1
+    revision: 5
     source: sdcda.org
     subset: null
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.5
 names:
-    fqname: sdcda.org-felony_hit_run-p6e2014-0.0.1~d02M001
+    fqname: sdcda.org-felony_hit_run-p6e2014-0.0.5~d02M005
     name: sdcda.org-felony_hit_run-p6e2014
-    vid: d02M001
-    vname: sdcda.org-felony_hit_run-p6e2014-0.0.1
+    vid: d02M005
+    vname: sdcda.org-felony_hit_run-p6e2014-0.0.5
 versions:
     1:
-        description: null
+        description: Original version.
         version: 0.0.1
+    2:
+        description: Added "Hours" time conversion, primarily for Work sentences.
+        version: 0.0.2
+    3:
+        description: Added better documentation
+        version: 0.0.3
+    4:
+        description: null
+        version: 0.0.4
+    5:
+        description: incr_local -> incar_local
+        version: 0.0.5

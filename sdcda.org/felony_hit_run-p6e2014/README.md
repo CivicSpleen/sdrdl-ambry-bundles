@@ -1,7 +1,3 @@
+# Felony Hit and Run, San Diego County 2009 to 2014
 
-# Bundle Readme
-
-The contents of this file should be written in  
-[Markdown](http://daringfireball.net/projects/markdown/syntax). It will
-be included in the about.description entry in the bundle configuration.
-
+Data from the San Diego DA's office about the prosecution results of hit and run collisions that resulted in injury or death.

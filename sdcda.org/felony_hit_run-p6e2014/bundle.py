@@ -169,6 +169,8 @@ class Bundle(BuildBundle):
                     days += n*365
                 elif p == 'Months':
                     days += n*30.4
+                elif p == 'Hours':
+                    days += float(n) / 24
         
             # The column names are heirarchical. Assign the days value to each level of the heirarchy. 
             

@@ -1,8 +1,25 @@
 documentation:
-    main: "\n# Bundle Documentation\n\nThe contents of this file should be written\
-        \ in  \n[Markdown](http://daringfireball.net/projects/markdown/syntax). It\
-        \ will\nbe included in the about.description entry in the bundle configuration.\n\
-        \n"
-    readme: "\n# Bundle Readme\n\nThe contents of this file should be written in \
-        \ \n[Markdown](http://daringfireball.net/projects/markdown/syntax). It will\n\
-        be included in the about.description entry in the bundle configuration.\n\n"
+    main: "**Data from the San Diego DA's office about the prosecution results of\
+        \ hit and run collisions that resulted in injury or death.**\n\nThis is a\
+        \ conversion of felony hit and run data provided by the San Diego district\
+        \ attorney. The file retains the original columns, with a few additions. The\
+        \ most important of which is that the `Sentencing` column is broken out into\
+        \ seperate components. Here are the column names and the original descriptino\
+        \ from the `Sentencing` column. \n\n* `incar`\tAny Incarceration\n* `incar_county`\t\
+        Prison Served in County Jail\n* `incar_life`\tLife and Life +\n* `incar_prison`\t\
+        State Prison\n* `incar_local`\tLocal Custody\n* `prob`\tAny probation\n* `prob_formal`\t\
+        Probation Formal\n* `prob_sum`\tProbation Summary\n* `prog`\tAny program\n\
+        * `prog_child`\tChild Abuse Program\n* `prog_dv`\tDV Recovery Program\n* `work`\t\
+        Any work\n* `work_furl`\tWork Furlough\n* `work_pub`\tPublic Work Service\n\
+        * `work_vol`\tVolunteer Work Service\n\nThe values in the columns are in days,\
+        \ converted from the original \"Years\" and \"Months\" ( 30.4 days per month.\
+        \ )\n\nThe Names are heirarchical. For instance, when there is a value of\
+        \ `10` in the  `prob_formal`, the same value will appear in the `prob` column,\
+        \ allowing you to analyze either the specific types of probations, or the\
+        \ general calss of all probation types.  \n\nAdditionally, the modifiers in\
+        \ the `highest_charge` field are broken out into `highest_charge_mod`\n"
+    readme: '# Felony Hit and Run, San Diego County 2009 to 2014
+
+
+        Data from the San Diego DA''s office about the prosecution results of hit
+        and run collisions that resulted in injury or death.'
