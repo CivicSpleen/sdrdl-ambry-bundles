@@ -35,18 +35,22 @@ identity:
     btime: p1ye2014
     dataset: calls
     id: d02J
-    revision: 1
+    revision: 2
     source: 211sandiego.org
     subset: null
     type: null
     variation: orig
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: 211sandiego.org-calls-p1ye2014-orig-0.0.1~d02J001
+    fqname: 211sandiego.org-calls-p1ye2014-orig-0.0.2~d02J002
     name: 211sandiego.org-calls-p1ye2014-orig
-    vid: d02J001
-    vname: 211sandiego.org-calls-p1ye2014-orig-0.0.1
+    vid: d02J002
+    vname: 211sandiego.org-calls-p1ye2014-orig-0.0.2
+process: {}
 versions:
     1:
         description: null
         version: 0.0.1
+    2:
+        description: Reattached original column heading to schema descriptions
+        version: 0.0.2
