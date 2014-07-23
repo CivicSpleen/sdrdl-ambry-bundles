@@ -1,0 +1,5 @@
+"table","column","is_pk","is_fk","i1","i2","i3","i4","i5","type","default","size","description"
+"pitc10r","id",1,,,,,,,"INTEGER",,,"Placeholder for the raster data file"
+"pitc10r","x",,,,,,,,"INTEGER",,,
+"pitc10r","y",,,,,,,,"INTEGER",,,
+"pitc10r","value",,,,,,,,"REAL",,,
