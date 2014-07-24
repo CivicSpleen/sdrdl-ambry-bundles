@@ -1,7 +1,3 @@
+# 211 San Diego Service Calls
 
-# Bundle Readme
-
-The contents of this file should be written in  
-[Markdown](http://daringfireball.net/projects/markdown/syntax). It will
-be included in the about.description entry in the bundle configuration.
-
+Over 800K records of service calls to 211 San Diego for 2013 and 2014

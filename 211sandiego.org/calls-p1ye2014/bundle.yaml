@@ -3,9 +3,9 @@ about:
     license: null
     rights: null
     subject: null
-    summary: null
+    summary: Over 800K records of service calls to 211 San Diego for 2013 and 2014
     tags: []
-    title: null
+    title: 211 San Diego Service Calls
 contact_bundle:
     creator:
         email: eric@sandiegodata.org
@@ -35,17 +35,17 @@ identity:
     btime: p1ye2014
     dataset: calls
     id: d02J
-    revision: 2
+    revision: 3
     source: 211sandiego.org
     subset: null
     type: null
     variation: orig
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: 211sandiego.org-calls-p1ye2014-orig-0.0.2~d02J002
+    fqname: 211sandiego.org-calls-p1ye2014-orig-0.0.3~d02J003
     name: 211sandiego.org-calls-p1ye2014-orig
-    vid: d02J002
-    vname: 211sandiego.org-calls-p1ye2014-orig-0.0.2
+    vid: d02J003
+    vname: 211sandiego.org-calls-p1ye2014-orig-0.0.3
 process: {}
 versions:
     1:
@@ -54,3 +54,6 @@ versions:
     2:
         description: Reattached original column heading to schema descriptions
         version: 0.0.2
+    3:
+        description: Added column codes and better documentation
+        version: 0.0.3

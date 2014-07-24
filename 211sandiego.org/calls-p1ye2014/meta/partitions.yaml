@@ -1,2 +1,4 @@
 -   name: 211sandiego.org-calls-p1ye2014-orig-calls
     table: calls
+-   name: 211sandiego.org-calls-p1ye2014-orig-column_codes
+    table: column_codes

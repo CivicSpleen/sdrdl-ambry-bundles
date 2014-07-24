@@ -1,37 +1,54 @@
-table,seq,column,is_pk,is_fk,type,size,description,id
-calls,1,id,1,,INTEGER,,,c02J01001
-calls,2,call_stat,,,VARCHAR,26,Shared - NEW - Call Status,c02J01002
-calls,3,restrictions,,,VARCHAR,19,Portal Restrictions,c02J01003
-calls,4,create_time,,,VARCHAR,30,Client: Create Date/Time,c02J01004
-calls,5,client_id,,,INTEGER,8,Client ID,c02J01005
-calls,6,queue,,,VARCHAR,27,211 - Queue,c02J01006
-calls,7,call_type,,,VARCHAR,23,Shared - Call Type,c02J01007
-calls,8,relationship,,,VARCHAR,46,"Shared (211, Imperial)- Relationship to client",c02J01008
-calls,9,called_before,,,VARCHAR,35,211 - Have you called 2-1-1 before?,c02J01009
-calls,10,how_hear,,,VARCHAR,34,211 - How did you hear about 211?,c02J0100a
-calls,11,have_ins,,,VARCHAR,38,Shared - Do you have health insurance?,c02J0100b
-calls,12,ins_type,,,VARCHAR,48,"Shared - If yes, what type of insurance?",c02J0100c
-calls,13,hshld_disabled,,,VARCHAR,42,211 - Is anyone in the household disabled?,c02J0100d
-calls,14,gender,,,VARCHAR,15,Shared - Gender,c02J0100e
-calls,15,age_goups,,,VARCHAR,35,"Shared (211, Imperial) - Age Groups",c02J0100f
-calls,16,caller_age,,,VARCHAR,26,New - 211 - Age of Caller,c02J0100g
-calls,17,preg_lt6,,,VARCHAR,40,NEW - Pregnant Women or Children under 6,c02J0100h
-calls,18,child_lt6,,,INTEGER,1,211  - Children Under 6,c02J0100i
-calls,19,ethnicity,,,VARCHAR,33,"Shared (211, C2C) Ethnic Category",c02J0100j
-calls,20,race,,,VARCHAR,41,"Shared (211, Imperial) - Race - Ethnicity",c02J0100k
-calls,21,language,,,VARCHAR,17,211 - Language?,c02J0100l
-calls,22,hshld_size,,,VARCHAR,29,Shared - Household Size,c02J0100m
-calls,23,income_source,,,VARCHAR,43,"Shared (211, Imperial) - Income Source",c02J0100n
-calls,24,hshld_income,,,VARCHAR,69,"Shared (211, Imperial) - What is your household's yearly gross income",c02J0100o
-calls,25,hshld_pct_fpl,,,VARCHAR,54,"(211, Imperial) - Enter Percentage for Household's FPL",c02J0100p
-calls,26,income_declined,,,VARCHAR,54,2-1-1 - Declined to State Yearly Income or Did Not Ask,c02J0100q
-calls,27,zip,,,INTEGER64,10,Shared - Zip,c02J0100r
-calls,28,need_tax_code,,,VARCHAR,31,Presenting Needs: Taxonomy Code,c02J0100s
-calls,29,need_tax_cat,,,VARCHAR,76,Presenting Needs: Taxonomy Category,c02J0100t
-calls,30,need_unmet,,,VARCHAR,24,Presenting Needs: Unmet?,c02J0100u
-calls,31,need_reason_unmet,,,VARCHAR,37,Presenting Needs: Reason Unmet,c02J0100v
-calls,32,ref_agency,,,VARCHAR,98,Referral Agency Name,c02J0100w
-calls,33,ref_name,,,VARCHAR,190,Referral Name,c02J0100x
-,,,,,,,,
-income,1,client_id,,,INTEGER,,,c02J02001
-income,2,income_source,,,VARCHAR,43,,c02J02002
+table,seq,column,is_pk,is_fk,type,size,description,d_code_key,id
+calls,1,id,1,,INTEGER,,,,c02J01001
+calls,2,call_stat,,,VARCHAR,17,Shared - NEW - Call Status,,c02J01002
+calls,3,restrictions,,,VARCHAR,13,Portal Restrictions,,c02J01003
+calls,4,create_time,,,VARCHAR,30,Client: Create Date/Time,,c02J01004
+calls,5,client_id,,,INTEGER,8,Client ID,,c02J01005
+calls,6,queue,,,VARCHAR,27,211 - Queue,,c02J01006
+calls,7,call_type,,,VARCHAR,23,Shared - Call Type,,c02J01007
+calls,8,relationship,,,VARCHAR,17,"Shared (211, Imperial)- Relationship to client",,c02J01008
+calls,9,called_before,,,VARCHAR,29,211 - Have you called 2-1-1 before?,,c02J01009
+calls,10,how_hear,,,VARCHAR,34,211 - How did you hear about 211?,,c02J0100a
+calls,11,have_ins,,,VARCHAR,29,Shared - Do you have health insurance?,,c02J0100b
+calls,12,ins_type,,,VARCHAR,48,"Shared - If yes, what type of insurance?",,c02J0100c
+calls,13,hshld_disabled,,,VARCHAR,29,211 - Is anyone in the household disabled?,,c02J0100d
+calls,14,gender,,,VARCHAR,6,Shared - Gender,,c02J0100e
+calls,15,age_goups,,,VARCHAR,19,"Shared (211, Imperial) - Age Groups",,c02J0100f
+calls,16,caller_age,,,VARCHAR,5,New - 211 - Age of Caller,,c02J0100g
+calls,17,preg_lt6,,,VARCHAR,29,NEW - Pregnant Women or Children under 6,,c02J0100h
+calls,18,child_lt6,,,INTEGER,1,211  - Children Under 6,,c02J0100i
+calls,19,ethnicity,,,VARCHAR,33,"Shared (211, C2C) Ethnic Category",,c02J0100j
+calls,20,race,,,VARCHAR,36,"Shared (211, Imperial) - Race - Ethnicity",,c02J0100k
+calls,21,language,,,VARCHAR,17,211 - Language?,,c02J0100l
+calls,22,hshld_size,,,INTEGER,29,Shared - Household Size,,c02J0100m
+calls,23,hshld_size_code,,,VARCHAR,29,Non-integer code value for column hshld_size,,c02J0100n
+calls,24,income_source,,,VARCHAR,43,"Shared (211, Imperial) - Income Source",,c02J0100o
+calls,25,hshld_income,,,REAL,,"Shared (211, Imperial) - What is your household's yearly gross income",,c02J0100p
+calls,26,hshld_pct_fpl,,,REAL,,"(211, Imperial) - Enter Percentage for Household's FPL",,c02J0100q
+calls,27,hshld_pct_fpl_code,,,VARCHAR,10,Non-integer code value for column hshld_pct_fpl,,c02J0100r
+calls,28,income_declined,,,VARCHAR,29,2-1-1 - Declined to State Yearly Income or Did Not Ask,,c02J0100s
+calls,29,zip,,,INTEGER64,,Shared - Zip,,c02J0100t
+calls,30,zip_code,,,VARCHAR,7,Non-integer code value for column zip,,c02J0100u
+calls,31,need_tax_code,,,VARCHAR,19,Presenting Needs: Taxonomy Code,,c02J0100v
+calls,32,need_tax_cat,,,VARCHAR,76,Presenting Needs: Taxonomy Category,,c02J0100w
+calls,33,need_unmet,,,VARCHAR,1,Presenting Needs: Unmet?,,c02J0100x
+calls,34,need_reason_unmet,,,VARCHAR,37,Presenting Needs: Reason Unmet,,c02J0100y
+calls,35,ref_agency,,,VARCHAR,98,Referral Agency Name,,c02J0100z
+calls,36,ref_name,,,VARCHAR,190,Referral Name,,c02J0100A
+,,,,,,,,,
+income,1,client_id,,,INTEGER,,,,c02J02001
+income,2,income_source,,,VARCHAR,43,,,c02J02002
+,,,,,,,,,
+calls_hshld_pct_fpl_codes,1,id,1,,INTEGER,,,"[""calls"", ""hshld_pct_fpl""]",c02J03001
+calls_hshld_pct_fpl_codes,2,code,,,VARCHAR,10,Value of code,,c02J03002
+calls_hshld_pct_fpl_codes,3,description,,,VARCHAR,,Code description,,c02J03003
+,,,,,,,,,
+calls_zip_codes,1,id,1,,INTEGER,,,"[""calls"", ""zip""]",c02J04001
+calls_zip_codes,2,code,,,VARCHAR,7,Value of code,,c02J04002
+calls_zip_codes,3,description,,,VARCHAR,,Code description,,c02J04003
+,,,,,,,,,
+column_codes,1,id,1,,INTEGER,,,,c02J05001
+,,,,,,,,,
+calls_hshld_size_codes,1,id,1,,INTEGER,,,"[""calls"", ""hshld_size""]",c02J06001
+calls_hshld_size_codes,2,code,,,VARCHAR,29,Value of code,,c02J06002
+calls_hshld_size_codes,3,description,,,VARCHAR,,Code description,,c02J06003

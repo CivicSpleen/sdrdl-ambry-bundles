@@ -167,6 +167,12 @@ class Bundle(BuildBundle):
                         
     def build(self):
         
+        # The CodeCastErrorHandler catches all conversion errors and turns them into 
+        # _code field entries. So, if there is a '(3)' as a flag in the wages column ( an integer), it gets
+        # stored in the varchar wages_code column. 
+        from ambry.database.inserter import CodeCastErrorHandler
+        from collections import defaultdict
+        
         p = self.partitions.find_or_new(table='calls')
         p.clean()
         
@@ -174,12 +180,25 @@ class Bundle(BuildBundle):
         
         self.log("Loading file. Loading large Excel files is really, really slow. ")
         
-        with p.inserter() as ins:
+        errors_counts = defaultdict(int)
+        
+        with p.inserter(cast_error_handler = CodeCastErrorHandler) as ins:
             for i, row in enumerate(self.gen_rows('calldata','fbexport')):
                 
-                lr()
+                if i == 0:
+                    continue # Header row
                 
-                ins.insert(row)
+                lr()
+
+                errors = ins.insert(row)
+                
+                if errors:
+                    s = str(errors)
+                    errors_counts[s] += 1
+                    if errors_counts[s] == 1:
+                        self.error("Insert Error: {}".format(errors, row))
+             
+        print errors_counts
                 
         return True
         
