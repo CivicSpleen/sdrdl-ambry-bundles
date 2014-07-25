@@ -1,0 +1,53 @@
+about:
+    groups: []
+    license: null
+    rights: null
+    subject: null
+    summary: null
+    tags: []
+    title: null
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: null
+        name: null
+        url: null
+    maintainer:
+        email: null
+        name: null
+        url: null
+external_documentation:
+    example:
+        description: description
+        source: source
+        title: title
+        url: http://example.com
+identity:
+    bspace: ca
+    btime: null
+    dataset: nets
+    id: d02O
+    revision: 1
+    source: exceptionalgrowth.org
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: exceptionalgrowth.org-nets-ca-0.0.1~d02O001
+    name: exceptionalgrowth.org-nets-ca
+    vid: d02O001
+    vname: exceptionalgrowth.org-nets-ca-0.0.1
+process: {}
+versions:
+    1:
+        description: null
+        version: 0.0.1

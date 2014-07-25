@@ -1,0 +1,12 @@
+table,seq,column,is_pk,is_fk,type,size,description,d_header,id
+migrations,1,id,1,,INTEGER,,"Business migrations in, out and within CA.",,c02O01001
+migrations,2,destcbsa,,,INTEGER,5,DestCBSA,,c02O01002
+migrations,3,moveyear,,,INTEGER,4,MoveYear,,c02O01003
+migrations,4,originstate,,,VARCHAR,2,OriginState,,c02O01004
+migrations,5,industry,,,VARCHAR,73,Industry,,c02O01005
+migrations,6,origincbsa,,,INTEGER,5,OriginCBSA,,c02O01006
+migrations,7,jobs,,,INTEGER,5,Jobs,,c02O01007
+migrations,8,origin_metro_area,,,VARCHAR,49,Origin Metro Area,,c02O01008
+migrations,9,estabs,,,INTEGER,4,Estabs,,c02O01009
+migrations,10,destination_metro_area,,,VARCHAR,49,Destination Metro Area,,c02O0100a
+migrations,11,deststate,,,VARCHAR,2,DestState,,c02O0100b
