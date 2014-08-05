@@ -1,0 +1,16 @@
+build:
+    requirements:
+        rtree: rtree
+        shapely: shapley
+dependencies:
+    addresses: clarinova.com-geocode-casnd-address-1.0.7
+    blocks: clarinova.com-places-casnd-blocks-geo
+    geocoder: clarinova.com-geocode-casnd-geocoder->1.0.0
+extract: {}
+sources:
+    active1:
+        description: Businesses A through K
+        url: http://www.sandiego.gov/treasurer/csv/nbl/active1.csv
+    active2:
+        description: Businesses L through Z
+        url: http://www.sandiego.gov/treasurer/csv/nbl/active2.csv
