@@ -79,6 +79,8 @@ class Bundle(BuildBundle):
                 row = dict(row)
    
                 try:
+                    # This just lets us know what addresses aren't geocoding. We'll use the faulures
+                    # as bad addresses in a geocoder update. 
                     row['address_id'], parsed = g.parse_and_code(row['address'], row['city'].title(), "CA")
                     row['parsed_addr'] = "{}, {}, CA ".format(parsed.text, parsed.locality.city)
 

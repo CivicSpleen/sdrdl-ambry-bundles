@@ -39,15 +39,15 @@ identity:
     source: sandiego.gov
     subset: null
     type: null
-    variation: null
+    variation: orig
     version: 0.0.1
 names:
-    fqname: sandiego.gov-businesses-0.0.1~d02R001
-    name: sandiego.gov-businesses
+    fqname: sandiego.gov-businesses-orig-0.0.1~d02R001
+    name: sandiego.gov-businesses-orig
     vid: d02R001
-    vname: sandiego.gov-businesses-0.0.1
+    vname: sandiego.gov-businesses-orig-0.0.1
 process: {}
 versions:
     1:
-        description: null
+        description: Initial version
         version: 0.0.1
