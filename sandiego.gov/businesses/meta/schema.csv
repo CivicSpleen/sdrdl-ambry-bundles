@@ -11,8 +11,8 @@ businesses,9,parsed_addr,,,VARCHAR,58,,,c02R01009
 businesses,10,address_id,,,INTEGER,6,,,c02R0100a
 businesses,11,business_phone,,,VARCHAR,18,business_phone,,c02R0100b
 businesses,12,owner_name,,,VARCHAR,50,owner_name,,c02R0100c
-businesses,13,creation_dt,,,DATE,10,creation_dt,,c02R0100d
-businesses,14,start_dt,,,DATE,10,start_dt,,c02R0100e
-businesses,15,exp_dt,,,DATE,10,exp_dt,,c02R0100f
+businesses,13,creation_dt,,,DATETIME,10,creation_dt,,c02R0100d
+businesses,14,start_dt,,,DATETIME,10,start_dt,,c02R0100e
+businesses,15,exp_dt,,,DATETIME,10,exp_dt,,c02R0100f
 businesses,16,naics,,,INTEGER,6,naics,,c02R0100g
 businesses,17,activity_desc,,,VARCHAR,52,activity_desc,,c02R0100h

@@ -35,19 +35,22 @@ identity:
     btime: null
     dataset: businesses
     id: d02R
-    revision: 1
+    revision: 2
     source: sandiego.gov
     subset: null
     type: null
     variation: orig
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: sandiego.gov-businesses-orig-0.0.1~d02R001
+    fqname: sandiego.gov-businesses-orig-0.0.2~d02R002
     name: sandiego.gov-businesses-orig
-    vid: d02R001
-    vname: sandiego.gov-businesses-orig-0.0.1
+    vid: d02R002
+    vname: sandiego.gov-businesses-orig-0.0.2
 process: {}
 versions:
     1:
         description: Initial version
         version: 0.0.1
+    2:
+        description: Changed DATEs to DATETIMEs. The values are stored with time parts, which DBAPI can not handle.
+        version: 0.0.2
