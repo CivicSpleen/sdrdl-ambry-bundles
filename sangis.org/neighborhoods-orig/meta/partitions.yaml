@@ -1,6 +1,0 @@
--   format: geo
-    name: sangis.org-neighborhoods-orig-sdcommunities-geo
-    table: sdcommunities
--   format: geo
-    name: sangis.org-neighborhoods-orig-sdneighborhoods-geo
-    table: sdneighborhoods

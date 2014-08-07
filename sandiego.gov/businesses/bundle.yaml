@@ -52,5 +52,6 @@ versions:
         description: Initial version
         version: 0.0.1
     2:
-        description: Changed DATEs to DATETIMEs. The values are stored with time parts, which DBAPI can not handle.
+        description: Changed DATEs to DATETIMEs. The values are stored with time parts,
+            which DBAPI can not handle.
         version: 0.0.2
