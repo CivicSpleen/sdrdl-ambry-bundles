@@ -1,0 +1,7 @@
+
+# Group 211 Calls
+
+In the original 211 call data, there is one record for every combination of values in all of the multi-valued fields. So, if a call has three fields that have multiple values, with 2, 3, and 4 values seletced in the respective fields, there will be 2 * 3 * 4 = 24 records for the single call. 
+
+This bundle gorups these multi-values fields. 
+

@@ -5,7 +5,7 @@ build:
 dependencies:
     addresses: clarinova.com-geocode-casnd-address-1.0.7
     blocks: clarinova.com-places-casnd-blocks-geo
-    geocoder: clarinova.com-geocode-casnd-geocoder->1.0.0
+    geocoder: clarinova.com-geocode-casnd-geocoder->=1.0.8
 extract: {}
 sources:
     active1:

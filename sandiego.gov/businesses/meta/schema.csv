@@ -1,18 +1,45 @@
-table,seq,column,is_pk,is_fk,type,size,d_header,description,id
+table,seq,column,is_pk,is_fk,type,size,description,d_header,id
 businesses,1,id,1,,INTEGER,,,,c02R01001
-businesses,2,business_acct_,,,INTEGER64,10,business_acct_,,c02R01002
-businesses,3,dba_name,,,VARCHAR,50,dba_name,,c02R01003
-businesses,4,ownership_type,,,VARCHAR,6,ownership_type,,c02R01004
-businesses,5,address,,,VARCHAR,49,address,,c02R01005
-businesses,6,city,,,VARCHAR,26,city,,c02R01006
-businesses,7,zip,,,VARCHAR,10,zip,,c02R01007
-businesses,8,state,,,VARCHAR,2,state,,c02R01008
-businesses,9,parsed_addr,,,VARCHAR,58,,,c02R01009
-businesses,10,address_id,,,INTEGER,6,,,c02R0100a
-businesses,11,business_phone,,,VARCHAR,18,business_phone,,c02R0100b
-businesses,12,owner_name,,,VARCHAR,50,owner_name,,c02R0100c
-businesses,13,creation_dt,,,DATETIME,10,creation_dt,,c02R0100d
-businesses,14,start_dt,,,DATETIME,10,start_dt,,c02R0100e
-businesses,15,exp_dt,,,DATETIME,10,exp_dt,,c02R0100f
-businesses,16,naics,,,INTEGER,6,naics,,c02R0100g
-businesses,17,activity_desc,,,VARCHAR,52,activity_desc,,c02R0100h
+businesses,2,business_acct_,,,INTEGER64,10,,business_acct_,c02R01002
+businesses,3,dba_name,,,VARCHAR,50,,dba_name,c02R01003
+businesses,4,ownership_type,,,VARCHAR,6,,ownership_type,c02R01004
+businesses,5,address,,,VARCHAR,49,,address,c02R01005
+businesses,6,city,,,VARCHAR,26,,city,c02R01006
+businesses,7,zip,,,VARCHAR,10,,zip,c02R01007
+businesses,8,state,,,VARCHAR,2,,state,c02R01008
+businesses,9,business_phone,,,VARCHAR,18,,business_phone,c02R01009
+businesses,10,owner_name,,,VARCHAR,50,,owner_name,c02R0100a
+businesses,11,creation_dt,,,DATETIME,10,,creation_dt,c02R0100b
+businesses,12,start_dt,,,DATETIME,10,,start_dt,c02R0100c
+businesses,13,exp_dt,,,DATETIME,10,,exp_dt,c02R0100d
+businesses,14,naics,,,INTEGER,6,,naics,c02R0100e
+businesses,15,activity_desc,,,VARCHAR,52,,activity_desc,c02R0100f
+,,,,,,,,,
+ck_addresses,1,id,1,,INTEGER,,Link table to CK San Diego County geocoder,,c02R02001
+ck_addresses,2,businesses_id,,1,INTEGER,5,Link to business tables,,c02R02002
+ck_addresses,3,address_id,,,INTEGER,6,CK Geocoder address id,,c02R02003
+ck_addresses,4,parsed_addr,,,VARCHAR,68,Output from address parser,,c02R02004
+ck_addresses,5,number,,,INTEGER,5,House number,,c02R02005
+ck_addresses,6,name,,,VARCHAR,2,Street name,,c02R02006
+ck_addresses,7,city,,,VARCHAR,14,city,,c02R02007
+ck_addresses,8,state,,,VARCHAR,2,state,,c02R02008
+ck_addresses,9,lat,,,REAL,,Latitude,,c02R02009
+ck_addresses,10,lon,,,REAL,,Longitude,,c02R0200a
+ck_addresses,11,score,,,INTEGER,2,geocoder score,,c02R0200b
+ck_addresses,12,ndist,,,INTEGER,3,Address number distance between given and coded address,,c02R0200c
+ck_addresses,13,confidence,,,REAL,,Geocoder confidence,,c02R0200d
+,,,,,,,,,
+dstk_addresses,1,id,1,,INTEGER,,Geocodes from DSTK geocoer,,c02R03001
+dstk_addresses,2,businesses_id,,1,INTEGER,5,Link to business tables,,c02R03002
+dstk_addresses,3,number,,,INTEGER,5,House number,,c02R03003
+dstk_addresses,4,name,,,VARCHAR,32,Street name,,c02R03004
+dstk_addresses,5,city,,,VARCHAR,22,City name,,c02R03005
+dstk_addresses,6,state,,,VARCHAR,2,State,,c02R03006
+dstk_addresses,7,county,,,INTEGER,5,FIPS county code,,c02R03007
+dstk_addresses,8,lat,,,REAL,,Latitude,,c02R03008
+dstk_addresses,9,lon,,,REAL,,Longitude,,c02R03009
+dstk_addresses,10,confidence,,,REAL,,Geocoder confidence,,c02R0300a
+,,,,,,,,,
+bus_block_cross,1,id,1,,INTEGER,,,,c02R04001
+bus_block_cross,2,businesses_id,,1,INTEGER,,,,c02R04002
+bus_block_cross,3,geoid,,1,VARCHAR,,,,c02R04003

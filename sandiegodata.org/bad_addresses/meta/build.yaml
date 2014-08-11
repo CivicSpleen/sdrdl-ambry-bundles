@@ -1,0 +1,7 @@
+build: {}
+dependencies:
+    alcohol: abc.ca.gov-alcohol_licenses-orig-licenses-2014
+    geocoder: clarinova.com-geocode-casnd-geocoder->1.0.0
+    masterlist: sandiego.gov-businesses-orig-businesses
+    sangis: sangis.org-business-sites-orig-businesses-geo
+extract: {}

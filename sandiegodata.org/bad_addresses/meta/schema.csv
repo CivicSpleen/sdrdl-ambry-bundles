@@ -1,0 +1,15 @@
+table,seq,column,is_pk,is_fk,type,size,description,id
+addresses,1,id,1,,INTEGER,,,c02S01001
+addresses,2,number,,,VARCHAR,6,,c02S01002
+addresses,3,name,,,VARCHAR,46,,c02S01003
+addresses,4,direction,,,VARCHAR,2,,c02S01004
+addresses,5,suffix,,,VARCHAR,7,,c02S01005
+addresses,6,city,,,VARCHAR,26,,c02S01006
+addresses,7,state,,,VARCHAR,2,,c02S01007
+addresses,8,zip,,,VARCHAR,10,,c02S01008
+addresses,9,text,,,VARCHAR,74,,c02S01009
+addresses,10,orig_text,,,VARCHAR,74,,c02S0100a
+addresses,11,source,,,VARCHAR,5,,c02S0100b
+addresses,12,score,,,INTEGER,5,,c02S0100c
+addresses,13,address_id,,,INTEGER,6,,c02S0100d
+addresses,14,for_testing,,,CHAR,1,,c02S0100e
