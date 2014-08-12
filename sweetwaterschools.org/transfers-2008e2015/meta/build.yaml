@@ -1,0 +1,27 @@
+build:
+    requirements:
+        xlrd: xlrd
+dependencies: {}
+extract: {}
+sources:
+    trans2008:
+        description: Student transfers 2018 - 2009
+        url: s3://ds.civicknowledge.org/voiceofsandiego.org/Sweetwater%20Open%20Enrollment/2008-2009%20all%20schools%20intras.xls
+    trans2009:
+        description: Student transfers 2009 - 2010
+        url: s3://ds.civicknowledge.org/voiceofsandiego.org/Sweetwater%20Open%20Enrollment/2009-2010%20all%20schools%20intras.xls
+    trans2010:
+        description: Student transfers 2010 - 2011
+        url: s3://ds.civicknowledge.org/voiceofsandiego.org/Sweetwater%20Open%20Enrollment/2010-2011%20all%20schools%20intras.xls
+    trans2011:
+        description: Student transfers 2011 - 2012
+        url: s3://ds.civicknowledge.org/voiceofsandiego.org/Sweetwater%20Open%20Enrollment/2011-2012%20Intras%20all%20sites.xlsx
+    trans2012:
+        description: Student transfers 2012 - 2013
+        url: s3://ds.civicknowledge.org/voiceofsandiego.org/Sweetwater%20Open%20Enrollment/2012-2013%20Intras%20all%20sites.xls
+    trans2013:
+        description: Student transfers 2013 - 2014
+        url: s3://ds.civicknowledge.org/voiceofsandiego.org/Sweetwater%20Open%20Enrollment/2013-2014%20Intras%20all%20sites.xls
+    trans2014:
+        description: Student transfers 2014 - 2015
+        url: s3://ds.civicknowledge.org/voiceofsandiego.org/Sweetwater%20Open%20Enrollment/2014-2015%20Intras%20all%20sites.xls

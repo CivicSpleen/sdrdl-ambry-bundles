@@ -1,9 +1,14 @@
 documentation:
-    main: "\n# Bundle Documentation\n\nThe contents of this file should be written\
-        \ in  \n[Markdown](http://daringfireball.net/projects/markdown/syntax). It\
-        \ will\nbe included in the about.description entry in the bundle configuration.\n\
+    main: "\n# Group 211 Calls\n\nIn the original 211 call data, there is one record\
+        \ for every combination of values in all of the multi-valued fields. So, if\
+        \ a call has three fields that have multiple values, with 2, 3, and 4 values\
+        \ seletced in the respective fields, there will be 2 * 3 * 4 = 24 records\
+        \ for the single call. \n\nThis bundle gorups these multi-values fields. \n\
         \n"
-    readme: '# None
+    readme: '# Deduplicated 211 Calls
 
 
-        None'
+        The 211 call dataset expresses multiple values in a field with multiple records,
+        one for each value in a field, multiplied over all of the multiple values
+        in fields that have multiple values. This bundle collapses those records into
+        one.'

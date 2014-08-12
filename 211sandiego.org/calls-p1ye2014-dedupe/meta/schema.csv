@@ -1,5 +1,5 @@
 table,seq,column,is_pk,is_fk,type,size,description,d_code_key,id
-calls,1,id,1,,INTEGER,,,,c02Q01001
+calls,1,id,1,,INTEGER,6,,,c02Q01001
 calls,2,call_stat,,,VARCHAR,17,Shared - NEW - Call Status,,c02Q01002
 calls,3,restrictions,,,VARCHAR,13,Portal Restrictions,,c02Q01003
 calls,4,create_time,,,VARCHAR,30,Client: Create Date/Time,,c02Q01004
@@ -10,7 +10,6 @@ calls,8,relationship,,,VARCHAR,17,"Shared (211, Imperial)- Relationship to clien
 calls,9,called_before,,,VARCHAR,29,211 - Have you called 2-1-1 before?,,c02Q01009
 calls,10,how_hear,,,VARCHAR,34,211 - How did you hear about 211?,,c02Q0100a
 calls,11,have_ins,,,VARCHAR,29,Shared - Do you have health insurance?,,c02Q0100b
-calls,12,ins_type,,,VARCHAR,48,"Shared - If yes, what type of insurance?",,c02Q0100c
 calls,13,hshld_disabled,,,VARCHAR,29,211 - Is anyone in the household disabled?,,c02Q0100d
 calls,14,gender,,,VARCHAR,6,Shared - Gender,,c02Q0100e
 calls,15,age_goups,,,VARCHAR,19,"Shared (211, Imperial) - Age Groups",,c02Q0100f
@@ -22,19 +21,12 @@ calls,20,race,,,VARCHAR,36,"Shared (211, Imperial) - Race - Ethnicity",,c02Q0100
 calls,21,language,,,VARCHAR,17,211 - Language?,,c02Q0100l
 calls,22,hshld_size,,,INTEGER,29,Shared - Household Size,,c02Q0100m
 calls,23,hshld_size_code,,,VARCHAR,29,Non-integer code value for column hshld_size,,c02Q0100n
-calls,24,income_source,,,VARCHAR,43,"Shared (211, Imperial) - Income Source",,c02Q0100o
 calls,25,hshld_income,,,REAL,,"Shared (211, Imperial) - What is your household's yearly gross income",,c02Q0100p
 calls,26,hshld_pct_fpl,,,REAL,,"(211, Imperial) - Enter Percentage for Household's FPL",,c02Q0100q
 calls,27,hshld_pct_fpl_code,,,VARCHAR,10,Non-integer code value for column hshld_pct_fpl,,c02Q0100r
 calls,28,income_declined,,,VARCHAR,29,2-1-1 - Declined to State Yearly Income or Did Not Ask,,c02Q0100s
 calls,29,zip,,,INTEGER64,,Shared - Zip,,c02Q0100t
 calls,30,zip_code,,,VARCHAR,7,Non-integer code value for column zip,,c02Q0100u
-calls,31,need_tax_code,,,VARCHAR,19,Presenting Needs: Taxonomy Code,,c02Q0100v
-calls,32,need_tax_cat,,,VARCHAR,76,Presenting Needs: Taxonomy Category,,c02Q0100w
-calls,33,need_unmet,,,VARCHAR,1,Presenting Needs: Unmet?,,c02Q0100x
-calls,34,need_reason_unmet,,,VARCHAR,37,Presenting Needs: Reason Unmet,,c02Q0100y
-calls,35,ref_agency,,,VARCHAR,98,Referral Agency Name,,c02Q0100z
-calls,36,ref_name,,,VARCHAR,190,Referral Name,,c02Q0100A
 ,,,,,,,,,
 income,1,client_id,,,INTEGER,,,,c02Q02001
 income,2,income_source,,,VARCHAR,43,,,c02Q02002
@@ -52,3 +44,26 @@ column_codes,1,id,1,,INTEGER,,,,c02Q05001
 calls_hshld_size_codes,1,id,1,,INTEGER,,,"[""calls"", ""hshld_size""]",c02Q06001
 calls_hshld_size_codes,2,code,,,VARCHAR,29,Value of code,,c02Q06002
 calls_hshld_size_codes,3,description,,,VARCHAR,,Code description,,c02Q06003
+,,,,,,,,,
+agencies,1,id,1,,INTEGER,,"Table for multiple values of (ref_agency, ref_name)",,c02Q07001
+agencies,2,calls_id,,1,INTEGER,6,,,c02Q07002
+agencies,3,ref_agency,,,VARCHAR,281,Referral Agency Name,,c02Q07003
+agencies,4,ref_name,,,VARCHAR,274,Referral Name,,c02Q07004
+,,,,,,,,,
+unmet_need,1,id,1,,INTEGER,,"Table for multiple values of (need_unmet, need_reason_unmet)",,c02Q08001
+unmet_need,2,calls_id,,1,INTEGER,6,,,c02Q08002
+unmet_need,3,need_unmet,,,VARCHAR,48,Presenting Needs: Unmet?,,c02Q08003
+unmet_need,4,need_reason_unmet,,,VARCHAR,48,Presenting Needs: Reason Unmet,,c02Q08004
+,,,,,,,,,
+need_tax,1,id,1,,INTEGER,,"Table for multiple values of (need_tax_code, need_tax_cat)",,c02Q09001
+need_tax,2,calls_id,,1,INTEGER,6,,,c02Q09002
+need_tax,3,need_tax_code,,,VARCHAR,102,Presenting Needs: Taxonomy Code,,c02Q09003
+need_tax,4,need_tax_cat,,,VARCHAR,81,Presenting Needs: Taxonomy Category,,c02Q09004
+,,,,,,,,,
+income_source,1,id,1,,INTEGER,,Table for multiple values of (income_source),,c02Q0a001
+income_source,2,calls_id,,1,INTEGER,6,,,c02Q0a002
+income_source,3,income_source,,,VARCHAR,43,"Shared (211, Imperial) - Income Source",,c02Q0a003
+,,,,,,,,,
+ins_type,1,id,1,,INTEGER,,Table for multiple values of (ins_type),,c02Q0b001
+ins_type,2,calls_id,,1,INTEGER,6,,,c02Q0b002
+ins_type,3,ins_type,,,VARCHAR,48,"Shared - If yes, what type of insurance?",,c02Q0b003

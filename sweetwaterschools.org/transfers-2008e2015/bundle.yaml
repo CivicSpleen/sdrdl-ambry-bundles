@@ -1,0 +1,48 @@
+about:
+    groups: []
+    license: null
+    rights: null
+    subject: School transfers
+    summary: Transfer requests between sweetwater union school district schools, for
+        the years from 2008 to 2014.
+    tags: []
+    title: Sweetwater Union High School Transfers
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: null
+        name: Sweetwater Union High School District
+        url: http://www.sweetwaterschools.org/
+    maintainer:
+        email: Bianca.Bruno@voiceofsandiego.org
+        name: Bianca Bruno
+        url: http://voiceofsandiego.org
+identity:
+    bspace: null
+    btime: null
+    dataset: transfers
+    id: d02V
+    revision: 1
+    source: sweetwaterschools.org
+    subset: 2008e2015
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: sweetwaterschools.org-transfers-2008e2015-0.0.1~d02V001
+    name: sweetwaterschools.org-transfers-2008e2015
+    vid: d02V001
+    vname: sweetwaterschools.org-transfers-2008e2015-0.0.1
+process: {}
+versions:
+    1:
+        description: Initial version
+        version: 0.0.1
