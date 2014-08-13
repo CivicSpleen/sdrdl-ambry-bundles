@@ -1,0 +1,91 @@
+build: {}
+dependencies: {}
+extract: {}
+sources:
+    1993:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr93.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=9394&cCat=Enrollment&cPage=filesenr.asp
+    1994:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr93.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=9495&cCat=Enrollment&cPage=filesenr.asp
+    1995:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr93.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=9596&cCat=Enrollment&cPage=filesenr.asp
+    1996:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr93.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=9697&cCat=Enrollment&cPage=filesenr.asp
+    1997:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr93.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=9798&cCat=Enrollment&cPage=filesenr.asp
+    1998:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr98.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=9899&cCat=Enrollment&cPage=filesenr.asp
+    1999:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr98.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=9900&cCat=Enrollment&cPage=filesenr.asp
+    2000:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr98.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=0001&cCat=Enrollment&cPage=filesenr.asp
+    2001:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr98.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=0102&cCat=Enrollment&cPage=filesenr.asp
+    2002:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr98.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=0203&cCat=Enrollment&cPage=filesenr.asp
+    2003:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr98.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=0304&cCat=Enrollment&cPage=filesenr.asp
+    2004:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr98.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=0405&cCat=Enrollment&cPage=filesenr.asp
+    2005:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr98.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=0506&cCat=Enrollment&cPage=filesenr.asp
+    2006:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr98.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=0607&cCat=Enrollment&cPage=filesenr.asp
+    2007:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr98.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=2007-08&cCat=Enrollment&cPage=filesenr.asp
+    2008:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr98.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=2008-09&cCat=Enrollment&cPage=filesenr.asp
+    2009:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=2009-10&cCat=Enrollment&cPage=filesenr.asp
+    2010:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=2010-11&cCat=Enrollment&cPage=filesenr.asp
+    2011:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=2011-12&cCat=Enrollment&cPage=filesenr.asp
+    2012:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=2012-13&cCat=Enrollment&cPage=filesenr.asp
+    2013:
+        dd_url: http://www.cde.ca.gov/ds/sd/sd/fsenr.asp
+        description: null
+        url: http://dq.cde.ca.gov/dataquest/dlfile/dlfile.aspx?cLevel=School&cYear=2013-14&cCat=Enrollment&cPage=filesenr.asp
+    index:
+        description: Web page that links to all of the files.
+        url: http://www.cde.ca.gov/ds/sd/sd/filesenr.asp

@@ -3,12 +3,9 @@ about:
     license: null
     rights: null
     subject: null
-    summary: The 211 call dataset expresses multiple values in a field with multiple
-        records, one for each value in a field, multiplied over all of the multiple
-        values in fields that have multiple values. This bundle collapses those records
-        into one.
+    summary: null
     tags: []
-    title: Deduplicated 211 Calls
+    title: null
 contact_bundle:
     creator:
         email: eric@sandiegodata.org
@@ -35,20 +32,20 @@ external_documentation:
         url: http://example.com
 identity:
     bspace: null
-    btime: p1ye2014
-    dataset: calls
-    id: d02Q
+    btime: null
+    dataset: enrollment
+    id: d02W
     revision: 1
-    source: 211sandiego.org
-    subset: null
+    source: cde.ca.gov
+    subset: 1993e
     type: null
-    variation: dedupe
+    variation: null
     version: 0.0.1
 names:
-    fqname: 211sandiego.org-calls-p1ye2014-dedupe-0.0.1~d02Q001
-    name: 211sandiego.org-calls-p1ye2014-dedupe
-    vid: d02Q001
-    vname: 211sandiego.org-calls-p1ye2014-dedupe-0.0.1
+    fqname: cde.ca.gov-enrollment-1993e-0.0.1~d02W001
+    name: cde.ca.gov-enrollment-1993e
+    vid: d02W001
+    vname: cde.ca.gov-enrollment-1993e-0.0.1
 process: {}
 versions:
     1:
