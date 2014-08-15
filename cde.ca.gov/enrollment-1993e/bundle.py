@@ -51,7 +51,9 @@ class Bundle(BuildBundle):
         d = {}
         
         for k, v in self.metadata.sources.items():
-            if k == 'index':
+            try:
+                int(k)
+            except: # All of the year data files have names that are ints
                 continue
                 
             schema_urls.add(v.dd_url)
@@ -137,7 +139,6 @@ class Bundle(BuildBundle):
                     row['year'] = k
                     yield  row
         
-
 
     def build(self):
         

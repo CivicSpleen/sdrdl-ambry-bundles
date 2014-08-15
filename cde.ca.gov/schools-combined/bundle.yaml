@@ -3,27 +3,25 @@ about:
     license: null
     rights: null
     subject: null
-    summary: null
+    summary: The cornerstone of California's Public Schools Accountability Act of 1999; measures the academic 
+        performance and growth of schools on a variety of academic measures.
     tags: []
-    title: null
+    title: California Schools Academic Performance Index
 contact_bundle:
     creator:
-        email: null
-        name: null
-        url: null
-    maintainer:
-        email: null
-        name: null
-        url: null
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
 contact_source:
     creator:
-        email: null
-        name: null
+        email:  aau@cde.ca.gov
+        name: California Department of Education, Academic Accountability Team
+        url: http://www.cde.ca.gov/index.asp
+external_documentation:
+    example:
+        description: Webpage that links to data files and data dictionaries. 
+        title: Datafile index page
         url: http://www.cde.ca.gov/ta/ac/ap/
-    maintainer:
-        email: null
-        name: null
-        url: null
 identity:
     bspace: null
     btime: null

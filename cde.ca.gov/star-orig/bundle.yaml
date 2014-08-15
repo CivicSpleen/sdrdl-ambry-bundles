@@ -13,11 +13,7 @@ contact_bundle:
     creator:
         email: eric@sandiegodata.org
         name: Eric Busboom
-        url: null
-    maintainer:
-        email: eric@sandiegodata.org
-        name: Eric Busboom
-        url: null
+        url: http://sandiegodata.org
 contact_source:
     creator:
         email: null

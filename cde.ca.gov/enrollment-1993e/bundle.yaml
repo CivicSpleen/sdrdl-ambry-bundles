@@ -3,51 +3,46 @@ about:
     license: null
     rights: null
     subject: null
-    summary: null
+    summary: Multi-year enrollment data for California Schools
     tags: []
-    title: null
+    title: California School Enrollments
 contact_bundle:
     creator:
-        email: eric@sandiegodata.org
-        name: Eric Busboom
-        url: http://www.sandiegodata.org
-    maintainer:
         email: eric@sandiegodata.org
         name: Eric Busboom
         url: http://www.sandiegodata.org
 contact_source:
     creator:
         email: null
-        name: null
-        url: null
-    maintainer:
-        email: null
-        name: null
-        url: null
+        name: California Department of Education
+        url: http://www.cde.ca.gov/index.asp
+
 external_documentation:
     example:
-        description: description
-        source: source
-        title: title
-        url: http://example.com
+        description: Webpage that links to data files and data dictionaries. 
+        title: Datafile index page
+        url: http://www.cde.ca.gov/ds/sd/sd/filesenr.asp
 identity:
     bspace: null
     btime: null
     dataset: enrollment
     id: d02W
-    revision: 1
+    revision: 2
     source: cde.ca.gov
     subset: 1993e
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: cde.ca.gov-enrollment-1993e-0.0.1~d02W001
+    fqname: cde.ca.gov-enrollment-1993e-0.0.2~d02W002
     name: cde.ca.gov-enrollment-1993e
-    vid: d02W001
-    vname: cde.ca.gov-enrollment-1993e-0.0.1
+    vid: d02W002
+    vname: cde.ca.gov-enrollment-1993e-0.0.2
 process: {}
 versions:
     1:
         description: null
         version: 0.0.1
+    2:
+        description: added indexes
+        version: 0.0.2

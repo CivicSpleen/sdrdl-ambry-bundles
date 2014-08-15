@@ -8,22 +8,20 @@ about:
     title: null
 contact_bundle:
     creator:
-        email: null
-        name: null
-        url: null
-    maintainer:
-        email: null
-        name: null
-        url: null
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
 contact_source:
     creator:
-        email: null
-        name: null
-        url: null
-    maintainer:
-        email: null
-        name: null
-        url: null
+        email:  
+        name: California Department of Education
+        url: http://www.cde.ca.gov/index.asp
+
+external_documentation:
+    example:
+        description: Webpage that links to data files and data dictionaries. 
+        title: Datafile index page
+        url: http://www.cde.ca.gov/ds/si/
 identity:
     bspace: null
     btime: null

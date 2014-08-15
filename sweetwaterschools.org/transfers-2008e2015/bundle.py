@@ -20,6 +20,9 @@ class Bundle(BuildBundle):
         
         for k, v in self.metadata.sources.items():
         
+            if not k.startswith('trans'):
+                continue
+        
             f = self.filesystem.download(k)
             wb = open_workbook(f)
             
@@ -51,19 +54,39 @@ class Bundle(BuildBundle):
                         self.error("Failed for row {}, file {} : {}".format(i, f, row))
                         
                         
-                        
+                  
+    def build_load_crosswalk(self):
+        import csv
 
-    def build(self):
+        fn = self.filesystem.download('code_cross')
+        
+        p = self.partitions.find_or_new(table='swtransfers')
+        with open(fn) as f:
+            reader = csv.DictReader(f)
+            
+            with p.inserter('code_cross') as ins:
+                for row in reader:
+                    ins.insert(row)
+
+    def build_transfers(self):
         
         p = self.partitions.find_or_new(table='swtransfers')
         p.clean()
 
-        
         with p.inserter() as ins:
             for row in self.gen_rows():
                 ins.insert(row)
                 
         return True
+        
+    def build(self):
+        
+        self.build_transfers()
+        
+        self.build_load_crosswalk()
+        
+        return True
+        
                 
             
 

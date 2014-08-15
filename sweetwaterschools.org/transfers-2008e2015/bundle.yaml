@@ -30,19 +30,22 @@ identity:
     btime: null
     dataset: transfers
     id: d02V
-    revision: 1
+    revision: 2
     source: sweetwaterschools.org
     subset: 2008e2015
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: sweetwaterschools.org-transfers-2008e2015-0.0.1~d02V001
+    fqname: sweetwaterschools.org-transfers-2008e2015-0.0.2~d02V002
     name: sweetwaterschools.org-transfers-2008e2015
-    vid: d02V001
-    vname: sweetwaterschools.org-transfers-2008e2015-0.0.1
+    vid: d02V002
+    vname: sweetwaterschools.org-transfers-2008e2015-0.0.2
 process: {}
 versions:
     1:
         description: Initial version
         version: 0.0.1
+    2:
+        description: null
+        version: 0.0.2

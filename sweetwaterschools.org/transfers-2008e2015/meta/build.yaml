@@ -4,6 +4,9 @@ build:
 dependencies: {}
 extract: {}
 sources:
+    code_cross:
+        description: Crosswalk between CDS codes and the codes used for school transfers.
+        url: s3://ds.civicknowledge.org/voiceofsandiego.org/Sweetwater%20Open%20Enrollment/sweet_code_cross.csv
     trans2008:
         description: Student transfers 2018 - 2009
         url: s3://ds.civicknowledge.org/voiceofsandiego.org/Sweetwater%20Open%20Enrollment/2008-2009%20all%20schools%20intras.xls
