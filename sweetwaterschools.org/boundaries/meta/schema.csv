@@ -1,0 +1,7 @@
+table,seq,column,is_pk,is_fk,type,width,description,id
+sws_boundaries,1,ogc_fid,1,,INTEGER,,,c02Y01001
+sws_boundaries,2,id,,,INTEGER64,9,,c02Y01002
+sws_boundaries,3,name,,,TEXT,100,,c02Y01003
+sws_boundaries,4,type,,,TEXT,1,,c02Y01004
+sws_boundaries,5,color_map,,,INTEGER64,9,,c02Y01005
+sws_boundaries,6,recid,,,INTEGER64,7,,c02Y01006

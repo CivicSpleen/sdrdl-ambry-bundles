@@ -1,0 +1,8 @@
+build:
+    s_srs: 4326
+dependencies: {}
+extract: {}
+sources:
+    sws_boundaries:
+        description: School enrollmentboundaries shapefile
+        url: http://ds.civicknowledge.org/voiceofsandiego.org/Sweetwater%20Open%20Enrollment/Sweetwater%20District%20Boundary%20Files.zip
