@@ -1,12 +1,13 @@
-table,seq,column,is_pk,is_fk,type,i1,i2,size,description,id
-swtransfers,1,id,1,,INTEGER,,,,Transfers by year between Sweetwater HS District schools,c02V01001
-swtransfers,2,year,,,VARCHAR,,,36,School year of transfer,c02V01002
-swtransfers,3,dest,,,VARCHAR,,,5,Destination school,c02V01003
-swtransfers,4,origin,,,VARCHAR,,,7,Home school,c02V01004
-swtransfers,5,status,,,VARCHAR,,,9,Transfer status,c02V01005
-,,,,,,,,,,
-code_cross,1,id,1,,INTEGER,,,,Links cds codes to the schools codes in the transfer files,c02V02001
-code_cross,2,code,,,VARCHAR,1,,5,Alpha code from transfer file,c02V02002
-code_cross,3,cdscode,,,VARCHAR,,1,14,CDS code,c02V02003
-code_cross,4,name,,,VARCHAR,,,77,School name,c02V02004
-code_cross,5,zip,,,VARCHAR,,,5,School zip code,c02V02005
+table,seq,column,is_pk,is_fk,type,i1,i2,i3,size,description,id
+swtransfers,1,id,1,,INTEGER,,,,,Transfers by year between Sweetwater HS District schools,c02V01001
+swtransfers,2,year,,,VARCHAR,,,,36,School year of transfer,c02V01002
+swtransfers,3,dest,,,VARCHAR,,,,5,Destination school,c02V01003
+swtransfers,4,origin,,,VARCHAR,,,,7,Home school,c02V01004
+swtransfers,5,status,,,VARCHAR,,,,9,Transfer status,c02V01005
+,,,,,,,,,,,
+code_cross,1,id,1,,INTEGER,,,,,Links cds codes to the schools codes in the transfer files,c02V02001
+code_cross,2,code,,,VARCHAR,1,,,5,Alpha code from transfer file,c02V02002
+code_cross,3,cdscode,,,VARCHAR,,1,,14,CDS code,c02V02003
+code_cross,4,name,,,VARCHAR,,,,77,School name,c02V02004
+code_cross,5,zip,,,VARCHAR,,,,5,School zip code,c02V02005
+code_cross,6,boundary_id,,,INTEGER,,,1,,Id value from the sweetwaterschools.org-boundaries bundle,c02V02006

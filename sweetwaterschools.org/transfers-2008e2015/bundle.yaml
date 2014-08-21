@@ -30,17 +30,17 @@ identity:
     btime: null
     dataset: transfers
     id: d02V
-    revision: 2
+    revision: 3
     source: sweetwaterschools.org
     subset: 2008e2015
     type: null
     variation: null
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: sweetwaterschools.org-transfers-2008e2015-0.0.2~d02V002
+    fqname: sweetwaterschools.org-transfers-2008e2015-0.0.3~d02V003
     name: sweetwaterschools.org-transfers-2008e2015
-    vid: d02V002
-    vname: sweetwaterschools.org-transfers-2008e2015-0.0.2
+    vid: d02V003
+    vname: sweetwaterschools.org-transfers-2008e2015-0.0.3
 process: {}
 versions:
     1:
@@ -49,3 +49,6 @@ versions:
     2:
         description: null
         version: 0.0.2
+    3:
+        description: Adding boundary_id to crosswalk to link to school boundaries.
+        version: 0.0.3

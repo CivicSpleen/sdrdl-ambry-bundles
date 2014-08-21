@@ -1,6 +1,8 @@
 build:
     s_srs: 4326
-dependencies: {}
+dependencies:
+    bg2012: census.gov-tigerline-2012-blockgroups-ca-geo-0.0.4
+    blocks: clarinova.com-places-casnd-blocks-geo
 extract: {}
 sources:
     sws_boundaries:

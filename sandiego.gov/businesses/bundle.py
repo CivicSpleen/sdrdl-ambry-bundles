@@ -217,13 +217,14 @@ class Bundle(BuildBundle):
             blocks = self.library.dep('blocks').partition
             lr = self.init_log_rate(3000)
             
-            for i,block in enumerate(blocks.query("SELECT  AsText(geometry) AS wkt, geoid FROM blocks")):
+            # Note, ogc_fid is the primary key. The id column is created by the shapefile. 
+            for i,block in enumerate(blocks.query("SELECT  AsText(geometry) AS wkt, id FROM  sws_boundaries")):
                 lr('Load rtree')
                 
                 if self.run_args.test and i > 200:
                     break
                 
-                yield i,block['geoid'], block['wkt']
+                yield i,block['id'], block['wkt']
         
         def generate_points():
             p = self.partitions.find(table = 'dstk_addresses')
@@ -241,7 +242,7 @@ class Bundle(BuildBundle):
             
             with p.inserter() as ins:
                 while True:
-                    (p,point_obj,poly_obj) = yield # Get a value back from find_geo_containment
+                    (p,point_obj,geometry, poly_obj) = yield # Get a value back from find_geo_containment
                     
                     d = dict(businesses_id = point_obj, 
                             block_geoid = poly_obj, # New name

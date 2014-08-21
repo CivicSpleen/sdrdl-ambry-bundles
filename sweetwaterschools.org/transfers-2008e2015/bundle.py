@@ -59,14 +59,17 @@ class Bundle(BuildBundle):
         import csv
 
         fn = self.filesystem.download('code_cross')
-        
+
         p = self.partitions.find_or_new(table='swtransfers')
+        p.query('DELETE FROM code_cross')
         with open(fn) as f:
             reader = csv.DictReader(f)
             
             with p.inserter('code_cross') as ins:
                 for row in reader:
+                   
                     ins.insert(row)
+               
 
     def build_transfers(self):
         

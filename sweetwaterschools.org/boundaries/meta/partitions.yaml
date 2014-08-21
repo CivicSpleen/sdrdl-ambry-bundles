@@ -1,3 +1,5 @@
 -   format: geo
     name: sweetwaterschools.org-boundaries-sws_boundaries-geo
     table: sws_boundaries
+-   name: sweetwaterschools.org-boundaries-acs_cross
+    table: acs_cross

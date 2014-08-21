@@ -35,19 +35,25 @@ identity:
     btime: null
     dataset: boundaries
     id: d02Y
-    revision: 1
+    revision: 3
     source: sweetwaterschools.org
     subset: null
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.3
 names:
-    fqname: sweetwaterschools.org-boundaries-0.0.1~d02Y001
+    fqname: sweetwaterschools.org-boundaries-0.0.3~d02Y003
     name: sweetwaterschools.org-boundaries
-    vid: d02Y001
-    vname: sweetwaterschools.org-boundaries-0.0.1
+    vid: d02Y003
+    vname: sweetwaterschools.org-boundaries-0.0.3
 process: {}
 versions:
     1:
         description: null
         version: 0.0.1
+    2:
+        description: null
+        version: 0.0.2
+    3:
+        description: null
+        version: 0.0.3
