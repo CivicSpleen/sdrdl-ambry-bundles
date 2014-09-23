@@ -2,6 +2,7 @@ build:
     requirements:
         rtree: rtree
         shapely: shapley
+        dstk: dstk
 dependencies:
     addresses: clarinova.com-geocode-casnd-address-1.0.7
     blocks: clarinova.com-places-casnd-blocks-geo
