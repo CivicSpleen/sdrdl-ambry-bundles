@@ -1,0 +1,3 @@
+# Downtown San Diego Neighborhood Boundaries
+
+Boundaries of Downtown San Diego neighborhoods, which are significanty different than those provided by SANGIS.

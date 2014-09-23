@@ -10,4 +10,4 @@ code_cross,2,code,,,VARCHAR,1,,,5,Alpha code from transfer file,c02V02002
 code_cross,3,cdscode,,,VARCHAR,,1,,14,CDS code,c02V02003
 code_cross,4,name,,,VARCHAR,,,,77,School name,c02V02004
 code_cross,5,zip,,,VARCHAR,,,,5,School zip code,c02V02005
-code_cross,6,boundary_id,,,INTEGER,,,1,,Id value from the sweetwaterschools.org-boundaries bundle,c02V02006
+code_cross,6,boundary_id,,,INTEGER,,,1,6,Id value from the sweetwaterschools.org-boundaries bundle,c02V02006

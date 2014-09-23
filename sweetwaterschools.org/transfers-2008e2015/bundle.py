@@ -57,11 +57,16 @@ class Bundle(BuildBundle):
                   
     def build_load_crosswalk(self):
         import csv
+        from ambry.dbexceptions import QueryError
 
         fn = self.filesystem.download('code_cross')
 
         p = self.partitions.find_or_new(table='swtransfers')
-        p.query('DELETE FROM code_cross')
+        try:
+            p.query('DELETE FROM code_cross')
+        except QueryError:
+            pass
+            
         with open(fn) as f:
             reader = csv.DictReader(f)
             

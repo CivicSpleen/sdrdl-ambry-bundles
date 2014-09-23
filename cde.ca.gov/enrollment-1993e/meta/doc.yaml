@@ -1,9 +1,0 @@
-documentation:
-    main: "\n# Bundle Documentation\n\nThe contents of this file should be written\
-        \ in  \n[Markdown](http://daringfireball.net/projects/markdown/syntax). It\
-        \ will\nbe included in the about.description entry in the bundle configuration.\n\
-        \n"
-    readme: '# None
-
-
-        None'

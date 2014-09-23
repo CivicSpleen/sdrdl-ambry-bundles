@@ -1,0 +1,13 @@
+documentation:
+    main: "\n# Bundle Documentation\n\nThe contents of this file should be written\
+        \ in  \n[Markdown](http://daringfireball.net/projects/markdown/syntax). It\
+        \ will\nbe included in the about.description entry in the bundle configuration.\n\
+        \n"
+    readme: '
+
+        # City of San Diego Budget Data
+
+
+        A quick import of budget files supplied by the City of San Diego
+
+        '

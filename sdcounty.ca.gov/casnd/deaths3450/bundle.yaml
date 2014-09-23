@@ -44,6 +44,7 @@ names:
     name: sdcounty.ca.gov-deaths3450-casnd
     vid: d02a001
     vname: sdcounty.ca.gov-deaths3450-casnd-0.0.1
+process: {}
 versions:
     1:
         description: null

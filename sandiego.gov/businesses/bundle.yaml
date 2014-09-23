@@ -1,11 +1,16 @@
 about:
-    groups: []
+    groups:
+    - business
+    - economy
     license: null
     rights: null
-    subject: null
-    summary: null
-    tags: []
-    title: null
+    subject: Busineses
+    summary: Basic information about businesses in San Diego county, from the lists
+        published byt the Office of the Treasurer
+    tags:
+    - business
+    - economy
+    title: San Diego Businesses
 contact_bundle:
     creator:
         email: eric@sandiegodata.org
@@ -17,35 +22,35 @@ contact_bundle:
         url: http://www.sandiegodata.org
 contact_source:
     creator:
-        email: null
-        name: null
-        url: null
+        email: btax@sandiego.gov
+        name: Office of the City Treasurer
+        url: http://www.sandiego.gov/treasurer/index.shtml
     maintainer:
         email: null
         name: null
         url: null
 external_documentation:
-    example:
-        description: description
+    main:
+        description: Main webpage which links to the files.
         source: source
-        title: title
-        url: http://example.com
+        title: Source Webpage
+        url: http://www.sandiego.gov/treasurer/taxesfees/btax/nblactive.shtml
 identity:
-    bspace: null
+    bspace: casnd
     btime: null
     dataset: businesses
     id: d02R
-    revision: 4
+    revision: 5
     source: sandiego.gov
     subset: null
     type: null
     variation: orig
-    version: 1.0.4
+    version: 1.0.5
 names:
-    fqname: sandiego.gov-businesses-orig-1.0.4~d02R004
-    name: sandiego.gov-businesses-orig
-    vid: d02R004
-    vname: sandiego.gov-businesses-orig-1.0.4
+    fqname: sandiego.gov-businesses-casnd-orig-1.0.5~d02R005
+    name: sandiego.gov-businesses-casnd-orig
+    vid: d02R005
+    vname: sandiego.gov-businesses-casnd-orig-1.0.5
 process: {}
 versions:
     1:
@@ -61,3 +66,6 @@ versions:
     4:
         description: null
         version: 1.0.4
+    5:
+        description: Improved documentation
+        version: 1.0.5

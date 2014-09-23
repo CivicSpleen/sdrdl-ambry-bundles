@@ -1,6 +1,0 @@
-meta/schema-revised.csv
-meta/schema-old.csv
-.project
-*.pyc
-.pydevproject
-build

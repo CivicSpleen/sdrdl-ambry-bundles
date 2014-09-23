@@ -67,6 +67,8 @@ class Bundle(BuildBundle):
         
         self.build_dstk_geocoder()
         
+        self.build_block_cross()
+        
         return True
         
 
@@ -208,8 +210,8 @@ class Bundle(BuildBundle):
                 if self.run_args.test and i > 500:
                     break
                  
-    def build_geolink(self):
-        
+    def build_block_cross(self):
+        """Build the bus_block_cross crosswalk file to assign businessed to blocks. """
         from ambry.geo.util import find_geo_containment
 
         def generate_geometries():
@@ -218,20 +220,20 @@ class Bundle(BuildBundle):
             lr = self.init_log_rate(3000)
             
             # Note, ogc_fid is the primary key. The id column is created by the shapefile. 
-            for i,block in enumerate(blocks.query("SELECT  AsText(geometry) AS wkt, id FROM  sws_boundaries")):
+            for i,block in enumerate(blocks.query("SELECT  AsText(geometry) AS wkt, geoid FROM  blocks")):
                 lr('Load rtree')
                 
                 if self.run_args.test and i > 200:
                     break
                 
-                yield i,block['id'], block['wkt']
+                yield i, block['geoid'] , block['wkt']
         
         def generate_points():
             p = self.partitions.find(table = 'dstk_addresses')
             #p = self.library.get('sandiego.gov-businesses-orig-dstk_addresses-1.0.3').partition
             for row in p.rows:
                 if  row['lon'] and row['lat']:
-                    yield row['lon'], row['lat'], row['businesses_id']
+                    yield (row['lon'], row['lat']), row['businesses_id']
 
         def mark_contains():
             
@@ -254,4 +256,4 @@ class Bundle(BuildBundle):
         
             
         find_geo_containment(generate_geometries(), generate_points(), mark_contains())
-        
+   

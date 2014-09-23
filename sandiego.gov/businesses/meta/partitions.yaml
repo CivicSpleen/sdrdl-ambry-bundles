@@ -1,6 +1,8 @@
--   name: sandiego.gov-businesses-orig-businesses
+-   name: sandiego.gov-businesses-casnd-orig-businesses
     table: businesses
--   name: sandiego.gov-businesses-orig-ck_addresses
+-   name: sandiego.gov-businesses-casnd-orig-ck_addresses
     table: ck_addresses
--   name: sandiego.gov-businesses-orig-dstk_addresses
+-   name: sandiego.gov-businesses-casnd-orig-dstk_addresses
     table: dstk_addresses
+-   name: sandiego.gov-businesses-casnd-orig-bus_block_cross
+    table: bus_block_cross

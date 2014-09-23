@@ -3,9 +3,10 @@ about:
     license: null
     rights: null
     subject: null
-    summary: null
+    summary: Boundaries of Downtown San Diego neighborhoods, which are significanty
+        different than those provided by SANGIS.
     tags: []
-    title: null
+    title: Downtown San Diego Neighborhood Boundaries
 contact_bundle:
     creator:
         email: eric@sandiegodata.org
@@ -18,34 +19,34 @@ contact_bundle:
 contact_source:
     creator:
         email: null
-        name: null
-        url: null
+        name: Civic San Diego
+        url: http://www.civicsd.com/
     maintainer:
         email: null
         name: null
         url: null
 external_documentation:
-    example:
-        description: description
+    neighborhoods:
+        description: Descriptions and PDF map of downtown San Diego neighborhoods
         source: source
-        title: title
-        url: http://example.com
+        title: Downtown Neighborhoods
+        url: http://civicsd.com/images/stories/publications/2011_neighborhoods.pdf
 identity:
     bspace: null
-    btime: 2010e2014
-    dataset: budget
-    id: d02r
+    btime: null
+    dataset: neighborhoods
+    id: d035
     revision: 1
-    source: sandiego.gov
+    source: civicsd.org
     subset: null
     type: null
     variation: null
     version: 0.0.1
 names:
-    fqname: sandiego.gov-budget-2010e2014-0.0.1~d02r001
-    name: sandiego.gov-budget-2010e2014
-    vid: d02r001
-    vname: sandiego.gov-budget-2010e2014-0.0.1
+    fqname: civicsd.org-neighborhoods-0.0.1~d035001
+    name: civicsd.org-neighborhoods
+    vid: d035001
+    vname: civicsd.org-neighborhoods-0.0.1
 process: {}
 versions:
     1:

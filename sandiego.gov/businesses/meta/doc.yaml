@@ -1,9 +1,12 @@
 documentation:
-    main: "\n# Bundle Documentation\n\nThe contents of this file should be written\
-        \ in  \n[Markdown](http://daringfireball.net/projects/markdown/syntax). It\
-        \ will\nbe included in the about.description entry in the bundle configuration.\n\
-        \n"
-    readme: '# None
+    main: "\n# Business List for San Diego County. \n\nThis list of businesses is\
+        \ published by the San Diego Office of the Treasurer. \n\nThe businesses listed\
+        \ in the file have locations across the US, but usually have some presence\
+        \ in San Diego, such as a San Diego location or an owner that lives in San\
+        \ Diego part time. Unfortunately, there is no upstream documentation to explain\
+        \ why many of the business addresses are outside of San Diego. \n\n"
+    readme: '# San Diego Businesses
 
 
-        None'
+        Basic information about businesses in San Diego county, from the lists published
+        byt the Office of the Treasurer'

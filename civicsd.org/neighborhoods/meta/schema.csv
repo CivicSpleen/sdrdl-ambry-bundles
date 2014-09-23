@@ -1,0 +1,20 @@
+table,seq,column,is_pk,is_fk,type,size,width,description,id
+example1,1,id,1,,INTEGER,,,,c03501001
+example1,2,uuid,,,VARCHAR,36,,A random UUID,c03501002
+example1,3,int,,,INTEGER,3,,A random integer,c03501003
+example1,4,float,,,REAL,,,,c03501004
+,,,,,,,,,
+example2,1,id,1,,INTEGER,,,,c03502001
+example2,2,uuid2,,,VARCHAR,,,A random UUID,c03502002
+example2,3,int2,,,INTEGER,,,A random integer,c03502003
+example2,4,float,,,REAL,,,,c03502004
+,,,,,,,,,
+neighborhoods,1,ogc_fid,1,,INTEGER,,,,c03503001
+neighborhoods,2,objectid_1,,,INTEGER64,,9,,c03503002
+neighborhoods,3,neighborho,,,INTEGER64,,9,,c03503003
+neighborhoods,4,neighbor_1,,,TEXT,,120,,c03503004
+neighborhoods,5,descriptio,,,TEXT,,250,,c03503005
+neighborhoods,6,pop2006,,,INTEGER64,,9,,c03503006
+neighborhoods,7,emp2006,,,INTEGER64,,9,,c03503007
+neighborhoods,8,shape_leng,,,NUMERIC,,19,,c03503008
+neighborhoods,9,shape_area,,,NUMERIC,,19,,c03503009

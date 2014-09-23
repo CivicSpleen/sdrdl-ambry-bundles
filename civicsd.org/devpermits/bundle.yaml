@@ -46,6 +46,7 @@ names:
     name: civicsd.org-devpermits
     vid: dxoLGGYtNk001
     vname: civicsd.org-devpermits-0.0.1
+process: {}
 versions:
     1:
         description: null
