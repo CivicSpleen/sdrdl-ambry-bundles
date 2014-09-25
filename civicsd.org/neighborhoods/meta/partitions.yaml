@@ -1,3 +1,5 @@
 -   format: geo
     name: civicsd.org-neighborhoods-neighborhoods-geo
     table: neighborhoods
+-   name: civicsd.org-neighborhoods-nhood_block_cross
+    table: nhood_block_cross

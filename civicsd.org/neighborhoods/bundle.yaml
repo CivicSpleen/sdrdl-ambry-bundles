@@ -36,19 +36,22 @@ identity:
     btime: null
     dataset: neighborhoods
     id: d035
-    revision: 1
+    revision: 2
     source: civicsd.org
     subset: null
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: civicsd.org-neighborhoods-0.0.1~d035001
+    fqname: civicsd.org-neighborhoods-0.0.2~d035002
     name: civicsd.org-neighborhoods
-    vid: d035001
-    vname: civicsd.org-neighborhoods-0.0.1
+    vid: d035002
+    vname: civicsd.org-neighborhoods-0.0.2
 process: {}
 versions:
     1:
         description: null
         version: 0.0.1
+    2:
+        description: null
+        version: 0.0.2

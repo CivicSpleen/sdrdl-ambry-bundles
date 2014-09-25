@@ -1,7 +1,9 @@
 build: {}
-dependencies: {}
+dependencies:
+    blocks: clarinova.com-places-casnd-blocks-geo
 extract: {}
 sources:
     neighborhoods:
         description: Downtown Neighborhoods shapefile
         url: http://ds.civicknowledge.org/civicsd.com/neighborhood.zip
+views: {}
