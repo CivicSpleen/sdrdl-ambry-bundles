@@ -1,0 +1,49 @@
+about:
+    groups: []
+    license: null
+    rights: null
+    subject: null
+    summary: Forecast data to 2050 for population, income, housing and race/ethnicity. Obtained via email.
+    tags: []
+    title:  SANDAG Series 13 Regional Growth Forecast data by Census Tract
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: 
+        email: Kirby.Brady@sandag.org 
+        name: Kirby Brady, Research Analyst, SANDAG
+    maintainer: {}
+external_documentation:
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://example.com
+identity:
+    bspace: null
+    btime: null
+    dataset: popest
+    id: d03d
+    revision: 1
+    source: sandag.org
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: sandag.org-popest-0.0.1~d03d001
+    name: sandag.org-popest
+    vid: d03d001
+    vname: sandag.org-popest-0.0.1
+process: {}
+versions:
+    1:
+        description: null
+        version: 0.0.1
