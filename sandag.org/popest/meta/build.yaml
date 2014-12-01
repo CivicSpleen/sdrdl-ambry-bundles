@@ -1,8 +1,15 @@
-build: {}
+build:
+    requirements:
+        xlrd: xlrd
 dependencies: {}
 extract: {}
 sources:
-    example:
-        description: description
-        url: http://example.com
+    descriptions:
+        description: Field descriptions
+        segment: 1
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/pop-projections/sr13Forecast_CT10.xlsx
+    forecast13:
+        description: SANDAG Series 13 population estimates
+        segment: 0
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/pop-projections/sr13Forecast_CT10.xlsx
 views: {}

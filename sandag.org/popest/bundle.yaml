@@ -2,10 +2,11 @@ about:
     groups: []
     license: null
     rights: null
-    subject: null
-    summary: Forecast data to 2050 for population, income, housing and race/ethnicity. Obtained via email.
+    subject: Demographics
+    summary: Forecast data to 2050 for population, income, housing and race/ethnicity.
+        Obtained via email.
     tags: []
-    title:  SANDAG Series 13 Regional Growth Forecast data by Census Tract
+    title: SANDAG Series 13 Regional Growth Forecast data by Census Tract
 contact_bundle:
     creator:
         email: eric@sandiegodata.org
@@ -16,16 +17,16 @@ contact_bundle:
         name: Eric Busboom
         url: http://www.sandiegodata.org
 contact_source:
-    creator: 
-        email: Kirby.Brady@sandag.org 
+    creator:
+        email: Kirby.Brady@sandag.org
         name: Kirby Brady, Research Analyst, SANDAG
     maintainer: {}
 external_documentation:
-    download:
-        description: Web page that links to the source files.
-        source: null
-        title: Download Page
-        url: http://example.com
+    overview:
+        description: Web page that describes the SANDAG forecasts program.
+        source: forecast13
+        title: 2050 Regional Growth Forecast
+        url: http://www.sandag.org/index.asp?projectid=355&fuseaction=projects.detail
 identity:
     bspace: null
     btime: null
@@ -45,5 +46,5 @@ names:
 process: {}
 versions:
     1:
-        description: null
+        description: Initial Version
         version: 0.0.1

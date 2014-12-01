@@ -1,10 +1,62 @@
-"table","seq","column","is_pk","is_fk","type","size","description"
-"example1",1,"id",1,,"INTEGER",,
-"example1",2,"uuid",,,"VARCHAR",36,"A random UUID"
-"example1",3,"int",,,"INTEGER",3,"A random integer"
-"example1",4,"float",,,"REAL",,
-,,,,,,,
-"example2",1,"id",1,,"INTEGER",,
-"example2",2,"uuid2",,,"VARCHAR",,"A random UUID"
-"example2",3,"int2",,,"INTEGER",,"A random integer"
-"example2",4,"float",,,"REAL",,
+table,seq,column,is_pk,is_fk,type,size,description,d_header,id
+forecast13,1,id,1,,INTEGER,,,,t03d01
+forecast13,2,censustract2010,,,INTEGER,5,,CensusTract2010,c03d01002
+forecast13,3,year,,,INTEGER,4,,year,c03d01003
+forecast13,4,pop,,,INTEGER,5,total population,pop,c03d01004
+forecast13,5,hhp,,,INTEGER,5,household population,hhp,c03d01005
+forecast13,6,gq,,,INTEGER,5,group quarters population,gq,c03d01006
+forecast13,7,gq_civ,,,INTEGER,5,civilian group quarters population,gq_civ,c03d01007
+forecast13,8,gq_mil,,,INTEGER,5,military group quarters population,gq_mil,c03d01008
+forecast13,9,hs,,,INTEGER,5,housing units,hs,c03d01009
+forecast13,10,hs_sf,,,INTEGER,4,single-family housing units,hs_sf,c03d0100a
+forecast13,11,hs_mf,,,INTEGER,5,multiple-family housing units,hs_mf,c03d0100b
+forecast13,12,hs_mh,,,INTEGER,4,mobile home housing units,hs_mh,c03d0100c
+forecast13,13,hh,,,INTEGER,5,households (occupied housing units),hh,c03d0100d
+forecast13,14,hh_sf,,,INTEGER,4,single-family households (occupied housing units),hh_sf,c03d0100e
+forecast13,15,hh_mf,,,INTEGER,4,multiple-family households (occupied housing units),hh_mf,c03d0100f
+forecast13,16,hh_mh,,,INTEGER,4,mobile home households (occupied housing units),hh_mh,c03d0100g
+forecast13,17,i1,,,INTEGER,4,"households with income less than $15,000",i1,c03d0100h
+forecast13,18,i2,,,INTEGER,4,"households with income $15,000-$29,999",i2,c03d0100i
+forecast13,19,i3,,,INTEGER,4,"households with income $30,000-$44,999",i3,c03d0100j
+forecast13,20,i4,,,INTEGER,4,"households with income $45,000-$59,999",i4,c03d0100k
+forecast13,21,i5,,,INTEGER,4,"households with income $60,000-$74,999",i5,c03d0100l
+forecast13,22,i6,,,INTEGER,4,"households with income $75,000-$99,999",i6,c03d0100m
+forecast13,23,i7,,,INTEGER,4,"households with income $100,000-$124,999",i7,c03d0100n
+forecast13,24,i8,,,INTEGER,4,"households with income $125,000-$149,999",i8,c03d0100o
+forecast13,25,i9,,,INTEGER,4,"households with income $150,000-$199,999",i9,c03d0100p
+forecast13,26,i10,,,INTEGER,4,"households with income $200,000 or more",i10,c03d0100q
+forecast13,27,inc_median,,,REAL,,,inc_median,c03d0100r
+forecast13,28,pop_0to4,,,INTEGER,4,population age 0  to  4,pop_0to4,c03d0100s
+forecast13,29,pop_5to9,,,INTEGER,4,population age 5  to  9,pop_5to9,c03d0100t
+forecast13,30,pop_10to14,,,INTEGER,4,population age 10 to 14,pop_10to14,c03d0100u
+forecast13,31,pop_15to17,,,INTEGER,4,population age 15 to 17,pop_15to17,c03d0100v
+forecast13,32,pop_18to19,,,INTEGER,4,population age 18 to 19,pop_18to19,c03d0100w
+forecast13,33,pop_20to24,,,INTEGER,5,population age 20 to 24,pop_20to24,c03d0100x
+forecast13,34,pop_25to29,,,INTEGER,4,population age 25 to 29,pop_25to29,c03d0100y
+forecast13,35,pop_30to34,,,INTEGER,4,population age 30 to 34,pop_30to34,c03d0100z
+forecast13,36,pop_35to39,,,INTEGER,4,population age 35 to 39,pop_35to39,c03d0100A
+forecast13,37,pop_40to44,,,INTEGER,4,population age 40 to 44,pop_40to44,c03d0100B
+forecast13,38,pop_45to49,,,INTEGER,4,population age 45 to 49,pop_45to49,c03d0100C
+forecast13,39,pop_50to54,,,INTEGER,4,population age 50 to 54,pop_50to54,c03d0100D
+forecast13,40,pop_55to59,,,INTEGER,4,population age 55 to 59,pop_55to59,c03d0100E
+forecast13,41,pop_60to61,,,INTEGER,4,population age 60 to 61,pop_60to61,c03d0100F
+forecast13,42,pop_62to64,,,INTEGER,4,population age 62 to 64,pop_62to64,c03d0100G
+forecast13,43,pop_65to69,,,INTEGER,4,population age 65 to 69,pop_65to69,c03d0100H
+forecast13,44,pop_70to74,,,INTEGER,4,population age 70 to 74,pop_70to74,c03d0100I
+forecast13,45,pop_75to79,,,INTEGER,4,population age 75 to 79,pop_75to79,c03d0100J
+forecast13,46,pop_80to84,,,INTEGER,4,population age 80 to 84,pop_80to84,c03d0100K
+forecast13,47,pop_85plus,,,INTEGER,4,population age 85 plus,pop_85plus,c03d0100L
+forecast13,48,median_age,,,REAL,,,median_age,c03d0100M
+forecast13,49,hisp,,,INTEGER,5,Hispanic,hisp,c03d0100N
+forecast13,50,nhisp,,,INTEGER,5,non-Hispanic,nhisp,c03d0100O
+forecast13,51,nhw,,,INTEGER,5,non-Hispanic White,nhw,c03d0100P
+forecast13,52,nhb,,,INTEGER,4,non-Hispanic Black,nhb,c03d0100Q
+forecast13,53,nhi,,,INTEGER,4,non-Hispanic American Indian or Alaska Native,nhi,c03d0100R
+forecast13,54,nha,,,INTEGER,5,non-Hispanic Asian,nha,c03d0100S
+forecast13,55,nhh,,,INTEGER,3,non-Hispanic Hawaiian or Pacific Islander,nhh,c03d0100T
+forecast13,56,nho,,,INTEGER,3,non-Hispanic Other,nho,c03d0100U
+forecast13,57,nh2,,,INTEGER,4,non-Hispanic 2 or More Races,nh2,c03d0100V
+,,,,,,,,,
+descriptions,1,id,1,,INTEGER,,,,t03d02
+descriptions,2,field,,,INTEGER,,,Field,c03d02002
+descriptions,3,description,,,VARCHAR,51,,description,c03d02003

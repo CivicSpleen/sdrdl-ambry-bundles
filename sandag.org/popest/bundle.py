@@ -1,37 +1,51 @@
 '''
-Example bundle that builds a single partition with a table of random numbers
+
 '''
 
-from  ambry.bundle import BuildBundle
+from  ambry.bundle.loader import ExcelBuildBundle
  
 
 
-class Bundle(BuildBundle):
+class Bundle(ExcelBuildBundle):
     ''' '''
 
     def __init__(self,directory=None):
 
         super(Bundle, self).__init__(directory)
 
-    def build(self):
-        import uuid
-        import random
+    def meta_add_descriptions(self):
+        """The second workskeet of the data file has the descriptions for each column. Load these and alter the
+        schema to include them. """
+        from xlrd import open_workbook
+        
+        fn, sheet_num = self.get_wb_sheet('descriptions')
 
-        p = self.partitions.new_partition(table='example1')
+        descriptions = {}
 
-        p.query('DELETE FROM example1')
+        with open(fn) as f:
 
-        lr = self.init_log_rate(100)
+            wb = open_workbook(fn)
 
-        with p.database.inserter() as ins:
-            for i in range(1000):
-                row = {}
-                row['uuid'] = str(uuid.uuid4())
-                row['int'] = random.randint(0,100)
-                row['float'] = random.random()*100
+            s = wb.sheets()[sheet_num]
 
-                ins.insert(row)
-                lr()
-
+            for i, row in enumerate(range(1,s.nrows)):
+                d =  self.srow_to_list(row, s)
+                descriptions[d[0]] = d[1]
+                
+        with self.session:
+            
+            for c in self.schema.table('forecast13').columns:
+                c.description = descriptions.get(c.name, '')
+                
+        self.schema.write_schema()
+            
+            
+    def meta(self):
+        
+        super(Bundle, self).meta()
+        
+        self.meta_add_descriptions()
+        
         return True
+
 
