@@ -40,7 +40,7 @@ class Bundle(BuildBundle):
             
             year, state, type_ = key.split('_')
             
-            years.add(int(year))
+            years.add(year)
             
         return years
 
@@ -85,10 +85,18 @@ class Bundle(BuildBundle):
             
             y, s, p = key.split('_')
         
-            if year != int(y) or s != state or p != pa:
+            if str(year) != str(y) or s != state or p != pa:
                 continue
         
+            if str(year) == 'ytd':
+                import datetime
+                year = datetime.datetime.now().year
+            else:
+                year = int(year)
+                
             fn = self.source(key)
+        
+           
         
             with open(fn) as f:
        
@@ -101,7 +109,7 @@ class Bundle(BuildBundle):
                 
                     v['state'] = state
                     v['pa'] = pa.lower()
-                    v['year'] = int(year)
+                    v['year'] = year
                     
                     for k in v.keys():
                         if k.endswith('_date'):

@@ -108,4 +108,13 @@ sources:
     base:
         description: Base S3 URL
         url: s3://ds.civicknowledge.org/sandiego.gov/opendsd
+    ytd_completed_permits:
+        description: Year To Date Completed Permits
+        url: http://www.sandiego.gov/development-services/opendsd/zip/yeartodatedsdpermitscompleted.zip
+    ytd_issued_permits:
+        description: Year To Date Issued Permits
+        url: http://www.sandiego.gov/development-services/opendsd/zip/yeartodatedsdpermitsissued.zip
+    ytd_received_applications:
+        description: Year To Date Received Applications
+        url: http://www.sandiego.gov/development-services/opendsd/zip/yeartodatedsdapplicationsreceived.zip
 views: {}

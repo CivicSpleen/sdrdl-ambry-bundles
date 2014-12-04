@@ -1,6 +1,6 @@
-# OpenDSD Approvals, Invoices and Projects
+# Index to OpenDSD Approvals, Invoices and Projects
 
-XML Exports of projects, approvals and invoices, exported from the Project Tracking System.
+XML Exports of summaries of applications and permits, exported from the City of San Diego Project Tracking System.
 
 # Development Notes
 
