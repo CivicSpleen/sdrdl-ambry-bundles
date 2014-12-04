@@ -1,0 +1,111 @@
+build:
+    requirements:
+        dateutil: dateutil
+        lxml: lxml
+        xmltodict: xmltodict
+dependencies: {}
+extract: {}
+sources:
+    2003_completed_permits:
+        description: 2003 Completed Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2003/Annual_2003_DSD_Permits_Completed.xml
+    2003_issued_permits:
+        description: 2003 Issued Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2003/Annual_2003_DSD_Permits_Issued.xml
+    2003_received_applications:
+        description: 2003 Received Applications
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2003/Annual_2003_DSD_Applications_Received.xml
+    2004_completed_permits:
+        description: 2004 Completed Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2004/Annual_2004_DSD_Permits_Completed.xml
+    2004_issued_permits:
+        description: 2004 Issued Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2004/Annual_2004_DSD_Permits_Issued.xml
+    2004_received_applications:
+        description: 2004 Received Applications
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2004/Annual_2004_DSD_Applications_Received.xml
+    2005_completed_permits:
+        description: 2005 Completed Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2005/Annual_2005_DSD_Permits_Completed.xml
+    2005_issued_permits:
+        description: 2005 Issued Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2005/Annual_2005_DSD_Permits_Issued.xml
+    2005_received_applications:
+        description: 2005 Received Applications
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2005/Annual_2005_DSD_Applications_Received.xml
+    2006_completed_permits:
+        description: 2006 Completed Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2006/Annual_2006_DSD_Permits_Completed.xml
+    2006_issued_permits:
+        description: 2006 Issued Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2006/Annual_2006_DSD_Permits_Issued.xml
+    2006_received_applications:
+        description: 2006 Received Applications
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2006/Annual_2006_DSD_Applications_Received.xml
+    2007_completed_permits:
+        description: 2007 Completed Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2007/Annual_2007_DSD_Permits_Completed.xml
+    2007_issued_permits:
+        description: 2007 Issued Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2007/Annual_2007_DSD_Permits_Issued.xml
+    2007_received_applications:
+        description: 2007 Received Applications
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2007/Annual_2007_DSD_Applications_Received.xml
+    2008_completed_permits:
+        description: 2008 Completed Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2008/Annual_2008_DSD_Permits_Completed.xml
+    2008_issued_permits:
+        description: 2008 Issued Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2008/Annual_2008_DSD_Permits_Issued.xml
+    2008_received_applications:
+        description: 2008 Received Applications
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2008/Annual_2008_DSD_Applications_Received.xml
+    2009_completed_permits:
+        description: 2009 Completed Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2009/Annual_2009_DSD_Permits_Completed.xml
+    2009_issued_permits:
+        description: 2009 Issued Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2009/Annual_2009_DSD_Permits_Issued.xml
+    2009_received_applications:
+        description: 2009 Received Applications
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2009/Annual_2009_DSD_Applications_Received.xml
+    2010_completed_permits:
+        description: 2010 Completed Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2010/Annual_2010_DSD_Permits_Completed.xml
+    2010_issued_permits:
+        description: 2010 Issued Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2010/Annual_2010_DSD_Permits_Issued.xml
+    2010_received_applications:
+        description: 2010 Received Applications
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2010/Annual_2010_DSD_Applications_Received.xml
+    2011_completed_permits:
+        description: 2011 Completed Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2011/Annual_2011_DSD_Permits_Completed.xml
+    2011_issued_permits:
+        description: 2011 Issued Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2011/Annual_2011_DSD_Permits_Issued.xml
+    2011_received_applications:
+        description: 2011 Received Applications
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2011/Annual_2011_DSD_Applications_Received.xml
+    2012_completed_permits:
+        description: 2012 Completed Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2012/Annual_2012_DSD_Permits_Completed.xml
+    2012_issued_permits:
+        description: 2012 Issued Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2012/Annual_2013_DSD_Permits_Issued.xml
+    2012_received_applications:
+        description: 2012 Received Applications
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2012/Annual_2012_DSD_Applications_Received.xml
+    2013_completed_permits:
+        description: 2013 Completed Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2013/Annual_2013_DSD_Permits_Completed.xml
+    2013_issued_permits:
+        description: 2013 Issued Permits
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2013/Annual_2013_DSD_Permits_Issued.xml
+    2013_received_applications:
+        description: 2013 Received Applications
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/opendsd/2013/Annual_2013_DSD_Applications_Received.xml
+    base:
+        description: Base S3 URL
+        url: s3://ds.civicknowledge.org/sandiego.gov/opendsd
+views: {}

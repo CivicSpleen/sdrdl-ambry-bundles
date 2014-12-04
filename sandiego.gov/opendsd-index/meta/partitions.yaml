@@ -1,0 +1,9 @@
+-   grain: completed
+    name: sandiego.gov-opendsd-index-permits-completed
+    table: permits
+-   grain: received
+    name: sandiego.gov-opendsd-index-applications-received
+    table: applications
+-   grain: issued
+    name: sandiego.gov-opendsd-index-permits-issued
+    table: permits

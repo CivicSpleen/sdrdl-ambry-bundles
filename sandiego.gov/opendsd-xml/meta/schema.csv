@@ -1,0 +1,5 @@
+table,seq,column,is_pk,is_fk,type,description,id
+xml,1,id,1,,INTEGER,Raw XML,t03g01
+xml,2,type,,,VARCHAR,Object Type,c03g01002
+xml,3,object_id,,,INTEGER,Object ID,c03g01003
+xml,4,data,,,TEXT,Object XML text,c03g01004

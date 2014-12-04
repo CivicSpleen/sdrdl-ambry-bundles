@@ -1,0 +1,58 @@
+about:
+    groups: []
+    license: null
+    rights: null
+    subject: null
+    summary: XML Exports of summaries of applications and permits, exported from the City of San Diego Project
+        Tracking System.
+    tags: []
+    title: Index to OpenDSD Approvals, Invoices and Projects
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    api:
+        description: API documentation
+        source: null
+        title: API Documentation
+        url: http://www.sandiego.gov/development-services/opendsd/pdf/opendsdapiv20141031.pdf
+    dataset:
+        description: Main website for OpenDSD
+        source: null
+        title: Dataset page
+        url: http://www.sandiego.gov/development-services/opendsd/
+    download:
+        description: Links to zipped XML files and API docs
+        source: null
+        title: Dataset download page
+        url: http://www.sandiego.gov/development-services/opendsd/developers.shtml
+identity:
+    bspace: null
+    btime: null
+    dataset: opendsd
+    id: d03f
+    revision: 1
+    source: sandiego.gov
+    subset: index
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: sandiego.gov-opendsd-index-0.0.1~d03f001
+    name: sandiego.gov-opendsd-index
+    vid: d03f001
+    vname: sandiego.gov-opendsd-index-0.0.1
+process: {}
+versions:
+    1:
+        description: null
+        version: 0.0.1
