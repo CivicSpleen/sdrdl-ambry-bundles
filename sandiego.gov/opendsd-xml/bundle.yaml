@@ -5,7 +5,7 @@ about:
     subject: null
     summary: Full data for application receieved, permits issues and permits completed,
         from the City of San Diego Project Tracking System, pulled from the OpenDSD
-        web API. XML is saved, but not parsed. 
+        web API. XML is saved, but not parsed.
     tags: []
     title: XML For OpenDSD Approvals, Invoices and Projects
 contact_bundle:

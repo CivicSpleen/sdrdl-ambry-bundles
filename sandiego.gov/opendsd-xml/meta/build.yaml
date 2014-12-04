@@ -1,6 +1,6 @@
 build: {}
 dependencies:
-    applications: sandiego.gov-opendsd-index-applications-received
+    applications: sandiego.gov-opendsd-index-applications-received->=0.0.2
 extract: {}
 sources:
     approval:

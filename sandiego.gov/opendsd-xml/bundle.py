@@ -46,7 +46,6 @@ class Bundle(BuildBundle):
                     p.close()
                     ins.close()
                     
-    
                 p = self.partitions.find_or_new(table='xml', grain='projects', segment = this_segment)
                 ins = p.inserter()
                 ins.__enter__()
@@ -54,7 +53,7 @@ class Bundle(BuildBundle):
                 
     
             if p.is_finalized:
-                # skip it
+                # skip it, and iterate through until we get to a record for a segment that is not finalized
                 continue
             else:
                 lr(str(p.identity))
