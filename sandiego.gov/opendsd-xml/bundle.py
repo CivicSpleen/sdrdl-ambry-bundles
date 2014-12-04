@@ -5,11 +5,10 @@ Example bundle that builds a single partition with a table of random numbers
 from  ambry.bundle import BuildBundle
  
 
-
 class Bundle(BuildBundle):
     ''' '''
     
-    segment_size = 1000
+    segment_size = 20000
 
     def __init__(self,directory=None):
 
@@ -18,7 +17,6 @@ class Bundle(BuildBundle):
         self.last_time = None
         self.delay_time = 0.01
         
-
     def build(self):
         
         self.request_projects()
@@ -51,7 +49,6 @@ class Bundle(BuildBundle):
                 ins.__enter__()
                 self.log("Switching to {}".format(str(p.identity)))
                 
-    
             if p.is_finalized:
                 # skip it, and iterate through until we get to a record for a segment that is not finalized
                 continue
@@ -59,11 +56,13 @@ class Bundle(BuildBundle):
                 lr(str(p.identity))
         
             t1 = time.time()
+            
             data = self.request('project', row['project_id'])
+            
             diff = time.time() - t1
             
             self.log('{} bytes, {} s'.format(len(data),diff))
-            
+        
             ins.insert(dict(
                 id = id,
                 type = 'project',
@@ -73,8 +72,6 @@ class Bundle(BuildBundle):
             
         p.close()
         ins.close()
-        
-        
         
     def request(self, url_name, id):
         import requests
@@ -95,7 +92,3 @@ class Bundle(BuildBundle):
         r = requests.get(url)
         return r.text
         
-    
-        
-    
-

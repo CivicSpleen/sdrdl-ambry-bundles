@@ -1,0 +1,6 @@
+table,seq,column,is_pk,is_fk,type,description,id
+json,1,id,1,,INTEGER,Raw XML,t03g01
+json,2,type,,,VARCHAR,Object Type,c03g01002
+json,3,access_time,,,INTEGER,Access Time,c03g01003
+json,4,object_id,,,INTEGER,Object ID,c03g01004
+json,5,data,,,BLOB,Object XML text,c03g01005
