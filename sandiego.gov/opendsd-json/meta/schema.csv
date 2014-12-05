@@ -1,6 +1,7 @@
-table,seq,column,is_pk,is_fk,type,description,id
-json,1,id,1,,INTEGER,Raw XML,t03g01
-json,2,type,,,VARCHAR,Object Type,c03g01002
-json,3,access_time,,,INTEGER,Access Time,c03g01003
-json,4,object_id,,,INTEGER,Object ID,c03g01004
-json,5,data,,,BLOB,Object XML text,c03g01005
+table,seq,column,is_pk,is_fk,type,size,description,id
+json,1,id,1,,INTEGER,6,Raw XML,t03g01
+json,2,type,,,VARCHAR,8,Object Type,c03g01002
+json,3,access_time,,,INTEGER64,10,Access Time,c03g01003
+json,4,object_id,,,INTEGER,6,Object ID,c03g01004
+json,5,response_code,,,INTEGER,3,HTTP response code,c03g01005
+json,6,data,,,BLOB,,Object XML text,c03g01006

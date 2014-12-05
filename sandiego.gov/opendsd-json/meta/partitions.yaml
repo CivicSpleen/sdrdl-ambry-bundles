@@ -1,2 +1,9 @@
--   name: sandiego.gov-opendsd-example1
-    table: example1
+-   grain: approvals
+    name: sandiego.gov-opendsd-json-json-approvals
+    table: json
+-   grain: projects
+    name: sandiego.gov-opendsd-json-json-projects
+    table: json
+-   grain: invoices
+    name: sandiego.gov-opendsd-json-json-invoices
+    table: json

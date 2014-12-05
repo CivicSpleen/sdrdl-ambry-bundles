@@ -1,12 +1,19 @@
 build: {}
 dependencies:
     applications: sandiego.gov-opendsd-index-applications-received->=0.0.2
+    completed: sandiego.gov-opendsd-index-permits-completed->=0.0.2
 extract: {}
 sources:
     approval:
+        description: Template for API urls for approvals
         url: http://opendsd.sandiego.gov/api/approval/{id}
     code_enforcement:
+        description: Template for API urls for code_enfocements
         url: http://opendsd.sandiego.gov/api/codeenforcement/{id}
+    invoice:
+        description: Template for API urls for invoice
+        url: http://opendsd.sandiego.gov/api/invoice/{id}
     project:
+        description: Template for API urls for projects
         url: http://opendsd.sandiego.gov/api/project/{id}
 views: {}

@@ -43,15 +43,15 @@ identity:
     id: d03g
     revision: 1
     source: sandiego.gov
-    subset: null
+    subset: json
     type: null
     variation: null
     version: 0.0.1
 names:
-    fqname: sandiego.gov-opendsd-0.0.1~d03g001
-    name: sandiego.gov-opendsd
+    fqname: sandiego.gov-opendsd-json-0.0.1~d03g001
+    name: sandiego.gov-opendsd-json
     vid: d03g001
-    vname: sandiego.gov-opendsd-0.0.1
+    vname: sandiego.gov-opendsd-json-0.0.1
 process: {}
 versions:
     1:
