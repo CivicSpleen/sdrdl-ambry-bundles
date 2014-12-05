@@ -9,12 +9,12 @@ import signal
 from multiprocessing.pool import ThreadPool
 
 
-def requestor_thread(idn, url, json_queue):
+def requestor_thread(idn, object_id, url, json_queue):
     import requests
 
     r = requests.get(url, headers={'Accept':'application/json'})
 
-    json_queue.put((idn, url, r.text))   
+    json_queue.put((idn, object_id, url, r.text))   
 
 
 class Bundle(BuildBundle):
@@ -36,28 +36,31 @@ class Bundle(BuildBundle):
         self.json_queue = Queue(1000)
         
 
-    def url_generator(self):
+    def generate_project_urls(self, p):
+    
+    
+        apps = self.library.dep('applications').partition
+    
+        
+        extant = set([ row['object_id'] for row in p.query("SELECT object_id FROM json") ])
+
+        for i, row in enumerate(apps.query('SELECT DISTINCT project_id FROM applications '
+                                       'ORDER BY project_id ')):
+        
+            if int(row['project_id']) in extant:
+                continue
+        
+            yield i, int(row['project_id']), self.metadata.sources.get('project').url.format(id=int(row['project_id']))
+
+    def rate_limit_generator(self, g):
         """Read project ids from the upstream dataset, then put URLs to get the project data
         onto a queue, at a maximum rate. The request threads will take URLs off of that queue.  """
         
         import time
-        
-        tok_n = 0
-        
-        apps = self.library.dep('applications').partition
 
         last_time = time.time()
         request_count = self.requests_per_delay
-        
-        def yield_urls():
-        
-            for i, row in enumerate(apps.query('SELECT DISTINCT project_id FROM applications '
-                                           'ORDER BY project_id ')):
-            
-                yield i, self.metadata.sources.get('project').url.format(id=int(row['project_id']))
-
-        g = yield_urls()
-
+     
         while True:
             # wait for the next time slot
             dt =  last_time + self.delay_time - time.time()
@@ -83,19 +86,19 @@ class Bundle(BuildBundle):
             lr(str(url))
        
     
-    def generate_json(self):
+    def generate_json(self, g):
       
         import time 
         
         lr = self.init_log_rate(50)
         
-        for idn, url in self.url_generator():
+        for idn, object_id, url in self.rate_limit_generator(g):
           
             # Limit the number of active threads
             while threading.active_count() > 15:
                 time.sleep(.1)
       
-            t  = threading.Thread(target=requestor_thread, args=(idn, url, self.json_queue))
+            t  = threading.Thread(target=requestor_thread, args=(idn, object_id, url, self.json_queue))
             t.start()    
 
             while self.json_queue.qsize() > 0:
@@ -105,27 +108,33 @@ class Bundle(BuildBundle):
                     break
                 
             
-    def build(self):
-        import time 
+    def scrape_api(self,p,g):
         
+        import time 
         lr = self.init_log_rate(50)
-
-        p = self.partitions.find_or_new(table='json', grain='projects')
-
+        
         with p.inserter(cache_size = 10) as ins:
-            for idn, url, json in self.generate_json():
+            for idn, object_id, url, json in self.generate_json(g):
     
                 lr(url)
         
-             
                 d = dict(
-                    id = idn,
+                    id = object_id,
                     type = 'project',
-                    object_id = idn,
+                    object_id = object_id,
                     access_time = time.time(),
                     data = json.encode('utf8').encode('zlib')
                 )
     
             
                 ins.insert(d)
-              
+            
+    def build(self):
+        
+        apps = self.library.dep('applications').partition
+        
+        p = self.partitions.find_or_new(table='json', grain='projects')
+        g = self.generate_project_urls(p)
+        
+        self.scrape_api(p,g)
+     
