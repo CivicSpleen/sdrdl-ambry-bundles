@@ -11,7 +11,7 @@ from multiprocessing.pool import ThreadPool
 class Bundle(BuildBundle):
     ''' '''
     
-    segment_size = 20000
+    max_threads = 5
 
     def __init__(self,directory=None):
 
@@ -25,8 +25,8 @@ class Bundle(BuildBundle):
       
         # Queue and thread for writing
         self.json_queue = Queue(1000)
+   
         
-
     def generate_project_urls(self, p):
         """Generate URLs for project objects we haven't seen yet. """
     
@@ -49,7 +49,7 @@ class Bundle(BuildBundle):
     
         apps = self.library.dep('completed').partition
     
-        extant = set([ row['object_id'] for row in p.query("SELECT object_id FROM json") ])
+        extant = set([ row['object_id'] for row in p.query("SELECT object_id FROM json ") ])
 
         limit = "LIMIT 200" if self.run_args.test else ''
 
@@ -68,7 +68,7 @@ class Bundle(BuildBundle):
         p1 = self.partitions.find_or_new(table='json', grain='approvals')
         p2 = self.partitions.find_or_new(table='json', grain='projects')
         
-        extant = set([ row['object_id'] for row in p.query("SELECT object_id FROM json") ])
+        extant = set([ row['object_id'] for row in p.query("SELECT object_id FROM json  WHERE response_code != 403") ])
         
         invoice_ids = set()
         
@@ -137,15 +137,13 @@ class Bundle(BuildBundle):
         for idn, object_id, url in self.rate_limit_generator(g):
           
             # Limit the number of active threads
-            while threading.active_count() >= 5:
+            while threading.active_count() >= self.max_threads:
                 self.progress("Sleeping. {} threads. Last idn: {}".format(threading.active_count(), idn ))
                 time.sleep(.1)
-                
                 
             def requestor_thread(idn, object_id, url, json_queue):
     
                 import requests
-
 
                 try:
                     r = requests.get(url, headers={'Accept':'application/json'})
@@ -199,7 +197,11 @@ class Bundle(BuildBundle):
                 ins.insert(d)
             
 
-    
+    def find_403s(self):
+        
+        grains = ('approvals', 'projects', 'invoices')
+        
+
     def build(self):
 
         p = self.partitions.find_or_new(table='json', grain='approvals')
