@@ -183,9 +183,7 @@ class Bundle(BuildBundle):
                         
                             return # Give up 
                         
-                        
-                        
-                    
+                
       
             t  = threading.Thread(target=requestor_thread, args=(idn, object_id, url, self.json_queue))
             t.start()    
@@ -200,7 +198,7 @@ class Bundle(BuildBundle):
     def scrape_api(self,object_type,p,g):
         """Run the json generator and store the json records in the database. """
         import time 
-        lr = self.init_log_rate(50)
+        lr = self.init_log_rate(1000)
         
         with p.inserter(cache_size = 10) as ins:
             for idn, object_id, url, response_code, json in self.generate_json(g):
