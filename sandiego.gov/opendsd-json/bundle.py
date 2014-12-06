@@ -6,12 +6,13 @@ from  ambry.bundle import BuildBundle
 from Queue import Queue, Full, Empty
 import threading
 import signal
+from multiprocessing import Lock
 from multiprocessing.pool import ThreadPool
 
 class Bundle(BuildBundle):
     ''' '''
     
-    max_threads = 5
+    max_threads = 5.0
 
     def __init__(self,directory=None):
 
@@ -25,6 +26,9 @@ class Bundle(BuildBundle):
       
         # Queue and thread for writing
         self.json_queue = Queue(1000)
+        
+        self.thread_count_lock =  Lock() # Lock for dynamically adjusting th number of threads. 
+        
    
         
     def generate_project_urls(self, p):
@@ -144,23 +148,43 @@ class Bundle(BuildBundle):
             def requestor_thread(idn, object_id, url, json_queue):
     
                 import requests
+                tries = 0
+                
+                while True:
+                    try:
+                        r = requests.get(url, headers={'Accept':'application/json'})
 
-                try:
-                    r = requests.get(url, headers={'Accept':'application/json'})
+                        r.raise_for_status()
 
-                    r.raise_for_status()
-
-                    json_queue.put((idn, object_id, url, r.status_code, r.text))
+                        json_queue.put((idn, object_id, url, r.status_code, r.text))
                     
-                except Exception as e:
-                    import json
-                    #self.error("Failed to request: {}: {}".format(url, e))
-                 
-                    json_queue.put((idn, object_id, url, r.status_code, json.dumps(dict(
-                        error = r.status_code,
-                        message = e.message,
-                        body = r.text
-                    ))))
+                        with self.thread_count_lock:
+                            self.max_threads += .001
+                            
+                        return
+                    
+                    except Exception as e:
+                        import json
+                        tries += 1
+                        time.sleep( 5**( 1 + (float(tries) / 10) ))
+                        
+                        with self.thread_count_lock:
+                            self.max_threads -= .5
+                        
+                        self.error("Failed to request: {}. Try: {} : {}".format(url, tries, e))
+                        
+                        if tries > 10:
+
+                            json_queue.put((idn, object_id, url, r.status_code, json.dumps(dict(
+                                error = r.status_code,
+                                message = e.message,
+                                body = r.text
+                            ))))
+                        
+                            return # Give up 
+                        
+                        
+                        
                     
       
             t  = threading.Thread(target=requestor_thread, args=(idn, object_id, url, self.json_queue))
