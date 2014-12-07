@@ -174,7 +174,7 @@ class Bundle(BuildBundle):
                         
                         self.error("Failed to request: {}. Try: {} : {}".format(url, tries, e))
                         
-                        if tries > 10:
+                        if tries > 10 or r.status_code > 500:
 
                             json_queue.put((idn, object_id, url, r.status_code, json.dumps(dict(
                                 error = r.status_code,
