@@ -6,7 +6,7 @@ about:
     summary: XML Exports of summaries of applications and permits, exported from the
         City of San Diego Project Tracking System.
     tags: []
-    title: Index to OpenDSD Approvals, Invoices and Projects
+    title: Index to OpenDSD Approvals, Invoices and Projects.
 contact_bundle:
     creator:
         email: eric@sandiegodata.org
@@ -20,6 +20,11 @@ contact_source:
     creator: {}
     maintainer: {}
 external_documentation:
+    agency:
+        description: Main website for the City's Development services.
+        source: null
+        title: Development Services Webpage
+        url: http://www.sandiego.gov/development-services
     api:
         description: API documentation
         source: null
@@ -40,17 +45,17 @@ identity:
     btime: null
     dataset: opendsd
     id: d03f
-    revision: 2
+    revision: 3
     source: sandiego.gov
     subset: index
     type: null
     variation: null
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: sandiego.gov-opendsd-index-0.0.2~d03f002
+    fqname: sandiego.gov-opendsd-index-0.0.3~d03f003
     name: sandiego.gov-opendsd-index
-    vid: d03f002
-    vname: sandiego.gov-opendsd-index-0.0.2
+    vid: d03f003
+    vname: sandiego.gov-opendsd-index-0.0.3
 process: {}
 versions:
     1:
@@ -59,3 +64,6 @@ versions:
     2:
         description: Adding year to date, for 2014.
         version: 0.0.2
+    3:
+        description: null
+        version: 0.0.3

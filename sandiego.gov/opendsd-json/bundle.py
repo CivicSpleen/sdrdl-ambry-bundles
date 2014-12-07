@@ -169,7 +169,8 @@ class Bundle(BuildBundle):
                         time.sleep( 5**( 1 + (float(tries) / 10) ))
                         
                         with self.thread_count_lock:
-                            self.max_threads -= .5
+                            if self.max_threads > 4:
+                                self.max_threads -= .5
                         
                         self.error("Failed to request: {}. Try: {} : {}".format(url, tries, e))
                         

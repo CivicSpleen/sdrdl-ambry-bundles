@@ -1,14 +1,18 @@
 documentation:
-    main: '
-
-        # Index to OpenDSD Approvals, Invoices and Projects
-
-
-        XML Exports of summaries of applications and permits, exported from the City
-        of San Diego Project Tracking System.
-
-        '
-    readme: '# Index to OpenDSD Approvals, Invoices and Projects
+    main: "\n# Index to OpenDSD Approvals, Invoices and Projects.\n\n*XML Exports\
+        \ of summaries of applications and permits, exported from the City of San\
+        \ Diego Project Tracking System.*\n\nThe City of San Diego's [Development\
+        \ Services](http://www.sandiego.gov/development-services) [OpenDSD Website](http://www.sandiego.gov/development-services/opendsd/)\
+        \ provides map interfaces, as well as direct data downloads, of key data objects\
+        \ related to development permits, projects and approvals. \n\nThis bundle\
+        \ provides tabular versions of the permit and application records that are\
+        \ avilable from the [dataset download page](http://www.sandiego.gov/development-services/opendsd/developers.shtml).\
+        \ As of version 0.02 of this bundle, the XML files used in this bundle are\
+        \ published by the San Diego Regional Data Library, having been recieved from\
+        \ Development Services on a USB stick. The download page links to XML files\
+        \ for recent objects, and will eventually have links to all of the same export\
+        \ data that the library acquired directly. \n"
+    readme: '# Index to OpenDSD Approvals, Invoices and Projects.
 
 
         XML Exports of summaries of applications and permits, exported from the City
