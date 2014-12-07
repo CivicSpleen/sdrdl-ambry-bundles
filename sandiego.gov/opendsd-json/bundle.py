@@ -169,12 +169,12 @@ class Bundle(BuildBundle):
                         time.sleep( 5**( 1 + (float(tries) / 10) ))
                         
                         with self.thread_count_lock:
-                            if self.max_threads > 4:
+                            if self.max_threads > 4 and r.status_code < 500:
                                 self.max_threads -= .5
                         
                         self.error("Failed to request: {}. Try: {} : {}".format(url, tries, e))
                         
-                        if tries > 10 or r.status_code > 500:
+                        if tries > 10 or r.status_code >= 500:
 
                             json_queue.put((idn, object_id, url, r.status_code, json.dumps(dict(
                                 error = r.status_code,
