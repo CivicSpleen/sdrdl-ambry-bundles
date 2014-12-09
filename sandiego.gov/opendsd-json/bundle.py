@@ -201,6 +201,7 @@ class Bundle(BuildBundle):
     def scrape_api(self,object_type,p,g):
         """Run the json generator and store the json records in the database. """
         import time 
+        from sqlalchemy.exc import IntegrityError
         lr = self.init_log_rate(1000)
         
         with p.inserter(cache_size = 10) as ins:
@@ -221,6 +222,8 @@ class Bundle(BuildBundle):
     
                 try:
                     ins.insert(d)
+                except IntegrityError:
+                    self.log("Duplicate for {} {} ".format(d['type'], d['id']))")
                 except:
                     self.error("Failed for {} {} ".format(d['type'], d['id']))
 
