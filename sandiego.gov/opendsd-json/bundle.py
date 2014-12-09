@@ -219,8 +219,10 @@ class Bundle(BuildBundle):
                     data = json.encode('utf8').encode('zlib')
                 )
     
-                ins.insert(d)
-            
+                try:
+                    ins.insert(d)
+                except:
+                    self.error("Failed for {} {} ".format(d['type'], d['id']))
 
     def find_403s(self):
         
