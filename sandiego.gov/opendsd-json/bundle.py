@@ -63,7 +63,6 @@ class Bundle(BuildBundle):
             if int(row['approval_id']) in extant:
                 continue
         
-
             yield i, int(row['approval_id']), self.metadata.sources.get('approval').url.format(id=int(row['approval_id']))
             
     def generate_invoice_urls(self, p):
@@ -204,10 +203,17 @@ class Bundle(BuildBundle):
         from sqlalchemy.exc import IntegrityError
         lr = self.init_log_rate(1000)
         
+        extant = set([row.id for row in p.rows])
+        
         with p.inserter(cache_size = 1) as ins:
             for idn, object_id, url, response_code, json in self.generate_json(g):
     
+                if object_id in extant:
+                    self.log('Duplicate {} {}'.format(object_type, object_id))
+                    continue
+    
                 self.progress('Inserting {} {}'.format(response_code,url))
+
     
                 lr("{} {} ".format(idn, url))
 
