@@ -223,7 +223,7 @@ class Bundle(BuildBundle):
                 try:
                     ins.insert(d)
                 except IntegrityError:
-                    self.log("Duplicate for {} {} ".format(d['type'], d['id']))")
+                    self.log("Duplicate for {} {} ".format(d['type'], d['id']))
                 except:
                     self.error("Failed for {} {} ".format(d['type'], d['id']))
 
