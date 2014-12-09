@@ -72,7 +72,7 @@ class Bundle(BuildBundle):
         p1 = self.partitions.find_or_new(table='json', grain='approvals')
         p2 = self.partitions.find_or_new(table='json', grain='projects')
         
-        extant = set([ row['object_id'] for row in p.query("SELECT object_id FROM json  WHERE response_code != 403") ])
+        extant = set([ row['object_id'] for row in p.query("SELECT object_id FROM json ") ])
         
         invoice_ids = set()
         
@@ -150,6 +150,8 @@ class Bundle(BuildBundle):
                 import requests
                 tries = 0
                 
+                r = None
+                
                 while True:
                     try:
                         r = requests.get(url, headers={'Accept':'application/json'})
@@ -169,7 +171,7 @@ class Bundle(BuildBundle):
                         time.sleep( 5**( 1 + (float(tries) / 10) ))
                         
                         with self.thread_count_lock:
-                            if self.max_threads > 4 and r.status_code < 500:
+                            if self.max_threads > 4 and r and r.status_code < 500:
                                 self.max_threads -= .5
                         
                         self.error("Failed to request: {}. Try: {} : {}".format(url, tries, e))
