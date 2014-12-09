@@ -204,7 +204,7 @@ class Bundle(BuildBundle):
         from sqlalchemy.exc import IntegrityError
         lr = self.init_log_rate(1000)
         
-        with p.inserter(cache_size = 10) as ins:
+        with p.inserter(cache_size = 1) as ins:
             for idn, object_id, url, response_code, json in self.generate_json(g):
     
                 self.progress('Inserting {} {}'.format(response_code,url))
