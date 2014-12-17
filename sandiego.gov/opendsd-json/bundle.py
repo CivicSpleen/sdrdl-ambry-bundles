@@ -30,7 +30,6 @@ class Bundle(BuildBundle):
         self.thread_count_lock =  Lock() # Lock for dynamically adjusting th number of threads. 
         
    
-        
     def generate_project_urls(self, p):
         """Generate URLs for project objects we haven't seen yet. """
     
@@ -115,7 +114,6 @@ class Bundle(BuildBundle):
 
             # Generate all of the URLs for this slot. 
             for ri in range(self.requests_per_delay):
-    
                 yield g.next()        
 
     def test_rate_limit(self):
@@ -131,71 +129,108 @@ class Bundle(BuildBundle):
             self.progress(str(x))
 
 
+
+
     def generate_json(self, g):
       
         import time 
+        import collections
         
         lr = self.init_log_rate(50)
         
-        for idn, object_id, url in self.rate_limit_generator(g):
-          
-            # Limit the number of active threads
-            while threading.active_count() >= self.max_threads:
-                self.progress("Sleeping. {} threads. Last idn: {}".format(threading.active_count(), idn ))
-                time.sleep(.1)
-                
-            def requestor_thread(idn, object_id, url, json_queue):
-    
-                import requests
-                tries = 0
-                
-                r = None
-                
-                while True:
-                    try:
-                        r = requests.get(url, headers={'Accept':'application/json'})
+        # TODO This won't actually work -- it will exit before all of the records are taken off of the
+        # json_queue
+        
+        rlg = self.rate_limit_generator(g)
+        rlg_stopped  = False
+        
+        def requestor_thread(idn, object_id, url, json_queue):
 
-                        r.raise_for_status()
+            import requests
+            tries = 0
+            
+            r = None
+            
+            while True:
+                try:
+                    r = requests.get(url, headers={'Accept':'application/json'})
 
-                        json_queue.put((idn, object_id, url, r.status_code, r.text))
-                    
-                        with self.thread_count_lock:
+                    r.raise_for_status()
+
+                    json_queue.put((idn, object_id, url, r.status_code, r.text))
+                
+                    with self.thread_count_lock:
+                        if self.max_threads < 50:
                             self.max_threads += .001
-                            
-                        return
-                    
-                    except Exception as e:
-                        import json
-                        tries += 1
-                        time.sleep( 5**( 1 + (float(tries) / 10) ))
                         
-                        with self.thread_count_lock:
-                            if self.max_threads > 4 and r and r.status_code < 500:
-                                self.max_threads -= .5
-                        
-                        self.error("Failed to request: {}. Try: {} : {}".format(url, tries, e))
-                        
-                        if tries > 10 or r.status_code >= 500:
-
-                            json_queue.put((idn, object_id, url, r.status_code, json.dumps(dict(
-                                error = r.status_code,
-                                message = e.message,
-                                body = r.text
-                            ))))
-                        
-                            return # Give up 
-                        
+                    return
                 
-      
-            t  = threading.Thread(target=requestor_thread, args=(idn, object_id, url, self.json_queue))
-            t.start()    
+                except Exception as e:
+                    import json
+                    tries += 1
+                    time.sleep( 5**( 1 + (float(tries) / 10) ))
+                    
+                    with self.thread_count_lock:
+                        if self.max_threads > 4 and r and r.status_code < 500:
+                            self.max_threads -= .5
+                    
+                    self.error("Failed to request: {}. Try: {} : {}".format(url, tries, e))
+                    
+                    if tries > 10 or ( r and r.status_code >= 500):
+
+                        json_queue.put((idn, object_id, url, r.status_code, json.dumps(dict(
+                            error = r.status_code,
+                            message = e.message,
+                            body = r.text
+                        ))))
+                    
+                        return # Give up
+        
+
+        threads_created = 0    
+        json_recieved = 0           
+
+        response_codes = collections.defaultdict(int)
+
+        start_time = time.time()
+
+        while True:
+        
+            if not rlg_stopped and threading.active_count() < self.max_threads:
+                
+                try:
+                    idn, object_id, url = rlg.next()
+                
+                    t  = threading.Thread(target=requestor_thread, args=(idn, object_id, url, self.json_queue))
+                    t.start()
+                    threads_created += 1
+                    
+                except StopIteration:
+                    rlg_stopped = True
+                    
 
             while self.json_queue.qsize() > 0:
-                self.progress('Getting from queue {}'.format(self.json_queue.qsize()))
+                
                 try:
-                    yield self.json_queue.get()
+                    json_recieved += 1
+                    idn, object_id, url, response_code, json =  self.json_queue.get()
+                    response_codes[response_code] += 1
+                    yield idn, object_id, url, response_code, json
                 except Empty:
                     break
+                    
+            run_time = time.time() - start_time
+            rate = round(float(threads_created) / run_time, 2)
+                    
+                
+            self.progress("STP={}, ATC={} TC={} JR={} RC={} RT = {} RATE={}".format(rlg_stopped, threading.active_count(), 
+                                                              threads_created, json_recieved, dict(response_codes.items()),
+                                                              round(run_time,2), rate ))
+                                                              
+            if rlg_stopped and threading.active_count() == 1 and self.json_queue.qsize() == 0:
+                print # Clear theprogress line. 
+                self.log("generate_json done")
+                return
                 
     def scrape_api(self,object_type,p,g):
         """Run the json generator and store the json records in the database. """
@@ -211,10 +246,7 @@ class Bundle(BuildBundle):
                 if object_id in extant:
                     self.log('Duplicate {} {}'.format(object_type, object_id))
                     continue
-    
-                self.progress('Inserting {} {}'.format(response_code,url))
-
-    
+  
                 lr("{} {} ".format(idn, url))
 
                 d = dict(

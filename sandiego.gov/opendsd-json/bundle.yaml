@@ -3,7 +3,7 @@ about:
     license: null
     rights: null
     subject: null
-    summary: Full data for application receieved, permits issues and permits completed,
+    summary: Full data for permit applications, invoices, and projects
         from the City of San Diego Project Tracking System, pulled from the OpenDSD
         web API as JSON. JSON is saved, but not converted to tables.
     tags: []
@@ -18,7 +18,10 @@ contact_bundle:
         name: Eric Busboom
         url: http://www.sandiegodata.org
 contact_source:
-    creator: {}
+    creator: 
+        name: City of San Diego Development Services Department
+        email: dsdprojectinfo@sandiego.gov.
+        url: http://www.sandiego.gov/development-services/index.shtml
     maintainer: {}
 external_documentation:
     api:

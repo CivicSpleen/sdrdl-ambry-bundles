@@ -2,7 +2,7 @@ table,seq,column,is_pk,is_fk,type,i1,i2,size,description,id
 permits,1,id,1,,INTEGER,,,,Permit Approvals,t03f01
 permits,2,year,,,INTEGER,,,4,,c03f01002
 permits,3,approval_id,,,INTEGER,1,,7,,c03f01003
-permits,4,approval_type,,,VARCHAR,,,30,,c03f01004
+permits,4,approval_type,,,VARCHAR,,,33,,c03f01004
 permits,5,approval_type_id,,,INTEGER,,1,3,,c03f01005
 permits,6,project_id,,,INTEGER,,,6,,c03f01006
 permits,7,application_date,,,DATETIME,,,,,c03f01007
@@ -16,7 +16,7 @@ permits,13,longitude,,,REAL,,,,,c03f0100d
 applications,1,id,1,,INTEGER,,,,Application approvals,t03f02
 applications,2,year,,,INTEGER,,,4,,c03f02002
 applications,3,approval_id,,,INTEGER,1,,7,,c03f02003
-applications,4,approval_type,,,VARCHAR,,,30,,c03f02004
+applications,4,approval_type,,,VARCHAR,,,33,,c03f02004
 applications,5,approval_type_id,,,INTEGER,,1,3,,c03f02005
 applications,6,project_id,,,INTEGER,,,6,,c03f02006
 applications,7,application_date,,,DATETIME,,,,,c03f02007
