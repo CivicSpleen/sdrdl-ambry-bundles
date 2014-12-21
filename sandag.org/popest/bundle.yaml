@@ -28,13 +28,13 @@ external_documentation:
         title: 2050 Regional Growth Forecast
         url: http://www.sandag.org/index.asp?projectid=355&fuseaction=projects.detail
     model:
-        description:This report presents a basic
+        description: This report presents a basic
             description of the SANDAG forecast models used in the
             2050 Regional Growth Forecast, including a general flow
             of information and some of the key inputs, assumptions,
             and computations for each of the components. 
         title: Model Documentation
-        url: http://www.sandag.org/uploads/publicationid/publicationid_1490_11298.pdf
+        url: 'http://www.sandag.org/uploads/publicationid/publicationid_1490_11298.pdf'
 identity:
     bspace: null
     btime: null
