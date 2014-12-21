@@ -1,0 +1,52 @@
+about:
+    groups: []
+    license: null
+    rights: null
+    subject: null
+    summary: COnversion of the JSON representation of OpenDSD objects to tabular data. 
+    tags: []
+    title: OpenDSD Approvals, Invoices and Projects
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer: {}
+contact_source:
+    creator: 
+        name: City of San Diego Development Services Department
+        email: dsdprojectinfo@sandiego.gov.
+        url: http://www.sandiego.gov/development-services/index.shtml
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Main website for OpenDSD
+        source: null
+        title: Dataset page
+        url: http://www.sandiego.gov/development-services/opendsd/
+    download:
+        description: Links to zipped XML files and API docs
+        source: null
+        title: Dataset download page
+        url: http://www.sandiego.gov/development-services/opendsd/developers.shtml
+identity:
+    bspace: null
+    btime: null
+    dataset: opendsd
+    id: d03i
+    revision: 1
+    source: sandiego.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: sandiego.gov-opendsd-0.0.1~d03i001
+    name: sandiego.gov-opendsd
+    vid: d03i001
+    vname: sandiego.gov-opendsd-0.0.1
+process: {}
+versions:
+    1:
+        description: null
+        version: 0.0.1

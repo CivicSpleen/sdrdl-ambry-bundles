@@ -1,0 +1,7 @@
+build: {}
+dependencies: 
+    projects: sandiego.gov-opendsd-json-json-projects
+    approvals: sandiego.gov-opendsd-json-json-approvals
+extract: {}
+sources: {}
+views: {}
