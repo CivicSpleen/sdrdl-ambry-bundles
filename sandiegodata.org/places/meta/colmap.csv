@@ -1,0 +1,13 @@
+"table","city","outcol","incol","group"
+"city",,"code","Snd{acro}",
+"city",,"scode","code",
+"city",,"name","name","name"
+"community","SndSAN","code","San{acro}",
+"community","SndSAN","scode","cpcode",
+"community","SndSAN","name","cpname","cpname"
+"council","SndSAN","code","San{district:03d}",
+"council","SndSAN","scode","{district}",
+"council","SndSAN","name","District {district:d}","district"
+"neighborhood","SndSAN","code","San{acro}",
+"neighborhood","SndSAN","scode","{OGC_FID}",
+"neighborhood","SndSAN","name","name","name"

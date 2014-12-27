@@ -1,0 +1,7 @@
+-   format: geo
+    name: sandiegodata.org-places-casnd-places-geo
+    table: places
+-   name: sandiegodata.org-places-casnd-places_blockgroups
+    table: places_blockgroups
+-   name: sandiegodata.org-places-casnd-places_tracts
+    table: places_tracts

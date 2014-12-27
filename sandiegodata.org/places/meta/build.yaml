@@ -1,0 +1,10 @@
+build: {}
+dependencies:
+    blockgroups: census.gov-tigerline-2012-blockgroups-ca-geo
+    cities: sangis.org-places-orig-cities-geo
+    communities: sangis.org-places-orig-sd_communities-geo
+    councils: sangis.org-places-orig-sd_councils-geo
+    neighborhoods: sangis.org-places-orig-sd_neighborhoods-geo
+    tracts: census.gov-tigerline-2012-tracts-ca-geo
+extract: {}
+views: {}

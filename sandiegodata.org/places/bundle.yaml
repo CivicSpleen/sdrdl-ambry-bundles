@@ -1,0 +1,43 @@
+about:
+    groups: []
+    license: other-open
+    rights: public
+    subject: places
+    summary: Names, codes, cross walks and basic demographics for cities, communities,
+        council districts and other areas in San Diego County.
+    tags: []
+    title: San Diego County Places
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: null
+    maintainer: {}
+contact_source:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: null
+    maintainer: {}
+identity:
+    bspace: casnd
+    btime: null
+    dataset: places
+    id: d03l
+    revision: 1
+    source: sandiegodata.org
+    subset: null
+    type: null
+    variation: null
+    version: 0.1.1
+names:
+    fqname: sandiegodata.org-places-casnd-0.1.1~d03l001
+    name: sandiegodata.org-places-casnd
+    vid: d03l001
+    vname: sandiegodata.org-places-casnd-0.1.1
+process: {}
+versions:
+    1:
+        date: null
+        description: Initial Revision, copied from another bundle.
+        version: null
