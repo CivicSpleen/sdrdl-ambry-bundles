@@ -1,10 +1,17 @@
 documentation:
-    main: '
-
-        # San Diego County Places
-
-
-        '
+    main: "\n# San Diego County Places\n\nThis bundle includes a partition that holds\
+        \ the names and boundaries for San Diego County cities, and within the City\
+        \ of San Diego, council districts, neighborhoods and communities. \n\nIt also\
+        \ includes two crosswalks, linking all of the geometries to blockgroups and\
+        \ tracts. Since some of the blockgroups and tracts cross boundaries, a collectio\
+        \ of blockgroups or tracts associated with a geometry will not have the same\
+        \ boundary as the geometry. However, the blockgroups and tracts that cross\
+        \ boundaries are primaryily large with low populations, so this problem has\
+        \ a larger effect on area than for population. \n\nThe mismatch between San\
+        \ Diego communities and  blocks and tracts is particularly poor for the communities\
+        \ of:\n\n* San Pasqual\n* Black Mountain Ranch\n* Del Mar Mesa\n* Fairbanks\
+        \ Ranch County Club\n* Villa De La Valle\n* Mira Mar Ranch North\n* East Elliot\n\
+        \n"
     readme: '# San Diego County Places
 
 

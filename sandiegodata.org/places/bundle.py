@@ -170,7 +170,7 @@ class Bundle(BuildBundle):
 
         
         with p.inserter() as ins:
-            for point, point_o, cntr_geo, cntr_o in find_containment(gen_bound(),gen_points('blockgroups')):
+            for point, point_o, cntr_geo, cntr_o in find_containment(gen_bound(),gen_points('tracts')):
 
                 ins.insert(dict(places_id = cntr_o, gvid = point_o))
             
