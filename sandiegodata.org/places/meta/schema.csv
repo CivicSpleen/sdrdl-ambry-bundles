@@ -1,20 +1,19 @@
-table,seq,column,is_pk,is_fk,type,i1,i2,i3,i4,i6,ui1,ui2,size,description,proto_vid,id
-places,1,id,1,,INTEGER,,,,,,,,,,,t03l01
-places,2,ogc_fid,,,INTEGER,1,,,,,,,,,,c03l01002
-places,3,type,,,VARCHAR,,1,,,,1,1,,,,c03l01003
-places,4,city,,,VARCHAR,,,1,,,,1,,,,c03l01004
-places,5,code,,,VARCHAR,,,,,,1,,,Clarinova code,,c03l01005
-places,6,scode,,,VARCHAR,,,,,,,,,Source data code,,c03l01006
-places,7,name,,,VARCHAR,,,,1,,,1,,,,c03l01007
-places,8,lat,,,REAL,,,,,1,,,,Latitude of centroid,,c03l01008
-places,9,lon,,,REAL,,,,,1,,,,Longitude of centroid,,c03l01009
-places,10,geometry,,,BLOB,,,,,,,,,,,c03l0100a
-places,11,area,,,REAL,,,,,,,,,,,c03l0100b
-,,,,,,,,,,,,,,,,
-places_blockgroups,1,id,1,,INTEGER,,,,,,,,,Crosswalk between places and blockgroups,,t03l02
-places_blockgroups,2,places_id,,,INTEGER,,,,,,,,3,,,c03l02002
-places_blockgroups,3,gvid,,,VARCHAR,,,,,,,,12,Blockgroup gvid,c0010d003002,c03l02003
-,,,,,,,,,,,,,,,,
-places_tracts,1,id,1,,INTEGER,,,,,,,,,Crosswalk between places and tracts,,t03l03
-places_tracts,2,places_id,,,INTEGER,,,,,,,,3,,,c03l03002
-places_tracts,3,gvid,,,VARCHAR,,,,,,,,12,Tract gvid,c0010d003002,c03l03003
+table,seq,column,is_pk,is_fk,type,i2,i3,i4,i6,ui1,ui2,size,description,proto_vid,id
+places,1,id,1,,INTEGER,,,,,,,3,,,t03l01
+places,2,type,,,VARCHAR,1,,,,1,1,12,,,c03l01002
+places,3,city,,,VARCHAR,,1,,,,1,6,,,c03l01003
+places,4,code,,,VARCHAR,,,,,1,,6,Clarinova code,,c03l01004
+places,5,scode,,,VARCHAR,,,,,,,3,Source data code,,c03l01005
+places,6,name,,,VARCHAR,,,1,,,1,35,,,c03l01006
+places,7,lat,,,REAL,,,,1,,,,Latitude of centroid,,c03l01007
+places,8,lon,,,REAL,,,,1,,,,Longitude of centroid,,c03l01008
+places,9,geometry,,,GEOMETRY,,,,,,,,,,c03l01009
+places,10,area,,,REAL,,,,,,,,,,c03l0100a
+,,,,,,,,,,,,,,,
+places_blockgroups,1,id,1,,INTEGER,,,,,,,,Crosswalk between places and blockgroups,,t03l02
+places_blockgroups,2,places_id,,t03l01,INTEGER,,,,,,,3,,,c03l02002
+places_blockgroups,3,gvid,,,VARCHAR,,,,,,,12,Blockgroup gvid,c0010d003,c03l02003
+,,,,,,,,,,,,,,,
+places_tracts,1,id,1,,INTEGER,,,,,,,,Crosswalk between places and tracts,,t03l03
+places_tracts,2,places_id,,t03l01,INTEGER,,,,,,,3,,,c03l03002
+places_tracts,3,gvid,,,VARCHAR,,,,,,,12,Tract gvid,c0010c003,c03l03003

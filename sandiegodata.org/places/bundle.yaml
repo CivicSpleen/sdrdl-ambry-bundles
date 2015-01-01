@@ -24,20 +24,24 @@ identity:
     btime: null
     dataset: places
     id: d03l
-    revision: 1
+    revision: 2
     source: sandiegodata.org
     subset: null
     type: null
     variation: null
-    version: 0.1.1
+    version: 0.1.2
 names:
-    fqname: sandiegodata.org-places-casnd-0.1.1~d03l001
+    fqname: sandiegodata.org-places-casnd-0.1.2~d03l002
     name: sandiegodata.org-places-casnd
-    vid: d03l001
-    vname: sandiegodata.org-places-casnd-0.1.1
+    vid: d03l002
+    vname: sandiegodata.org-places-casnd-0.1.2
 process: {}
 versions:
     1:
         date: null
         description: Initial Revision, copied from another bundle.
         version: null
+    2:
+        date: '2015-01-01T15:29:56.832118'
+        description: Last rebuild looked bad
+        version: 0.1.2
