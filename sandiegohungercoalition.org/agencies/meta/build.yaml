@@ -1,0 +1,9 @@
+build:
+    requirements:
+        xlrd: xlrd
+dependencies: {}
+sources:
+    agency_list:
+        description: description
+        url: file:///Volumes/Storage/Downloads/SDFSA_agencies.csv
+views: {}

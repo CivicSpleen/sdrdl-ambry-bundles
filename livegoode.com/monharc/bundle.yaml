@@ -20,39 +20,28 @@ contact_bundle:
         name: Eric Busboom
         url: http://www.sandiegodata.org
 contact_source:
-    creator:
-        email: null
-        name: null
-        url: null
-    maintainer:
-        email: null
-        name: null
-        url: null
+    creator: {}
+    maintainer: {}
 external_documentation:
-    example:
-        description: description
-        source: source
-        title: title
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
         url: http://example.com
 identity:
     bspace: null
-    btime: 2010e2014
-    dataset: budget
-    id: d02r
+    btime: null
+    dataset: monharc
+    id: d03I
     revision: 1
-    source: sandiego.gov
+    source: livegoode.com
     subset: null
     type: null
     variation: null
     version: 0.0.1
 names:
-    fqname: sandiego.gov-budget-2010e2014-0.0.1~d02r001
-    name: sandiego.gov-budget-2010e2014
-    vid: d02r001
-    vname: sandiego.gov-budget-2010e2014-0.0.1
+    fqname: livegoode.com-monharc-0.0.1~d03I001
+    name: livegoode.com-monharc
+    vid: d03I001
+    vname: livegoode.com-monharc-0.0.1
 process: {}
-versions:
-    1:
-        date: null
-        description: null
-        version: 0.0.1

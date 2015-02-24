@@ -20,3 +20,4 @@ sources:
     master_data:
         description: description
         url: http://ds.civicknowledge.org.s3.amazonaws.com/sandiego.gov/City%20Budget/201405/Master%20Data_All.xlsx
+views: {}

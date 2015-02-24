@@ -1,0 +1,9 @@
+build:
+    requirements:
+        xlrd: xlrd
+dependencies: {}
+sources:
+    referrals:
+        description: Monharc school referrals to the D12 timeout room.
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/livegood.com/Monarch%20D12%20Referrals%20Cleaned.csv
+views: {}
