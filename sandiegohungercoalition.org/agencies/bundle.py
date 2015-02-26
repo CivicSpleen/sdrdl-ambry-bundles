@@ -2,68 +2,93 @@
 
 '''
 
-from  ambry.bundle.loader import ExcelBuildBundle
+from  ambry.bundle.loader import CsvBundle
  
-
-class Bundle(ExcelBuildBundle):
+class Bundle(CsvBundle):
     ''' '''
-
-    decode = lambda self, v : v.encode('ascii', 'ignore').decode('ascii')
-
-    def __init__(self,directory=None):
-
-        super(Bundle, self).__init__(directory)
-
-    def foo(self):
+    
+    def generate_agencies(self):
+        """Load the agency list from the web, and yield geocoded address records"""
         import csv
         from ambry.geo.geocoders import DstkGeocoder
         from collections import defaultdict
-        
-        fn  = self.source('agency_list')
-        
-        names = {}
-        site_id = defaultdict(int)
-        
+
         def address_gen():
-            with open(fn) as f:
-                r = csv.DictReader(f)
+            
+            for row in self.partitions.find(table='sdfb_partners').rows:
 
-                for row in r:
-                    row['id'] = row['id'].strip()
-                    row['name'] = row['name'].strip()
-                    
-                    if row['id']:
-                        if row['name'] in names:
-                            self.error("Dupe name:".format(row['name']))
-                    
-                        else:
-                            names[row['name']] = row
-                            site_id[row['name']] += 1
-                            row['site_id'] = site_id[row['name']]
-                                                    
-                    else:
-                        row['id'] = names[row['name']]['id']
-                        site_id[row['name']] += 1
-                        row['site_id'] = site_id[row['name']]
-                    
-                    yield (row['address'].decode('ascii','ignore'), (row['id'], row['site_id'], row['name']))
+                yield ("{} {}, CA {}".format(row['addr1'].decode('ascii','ignore'), row['city'], row['zip']),
+                            (row['agencyref'].strip(), None, row['agencyname'].strip()))
+            
+            for row in self.partitions.find(table='agency_list').rows:
                 
-        dstk_service = self.config.service('dstk')
+                yield (row['address'].decode('ascii','ignore'), 
+                      (row['agency_id'], row['site_id'], row['name'].strip()))
+
+
+
+        dstk_gc = DstkGeocoder(self.config.service('dstk'), address_gen())
+
+        header = 'agency_id site_id name orig_address geocoded_address city lat lon'.split()
+
+        for i, (k, r, o) in enumerate(dstk_gc.geocode()):
+            
+            row = [o[0],o[1],o[2],k]
+            
+            if r:
+                row += [r['street_address'], r['locality'], r['latitude'], r['longitude']]
+                
+            yield dict(
+                i = i,
+                address = k, 
+                geocoded = r,
+                row = dict(zip(header, row ))
+            )
         
-        dstk_gc = DstkGeocoder(dstk_service, address_gen())
+    def build(self):
+        
+        self.build_from_source('sdfb_partners')
+        self.build_from_source('agency_list')
+        
+        self.build_agencies()
+        
+        return True
+        
+    def build_agencies(self):
+        """Build the facilities_blockgroups crosswalk file to assign facilities to blockgroups. """
+        from ambry.geo.util import find_geo_containment, find_containment
 
-        with open("agencies.csv", 'w') as f:
-            w = csv.writer(f)
-            w.writerow('agency_id site_id name orig_address geocoded_address'.split())
-            for i, (k, r, o) in enumerate(dstk_gc.geocode()):
-                
-                row = [o[0],o[1],o[2],k]
-                
-                if r:
-                    row += [r['street_address'], r['locality'], r['latitude'], r['longitude']]
-                
-                
-                w.writerow(row)
-               
+        lr = self.init_log_rate(3000)
+
+        def gen_bound():
+            
+            boundaries = self.library.dep('blockgroups').partition
+
+            # Note, ogc_fid is the primary key. The id column is created by the shapefile. 
+            for i,boundary in enumerate(boundaries.query(
+                "SELECT  AsText(geometry) AS wkt, gvid FROM blockgroups")):
+                lr('Load rtree')
+     
+                yield i, boundary['wkt'] , boundary['gvid'] 
+        
+        def gen_points():
+
+            for o in self.generate_agencies():
+                if o['geocoded']:
+                    yield (o['geocoded']['longitude'], o['geocoded']['latitude']), o
           
+        p = self.partitions.find_or_new(table='locations')
+        p.clean()
+
+        with p.inserter() as ins:
+        
+            for point, point_o, cntr_geo, cntr_o in find_containment(gen_bound(),gen_points()):
+           
+                row = point_o['row']
+                
+                row['gvid'] = cntr_o
+           
+                ins.insert(row)
+        
+                lr('Marking point containment')
           

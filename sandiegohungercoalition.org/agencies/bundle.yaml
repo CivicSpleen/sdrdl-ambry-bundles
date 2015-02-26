@@ -6,10 +6,11 @@ about:
     rights: null
     space: null
     subject: null
-    summary: null
+    summary: This is an incomplete geocoding of a subset of a list of food agencies
+        provided by the San Diego Food System Alliance
     tags: []
     time: null
-    title: null
+    title: Food Agency Locations
 contact_bundle:
     creator:
         email: eric@sandiegodata.org

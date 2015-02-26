@@ -2,3 +2,9 @@
 # {about_title}
 
 {about_summary}
+
+The Monarch referrals data set documents and codes each incident in which a student is sent out of the classroom for a behavior issue.  At Monarch, when students are sent out of the classroom to address a behavior, they are sent to the D-12 Room.  D-12 stands for the "Definite Dozen" .  This is the name of the behavior management system utilized at Monarch.  D-12 refers to the 12 principles that all students and staff work toward embodying in their behavior when at The Monarch School.  
+
+Within the data set, you will find the student ID, name, date and time the behavior incident occurred, where it occurred, which staff member referred the student, which actual classroom the student belongs to, what misbehavior was committed and the consequence students faced.
+
+This data is useful for Monarch so they may be able to uncover patterns around behavior that are occurring in specific student populations, grade levels, or if there is more or less of any one type of behavior.  Monarch is also interested in understanding the behavior patterns that may emerge with those students that stand out by exhibiting more than the average number of behavior problems. This data can then be used to help Monarch Administration better train teachers to manage behavior challenges and to help individual students understand their own behavior patterns over time.
