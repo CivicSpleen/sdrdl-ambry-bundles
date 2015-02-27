@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Bundle Documentation</title>
+</head>
+<body>
+<h1>Food Agency Locations</h1>
+<p>This is an incomplete geocoding of a subset of a list of food agencies provided by the San Diego Food System Alliance</p>
+<p>The data in this dataset was submitted byt the San Diego Foo System Alliance to support the 2015 SDSU Data Analysis Contest. The datasets are extracts of administrative systems, there they have all of the inconsistencies and quality issues that are typical of administrative data. </p>
+<p>The three partitions in this dataset are: </p>
+<ul>
+<li>
+<p><code>sandiegohungercoalition.org-agencies-agency_list</code>  is a subset of the organizations references in the <a href="http://ds.civicknowledge.org/sandiegohungercoalition.org/Agency%20Matrix.xlsx">SDFSA Master Agency Matrix spreadsheet</a>. It enumerates the agencies in the list and assigns <code>site_id</code> values to the different locations. </p>
+</li>
+<li>
+<p><code>sandiegohungercoalition.org-agencies-sdfb_partners</code>  has a direct import of  a list of agencies that are partners of the San Diego Food Bank. THis list may be different than in <code>agency_list</code></p>
+</li>
+<li>
+<p><code>sandiegohungercoalition.org-agencies-locations</code> geocodes all of the addresses in the <code>agency_list</code> and <code>sdfb_partners</code> files</p>
+</li>
+</ul>
+</body>
+</html>

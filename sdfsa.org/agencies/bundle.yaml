@@ -1,0 +1,53 @@
+about:
+    access: null
+    grain: null
+    groups: []
+    license: null
+    rights: null
+    space: null
+    subject: null
+    summary: This is an incomplete geocoding of a subset of a list of food agencies
+        provided by the San Diego Food System Alliance
+    tags: []
+    time: null
+    title: Food Agency Locations
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://example.com
+identity:
+    bspace: null
+    btime: null
+    dataset: agencies
+    id: d03H
+    revision: 2
+    source: sdfsa.org
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.2
+names:
+    fqname: sdfsa.org-agencies-0.0.2~d03H002
+    name: sdfsa.org-agencies
+    vid: d03H002
+    vname: sdfsa.org-agencies-0.0.2
+process: {}
+versions:
+    2:
+        date: '2015-02-26T20:05:56.243524'
+        description: Improving Documentation
+        version: 0.0.2

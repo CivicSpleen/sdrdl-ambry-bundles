@@ -1,0 +1,20 @@
+documentation:
+    main: "\n# Food Agency Locations\n\nThis is an incomplete geocoding of a subset\
+        \ of a list of food agencies provided by the San Diego Food System Alliance\n\
+        \n\nThe data in this dataset was submitted byt the San Diego Foo System Alliance\
+        \ to support the 2015 SDSU Data Analysis Contest. The datasets are extracts\
+        \ of administrative systems, there they have all of the inconsistencies and\
+        \ quality issues that are typical of administrative data. \n\nThe three partitions\
+        \ in this dataset are: \n\n* `sandiegohungercoalition.org-agencies-agency_list`\
+        \  is a subset of the organizations references in the [SDFSA Master Agency\
+        \ Matrix spreadsheet](http://ds.civicknowledge.org/Agency%20Matrix.xlsx).\
+        \ It enumerates the agencies in the list and assigns `site_id` values to the\
+        \ different locations. \n\n* `sandiegohungercoalition.org-agencies-sdfb_partners`\
+        \  has a direct import of  a list of agencies that are partners of the San\
+        \ Diego Food Bank. THis list may be different than in `agency_list`\n\n* `sandiegohungercoalition.org-agencies-locations`\
+        \ geocodes all of the addresses in the `agency_list` and `sdfb_partners` files\n"
+    readme: '# Food Agency Locations
+
+
+        This is an incomplete geocoding of a subset of a list of food agencies provided
+        by the San Diego Food System Alliance'
