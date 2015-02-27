@@ -1,15 +1,16 @@
 about:
-    access: null
-    grain: null
+    access: restricted
+    grain: student
     groups: []
-    license: null
-    rights: null
+    license: restricted
+    rights: restricted
     space: null
     subject: null
-    summary: null
+    summary: Records of teacher's referrals of students to the Monarch School's D12
+        "Time Out" room
     tags: []
     time: null
-    title: null
+    title: Disciplary referrals at the Monarch School
 contact_bundle:
     creator:
         email: eric@sandiegodata.org
@@ -20,28 +21,30 @@ contact_bundle:
         name: Eric Busboom
         url: http://www.sandiegodata.org
 contact_source:
-    creator: {}
+    creator:
+        email: mailto:ayoderclark@livegoode.com
+        name: Andrea Yoder Clark
+        url: http://livegoode.com
     maintainer: {}
-external_documentation:
-    download:
-        description: Web page that links to the source files.
-        source: null
-        title: Download Page
-        url: http://example.com
 identity:
     bspace: null
     btime: null
-    dataset: monharc
+    dataset: monarch_referrals
     id: d03I
-    revision: 1
+    revision: 2
     source: livegoode.com
     subset: null
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: livegoode.com-monharc-0.0.1~d03I001
-    name: livegoode.com-monharc
-    vid: d03I001
-    vname: livegoode.com-monharc-0.0.1
+    fqname: livegoode.com-monarch_referrals-0.0.2~d03I002
+    name: livegoode.com-monarch_referrals
+    vid: d03I002
+    vname: livegoode.com-monarch_referrals-0.0.2
 process: {}
+versions:
+    2:
+        date: '2015-02-26T17:07:13.381512'
+        description: Updated title
+        version: 0.0.2
