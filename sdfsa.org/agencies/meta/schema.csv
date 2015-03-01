@@ -1,112 +1,108 @@
-table,seq,column,is_pk,is_fk,type,size,description,derivedfrom,d_has_codes,d_is_code,id
-sdfb_partners,1,id,1,,INTEGER,,San Diego Food Bank Partners,,,,t03H01
-sdfb_partners,2,agencyref,,,VARCHAR,11,AgencyRef,,,,c03H01002
-sdfb_partners,3,agencyname,,,VARCHAR,47,AgencyName,,,,c03H01003
-sdfb_partners,4,addr1,,,VARCHAR,35,Addr1,,,,c03H01004
-sdfb_partners,5,addr2,,,VARCHAR,28,Addr2,,,,c03H01005
-sdfb_partners,6,city,,,VARCHAR,15,City,,,,c03H01006
-sdfb_partners,7,state,,,VARCHAR,2,State,,,,c03H01007
-sdfb_partners,8,zip,,,INTEGER,5,Zip,,,,c03H01008
-sdfb_partners,9,freefoodonly,,,VARCHAR,5,FreeFoodOnly,,,,c03H01009
-sdfb_partners,10,last_pu_delivery,,,DATE,,Last PU/Delivery,,,,c03H0100a
-sdfb_partners,11,county_code,,,VARCHAR,9,County Code,,,,c03H0100b
-sdfb_partners,12,city_code,,,VARCHAR,15,City Code,,,,c03H0100c
-sdfb_partners,13,agency_type,,,VARCHAR,8,Agency Type,,,,c03H0100d
-sdfb_partners,14,group,,,VARCHAR,30,Group,,,,c03H0100e
-sdfb_partners,15,service_fee,,,VARCHAR,18,Service Fee,,,,c03H0100f
-sdfb_partners,16,markup,,,VARCHAR,9,Markup,,,,c03H0100g
-sdfb_partners,17,agency_size,,,VARCHAR,8,Agency Size,,,,c03H0100h
-sdfb_partners,18,parent_agency,,,VARCHAR,44,Parent Agency,,,,c03H0100i
-sdfb_partners,19,default_warehouse,,,VARCHAR,36,Default Warehouse,,,,c03H0100j
-sdfb_partners,20,default_pickup_warehouse,,,VARCHAR,36,Default Pickup Warehouse,,,,c03H0100k
-sdfb_partners,21,opensunam,,,VARCHAR,5,OpenSunAM,,,,c03H0100l
-sdfb_partners,22,opensunpm,,,VARCHAR,5,OpenSunPM,,,,c03H0100m
-sdfb_partners,23,sunfrom,,,VARCHAR,11,SunFrom,,,,c03H0100n
-sdfb_partners,24,sunto,,,VARCHAR,10,SunTo,,,,c03H0100o
-sdfb_partners,25,openmonam,,,VARCHAR,5,OpenMonAM,,,,c03H0100p
-sdfb_partners,26,openmonpm,,,VARCHAR,5,OpenMonPM,,,,c03H0100q
-sdfb_partners,27,monfrom,,,DATE,,MonFrom,,1,,c03H0100r
-sdfb_partners,29,monto,,,DATETIME,,MonTo,,1,,c03H0100t
-sdfb_partners,31,opentueam,,,VARCHAR,5,OpenTueAM,,,,c03H0100v
-sdfb_partners,32,opentuepm,,,VARCHAR,5,OpenTuePM,,,,c03H0100w
-sdfb_partners,33,tuefrom,,,DATE,,TueFrom,,1,,c03H0100x
-sdfb_partners,35,tueto,,,DATE,,TueTo,,1,,c03H0100z
-sdfb_partners,37,openwedam,,,VARCHAR,5,OpenWedAM,,,,c03H0100B
-sdfb_partners,38,openwedpm,,,VARCHAR,5,OpenWedPM,,,,c03H0100C
-sdfb_partners,39,wedfrom,,,DATE,,WedFrom,,1,,c03H0100D
-sdfb_partners,41,wedto,,,DATETIME,,WedTo,,1,,c03H0100F
-sdfb_partners,43,openthram,,,VARCHAR,5,OpenThrAM,,,,c03H0100H
-sdfb_partners,44,openthrpm,,,VARCHAR,5,OpenThrPM,,,,c03H0100I
-sdfb_partners,45,thrfrom,,,DATE,,ThrFrom,,1,,c03H0100J
-sdfb_partners,47,thrto,,,DATE,,ThrTo,,1,,c03H0100L
-sdfb_partners,49,openfriam,,,VARCHAR,5,OpenFriAM,,,,c03H0100N
-sdfb_partners,50,openfripm,,,VARCHAR,5,OpenFriPM,,,,c03H0100O
-sdfb_partners,51,frifrom,,,DATE,,FriFrom,,1,,c03H0100P
-sdfb_partners,53,frito,,,DATETIME,,FriTo,,1,,c03H0100R
-sdfb_partners,55,opensatam,,,VARCHAR,5,OpenSatAM,,,,c03H0100T
-sdfb_partners,56,opensatpm,,,VARCHAR,5,OpenSatPM,,,,c03H0100U
-sdfb_partners,57,satfrom,,,VARCHAR,9,SatFrom,,,,c03H0100V
-sdfb_partners,58,satto,,,VARCHAR,8,SatTo,,,,c03H0100W
-sdfb_partners,59,opened,,,DATE,,Opened,,,,c03H0100X
-sdfb_partners,60,lastsold,,,DATE,,LastSold,,,,c03H0100Y
-sdfb_partners,61,open24,,,VARCHAR,5,Open24,,,,c03H0100Z
-sdfb_partners,62,latecharge,,,VARCHAR,5,LateCharge,,,,c03H01010
-sdfb_partners,63,hourscomments,,,VARCHAR,255,HoursComments,,,,c03H01011
-sdfb_partners,64,alternate_state,,,VARCHAR,0,Alternate State,,,,c03H01012
-sdfb_partners,65,food_rescue,,,VARCHAR,5,Food Rescue,,,,c03H01013
-sdfb_partners,66,retail_pickup,,,VARCHAR,5,Retail Pickup,,,,c03H01014
-sdfb_partners,67,agency_retail_pickup,,,VARCHAR,5,Agency Retail Pickup,,,,c03H01015
-sdfb_partners,68,datesuspended,,,VARCHAR,18,DateSuspended,,,,c03H01016
-sdfb_partners,69,suspendedreason,,,VARCHAR,35,SuspendedReason,,,,c03H01017
-sdfb_partners,70,monthlyweightlimit,,,INTEGER,,MonthlyWeightLimit,,,,c03H01018
-sdfb_partners,71,monthlycreditlimit,,,INTEGER,,MonthlyCreditLimit,,,,c03H01019
-sdfb_partners,72,max_weight,,,INTEGER,,Max Weight,,,,c03H0101a
-sdfb_partners,73,min_weight,,,INTEGER,,Min Weight,,,,c03H0101b
-sdfb_partners,74,max_quantity,,,INTEGER,,Max Quantity,,,,c03H0101c
-sdfb_partners,75,min_quantity,,,INTEGER,,Min Quantity,,,,c03H0101d
-sdfb_partners,76,expiredayscalcmethod,,,VARCHAR,16,ExpireDaysCalcMethod,,,,c03H0101e
-sdfb_partners,77,dayspastexpire,,,INTEGER,,DaysPastExpire,,,,c03H0101f
-sdfb_partners,78,polviewonly,,,VARCHAR,5,POLViewOnly,,,,c03H0101g
-sdfb_partners,79,scheduled_location,,,VARCHAR,0,Scheduled Location,,,,c03H0101h
-sdfb_partners,80,rooffsetdays,,,INTEGER,,ROOffsetDays,,,,c03H0101i
-sdfb_partners,81,recurringorders,,,VARCHAR,5,RecurringOrders,,,,c03H0101j
-sdfb_partners,82,pickuptime,,,DATE,,PickupTime,,,,c03H0101k
-sdfb_partners,83,pickupday,,,VARCHAR,7,PickUpDay,,,,c03H0101l
-sdfb_partners,84,statisticsrequired,,,VARCHAR,5,StatisticsRequired,,,,c03H0101m
-sdfb_partners,85,default_ship_via,,,VARCHAR,8,Default Ship Via,,,,c03H0101n
-sdfb_partners,86,assigned_to,,,VARCHAR,12,Assigned To,,,,c03H0101o
-sdfb_partners,87,getfood,,,VARCHAR,5,GetFood,,,,c03H0101p
-sdfb_partners,88,givefood,,,VARCHAR,5,GiveFood,,,,c03H0101q
-sdfb_partners,89,donationhours,,,VARCHAR,0,DonationHours,,,,c03H0101r
-sdfb_partners,90,homedelivery,,,VARCHAR,5,HomeDelivery,,,,c03H0101s
-sdfb_partners,91,date_monitored_sent,,,VARCHAR,0,Date Monitored Sent,,,,c03H0101t
-sdfb_partners,92,is_warehouse,,,VARCHAR,5,Is Warehouse,,,,c03H0101u
-sdfb_partners,93,default_retail_pu_del,,,VARCHAR,5,Default Retail PU/Del,,,,c03H0101v
-sdfb_partners,94,latitude,,,INTEGER,1,Latitude,,,,c03H0101w
-sdfb_partners,95,longitude,,,INTEGER,,Longitude,,,,c03H0101x
-sdfb_partners,96,deliveriesperperiod,,,INTEGER,,DeliveriesPerPeriod,,,,c03H0101y
-sdfb_partners,97,defaultmobilepantrydrop,,,VARCHAR,5,DefaultMobilePantryDrop,,,,c03H0101z
-sdfb_partners,98,city_rep,,,VARCHAR,10,City Rep,,,,c03H0101A
-sdfb_partners,99,county_rep,,,VARCHAR,12,County Rep,,,,c03H0101B
-sdfb_partners,100,stat_group,,,VARCHAR,8,Stat Group,,,,c03H0101C
+"table","seq","column","is_pk","is_fk","type","size","description","derivedfrom","d_has_codes","d_is_code","id"
+"sdfb_partners",1,"id",1,,"INTEGER",,"San Diego Food Bank Partners",,,,"t03H01"
+"sdfb_partners",2,"agencyref",,,"VARCHAR",11,"AgencyRef",,,,"c03H01002"
+"sdfb_partners",3,"agencyname",,,"VARCHAR",47,"AgencyName",,,,"c03H01003"
+"sdfb_partners",4,"addr1",,,"VARCHAR",35,"Addr1",,,,"c03H01004"
+"sdfb_partners",5,"addr2",,,"VARCHAR",28,"Addr2",,,,"c03H01005"
+"sdfb_partners",6,"city",,,"VARCHAR",15,"City",,,,"c03H01006"
+"sdfb_partners",7,"state",,,"VARCHAR",2,"State",,,,"c03H01007"
+"sdfb_partners",8,"zip",,,"INTEGER",5,"Zip",,,,"c03H01008"
+"sdfb_partners",9,"freefoodonly",,,"VARCHAR",5,"FreeFoodOnly",,,,"c03H01009"
+"sdfb_partners",10,"last_pu_delivery",,,"DATE",,"Last PU/Delivery",,,,"c03H0100a"
+"sdfb_partners",11,"county_code",,,"VARCHAR",9,"County Code",,,,"c03H0100b"
+"sdfb_partners",12,"city_code",,,"VARCHAR",15,"City Code",,,,"c03H0100c"
+"sdfb_partners",13,"agency_type",,,"VARCHAR",8,"Agency Type",,,,"c03H0100d"
+"sdfb_partners",14,"group",,,"VARCHAR",30,"Group",,,,"c03H0100e"
+"sdfb_partners",15,"service_fee",,,"VARCHAR",18,"Service Fee",,,,"c03H0100f"
+"sdfb_partners",16,"markup",,,"VARCHAR",9,"Markup",,,,"c03H0100g"
+"sdfb_partners",17,"agency_size",,,"VARCHAR",8,"Agency Size",,,,"c03H0100h"
+"sdfb_partners",18,"parent_agency",,,"VARCHAR",44,"Parent Agency",,,,"c03H0100i"
+"sdfb_partners",19,"default_warehouse",,,"VARCHAR",36,"Default Warehouse",,,,"c03H0100j"
+"sdfb_partners",20,"default_pickup_warehouse",,,"VARCHAR",36,"Default Pickup Warehouse",,,,"c03H0100k"
+"sdfb_partners",21,"opensunam",,,"VARCHAR",5,"OpenSunAM",,,,"c03H0100l"
+"sdfb_partners",22,"opensunpm",,,"VARCHAR",5,"OpenSunPM",,,,"c03H0100m"
+"sdfb_partners",23,"sunfrom",,,"VARCHAR",11,"SunFrom",,,,"c03H0100n"
+"sdfb_partners",24,"sunto",,,"VARCHAR",10,"SunTo",,,,"c03H0100o"
+"sdfb_partners",25,"openmonam",,,"VARCHAR",5,"OpenMonAM",,,,"c03H0100p"
+"sdfb_partners",26,"openmonpm",,,"VARCHAR",5,"OpenMonPM",,,,"c03H0100q"
+"sdfb_partners",27,"monfrom",,,"DATE",,"MonFrom",,1,,"c03H0100r"
+"sdfb_partners",29,"monto",,,"DATETIME",,"MonTo",,1,,"c03H0100t"
+"sdfb_partners",31,"opentueam",,,"VARCHAR",5,"OpenTueAM",,,,"c03H0100v"
+"sdfb_partners",32,"opentuepm",,,"VARCHAR",5,"OpenTuePM",,,,"c03H0100w"
+"sdfb_partners",33,"tuefrom",,,"DATE",,"TueFrom",,1,,"c03H0100x"
+"sdfb_partners",35,"tueto",,,"DATE",,"TueTo",,1,,"c03H0100z"
+"sdfb_partners",37,"openwedam",,,"VARCHAR",5,"OpenWedAM",,,,"c03H0100B"
+"sdfb_partners",38,"openwedpm",,,"VARCHAR",5,"OpenWedPM",,,,"c03H0100C"
+"sdfb_partners",39,"wedfrom",,,"DATE",,"WedFrom",,1,,"c03H0100D"
+"sdfb_partners",41,"wedto",,,"DATETIME",,"WedTo",,1,,"c03H0100F"
+"sdfb_partners",43,"openthram",,,"VARCHAR",5,"OpenThrAM",,,,"c03H0100H"
+"sdfb_partners",44,"openthrpm",,,"VARCHAR",5,"OpenThrPM",,,,"c03H0100I"
+"sdfb_partners",45,"thrfrom",,,"DATE",,"ThrFrom",,1,,"c03H0100J"
+"sdfb_partners",47,"thrto",,,"DATE",,"ThrTo",,1,,"c03H0100L"
+"sdfb_partners",49,"openfriam",,,"VARCHAR",5,"OpenFriAM",,,,"c03H0100N"
+"sdfb_partners",50,"openfripm",,,"VARCHAR",5,"OpenFriPM",,,,"c03H0100O"
+"sdfb_partners",51,"frifrom",,,"DATE",,"FriFrom",,1,,"c03H0100P"
+"sdfb_partners",53,"frito",,,"DATETIME",,"FriTo",,1,,"c03H0100R"
+"sdfb_partners",55,"opensatam",,,"VARCHAR",5,"OpenSatAM",,,,"c03H0100T"
+"sdfb_partners",56,"opensatpm",,,"VARCHAR",5,"OpenSatPM",,,,"c03H0100U"
+"sdfb_partners",57,"satfrom",,,"VARCHAR",9,"SatFrom",,,,"c03H0100V"
+"sdfb_partners",58,"satto",,,"VARCHAR",8,"SatTo",,,,"c03H0100W"
+"sdfb_partners",59,"opened",,,"DATE",,"Opened",,,,"c03H0100X"
+"sdfb_partners",60,"lastsold",,,"DATE",,"LastSold",,,,"c03H0100Y"
+"sdfb_partners",61,"open24",,,"VARCHAR",5,"Open24",,,,"c03H0100Z"
+"sdfb_partners",62,"latecharge",,,"VARCHAR",5,"LateCharge",,,,"c03H01010"
+"sdfb_partners",63,"hourscomments",,,"VARCHAR",255,"HoursComments",,,,"c03H01011"
+"sdfb_partners",64,"alternate_state",,,"VARCHAR",0,"Alternate State",,,,"c03H01012"
+"sdfb_partners",65,"food_rescue",,,"VARCHAR",5,"Food Rescue",,,,"c03H01013"
+"sdfb_partners",66,"retail_pickup",,,"VARCHAR",5,"Retail Pickup",,,,"c03H01014"
+"sdfb_partners",67,"agency_retail_pickup",,,"VARCHAR",5,"Agency Retail Pickup",,,,"c03H01015"
+"sdfb_partners",68,"datesuspended",,,"VARCHAR",18,"DateSuspended",,,,"c03H01016"
+"sdfb_partners",69,"suspendedreason",,,"VARCHAR",35,"SuspendedReason",,,,"c03H01017"
+"sdfb_partners",70,"monthlyweightlimit",,,"INTEGER",,"MonthlyWeightLimit",,,,"c03H01018"
+"sdfb_partners",71,"monthlycreditlimit",,,"INTEGER",,"MonthlyCreditLimit",,,,"c03H01019"
+"sdfb_partners",72,"max_weight",,,"INTEGER",,"Max Weight",,,,"c03H0101a"
+"sdfb_partners",73,"min_weight",,,"INTEGER",,"Min Weight",,,,"c03H0101b"
+"sdfb_partners",74,"max_quantity",,,"INTEGER",,"Max Quantity",,,,"c03H0101c"
+"sdfb_partners",75,"min_quantity",,,"INTEGER",,"Min Quantity",,,,"c03H0101d"
+"sdfb_partners",76,"expiredayscalcmethod",,,"VARCHAR",16,"ExpireDaysCalcMethod",,,,"c03H0101e"
+"sdfb_partners",77,"dayspastexpire",,,"INTEGER",,"DaysPastExpire",,,,"c03H0101f"
+"sdfb_partners",78,"polviewonly",,,"VARCHAR",5,"POLViewOnly",,,,"c03H0101g"
+"sdfb_partners",79,"scheduled_location",,,"VARCHAR",0,"Scheduled Location",,,,"c03H0101h"
+"sdfb_partners",80,"rooffsetdays",,,"INTEGER",,"ROOffsetDays",,,,"c03H0101i"
+"sdfb_partners",81,"recurringorders",,,"VARCHAR",5,"RecurringOrders",,,,"c03H0101j"
+"sdfb_partners",82,"pickuptime",,,"DATE",,"PickupTime",,,,"c03H0101k"
+"sdfb_partners",83,"pickupday",,,"VARCHAR",7,"PickUpDay",,,,"c03H0101l"
+"sdfb_partners",84,"statisticsrequired",,,"VARCHAR",5,"StatisticsRequired",,,,"c03H0101m"
+"sdfb_partners",85,"default_ship_via",,,"VARCHAR",8,"Default Ship Via",,,,"c03H0101n"
+"sdfb_partners",86,"assigned_to",,,"VARCHAR",12,"Assigned To",,,,"c03H0101o"
+"sdfb_partners",87,"getfood",,,"VARCHAR",5,"GetFood",,,,"c03H0101p"
+"sdfb_partners",88,"givefood",,,"VARCHAR",5,"GiveFood",,,,"c03H0101q"
+"sdfb_partners",89,"donationhours",,,"VARCHAR",0,"DonationHours",,,,"c03H0101r"
+"sdfb_partners",90,"homedelivery",,,"VARCHAR",5,"HomeDelivery",,,,"c03H0101s"
+"sdfb_partners",91,"date_monitored_sent",,,"VARCHAR",0,"Date Monitored Sent",,,,"c03H0101t"
+"sdfb_partners",92,"is_warehouse",,,"VARCHAR",5,"Is Warehouse",,,,"c03H0101u"
+"sdfb_partners",93,"default_retail_pu_del",,,"VARCHAR",5,"Default Retail PU/Del",,,,"c03H0101v"
+"sdfb_partners",94,"latitude",,,"INTEGER",1,"Latitude",,,,"c03H0101w"
+"sdfb_partners",95,"longitude",,,"INTEGER",,"Longitude",,,,"c03H0101x"
+"sdfb_partners",96,"deliveriesperperiod",,,"INTEGER",,"DeliveriesPerPeriod",,,,"c03H0101y"
+"sdfb_partners",97,"defaultmobilepantrydrop",,,"VARCHAR",5,"DefaultMobilePantryDrop",,,,"c03H0101z"
+"sdfb_partners",98,"city_rep",,,"VARCHAR",10,"City Rep",,,,"c03H0101A"
+"sdfb_partners",99,"county_rep",,,"VARCHAR",12,"County Rep",,,,"c03H0101B"
+"sdfb_partners",100,"stat_group",,,"VARCHAR",8,"Stat Group",,,,"c03H0101C"
 ,,,,,,,,,,,
-agency_list,1,id,1,,INTEGER,,description,,,,t03H02
-agency_list,2,agency_id,,,INTEGER,4,agency_id,,,,c03H02002
-agency_list,3,site_id,,,INTEGER,2,site_id,,,,c03H02003
-agency_list,4,name,,,VARCHAR,74,name,,,,c03H02004
-agency_list,5,address,,,VARCHAR,53,address,,,,c03H02005
-agency_list,6,geocoded_address,,,VARCHAR,28,geocoded_address,,,,c03H02006
-agency_list,7,geocoded_city,,,VARCHAR,13,geocoded_city,,,,c03H02007
-agency_list,8,lat,,,REAL,,lat,,,,c03H02008
-agency_list,9,lon,,,REAL,,lon,,,,c03H02009
+"agency_list",1,"id",1,,"INTEGER",,"Names and Site IDs for SDFSA agencies",,,,"t03H02"
+"agency_list",2,"agency_id",,,"INTEGER",4,"agency_id",,,,"c03H02002"
+"agency_list",3,"site_id",,,"INTEGER",2,"site_id",,,,"c03H02003"
+"agency_list",4,"name",,,"VARCHAR",74,"name",,,,"c03H02004"
+"agency_list",5,"address",,,"VARCHAR",53,"address",,,,"c03H02005"
 ,,,,,,,,,,,
-locations,1,id,1,,INTEGER,,,t03H01,,,t03H03
-locations,2,agency_id,,,VARCHAR,11,,c03H01002,,,c03H03002
-locations,3,site_id,,,INTEGER,1,,c03H01003,,,c03H03003
-locations,4,name,,,VARCHAR,74,,c03H01004,,,c03H03004
-locations,5,orig_address,,,VARCHAR,55,,c03H01005,,,c03H03005
-locations,6,geocoded_address,,,VARCHAR,38,,c03H01006,,,c03H03006
-locations,7,city,,,VARCHAR,15,,c03H01007,,,c03H03007
-locations,8,lat,,,REAL,,,c03H01008,,,c03H03008
-locations,9,lon,,,REAL,,,c03H01009,,,c03H03009
-locations,10,gvid,,c03x09003,VARCHAR,12,,c03H0100a,,,c03H0300a
+"locations",1,"id",1,,"INTEGER",,"Geocodes locations for San Diego Food Bank and SDFSA sites","t03H01",,,"t03H03"
+"locations",2,"agency_id",,,"VARCHAR",11,,"c03H01002",,,"c03H03002"
+"locations",3,"site_id",,,"INTEGER",1,,"c03H01003",,,"c03H03003"
+"locations",4,"name",,,"VARCHAR",74,,"c03H01004",,,"c03H03004"
+"locations",5,"orig_address",,,"VARCHAR",55,,"c03H01005",,,"c03H03005"
+"locations",6,"geocoded_address",,,"VARCHAR",38,,"c03H01006",,,"c03H03006"
+"locations",7,"city",,,"VARCHAR",15,,"c03H01007",,,"c03H03007"
+"locations",8,"lat",,,"REAL",,,"c03H01008",,,"c03H03008"
+"locations",9,"lon",,,"REAL",,,"c03H01009",,,"c03H03009"
+"locations",10,"gvid",,"c03x09003","VARCHAR",12,,"c03H0100a",,,"c03H0300a"

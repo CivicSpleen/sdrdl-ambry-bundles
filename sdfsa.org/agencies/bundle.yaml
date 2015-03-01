@@ -6,8 +6,8 @@ about:
     rights: null
     space: null
     subject: null
-    summary: This is an incomplete geocoding of a subset of a list of food agencies
-        provided by the San Diego Food System Alliance
+    summary: Sites and locations for food distribtion for  San Diego Food System Alliance agencies and 
+        San Diego Food Bank partners. 
     tags: []
     time: null
     title: Food Agency Locations
@@ -21,7 +21,9 @@ contact_bundle:
         name: Eric Busboom
         url: http://www.sandiegodata.org
 contact_source:
-    creator: {}
+    creator: 
+        name: San Diego Food System Alliance
+        url: sdfsa.org
     maintainer: {}
 external_documentation:
     download:
@@ -34,20 +36,24 @@ identity:
     btime: null
     dataset: agencies
     id: d03H
-    revision: 2
+    revision: 3
     source: sdfsa.org
     subset: null
     type: null
     variation: null
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: sdfsa.org-agencies-0.0.2~d03H002
+    fqname: sdfsa.org-agencies-0.0.3~d03H003
     name: sdfsa.org-agencies
-    vid: d03H002
-    vname: sdfsa.org-agencies-0.0.2
+    vid: d03H003
+    vname: sdfsa.org-agencies-0.0.3
 process: {}
 versions:
     2:
         date: '2015-02-26T20:05:56.243524'
         description: Improving Documentation
         version: 0.0.2
+    3:
+        date: '2015-03-01T07:37:27.073293'
+        description: improved documentation
+        version: 0.0.3
