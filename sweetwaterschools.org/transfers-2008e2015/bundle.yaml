@@ -1,11 +1,15 @@
 about:
+    access: null
+    grain: null
     groups: []
     license: null
     rights: null
+    space: null
     subject: School transfers
     summary: Transfer requests between sweetwater union school district schools, for
         the years from 2008 to 2014.
     tags: []
+    time: null
     title: Sweetwater Union High School Transfers
 contact_bundle:
     creator:
@@ -44,11 +48,14 @@ names:
 process: {}
 versions:
     1:
+        date: null
         description: Initial version
         version: 0.0.1
     2:
+        date: null
         description: null
         version: 0.0.2
     3:
+        date: null
         description: Adding boundary_id to crosswalk to link to school boundaries.
         version: 0.0.3

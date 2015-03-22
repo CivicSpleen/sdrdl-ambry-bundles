@@ -28,3 +28,4 @@ sources:
     trans2014:
         description: Student transfers 2014 - 2015
         url: s3://ds.civicknowledge.org/voiceofsandiego.org/Sweetwater%20Open%20Enrollment/2014-2015%20Intras%20all%20sites.xls
+views: {}
