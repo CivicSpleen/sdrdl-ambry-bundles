@@ -1,0 +1,57 @@
+about:
+    access: null
+    grain: null
+    groups: []
+    license: null
+    rights: null
+    space: null
+    subject: null
+    summary: null
+    tags: []
+    time: null
+    title: null
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Dataset Page
+        url: http://example.com
+    documentation:
+        description: The primary documentation file
+        source: null
+        title: Main Documentation
+        url: http://example.com
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://example.com
+identity:
+    bspace: null
+    btime: '2014'
+    dataset: boundaries
+    id: d03M
+    revision: 1
+    source: sandi.net
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: sandi.net-boundaries-2014-0.0.1~d03M001
+    name: sandi.net-boundaries-2014
+    vid: d03M001
+    vname: sandi.net-boundaries-2014-0.0.1
+process: {}
