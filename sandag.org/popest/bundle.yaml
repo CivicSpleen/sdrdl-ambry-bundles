@@ -1,11 +1,15 @@
 about:
+    access: null
+    grain: null
     groups: []
     license: null
     rights: null
+    space: null
     subject: Demographics
     summary: Forecast data to 2050 for population, income, housing and race/ethnicity.
         Obtained via email.
     tags: []
+    time: null
     title: SANDAG Series 13 Regional Growth Forecast data by Census Tract
 contact_bundle:
     creator:
@@ -22,19 +26,19 @@ contact_source:
         name: Kirby Brady, Research Analyst, SANDAG
     maintainer: {}
 external_documentation:
+    model:
+        description: This report presents a basic description of the SANDAG forecast
+            models used in the 2050 Regional Growth Forecast, including a general
+            flow of information and some of the key inputs, assumptions, and computations
+            for each of the components.
+        source: null
+        title: Model Documentation
+        url: http://www.sandag.org/uploads/publicationid/publicationid_1490_11298.pdf
     overview:
         description: Web page that describes the SANDAG forecasts program.
         source: forecast13
         title: 2050 Regional Growth Forecast
         url: http://www.sandag.org/index.asp?projectid=355&fuseaction=projects.detail
-    model:
-        description: This report presents a basic
-            description of the SANDAG forecast models used in the
-            2050 Regional Growth Forecast, including a general flow
-            of information and some of the key inputs, assumptions,
-            and computations for each of the components. 
-        title: Model Documentation
-        url: 'http://www.sandag.org/uploads/publicationid/publicationid_1490_11298.pdf'
 identity:
     bspace: null
     btime: null
@@ -54,5 +58,6 @@ names:
 process: {}
 versions:
     1:
+        date: null
         description: Initial Version
         version: 0.0.1

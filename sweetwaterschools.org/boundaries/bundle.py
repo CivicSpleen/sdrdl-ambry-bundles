@@ -38,7 +38,7 @@ class Bundle(GeoBuildBundle):
             block_groups = self.library.dep('bg2012').partition
          
             for row in block_groups.query("""SELECT 
-                    geoid, 
+                    gvid, 
                     X(Transform(Centroid(geometry), 4326)) AS lon, 
                     Y(Transform(Centroid(geometry), 4326)) as lat,
                     MbrMinX(geometry) AS x_min, 
@@ -46,11 +46,11 @@ class Bundle(GeoBuildBundle):
                     MbrMaxX(geometry) AS x_max,  
                     MbrMaxY(geometry) AS y_max
                     FROM blockgroups
-                    WHERE arealand > 0
+                    
                     """):
                 if  row['lon'] and row['lat']:
                    
-                    yield (row['x_min'], row['y_min'], row['x_max'], row['y_max']), row['geoid']
+                    yield (row['x_min'], row['y_min'], row['x_max'], row['y_max']), row['gvid']
 
         def mark_contains():
             
@@ -64,7 +64,7 @@ class Bundle(GeoBuildBundle):
                     (p,point_obj,geometry, poly_obj) = yield # Get a value back from find_geo_containment
 
                     d = {
-                        'geoid': point_obj,
+                        'gvid': point_obj,
                         'sws_boundaries_id': poly_obj
                     }
 

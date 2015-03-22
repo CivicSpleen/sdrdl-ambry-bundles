@@ -1,10 +1,14 @@
 about:
+    access: null
+    grain: null
     groups: []
     license: null
     rights: null
+    space: null
     subject: null
     summary: Over 800K records of service calls to 211 San Diego for 2013 and 2014
     tags: []
+    time: null
     title: 211 San Diego Service Calls
 contact_bundle:
     creator:
@@ -49,11 +53,14 @@ names:
 process: {}
 versions:
     1:
+        date: null
         description: null
         version: 0.0.1
     2:
+        date: null
         description: Reattached original column heading to schema descriptions
         version: 0.0.2
     3:
+        date: null
         description: Added column codes and better documentation
         version: 0.0.3

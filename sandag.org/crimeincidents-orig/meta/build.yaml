@@ -24,3 +24,4 @@ sources:
         url: http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/SANDAG%20Crime%20Incidents%202012.zip
     2013:
         url: http://ds.civicknowledge.org.s3.amazonaws.com/sandag.org/SANDAG%20Crime%20Incidents%202013.zip
+views: {}

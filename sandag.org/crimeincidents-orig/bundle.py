@@ -17,9 +17,7 @@ class Bundle(BuildBundle):
 
 
     def generate_incidents(self, p):
-        from ambry.client.ckan import Ckan
-      
-      
+
         for year in self.metadata.build.set_1_years:
             
             f = self.filesystem.download(year)

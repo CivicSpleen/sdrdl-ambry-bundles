@@ -58,6 +58,8 @@ class Bundle(BuildBundle):
                                 d['approved'] = parse(part, yearfirst = False, dayfirst = False)
                             except ValueError as e:
                                 msg.append(part)
+                            except TypeError:
+                                msg.append(part)
                                 
                         d['approval_msg'] = ' '.join(msg).title()
 

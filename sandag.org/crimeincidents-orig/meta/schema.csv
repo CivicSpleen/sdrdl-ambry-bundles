@@ -1,5 +1,5 @@
 table,seq,column,is_pk,is_fk,type,i1,i2,default,d_fileheader,description,id
-incidents,1,id,1,,INTEGER,,,,,,c00L01001
+incidents,1,id,1,,INTEGER,,,,,,t00L01
 incidents,2,type,,,VARCHAR,,,-,activityType,,c00L01002
 incidents,3,agency,,,VARCHAR,,,-,AGENCY,,c00L01003
 incidents,4,datetime,,,TIMESTAMP,,,,activityDate,,c00L01004

@@ -1,11 +1,15 @@
 about:
+    access: null
+    grain: null
     groups: []
     license: null
     rights: null
+    space: null
     subject: Traffic collision prosecution
     summary: Data from the San Diego DA's office about the prosecution results of
         hit and run collisions that resulted in injury or death.
     tags: []
+    time: null
     title: Felony Hit and Run, San Diego County 2009 to 2014
 contact_bundle:
     creator:
@@ -44,17 +48,22 @@ names:
 process: {}
 versions:
     1:
+        date: null
         description: Original version.
         version: 0.0.1
     2:
+        date: null
         description: Added "Hours" time conversion, primarily for Work sentences.
         version: 0.0.2
     3:
+        date: null
         description: Added better documentation
         version: 0.0.3
     4:
+        date: null
         description: null
         version: 0.0.4
     5:
+        date: null
         description: incr_local -> incar_local
         version: 0.0.5

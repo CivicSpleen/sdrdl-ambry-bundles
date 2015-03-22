@@ -1,5 +1,5 @@
 table,seq,column,is_pk,is_fk,type,size,description,id
-permits,1,id,1,,INTEGER,,,cxoLGGYtNk01001
+permits,1,id,1,,INTEGER,,,txoLGGYtNk01
 permits,2,permit_no,,,VARCHAR,11,,cxoLGGYtNk01002
 permits,3,type,,,VARCHAR,18,,cxoLGGYtNk01003
 permits,4,received,,,DATE,,,cxoLGGYtNk01004

@@ -6,3 +6,4 @@ sources:
         description: Extract from NETS for business by CBSA moving into and out of
             CA
         url: s3://ds.civicknowledge.org/voiceofsandiego.org/BusinessMigration/migration_combined.csv
+views: {}

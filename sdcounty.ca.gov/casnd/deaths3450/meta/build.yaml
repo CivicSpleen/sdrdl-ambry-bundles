@@ -5,3 +5,4 @@ sources:
     deaths:
         description: null
         url: http://ds.civicknowledge.org.s3.amazonaws.com/sdcounty.ca.gov/Deaths-3-4-50-2000-2011.csv
+views: {}
