@@ -1,10 +1,14 @@
 about:
+    access: sdrdl
+    grain: null
     groups: []
     license: null
     rights: null
+    space: null
     subject: null
-    summary: COnversion of the JSON representation of OpenDSD objects to tabular data. 
+    summary: COnversion of the JSON representation of OpenDSD objects to tabular data.
     tags: []
+    time: null
     title: OpenDSD Approvals, Invoices and Projects
 contact_bundle:
     creator:
@@ -13,9 +17,9 @@ contact_bundle:
         url: http://www.sandiegodata.org
     maintainer: {}
 contact_source:
-    creator: 
-        name: City of San Diego Development Services Department
+    creator:
         email: dsdprojectinfo@sandiego.gov.
+        name: City of San Diego Development Services Department
         url: http://www.sandiego.gov/development-services/index.shtml
     maintainer: {}
 external_documentation:
@@ -48,5 +52,6 @@ names:
 process: {}
 versions:
     1:
+        date: null
         description: null
         version: 0.0.1

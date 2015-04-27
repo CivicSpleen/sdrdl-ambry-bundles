@@ -1,15 +1,19 @@
 about:
+    access: sdrdl
+    grain: null
     groups:
     - business
     - economy
     license: null
     rights: null
+    space: null
     subject: Busineses
     summary: Basic information about businesses in San Diego county, from the lists
         published byt the Office of the Treasurer
     tags:
     - business
     - economy
+    time: null
     title: San Diego Businesses
 contact_bundle:
     creator:
@@ -54,18 +58,23 @@ names:
 process: {}
 versions:
     1:
+        date: null
         description: Initial version
         version: 0.0.1
     2:
+        date: null
         description: Changed DATEs to DATETIMEs. The values are stored with time parts,
             which DBAPI can not handle.
         version: 0.0.2
     3:
+        date: null
         description: Broke out the original data from the CK and DSTK geocoded values.
         version: 1.0.3
     4:
+        date: null
         description: null
         version: 1.0.4
     5:
+        date: null
         description: Improved documentation
         version: 1.0.5

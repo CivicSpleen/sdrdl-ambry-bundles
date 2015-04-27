@@ -1,11 +1,15 @@
 about:
+    access: sdrdl
+    grain: null
     groups: []
     license: null
     rights: null
+    space: null
     subject: null
     summary: Boundaries of Downtown San Diego neighborhoods, which are significanty
         different than those provided by SANGIS.
     tags: []
+    time: null
     title: Downtown San Diego Neighborhood Boundaries
 contact_bundle:
     creator:
@@ -50,8 +54,10 @@ names:
 process: {}
 versions:
     1:
+        date: null
         description: null
         version: 0.0.1
     2:
+        date: null
         description: null
         version: 0.0.2

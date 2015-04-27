@@ -1,14 +1,18 @@
 about:
+    access: sdrdl
+    grain: null
     groups:
     - group1
     - group2
     license: other-open
     rights: null
+    space: null
     subject: null
     summary: !include 'meta/about.description.md'
     tags:
     - tag1
     - tag2
+    time: null
     title: Bundle title
 contact_bundle:
     creator:
@@ -47,5 +51,6 @@ names:
 process: {}
 versions:
     1:
+        date: null
         description: null
         version: 0.0.1

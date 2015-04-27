@@ -1,14 +1,18 @@
 about:
+    access: sdrdl
+    grain: null
     groups:
     - Crime
     license: other-open
     rights: null
+    space: null
     subject: null
     summary: Crime incidents provided by SANDAG in response to Public Records Request
         12-075, covering the period from 1 Jan 2007 to 31 March 2013.
     tags:
     - government
     - gov-crime
+    time: null
     title: SANDAG Crime Incidents, 2007 - March 2013
 contact_bundle:
     creator:
@@ -47,14 +51,18 @@ names:
 process: {}
 versions:
     1:
+        date: null
         description: null
         version: null
     2:
+        date: null
         description: null
         version: null
     3:
+        date: null
         description: Dropped CKAN access in favor of S3 urls.
         version: 1.0.3
     4:
+        date: null
         description: Added 2013 records
         version: 1.0.4

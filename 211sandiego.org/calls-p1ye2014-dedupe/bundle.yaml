@@ -1,13 +1,17 @@
 about:
+    access: sdrdl
+    grain: null
     groups: []
     license: null
     rights: null
+    space: null
     subject: null
     summary: The 211 call dataset expresses multiple values in a field with multiple
         records, one for each value in a field, multiplied over all of the multiple
         values in fields that have multiple values. This bundle collapses those records
         into one.
     tags: []
+    time: null
     title: Deduplicated 211 Calls
 contact_bundle:
     creator:
@@ -52,5 +56,6 @@ names:
 process: {}
 versions:
     1:
+        date: null
         description: null
         version: 0.0.1

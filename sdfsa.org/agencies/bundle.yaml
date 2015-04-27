@@ -1,13 +1,13 @@
 about:
-    access: null
+    access: sdrdl
     grain: null
     groups: []
     license: null
     rights: null
     space: null
     subject: null
-    summary: Sites and locations for food distribtion for  San Diego Food System Alliance agencies and 
-        San Diego Food Bank partners. 
+    summary: Sites and locations for food distribtion for  San Diego Food System Alliance
+        agencies and San Diego Food Bank partners.
     tags: []
     time: null
     title: Food Agency Locations
@@ -21,7 +21,7 @@ contact_bundle:
         name: Eric Busboom
         url: http://www.sandiegodata.org
 contact_source:
-    creator: 
+    creator:
         name: San Diego Food System Alliance
         url: sdfsa.org
     maintainer: {}
