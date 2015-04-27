@@ -2,9 +2,9 @@ about:
     access: sdrdl
     grain: null
     groups: []
-    license: other-open
+    license: odbl
     rights: public
-    space: null
+    space: San Diego
     subject: places
     summary: Names, codes, cross walks and basic demographics for cities, communities,
         council districts and other areas in San Diego County.

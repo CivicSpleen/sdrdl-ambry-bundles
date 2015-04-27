@@ -2,9 +2,9 @@ about:
     access: sdrdl
     grain: null
     groups: []
-    license: null
-    rights: null
-    space: null
+    license: odbl
+    rights: public
+    space: San Diego
     subject: null
     summary: XML Exports of summaries of applications and permits, exported from the
         City of San Diego Project Tracking System.

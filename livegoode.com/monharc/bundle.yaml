@@ -2,9 +2,9 @@ about:
     access: sdrdl
     grain: student
     groups: []
-    license: restricted
-    rights: restricted
-    space: null
+    license: odbl
+    rights: public
+    space: San Diego
     subject: null
     summary: Records of teacher's referrals of students to the Monarch School's D12
         "Time Out" room

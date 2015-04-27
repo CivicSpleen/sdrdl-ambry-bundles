@@ -4,9 +4,9 @@ about:
     groups:
     - business
     - economy
-    license: null
-    rights: null
-    space: null
+    license: odbl
+    rights: public
+    space: San Diego
     subject: Busineses
     summary: Basic information about businesses in San Diego county, from the lists
         published byt the Office of the Treasurer

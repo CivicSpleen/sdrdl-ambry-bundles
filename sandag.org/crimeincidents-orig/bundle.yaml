@@ -3,9 +3,9 @@ about:
     grain: null
     groups:
     - Crime
-    license: other-open
-    rights: null
-    space: null
+    license: odbl
+    rights: public
+    space: San Diego
     subject: null
     summary: Crime incidents provided by SANDAG in response to Public Records Request
         12-075, covering the period from 1 Jan 2007 to 31 March 2013.

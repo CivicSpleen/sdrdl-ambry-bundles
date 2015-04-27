@@ -2,9 +2,9 @@ about:
     access: sdrdl
     grain: null
     groups: []
-    license: null
-    rights: null
-    space: null
+    license: odbl
+    rights: public
+    space: San Diego
     subject: null
     summary: Over 800K records of service calls to 211 San Diego for 2013 and 2014
     tags: []

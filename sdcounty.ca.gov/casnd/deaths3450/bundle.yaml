@@ -4,9 +4,9 @@ about:
     groups:
     - group1
     - group2
-    license: other-open
-    rights: null
-    space: null
+    license: odbl
+    rights: public
+    space: San Diego
     subject: null
     summary: !include 'meta/about.description.md'
     tags:
