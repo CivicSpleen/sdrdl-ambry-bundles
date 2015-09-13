@@ -1,4 +1,4 @@
--   name: livegoode.com-monharc-referrals
+-   name: livegoode.com-monarch_referrals-referrals
     table: referrals
--   name: livegoode.com-monharc-direferrals
+-   name: livegoode.com-monarch_referrals-direferrals
     table: direferrals

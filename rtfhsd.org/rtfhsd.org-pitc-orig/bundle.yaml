@@ -1,6 +1,4 @@
 build:
-    dependencies:
-        places: clarinova.com-places-casd-7ba4.places
     schema_file: meta/schema.csv
     sources:
         pitc10: https://ds.civicknowledge.org.s3.amazonaws.com/rtfhsd.org/PITC_2010.zip?AWSAccessKeyId=AKIAIW6AZFKTKTVUUWWA&Expires=1373304643&Signature=7ZZ%2B2HMPs7d2RBcfbnKqnvG%2B0sU%3D
@@ -12,4 +10,5 @@ identity:
     revision: 1
     source: rtfhsd.org
     variation: orig
+    version: 0.0.6
 partitions: []
