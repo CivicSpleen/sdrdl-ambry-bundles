@@ -1,33 +1,34 @@
-table,seq,column,is_pk,is_fk,id,type,size,description,d_has_codes,d_is_code
-referrals,1,id,1,,t03I01,INTEGER,,Monharc school referrals to the D12 timeout room.,,
-referrals,2,timestamp,,,c03I01002,DATETIME,,Timestamp,,
-referrals,3,last_name,,,c03I01003,VARCHAR,16,Last Name,,
-referrals,4,first_name,,,c03I01004,VARCHAR,11,First Name,,
-referrals,5,grade,,,c03I01005,INTEGER,2,Grade,1,
-referrals,6,date_and_time_of_misbehavior,,,c03I01006,DATETIME,,Date and Time of Misbehavior,,
-referrals,7,location_of_misbehavior,,,c03I01007,VARCHAR,47,Location of Misbehavior,,
-referrals,8,documenting_staff_member,,,c03I01008,VARCHAR,14,Documenting Staff Member,,
-referrals,9,classroom_or_administrative_managed,,,c03I01009,VARCHAR,14,Classroom or Administrative Managed,,
-referrals,10,type_of_misbehavior,,,c03I0100a,VARCHAR,295,Type of Misbehavior,,
-referrals,11,narrative_description_of_misbehavior,,,c03I0100b,VARCHAR,437,Narrative Description of Misbehavior,,
-referrals,12,consequence,,,c03I0100c,VARCHAR,232,Consequence,,
-referrals,13,reporting_staff_member,,,c03I0100d,VARCHAR,40,Reporting Staff Member,,
-referrals,14,d12_planning_completed,,,c03I0100e,VARCHAR,31,D12 Planning Completed,,
-referrals,15,narrative_of_consequence,,,c03I0100f,VARCHAR,430,Narrative of Consequence,,
+table,seq,column,is_pk,is_fk,type,size,description,d_has_codes,d_is_code,id
+referrals,1,id,1,,INTEGER,,Monharc school referrals to the D12 timeout room.,,,t03I01
+referrals,2,timestamp,,,DATETIME,,Timestamp,,,c03I01002
+referrals,3,last_name,,,VARCHAR,16,Last Name,,,c03I01003
+referrals,4,first_name,,,VARCHAR,11,First Name,,,c03I01004
+referrals,5,grade,,,INTEGER,2,Grade,1,,c03I01005
+referrals,6,date_and_time_of_misbehavior,,,DATETIME,,Date and Time of Misbehavior,,,c03I01006
+referrals,7,location_of_misbehavior,,,VARCHAR,47,Location of Misbehavior,,,c03I01007
+referrals,8,documenting_staff_member,,,VARCHAR,14,Documenting Staff Member,,,c03I01008
+referrals,9,classroom_or_administrative_managed,,,VARCHAR,14,Classroom or Administrative Managed,,,c03I01009
+referrals,10,type_of_misbehavior,,,VARCHAR,295,Type of Misbehavior,,,c03I0100a
+referrals,11,narrative_description_of_misbehavior,,,VARCHAR,437,Narrative Description of Misbehavior,,,c03I0100b
+referrals,12,consequence,,,VARCHAR,232,Consequence,,,c03I0100c
+referrals,13,reporting_staff_member,,,VARCHAR,40,Reporting Staff Member,,,c03I0100d
+referrals,14,d12_planning_completed,,,VARCHAR,31,D12 Planning Completed,,,c03I0100e
+referrals,15,narrative_of_consequence,,,VARCHAR,430,Narrative of Consequence,,,c03I0100f
 ,,,,,,,,,,
-direferrals,1,id,1,,t03I02,INTEGER,3,"Monharc school referrals to the D12 timeout room, deidentified",,
-direferrals,2,timestamp,,,c03I02002,DATETIME,,Timestamp,,
-direferrals,3,student_id,,,c03I02003,VARCHAR,16,Student ID number,,
-direferrals,4,grade,,,c03I02004,INTEGER,2,Grade,1,
-direferrals,5,date_and_time_of_misbehavior,,,c03I02005,DATETIME,,Date and Time of Misbehavior,,
-direferrals,6,location_of_misbehavior,,,c03I02006,VARCHAR,47,Location of Misbehavior,,
-direferrals,7,documenting_staff_id,,,c03I02007,INTEGER,3,Documenting Staff Member,,
-direferrals,8,documenting_staff,,,c03I02008,VARCHAR,14,Documenting Staff Member,,
-direferrals,9,classroom_or_administrative_managed,,,c03I02009,VARCHAR,14,Classroom or Administrative Managed,,
-direferrals,10,type_of_misbehavior,,,c03I0200a,VARCHAR,295,Type of Misbehavior,,
-direferrals,11,narrative_description_of_misbehavior,,,c03I0200b,VARCHAR,437,Narrative Description of Misbehavior,,
-direferrals,12,consequence,,,c03I0200c,VARCHAR,232,Consequence,,
-direferrals,13,reporting_staff_id,,,c03I0200d,INTEGER,3,Reporting Staff Member,,
-direferrals,14,reporting_staff,,,c03I0200e,VARCHAR,40,Reporting Staff Member,,
-direferrals,15,d12_planning_completed,,,c03I0200f,VARCHAR,31,D12 Planning Completed,,
-direferrals,16,narrative_of_consequence,,,c03I0200g,VARCHAR,430,Narrative of Consequence,,
+direferrals,1,id,1,,INTEGER,3,"Monharc school referrals to the D12 timeout room, deidentified",,,t03I02
+direferrals,2,timestamp,,,DATETIME,,Timestamp,,,c03I02002
+direferrals,3,student_id,,,VARCHAR,16,Student ID number,,,c03I02003
+direferrals,4,grade,,,INTEGER,2,Grade,1,,c03I02004
+direferrals,5,date_and_time_of_misbehavior,,,DATETIME,,Date and Time of Misbehavior,,,c03I02005
+direferrals,6,location_of_misbehavior,,,VARCHAR,47,Location of Misbehavior,,,c03I02006
+direferrals,7,documenting_staff_id,,,INTEGER,3,Documenting Staff Member,,,c03I02007
+direferrals,8,documenting_staff,,,VARCHAR,14,Documenting Staff Member,,,c03I02008
+direferrals,9,classroom_or_administrative_managed,,,VARCHAR,14,Classroom or Administrative Managed,,,c03I02009
+direferrals,10,type_of_misbehavior,,,VARCHAR,295,Type of Misbehavior,,,c03I0200a
+direferrals,11,narrative_description_of_misbehavior,,,VARCHAR,437,Narrative Description of Misbehavior,,,c03I0200b
+direferrals,12,consequence,,,VARCHAR,232,Consequence,,,c03I0200c
+direferrals,13,reporting_staff_id,,,INTEGER,3,Reporting Staff Member,,,c03I0200d
+direferrals,14,reporting_staff,,,VARCHAR,40,Reporting Staff Member,,,c03I0200e
+direferrals,15,d12_planning_completed,,,VARCHAR,31,D12 Planning Completed,,,c03I0200f
+direferrals,16,narrative_of_consequence,,,VARCHAR,430,Narrative of Consequence,,,c03I0200g
+

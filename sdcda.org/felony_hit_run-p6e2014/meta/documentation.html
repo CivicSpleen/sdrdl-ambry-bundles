@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Bundle Documentation</title>
+</head>
+<body>
+<p><strong>Data from the San Diego DA's office about the prosecution results of hit and run collisions that resulted in injury or death.</strong></p>
+<p>This is a conversion of felony hit and run data provided by the San Diego district attorney. The file retains the original columns, with a few additions. The most important of which is that the <code>Sentencing</code> column is broken out into seperate components. Here are the column names and the original descriptino from the <code>Sentencing</code> column. </p>
+<ul>
+<li><code>incar</code>   Any Incarceration</li>
+<li><code>incar_county</code>    Prison Served in County Jail</li>
+<li><code>incar_life</code>  Life and Life +</li>
+<li><code>incar_prison</code>    State Prison</li>
+<li><code>incar_local</code> Local Custody</li>
+<li><code>prob</code>    Any probation</li>
+<li><code>prob_formal</code> Probation Formal</li>
+<li><code>prob_sum</code>    Probation Summary</li>
+<li><code>prog</code>    Any program</li>
+<li><code>prog_child</code>  Child Abuse Program</li>
+<li><code>prog_dv</code> DV Recovery Program</li>
+<li><code>work</code>    Any work</li>
+<li><code>work_furl</code>   Work Furlough</li>
+<li><code>work_pub</code>    Public Work Service</li>
+<li><code>work_vol</code>    Volunteer Work Service</li>
+</ul>
+<p>The values in the columns are in days, converted from the original "Years" and "Months" ( 30.4 days per month. )</p>
+<p>The Names are heirarchical. For instance, when there is a value of <code>10</code> in the  <code>prob_formal</code>, the same value will appear in the <code>prob</code> column, allowing you to analyze either the specific types of probations, or the general calss of all probation types.  </p>
+<p>Additionally, the modifiers in the <code>highest_charge</code> field are broken out into <code>highest_charge_mod</code></p>
+</body>
+</html>

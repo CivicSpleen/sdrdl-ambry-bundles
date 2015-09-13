@@ -1,5 +1,5 @@
 table,seq,column,is_pk,is_fk,type,size,d_caster,description,id
-deaths3450,1,id,1,,INTEGER,,,,c02a01001
+deaths3450,1,id,1,,INTEGER,,,,t02a01
 deaths3450,2,line,,,INTEGER,3,,,c02a01002
 deaths3450,3,area,,,VARCHAR,22,,,c02a01003
 deaths3450,4,year,,,INTEGER,4,,,c02a01004

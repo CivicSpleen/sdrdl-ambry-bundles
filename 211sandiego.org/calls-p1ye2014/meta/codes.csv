@@ -1,0 +1,55 @@
+table,column,key,value,description
+calls,hshld_size,0,None,None
+calls,hshld_size,1,call disconnected,call disconnected
+calls,hshld_size,2,Call dropped,Call dropped
+calls,hshld_size,3,7 or more,7 or more
+calls,hshld_size,4,Declined to State,Declined to State
+calls,hshld_size,5,Did not ask,Did not ask
+calls,hshld_size,6,Not appropriate for this call,Not appropriate for this call
+calls,hshld_pct_fpl,0,00d,00d
+calls,hshld_pct_fpl,1,n-a,n-a
+calls,hshld_pct_fpl,2,n/a,n/a
+calls,hshld_pct_fpl,3,2*9,2*9
+calls,hshld_pct_fpl,4,NA/,NA/
+calls,hshld_pct_fpl,5,000d,000d
+calls,hshld_pct_fpl,6,na,na
+calls,hshld_pct_fpl,7,`0,`0
+calls,hshld_pct_fpl,8,000`,000`
+calls,hshld_pct_fpl,9,0nn,0nn
+calls,hshld_pct_fpl,10,yes,yes
+calls,hshld_pct_fpl,11,86cu,86cu
+calls,hshld_pct_fpl,12,declined,declined
+calls,hshld_pct_fpl,13,nn,nn
+calls,hshld_pct_fpl,14,NA,NA
+calls,hshld_pct_fpl,15,n/A,n/A
+calls,hshld_pct_fpl,16,.,.
+calls,hshld_pct_fpl,17,7&,7&
+calls,hshld_pct_fpl,18,0s,0s
+calls,hshld_pct_fpl,19,ooo,ooo
+calls,hshld_pct_fpl,20,N/A,N/A
+calls,hshld_pct_fpl,21,O,O
+calls,hshld_pct_fpl,22,123$,123$
+calls,hshld_pct_fpl,23,N-A,N-A
+calls,hshld_pct_fpl,24,000%`,000%`
+calls,hshld_pct_fpl,25,46&,46&
+calls,hshld_pct_fpl,26,N\A,N\A
+calls,hshld_pct_fpl,27,0`nn,0`nn
+calls,hshld_pct_fpl,28,d,d
+calls,hshld_pct_fpl,29,313%%,313%%
+calls,hshld_pct_fpl,30,N/a,N/a
+calls,hshld_pct_fpl,31,o,o
+calls,hshld_pct_fpl,32,n,n
+calls,hshld_pct_fpl,33,0`,0`
+calls,hshld_pct_fpl,34,0d,0d
+calls,hshld_pct_fpl,35,65q,65q
+calls,hshld_pct_fpl,36,n0,n0
+calls,hshld_pct_fpl,37,61n,61n
+calls,hshld_pct_fpl,38,0n,0n
+calls,hshld_pct_fpl,39,1381300*12,1381300*12
+calls,zip,0,92105`,92105`
+calls,zip,1,85741``,85741``
+calls,zip,2,92129``,92129``
+calls,zip,3,00000`,00000`
+calls,zip,4,00000``,00000``
+calls,zip,5,92040`,92040`
+calls,zip,6,92103`,92103`

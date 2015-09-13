@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Bundle Documentation</title>
+</head>
+<body>
+<p>Over 800K records of service calls to 211 San Diego for 2013 and 2014</p>
+<h2>Caveats</h2>
+<p>There are three columns that have code columns, but probably shouldn't. Code columns are extra columns to hold values that are not of the right datatype, such as letter code in an integer column. The columns in the <code>calls</code> table with codes are: </p>
+<ul>
+<li>hshld_pct_fpl</li>
+<li>zip</li>
+<li>hshld_size</li>
+</ul>
+<p>The code columns have the same name as the source column, appended with <code>_code</code>. Note that this means that the <code>zip_code</code> column does not hold a zip_code, it holds the non-numeric values from the <code>zip</code> column. </p>
+<p>Analysts should example the unique values for the <code>hshld_pct_fpl_codes</code> and <code>hshld_size_codes</code> columns before using the source columns. </p>
+</body>
+</html>

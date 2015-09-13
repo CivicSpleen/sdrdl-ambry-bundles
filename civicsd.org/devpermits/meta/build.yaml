@@ -15,3 +15,4 @@ sources:
     permits:
         description: Permits for downtown San Diego from Civic San Diego
         url: http://ds.civicknowledge.org.s3.amazonaws.com/civicsd.com/Development%20Permits%202004-2014%20Stats.xls
+views: {}

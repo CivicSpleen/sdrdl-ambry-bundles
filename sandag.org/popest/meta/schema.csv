@@ -58,5 +58,5 @@ forecast13,56,nho,,,INTEGER,3,non-Hispanic Other,nho,c03d0100U
 forecast13,57,nh2,,,INTEGER,4,non-Hispanic 2 or More Races,nh2,c03d0100V
 ,,,,,,,,,
 descriptions,1,id,1,,INTEGER,,,,t03d02
-descriptions,2,field,,,VARCHAR,,,Field,c03d02002
+descriptions,2,field,,,VARCHAR,10,,Field,c03d02002
 descriptions,3,description,,,VARCHAR,51,,description,c03d02003

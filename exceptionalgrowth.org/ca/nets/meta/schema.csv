@@ -1,5 +1,5 @@
 table,seq,column,is_pk,is_fk,type,size,description,d_header,id
-migrations,1,id,1,,INTEGER,,"Business migrations in, out and within CA.",,c02O01001
+migrations,1,id,1,,INTEGER,,"Business migrations in, out and within CA.",,t02O01
 migrations,2,destcbsa,,,INTEGER,5,DestCBSA,,c02O01002
 migrations,3,moveyear,,,INTEGER,4,MoveYear,,c02O01003
 migrations,4,originstate,,,VARCHAR,2,OriginState,,c02O01004

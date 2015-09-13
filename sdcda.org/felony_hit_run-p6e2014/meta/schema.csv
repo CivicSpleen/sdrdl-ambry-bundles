@@ -1,5 +1,5 @@
 table,seq,column,is_pk,is_fk,type,size,description,id
-hitnrun,1,id,1,,INTEGER,3,,c02M01001
+hitnrun,1,id,1,,INTEGER,3,,t02M01
 hitnrun,2,division,,,VARCHAR,25,,c02M01002
 hitnrun,3,district,,,VARCHAR,12,,c02M01003
 hitnrun,4,highest_dispo_charge,,,VARCHAR,25,,c02M01004

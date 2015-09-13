@@ -1,5 +1,5 @@
 table,seq,column,is_pk,is_fk,type,size,description,d_code_key,id
-calls,1,id,1,,INTEGER,,,,c02J01001
+calls,1,id,1,,INTEGER,,,,t02J01
 calls,2,call_stat,,,VARCHAR,17,Shared - NEW - Call Status,,c02J01002
 calls,3,restrictions,,,VARCHAR,13,Portal Restrictions,,c02J01003
 calls,4,create_time,,,VARCHAR,30,Client: Create Date/Time,,c02J01004
@@ -39,16 +39,16 @@ calls,36,ref_name,,,VARCHAR,190,Referral Name,,c02J0100A
 income,1,client_id,,,INTEGER,,,,c02J02001
 income,2,income_source,,,VARCHAR,43,,,c02J02002
 ,,,,,,,,,
-calls_hshld_pct_fpl_codes,1,id,1,,INTEGER,,,"[""calls"", ""hshld_pct_fpl""]",c02J03001
+calls_hshld_pct_fpl_codes,1,id,1,,INTEGER,,,"[""calls"", ""hshld_pct_fpl""]",t02J03
 calls_hshld_pct_fpl_codes,2,code,,,VARCHAR,10,Value of code,,c02J03002
 calls_hshld_pct_fpl_codes,3,description,,,VARCHAR,,Code description,,c02J03003
 ,,,,,,,,,
-calls_zip_codes,1,id,1,,INTEGER,,,"[""calls"", ""zip""]",c02J04001
+calls_zip_codes,1,id,1,,INTEGER,,,"[""calls"", ""zip""]",t02J04
 calls_zip_codes,2,code,,,VARCHAR,7,Value of code,,c02J04002
 calls_zip_codes,3,description,,,VARCHAR,,Code description,,c02J04003
 ,,,,,,,,,
-column_codes,1,id,1,,INTEGER,,,,c02J05001
+column_codes,1,id,1,,INTEGER,,,,t02J05
 ,,,,,,,,,
-calls_hshld_size_codes,1,id,1,,INTEGER,,,"[""calls"", ""hshld_size""]",c02J06001
+calls_hshld_size_codes,1,id,1,,INTEGER,,,"[""calls"", ""hshld_size""]",t02J06
 calls_hshld_size_codes,2,code,,,VARCHAR,29,Value of code,,c02J06002
 calls_hshld_size_codes,3,description,,,VARCHAR,,Code description,,c02J06003
